@@ -36,6 +36,7 @@ tbody tr{cursor:pointer}tbody tr:hover{background:#1b2740}
 .up{color:var(--up)}.down{color:var(--down)}
 .uname{color:var(--mut);font-size:12px;white-space:normal;min-width:180px}
 .scorecell{display:flex;align-items:center;gap:8px}
+.score10{font-size:17px;font-weight:800;min-width:34px;text-align:right}
 .pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px}
 .pSB{background:#123a6d;color:#9ec5ff}.pB{background:#0f2f57;color:#7fb3ff}.pN{background:#2a2f3a;color:#aab}.pS{background:#5c1f1a;color:#ff9d94}.pSS{background:#6d1712;color:#ffb3ab}
 /* modal */
@@ -84,6 +85,12 @@ table.mini{font-size:12.5px}table.mini td,table.mini th{padding:6px 8px}
 let DATA=[];
 const pill=r=>r==="Strong Buy"?"pSB":r==="Buy"?"pB":r==="Neutral"?"pN":r==="Sell"?"pS":"pSS";
 const pc=v=>v==null?"—":`<span class="${v>=0?"up":"down"}">${v>=0?"+":""}${v.toFixed(2)}%</span>`;
+function scoreColor(s){ // 0-100 → red → amber → green
+  const r1=[239,83,80],r2=[245,200,90],r3=[38,166,154];let a,b,f;
+  if(s<50){a=r1;b=r2;f=s/50;}else{a=r2;b=r3;f=(s-50)/50;}
+  const c=a.map((v,i)=>Math.round(v+(b[i]-v)*f));
+  return `rgb(${c[0]},${c[1]},${c[2]})`;
+}
 function gauge(score,size){
   size=size||120;const cx=size/2,cy=size/2,R=size/2-8;
   const pol=(a,r)=>[cx+r*Math.cos(a),cy+r*Math.sin(a)];
@@ -146,7 +153,7 @@ function render(){
     <td class="num">$${t.price.toFixed(2)}</td>
     <td class="num">${pc(t.today_pct)}</td><td class="num">${pc(t.ytd_pct)}</td>
     <td class="num">${pc(t.m3_pct)}</td><td class="num">${pc(t.m6_pct)}</td>
-    <td><div class="scorecell">${gauge(t.score,64)}<span class="pill ${pill(t.rating)}">${t.rating}</span></div></td>
+    <td><div class="scorecell"><span class="score10" style="color:${scoreColor(t.score)}">${(t.score/10).toFixed(1)}</span><span class="pill ${pill(t.rating)}">${t.rating}</span></div></td>
     <td class="num">${pc(t.vs_sma50_pct)}</td></tr>`).join("");
   document.querySelectorAll("#rows tr").forEach(tr=>tr.onclick=()=>openModal(DATA.find(t=>t.ticker===tr.dataset.t)));
   document.getElementById("tbl").style.display="";document.getElementById("loading").style.display="none";
