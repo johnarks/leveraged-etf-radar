@@ -98,11 +98,44 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 .hl li{padding:9px 0;border-top:1px solid var(--line)}
 .hl b{font-weight:600}
 .hl .dsub{margin-top:2px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.menuwrap{position:relative;flex:none}
+#menubtn{background:var(--panel);border:1px solid var(--line);color:var(--txt);font-size:20px;line-height:1;border-radius:10px;padding:8px 13px;cursor:pointer}
+#menubtn:hover{background:var(--panel2)}
+.menudrop{position:absolute;right:0;top:calc(100% + 8px);background:var(--panel);border:1px solid var(--line);border-radius:12px;min-width:272px;box-shadow:0 10px 30px rgba(0,0,0,.55);z-index:60;overflow:hidden}
+.menudrop a{display:block;padding:13px 16px;color:var(--txt);text-decoration:none;font-size:14px;border-top:1px solid var(--line)}
+.menudrop a:first-child{border-top:0}
+.menudrop a:hover{background:var(--panel2)}
+.menudrop a.cur{color:#5b8def;font-weight:700}
+.pickhero{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0}
+.pickhero h2{margin:0 0 6px;font-size:22px}
+.pickhero h3{margin:0 0 10px;font-size:16px}
+.thesis{white-space:pre-wrap;font-size:14px}
+.snapchips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.snap{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12.5px;color:var(--mut)}
+.snap b{color:var(--txt)}
+.strategy{background:#181a2e;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:14px 0}
+.strategy h3{margin:0 0 6px;font-size:15px}
+.picktable{min-width:720px}
+.verdict-good{color:var(--up);font-weight:700}
+.verdict-miss{color:var(--down);font-weight:700}
+tr.pickrow:hover{background:#1b2740}
+tr.thesisrow td{white-space:normal;border-top:0;padding-top:4px}
+.dayline{font-size:15px;margin:8px 0}
 </style>
 </head>
 <body>
 <header>
+<div class="topbar">
 <h1>⚡ Leveraged ETF Radar</h1>
+<div class="menuwrap">
+<button id="menubtn" aria-label="Menu" title="Menu">☰</button>
+<div id="menudrop" class="menudrop" style="display:none">
+<a href="#/" data-nav="dash">📊 Leveraged ETF Dashboard</a>
+<a href="#/picks" data-nav="picks">🎯 Leveraged ETF Daily Picks</a>
+</div>
+</div>
+</div>
 <div class="sub" id="asof">Loading data…</div>
 <div class="warn">⚠️ Leveraged ETFs reset <b>daily</b> — they are designed for short-term trading, not buy-and-hold. Compounding and volatility decay can erode returns even if you guess the direction right. This page is for research, not financial advice. Prices ~15-min delayed. Sentiment scores are compiled from recent news headlines.</div>
 <div id="stats"></div>
@@ -124,8 +157,9 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 </tr></thead><tbody id="rows"></tbody></table></div>
 </div>
 <div id="detail" style="display:none"></div>
+<div id="picksview" style="display:none"></div>
 </main>
-<footer>Method: 12 oscillators (RSI-14, Stoch %K, CCI-20, ADX-14, Awesome Oscillator, Momentum-10, MACD, Stoch RSI, Williams %R, Ultimate Oscillator, Bull Power, Bear Power) + 12 moving averages (SMA/EMA 10/20/30/50/100/200). Score = 50 + 50×(buys−sells)/24, mapped to Strong Buy ≥80, Buy ≥60, Neutral ≥40, Sell ≥20, Strong Sell &lt;20. Data: Yahoo Finance daily bars.<br>Sentiment (1–10) = 50% theme/group news (recent headlines for the sector, industry, country, or asset group the ETF tracks) + 50% top-10-holdings news (individual company news for the proxy's top 10 holdings, weighted by position size; holdings without individual coverage inherit the theme score). Single-stock ETFs use the stock's own company news; bullion/bond/futures proxies use the theme score for both halves. Coverage % = share of top-10 weight with individual company news. Labels: 9–10 very bullish, 7–8.9 bullish, 5.5–6.9 slightly bullish, 4.5–5.4 neutral, 3–4.4 slightly bearish, 1–2.9 bearish.<br>Limitations: only the top 10 holdings are analyzed, and most proxy holdings files contain just the top 25 positions — not full constituents. Scores reflect news as of 2026-09-22 and are a snapshot, not a forecast.</footer>
+<footer>Method: 12 oscillators (RSI-14, Stoch %K, CCI-20, ADX-14, Awesome Oscillator, Momentum-10, MACD, Stoch RSI, Williams %R, Ultimate Oscillator, Bull Power, Bear Power) + 12 moving averages (SMA/EMA 10/20/30/50/100/200). Score = 50 + 50×(buys−sells)/24, mapped to Strong Buy ≥80, Buy ≥60, Neutral ≥40, Sell ≥20, Strong Sell &lt;20. Data: Yahoo Finance daily bars.<br>Sentiment (1–10) = 50% theme/group news (recent headlines for the sector, industry, country, or asset group the ETF tracks) + 50% top-10-holdings news (individual company news for the proxy's top 10 holdings, weighted by position size; holdings without individual coverage inherit the theme score). Single-stock ETFs use the stock's own company news; bullion/bond/futures proxies use the theme score for both halves. Coverage % = share of top-10 weight with individual company news. Labels: 9–10 very bullish, 7–8.9 bullish, 5.5–6.9 slightly bullish, 4.5–5.4 neutral, 3–4.4 slightly bearish, 1–2.9 bearish.<br>Limitations: only the top 10 holdings are analyzed, and most proxy holdings files contain just the top 25 positions — not full constituents. Scores reflect news as of <span id="sentasof">—</span> and are a snapshot, not a forecast.</footer>
 <script>
 let DATA=[];
 const pill=r=>r==="Strong Buy"?"pSB":r==="Buy"?"pB":r==="Neutral"?"pN":r==="Sell"?"pS":"pSS";
@@ -199,6 +233,7 @@ function detailHTML(t){
 }
 function showDetail(t,anchor){
   document.getElementById("listview").style.display="none";
+  document.getElementById("picksview").style.display="none";
   document.getElementById("stats").style.display="none";
   document.getElementById("controls").style.display="none";
   const d=document.getElementById("detail");d.style.display="";d.innerHTML=detailHTML(t);
@@ -208,6 +243,7 @@ function showDetail(t,anchor){
 }
 function showList(){
   document.getElementById("detail").style.display="none";
+  document.getElementById("picksview").style.display="none";
   document.getElementById("listview").style.display="";
   document.getElementById("stats").style.display="";
   document.getElementById("controls").style.display="";
@@ -216,6 +252,7 @@ function showList(){
 let HOLDINGS=null;
 function showHoldings(t){
   document.getElementById("listview").style.display="none";
+  document.getElementById("picksview").style.display="none";
   document.getElementById("stats").style.display="none";
   document.getElementById("controls").style.display="none";
   const d=document.getElementById("detail");d.style.display="";
@@ -243,7 +280,9 @@ function showHoldings(t){
   }).catch(()=>{document.getElementById("holdbody").innerHTML='<div class="dsub">Could not load holdings.</div>';});
 }
 function route(){
-  const m=location.hash.match(/^#\/([A-Za-z0-9.-]+)(!sent|!hold)?$/);
+  const h=location.hash;
+  if(h==="#/picks"||h==="#picks"){showPicks();return;}
+  const m=h.match(/^#\/([A-Za-z0-9.-]+)(!sent|!hold)?$/);
   if(m&&DATA.length){const t=DATA.find(x=>x.ticker===m[1].toUpperCase());if(t){if(m[2]==="!hold"){showHoldings(t);return;}showDetail(t,m[2]);return;}}
   showList();
 }
@@ -285,10 +324,73 @@ function render(){
 }
 function updateSortIndicators(){document.querySelectorAll("th[data-s]").forEach(th=>{const b=th.textContent.replace(/ [↑↓]$/,"");th.textContent=th.dataset.s===state.sort?b+" "+(state.dir==="desc"?"↓":"↑"):b;});}
 function seg(id,key){document.querySelectorAll("#"+id+" button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#"+id+" button").forEach(x=>x.classList.remove("on"));b.classList.add("on");state[key]=b.dataset.v;render();});}
+let PICKS=null;
+const escapeHTML=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+// hamburger menu
+const menubtn=document.getElementById("menubtn"),menudrop=document.getElementById("menudrop");
+function markMenu(){const h=location.hash;const onPicks=(h==="#/picks"||h==="#picks");menudrop.querySelectorAll("a").forEach(a=>{a.classList.toggle("cur",(a.getAttribute("href")==="#/picks")===onPicks);});}
+menubtn.onclick=e=>{e.stopPropagation();menudrop.style.display=menudrop.style.display==="none"?"":"none";markMenu();};
+document.addEventListener("click",e=>{if(menudrop.style.display!=="none"&&!menudrop.contains(e.target))menudrop.style.display="none";});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")menudrop.style.display="none";});
+menudrop.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{menudrop.style.display="none";}));
+function showPicks(){
+  document.getElementById("listview").style.display="none";
+  document.getElementById("detail").style.display="none";
+  document.getElementById("stats").style.display="none";
+  document.getElementById("controls").style.display="none";
+  const v=document.getElementById("picksview");v.style.display="";
+  markMenu();renderPicks();
+}
+function pickHeroHTML(p){
+  const s=p.snapshot||{};
+  const vd=p.verdict==="good"?'<span class="pill pB">✓ Good pick</span>':p.verdict==="miss"?'<span class="pill pS">✗ Miss</span>':'<span class="pill pN">In progress</span>';
+  const chips=[
+    s.composite!=null?`Composite <b>${Number(s.composite).toFixed(1)}</b>`:"",
+    s.sentiment!=null?`Sentiment <b>${Number(s.sentiment).toFixed(1)}/10</b>`:"",
+    s.score!=null?`Technical <b>${(Number(s.score)/10).toFixed(1)}</b>`:"",
+    s.rating?`Rating <b>${escapeHTML(s.rating)}</b>`:"",
+    s.vs_sma50_pct!=null?`vs 50DMA <b>${s.vs_sma50_pct>=0?"+":""}${Number(s.vs_sma50_pct).toFixed(2)}%</b>`:"",
+    (s.trend7&&s.trend7.length)?`7D <b>${s.trend7.map(x=>x==="up"?"▲":x==="down"?"▼":"–").join("")}</b>`:""
+  ].filter(Boolean).map(c=>`<span class="snap">${c}</span>`).join("");
+  const day=p.day_return_pct!=null?`Day: <b class="${p.day_return_pct>=0?"up":"down"}">${p.day_return_pct>=0?"+":""}${p.day_return_pct.toFixed(2)}%</b> (SPY ${p.spy_return_pct!=null?(p.spy_return_pct>=0?"+":"")+p.spy_return_pct.toFixed(2)+"%":"—"})`:"Day: <span class='dsub'>settles at close</span>";
+  return `<div class="pickhero">
+    <div class="dsub">${escapeHTML(p.date)} · Meta's pick for today</div>
+    <h2><span class="tk">${escapeHTML(p.ticker)}</span> <span class="badge ${p.lev===3?"b3":"b2"}">${p.lev}x</span> ${vd}</h2>
+    <div class="dsub">${escapeHTML(p.name||"")} · ${escapeHTML(p.underlying||"")}</div>
+    <div class="snapchips">${chips}</div>
+    <div class="thesis">${escapeHTML(p.thesis)}</div>
+    <div class="dayline">Open <b>${p.open!=null?"$"+Number(p.open).toFixed(2):"—"}</b> · Close <b>${p.close!=null?"$"+Number(p.close).toFixed(2):"—"}</b> · ${day}</div>
+  </div>`;
+}
+function renderPicks(){
+  const v=document.getElementById("picksview");
+  if(!PICKS){v.innerHTML='<div class="pickhero">Loading picks…</div>';return;}
+  const ps=PICKS.picks||[];
+  const rec=PICKS.record||{wins:0,losses:0};
+  const n=(rec.wins||0)+(rec.losses||0),wr=n?Math.round(rec.wins/n*100):null;
+  let h=`<div class="pickhero"><h2>🎯 Leveraged ETF Daily Picks</h2>
+  <div class="dsub">One ETF picked each trading morning at 9 AM ET from scores, technicals, sentiment and holdings — tracked open to close. Record: <b>${rec.wins||0}–${rec.losses||0}</b>${wr===null?"":" · win rate "+wr+"%"}${rec.avg_return_pct==null?"":" · avg day "+(rec.avg_return_pct>=0?"+":"")+Number(rec.avg_return_pct).toFixed(2)+"%"}</div></div>`;
+  const latest=ps[ps.length-1];
+  h+=latest?pickHeroHTML(latest):'<div class="pickhero"><div class="dsub">No picks yet — the first pick drops at the next 9 AM ET market open.</div></div>';
+  const st=PICKS.strategy||{};
+  h+=`<div class="strategy"><h3>📈 Current strategy${st.updated?` <span class="dsub">· updated ${escapeHTML(st.updated)}</span>`:""}</h3><div class="thesis">${escapeHTML(st.current||"—")}</div><div class="dsub" style="margin-top:8px">Reviewed every morning against past results and adjusted to improve.</div></div>`;
+  h+=`<div class="pickhero"><h3>History</h3><div class="tablewrap"><table class="picktable"><thead><tr><th>Date</th><th>Pick</th><th class="num">Open</th><th class="num">Close</th><th class="num">Day</th><th class="num">SPY</th><th>Result</th></tr></thead><tbody>`;
+  ps.map((p,i)=>({p,i})).reverse().forEach(({p,i})=>{
+    const vd=p.verdict==="good"?'<span class="verdict-good">✓ Good</span>':p.verdict==="miss"?'<span class="verdict-miss">✗ Miss</span>':'<span class="dsub">—</span>';
+    h+=`<tr class="pickrow" data-i="${i}"><td>${escapeHTML(p.date)}</td><td><span class="tk">${escapeHTML(p.ticker)}</span> <span class="badge ${p.lev===3?"b3":"b2"}">${p.lev}x</span></td><td class="num">${p.open!=null?"$"+Number(p.open).toFixed(2):"—"}</td><td class="num">${p.close!=null?"$"+Number(p.close).toFixed(2):"—"}</td><td class="num">${p.day_return_pct!=null?pc(p.day_return_pct):"—"}</td><td class="num">${p.spy_return_pct!=null?pc(p.spy_return_pct):"—"}</td><td>${vd}</td></tr>`;
+    h+=`<tr class="thesisrow" id="pthrow-${i}" style="display:none"><td colspan="7"><b>Thesis (${escapeHTML(p.date)} · ${escapeHTML(p.ticker)}):</b><div class="thesis">${escapeHTML(p.thesis||"")}</div>${p.strategy_notes?`<div class="dsub" style="margin-top:6px"><b>Strategy notes:</b> ${escapeHTML(p.strategy_notes)}</div>`:""}</td></tr>`;
+  });
+  h+=`</tbody></table></div><div class="dsub" style="margin-top:8px">Click a row to read the full thesis.</div></div>`;
+  v.innerHTML=h;
+  v.querySelectorAll(".pickrow").forEach(r=>r.onclick=()=>{const t=document.getElementById("pthrow-"+r.dataset.i);t.style.display=t.style.display==="none"?"":"none";});
+}
+fetch("picks.json",{cache:"no-store"}).then(r=>r.json()).then(j=>{PICKS=j;if(location.hash==="#/picks"||location.hash==="#picks")renderPicks();}).catch(()=>{PICKS={picks:[],record:{wins:0,losses:0,avg_return_pct:null},strategy:{current:"",updated:null}};});
 fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(j=>{
   DATA=j.tickers;
   const _asof=new Date(j.as_of);
   document.getElementById("asof").textContent=`Last refreshed by Meta: ${_asof.toLocaleString("en-US",{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit",timeZoneName:"short"})} · ${j.count} leveraged ETFs · ${j.note}`;
+  const _st=j.tickers.find(t=>t.sentiment&&t.sentiment.as_of);
+  if(_st)document.getElementById("sentasof").textContent=_st.sentiment.as_of;
   const top=[...DATA].sort((a,b)=>b.score-a.score)[0];
   const ts=[...DATA].filter(t=>t.sentiment).sort((a,b)=>b.sentiment.score-a.sentiment.score)[0];
   const bt=[...DATA].sort((a,b)=>(b.today_pct??-1e9)-(a.today_pct??-1e9))[0];
