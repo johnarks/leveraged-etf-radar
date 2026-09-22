@@ -24,7 +24,7 @@ h1{margin:0 0 4px;font-size:26px;letter-spacing:.3px}
 .seg button.on{background:var(--buy);color:#fff}
 main{max-width:1280px;margin:0 auto;padding:0 20px 40px}
 .tablewrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px}
-table{width:100%;min-width:920px;border-collapse:collapse;font-size:13px}
+table{width:100%;min-width:1000px;border-collapse:collapse;font-size:13px}
 th{background:var(--panel2);color:var(--mut);text-align:left;padding:10px 12px;font-weight:600;white-space:nowrap;cursor:pointer;user-select:none}
 th.num,td.num{text-align:right}
 td{padding:9px 12px;border-top:1px solid var(--line);white-space:nowrap}
@@ -79,20 +79,29 @@ ul.sig{list-style:none;margin:0;padding:0}
 ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
 .sname{flex:1}
 .sval{font-variant-numeric:tabular-nums;color:var(--mut);min-width:64px;text-align:right}
+/* sentiment */
+.sentlink{font-weight:700;text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer}
+.dsent{margin:0 0 16px}
+.dsent h3{margin:4px 0 4px;font-size:15px}
+.dsent-top{display:flex;align-items:center;gap:16px;margin:8px 0 10px}
+.hl{list-style:none;margin:0;padding:0}
+.hl li{padding:9px 0;border-top:1px solid var(--line)}
+.hl b{font-weight:600}
+.hl .dsub{margin-top:2px}
 </style>
 </head>
 <body>
 <header>
 <h1>⚡ Leveraged ETF Radar</h1>
 <div class="sub" id="asof">Loading data…</div>
-<div class="warn">⚠️ Leveraged ETFs reset <b>daily</b> — they are designed for short-term trading, not buy-and-hold. Compounding and volatility decay can erode returns even if you guess the direction right. This page is for research, not financial advice. Prices ~15-min delayed.</div>
+<div class="warn">⚠️ Leveraged ETFs reset <b>daily</b> — they are designed for short-term trading, not buy-and-hold. Compounding and volatility decay can erode returns even if you guess the direction right. This page is for research, not financial advice. Prices ~15-min delayed. Sentiment scores are compiled from recent news headlines.</div>
 <div id="stats"></div>
 <div id="controls">
 <input type="text" id="q" placeholder="Search ticker or name…">
 <div class="seg" id="levseg"><button data-v="all" class="on">All</button><button data-v="3">3x</button><button data-v="2">2x</button></div>
 <div class="seg" id="dirseg"><button data-v="all" class="on">Long+Short</button><button data-v="long">Long</button><button data-v="short">Short</button></div>
 <select id="cat"><option value="all">All categories</option><option value="index">Index</option><option value="sector">Sector</option><option value="commodity">Commodity</option><option value="rates">Bonds/Rates</option><option value="fx">Currency</option><option value="country">Country</option><option value="single-stock">Single-stock</option></select>
-<select id="sort"><option value="score">Sort: Score ↓</option><option value="today">Sort: Today ↓</option><option value="ytd">Sort: YTD ↓</option><option value="m3">Sort: 3M ↓</option><option value="m6">Sort: 6M ↓</option><option value="ticker">Sort: Ticker A–Z</option></select>
+<select id="sort"><option value="score">Sort: Score ↓</option><option value="sent">Sort: Sentiment ↓</option><option value="today">Sort: Today ↓</option><option value="ytd">Sort: YTD ↓</option><option value="m3">Sort: 3M ↓</option><option value="m6">Sort: 6M ↓</option><option value="ticker">Sort: Ticker A–Z</option></select>
 </div>
 </header>
 <main>
@@ -102,12 +111,12 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 <th data-s="ticker">Ticker</th><th>Tracks</th>
 <th class="num" data-s="price">Price</th><th class="num" data-s="today">Today</th>
 <th class="num" data-s="ytd">YTD</th><th class="num" data-s="m3">3M</th><th class="num" data-s="m6">6M</th>
-<th data-s="score">Score</th><th class="num" data-s="vs50">vs 50DMA</th>
+<th data-s="score">Score</th><th data-s="sent">Sentiment</th><th class="num" data-s="vs50">vs 50DMA</th>
 </tr></thead><tbody id="rows"></tbody></table></div>
 </div>
 <div id="detail" style="display:none"></div>
 </main>
-<footer>Method: 12 oscillators (RSI-14, Stoch %K, CCI-20, ADX-14, Awesome Oscillator, Momentum-10, MACD, Stoch RSI, Williams %R, Ultimate Oscillator, Bull Power, Bear Power) + 12 moving averages (SMA/EMA 10/20/30/50/100/200). Score = 50 + 50×(buys−sells)/24, mapped to Strong Buy ≥80, Buy ≥60, Neutral ≥40, Sell ≥20, Strong Sell &lt;20. Data: Yahoo Finance daily bars.</footer>
+<footer>Method: 12 oscillators (RSI-14, Stoch %K, CCI-20, ADX-14, Awesome Oscillator, Momentum-10, MACD, Stoch RSI, Williams %R, Ultimate Oscillator, Bull Power, Bear Power) + 12 moving averages (SMA/EMA 10/20/30/50/100/200). Score = 50 + 50×(buys−sells)/24, mapped to Strong Buy ≥80, Buy ≥60, Neutral ≥40, Sell ≥20, Strong Sell &lt;20. Data: Yahoo Finance daily bars.<br>Sentiment: 1–10 score compiled from the last ~3 days of news headlines for what each ETF tracks (sector news + top holdings for sector funds, company news for single-stock funds). 9–10 very bullish, 7–8.9 bullish, 5.5–6.9 slightly bullish, 4.5–5.4 neutral, 3–4.4 slightly bearish, 1–2.9 bearish. For inverse funds the score describes the underlying — bullish news works against a short fund.</footer>
 <script>
 let DATA=[];
 const pill=r=>r==="Strong Buy"?"pSB":r==="Buy"?"pB":r==="Neutral"?"pN":r==="Sell"?"pS":"pSS";
@@ -136,6 +145,16 @@ function gaugeBlock(title,counts,score,label){
 }
 const SHORT={"Relative Strength Index (14)":"RSI (14)","Stochastic %K (14, 3, 3)":"Stoch %K (14, 3, 3)","Commodity Channel Index (20)":"CCI (20)","Average Directional Index (14)":"ADX (14)","Awesome Oscillator":"Awesome Osc","Momentum (10)":"Momentum (10)","MACD Level (12, 26)":"MACD (12, 26)","Stochastic RSI Fast (3, 14, 14)":"Stoch RSI Fast","Williams %R (14)":"Williams %R (14)","Ultimate Oscillator (7, 14, 28)":"Ultimate Osc","Bull Power (13)":"Bull Power (13)","Bear Power (13)":"Bear Power (13)"};
 function shortName(n){const m=n.match(/(Exponential|Simple) Moving Average \((\d+)\)/);if(m)return(m[1][0]==="E"?"EMA ":"SMA ")+m[2];return SHORT[n]||n;}
+function sentPill(label){return label.indexOf("Bullish")>=0?"pB":label.indexOf("Bearish")>=0?"pS":"pN";}
+function sentSection(t){
+  const s=t.sentiment;if(!s)return "";
+  const note=t.direction==="short"?`<p class="dsub" style="margin-top:10px">Note: this is an inverse fund — this score describes the ${s.theme_label.toLowerCase()} it tracks, so bullish news here works against it.</p>`:"";
+  return `<div class="dcard dsent" id="sentiment"><h3>News sentiment <span class="dsub">· what the headlines say about ${s.theme_label}</span></h3>
+  <div class="dsent-top"><div class="dnum" style="font-size:44px;color:${scoreColor(s.score*10)}">${s.score.toFixed(1)}</div>
+  <div><span class="pill ${sentPill(s.label)} big">${s.label}</span><div class="dscore-sub">Compiled from recent headlines · ${s.as_of}</div></div></div>
+  <p>${s.summary}</p>
+  <ul class="hl">${s.headlines.map(h=>`<li><b>${h.title}</b><div class="dsub">${h.source} — ${h.why}</div></li>`).join("")}</ul>${note}</div>`;
+}
 function detailHTML(t){
   const sig=i=>`<li><span class="sname">${shortName(i.name)}</span><span class="sval">${i.value.toFixed(2)}</span><span class="pill ${i.action==="Buy"?"pB":i.action==="Sell"?"pS":"pN"}">${i.action}</span></li>`;
   const met=(k,v)=>`<div class="dm"><div class="dk">${k}</div><div class="dv">${pc(v)}</div></div>`;
@@ -150,6 +169,7 @@ function detailHTML(t){
   <div class="dscore"><div class="dnum" style="color:${scoreColor(t.score)}">${(t.score/10).toFixed(1)}</div>
     <div><span class="pill ${pill(t.rating)} big">${t.rating}</span>
     <div class="dscore-sub">${t.sum_counts.buy} buy · ${t.sum_counts.sell} sell · ${t.sum_counts.neutral} neutral across 24 signals</div></div></div>
+  ${sentSection(t)}
   <div class="dabout"><div><b>Tracks</b><p>${t.blurb}</p></div><div><b>When to use</b><p>${t.use_when}</p></div></div>
   <div class="dmetrics">${met("YTD",t.ytd_pct)}${met("3 months",t.m3_pct)}${met("6 months",t.m6_pct)}${met("1 year",t.y1_pct)}${met("vs 50-day avg",t.vs_sma50_pct)}${met("vs 200-day avg",t.vs_sma200_pct)}</div>
   <div class="dgauges">${gaugeBlock("Momentum signals",t.osc_counts,gpct(t.osc_counts),grp(t.osc_counts))}${gaugeBlock("Summary",t.sum_counts,t.score,t.rating)}${gaugeBlock("Trend · moving avgs",t.ma_counts,gpct(t.ma_counts),grp(t.ma_counts))}</div>
@@ -158,13 +178,14 @@ function detailHTML(t){
     <div class="dcard"><h3>Trend · moving averages</h3><ul class="sig">${t.ma.map(sig).join("")}</ul></div>
   </div>`;
 }
-function showDetail(t){
+function showDetail(t,anchor){
   document.getElementById("listview").style.display="none";
   document.getElementById("stats").style.display="none";
   document.getElementById("controls").style.display="none";
   const d=document.getElementById("detail");d.style.display="";d.innerHTML=detailHTML(t);
   document.getElementById("backbtn").onclick=()=>{location.hash="";};
   window.scrollTo(0,0);
+  if(anchor){const el=document.getElementById("sentiment");if(el)el.scrollIntoView();}
 }
 function showList(){
   document.getElementById("detail").style.display="none";
@@ -174,8 +195,8 @@ function showList(){
   if(!document.getElementById("tbl").style.display)window.scrollTo(0,0);
 }
 function route(){
-  const m=location.hash.match(/^#\/([A-Za-z0-9.-]+)$/);
-  if(m&&DATA.length){const t=DATA.find(x=>x.ticker===m[1].toUpperCase());if(t){showDetail(t);return;}}
+  const m=location.hash.match(/^#\/([A-Za-z0-9.-]+)(!sent)?$/);
+  if(m&&DATA.length){const t=DATA.find(x=>x.ticker===m[1].toUpperCase());if(t){showDetail(t,m[2]);return;}}
   showList();
 }
 window.addEventListener("hashchange",route);
@@ -189,7 +210,8 @@ function filtered(){
       if(!(t.ticker.toLowerCase().includes(q)||t.name.toLowerCase().includes(q)||t.underlying.toLowerCase().includes(q)))return false;}
     return true;});
   const key={score:"score",today:"today_pct",ytd:"ytd_pct",m3:"m3_pct",m6:"m6_pct",price:"price",vs50:"vs_sma50_pct",ticker:"ticker"}[state.sort];
-  r.sort((a,b)=>state.sort==="ticker"?a.ticker.localeCompare(b.ticker):(b[key]??-1e9)-(a[key]??-1e9));
+  const val=t=>state.sort==="sent"?(t.sentiment?t.sentiment.score:-1e9):(t[key]??-1e9);
+  r.sort((a,b)=>state.sort==="ticker"?a.ticker.localeCompare(b.ticker):val(b)-val(a));
   return r;
 }
 function render(){
@@ -201,8 +223,10 @@ function render(){
     <td class="num">${pc(t.today_pct)}</td><td class="num">${pc(t.ytd_pct)}</td>
     <td class="num">${pc(t.m3_pct)}</td><td class="num">${pc(t.m6_pct)}</td>
     <td><div class="scorecell"><span class="score10" style="color:${scoreColor(t.score)}">${(t.score/10).toFixed(1)}</span><span class="pill ${pill(t.rating)}">${t.rating}</span></div></td>
+    <td class="num"><span class="sentlink" data-t="${t.ticker}" title="News sentiment — click for details" style="color:${scoreColor(t.sentiment?t.sentiment.score*10:50)}">${t.sentiment?t.sentiment.score.toFixed(1):"—"}</span></td>
     <td class="num">${pc(t.vs_sma50_pct)}</td></tr>`).join("");
   document.querySelectorAll("#rows tr").forEach(tr=>tr.onclick=()=>{location.hash="#/"+tr.dataset.t;});
+  document.querySelectorAll(".sentlink").forEach(s=>s.onclick=e=>{e.stopPropagation();location.hash="#/"+s.dataset.t+"!sent";});
   document.getElementById("tbl").style.display="";document.getElementById("loading").style.display="none";
 }
 function seg(id,key){document.querySelectorAll("#"+id+" button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#"+id+" button").forEach(x=>x.classList.remove("on"));b.classList.add("on");state[key]=b.dataset.v;render();});}
@@ -210,11 +234,13 @@ fetch("data.json").then(r=>r.json()).then(j=>{
   DATA=j.tickers;
   document.getElementById("asof").textContent=`${j.count} leveraged ETFs · data as of ${new Date(j.as_of).toLocaleString()} · ${j.note}`;
   const top=[...DATA].sort((a,b)=>b.score-a.score)[0];
+  const ts=[...DATA].filter(t=>t.sentiment).sort((a,b)=>b.sentiment.score-a.sentiment.score)[0];
   const bt=[...DATA].sort((a,b)=>(b.today_pct??-1e9)-(a.today_pct??-1e9))[0];
   const wt=[...DATA].sort((a,b)=>(a.today_pct??1e9)-(b.today_pct??1e9))[0];
   document.getElementById("stats").innerHTML=
    `<div class="stat"><div class="k">ETFs tracked</div><div class="v">${j.count}</div></div>
     <div class="stat"><div class="k">Top score</div><div class="v">${top.ticker} <span class="pill ${pill(top.rating)}">${top.rating}</span></div></div>
+    <div class="stat"><div class="k">Top sentiment</div><div class="v">${ts.ticker} <span style="color:${scoreColor(ts.sentiment.score*10)};font-weight:700">${ts.sentiment.score.toFixed(1)}/10</span></div></div>
     <div class="stat"><div class="k">Best today</div><div class="v ${bt.today_pct>=0?"up":"down"}">${bt.ticker} ${bt.today_pct>=0?"+":""}${bt.today_pct.toFixed(2)}%</div></div>
     <div class="stat"><div class="k">Worst today</div><div class="v ${wt.today_pct>=0?"up":"down"}">${wt.ticker} ${wt.today_pct>=0?"+":""}${wt.today_pct.toFixed(2)}%</div></div>`;
   seg("levseg","lev");seg("dirseg","dir");
