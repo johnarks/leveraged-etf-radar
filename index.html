@@ -34,6 +34,7 @@ tbody tr{cursor:pointer}tbody tr:hover{background:#1b2740}
 .b3{background:#7c2d12;color:#ffb59e}.b2{background:#123a6d;color:#9ec5ff}
 .long{color:var(--up);font-weight:700;font-size:11px}
 .up{color:var(--up)}.down{color:var(--down)}
+.trend7{white-space:nowrap;letter-spacing:2px;font-size:12px}
 .uname{color:var(--mut);font-size:12px;white-space:normal;min-width:180px}
 .scorecell{display:flex;align-items:center;gap:8px}
 .score10{font-size:17px;font-weight:800;min-width:34px;text-align:right}
@@ -119,17 +120,15 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 <th data-s="ticker">Ticker</th><th>Tracks</th><th class="num" data-s="hold" title="Holdings in the underlying index/stock — click a number for the full list">Holdings</th>
 <th class="num" data-s="price">Price</th><th class="num" data-s="today">Today</th>
 <th class="num" data-s="ytd">YTD</th><th class="num" data-s="m3">3M</th><th class="num" data-s="m6">6M</th>
-<th data-s="score">Score</th><th data-s="sent">Sentiment</th><th data-s="comp" title="50% technical score + 50% news sentiment">Composite</th><th class="num" data-s="vs50">vs 50DMA</th>
+<th data-s="score">Score</th><th data-s="sent">Sentiment</th><th data-s="comp" title="50% technical score + 50% news sentiment">Composite</th><th class="num" data-s="vs50">vs 50DMA</th><th title="Last 7 trading days — up/down vs prior close, most recent on the left">7D</th>
 </tr></thead><tbody id="rows"></tbody></table></div>
 </div>
 <div id="detail" style="display:none"></div>
 </main>
-<footer>Method: 12 oscillators (RSI-14, Stoch %K, CCI-20, ADX-14, Awesome Oscillator, Momentum-10, MACD, Stoch RSI, Williams %R, Ultimate Oscillator, Bull Power, Bear Power) + 12 moving averages (SMA/EMA 10/20/30/50/100/200). Score = 50 + 50×(buys−sells)/24, mapped to Strong Buy ≥80, Buy ≥60, Neutral ≥40, Sell ≥20, Strong Sell &lt;20. Data: Yahoo Finance daily bars.<br>Sentiment: 1–10 score compiled from the last ~3 days of news headlines for what each ETF tracks (sector news + top holdings for sector funds, company news for single-stock funds). 9–10 very bullish, 7–8.9 bullish, 5.5–6.9 slightly bullish, 4.5–5.4 neutral, 3–4.4 slightly bearish, 1–2.9 bearish.</footer>
+<footer>Method: 12 oscillators (RSI-14, Stoch %K, CCI-20, ADX-14, Awesome Oscillator, Momentum-10, MACD, Stoch RSI, Williams %R, Ultimate Oscillator, Bull Power, Bear Power) + 12 moving averages (SMA/EMA 10/20/30/50/100/200). Score = 50 + 50×(buys−sells)/24, mapped to Strong Buy ≥80, Buy ≥60, Neutral ≥40, Sell ≥20, Strong Sell &lt;20. Data: Yahoo Finance daily bars.<br>Sentiment (1–10) = 50% theme/group news (recent headlines for the sector, industry, country, or asset group the ETF tracks) + 50% top-10-holdings news (individual company news for the proxy's top 10 holdings, weighted by position size; holdings without individual coverage inherit the theme score). Single-stock ETFs use the stock's own company news; bullion/bond/futures proxies use the theme score for both halves. Coverage % = share of top-10 weight with individual company news. Labels: 9–10 very bullish, 7–8.9 bullish, 5.5–6.9 slightly bullish, 4.5–5.4 neutral, 3–4.4 slightly bearish, 1–2.9 bearish.<br>Limitations: only the top 10 holdings are analyzed, and most proxy holdings files contain just the top 25 positions — not full constituents. Scores reflect news as of 2026-09-22 and are a snapshot, not a forecast.</footer>
 <script>
 let DATA=[];
 const pill=r=>r==="Strong Buy"?"pSB":r==="Buy"?"pB":r==="Neutral"?"pN":r==="Sell"?"pS":"pSS";
-function compScore(t){const tech=t.score/10;return t.sentiment?(tech+t.sentiment.score)/2:tech;} // 50% technical + 50% news sentiment, 0-10
-function compRating(c){const s=c*10;return s>=80?"Strong Buy":s>=60?"Buy":s>=40?"Neutral":s>=20?"Sell":"Strong Sell";}
 function compScore(t){const tech=t.score/10;return t.sentiment?(tech+t.sentiment.score)/2:tech;} // 50% technical + 50% news sentiment, 0-10
 function compRating(c){const s=c*10;return s>=80?"Strong Buy":s>=60?"Buy":s>=40?"Neutral":s>=20?"Sell":"Strong Sell";}
 const pc=v=>v==null?"—":`<span class="${v>=0?"up":"down"}">${v>=0?"+":""}${v.toFixed(2)}%</span>`;
@@ -152,12 +151,28 @@ function grpScore(c){const tot=c.buy+c.sell+c.neutral||1;return 5+5*(c.buy-c.sel
 const SHORT={"Relative Strength Index (14)":"RSI (14)","Stochastic %K (14, 3, 3)":"Stoch %K (14, 3, 3)","Commodity Channel Index (20)":"CCI (20)","Average Directional Index (14)":"ADX (14)","Awesome Oscillator":"Awesome Osc","Momentum (10)":"Momentum (10)","MACD Level (12, 26)":"MACD (12, 26)","Stochastic RSI Fast (3, 14, 14)":"Stoch RSI Fast","Williams %R (14)":"Williams %R (14)","Ultimate Oscillator (7, 14, 28)":"Ultimate Osc","Bull Power (13)":"Bull Power (13)","Bear Power (13)":"Bear Power (13)"};
 function shortName(n){const m=n.match(/(Exponential|Simple) Moving Average \((\d+)\)/);if(m)return(m[1][0]==="E"?"EMA ":"SMA ")+m[2];return SHORT[n]||n;}
 function sentPill(label){return label.indexOf("Bullish")>=0?"pB":label.indexOf("Bearish")>=0?"pS":"pN";}
+function trend7HTML(t){
+  if(!t.trend7||!t.trend7.length)return '<span style="color:var(--mut)">—</span>';
+  return t.trend7.map(d=>d==="up"?'<span class="up" title="Up vs prior close">▲</span>':d==="down"?'<span class="down" title="Down vs prior close">▼</span>':'<span class="aneu" title="Unchanged vs prior close">–</span>').join("");
+}
+function sentHoldings(s){
+  const rows=s.holdings_detail.map(d=>`<tr><td><span class="tk">${d.t}</span></td>
+    <td class="num">${d.w.toFixed(2)}%</td>
+    <td class="num" style="color:${scoreColor(d.score*10)}">${d.score.toFixed(1)}</td>
+    <td class="dsub">${d.src==="news"?"company news":"theme fallback"}</td></tr>`).join("");
+  const seen={};const whys=s.holdings_detail.filter(d=>d.src==="news"&&d.why&&!seen[d.t]&&(seen[d.t]=1))
+    .map(d=>`<li><b>${d.t}</b> — ${d.why}</li>`).join("");
+  return `<h4>Top-10 holdings news <span class="dsub">· ${s.coverage_pct}% of top-10 weight with individual company news${s.holdings_note?` — ${s.holdings_note}`:""}</span></h4>
+  <div class="tablewrap"><table class="holdtbl"><thead><tr><th>Holding</th><th class="num">Weight</th><th class="num">Score</th><th>Source</th></tr></thead><tbody>${rows}</tbody></table></div>
+  ${whys?`<ul class="hl">${whys}</ul>`:""}`;
+}
 function sentSection(t){
   const s=t.sentiment;if(!s)return "";
   return `<div class="dcard dsent" id="sentiment"><h3>News sentiment <span class="dsub">· what the headlines say about ${s.theme_label}</span></h3>
   <div class="dsent-top"><div class="dnum" style="font-size:44px;color:${scoreColor(s.score*10)}">${s.score.toFixed(1)}</div>
-  <div><span class="pill ${sentPill(s.label)} big">${s.label}</span><div class="dscore-sub">Compiled from recent headlines · ${s.as_of}</div></div></div>
+  <div><span class="pill ${sentPill(s.label)} big">${s.label}</span><div class="dscore-sub">50% theme/group news (${s.sector_score.toFixed(1)}) + 50% top-10 holdings news (${s.holdings_score.toFixed(1)}) · ${s.as_of}</div></div></div>
   <p>${s.summary}</p>
+  ${sentHoldings(s)}
   <ul class="hl">${s.headlines.map(h=>`<li><b>${h.title}</b><div class="dsub">${h.source} — ${h.why}</div></li>`).join("")}</ul></div>`;
 }
 function detailHTML(t){
@@ -259,9 +274,9 @@ function render(){
     <td class="num">${pc(t.today_pct)}</td><td class="num">${pc(t.ytd_pct)}</td>
     <td class="num">${pc(t.m3_pct)}</td><td class="num">${pc(t.m6_pct)}</td>
     <td><div class="scorecell"><span class="score10" style="color:${scoreColor(t.score)}">${(t.score/10).toFixed(1)}</span><span class="pill ${pill(t.rating)}">${t.rating}</span></div></td>
-    <td class="num"><span class="sentlink" data-t="${t.ticker}" title="News sentiment — click for details" style="color:${scoreColor(t.sentiment?t.sentiment.score*10:50)}">${t.sentiment?t.sentiment.score.toFixed(1):"—"}</span></td>
+    <td class="num"><span class="sentlink" data-t="${t.ticker}" title="${t.sentiment?`News sentiment ${t.sentiment.score.toFixed(1)} = 50% theme/group news (${t.sentiment.sector_score.toFixed(1)}) + 50% top-10 holdings news (${t.sentiment.holdings_score.toFixed(1)}), ${t.sentiment.coverage_pct}% of top-10 weight with individual news — click for details`:`News sentiment — click for details`}" style="color:${scoreColor(t.sentiment?t.sentiment.score*10:50)}">${t.sentiment?t.sentiment.score.toFixed(1):"—"}</span></td>
     <td title="50% technical score + 50% news sentiment"><div class="scorecell"><span class="score10" style="color:${scoreColor(cs*10)}">${cs.toFixed(1)}</span><span class="pill ${pill(cr)}">${cr}</span></div></td>
-    <td class="num">${pc(t.vs_sma50_pct)}</td></tr>`;}).join("");
+    <td class="num">${pc(t.vs_sma50_pct)}</td><td class="trend7">${trend7HTML(t)}</td></tr>`;}).join("");
   document.querySelectorAll("#rows tr").forEach(tr=>tr.onclick=()=>{location.hash="#/"+tr.dataset.t;});
   document.querySelectorAll(".sentlink").forEach(s=>s.onclick=e=>{e.stopPropagation();location.hash="#/"+s.dataset.t+"!sent";});
   document.querySelectorAll(".holdcell").forEach(c=>c.onclick=e=>{e.stopPropagation();location.hash="#/"+c.dataset.t+"!hold";});
