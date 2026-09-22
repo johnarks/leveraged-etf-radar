@@ -39,11 +39,6 @@ tbody tr{cursor:pointer}tbody tr:hover{background:#1b2740}
 .score10{font-size:17px;font-weight:800;min-width:34px;text-align:right}
 .pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px}
 .pSB{background:#123a6d;color:#9ec5ff}.pB{background:#0f2f57;color:#7fb3ff}.pN{background:#2a2f3a;color:#aab}.pS{background:#5c1f1a;color:#ff9d94}.pSS{background:#6d1712;color:#ffb3ab}
-/* modal */
-#overlay{position:fixed;inset:0;background:rgba(4,8,16,.75);display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:30px 16px;z-index:50}
-#modal{background:var(--panel);border:1px solid var(--line);border-radius:14px;max-width:860px;width:100%;padding:24px}
-#modal h2{margin:0 0 2px;font-size:22px}
-#mclose{float:right;background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:6px 12px;cursor:pointer}
 .gauges{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin:16px 0}
 .g{text-align:center}.g .gl{font-weight:700;margin-top:2px}.g .gc{font-size:12px;color:var(--mut)}
 .g .gv{font-weight:800;font-size:15px}
@@ -54,6 +49,36 @@ table.mini{font-size:12.5px}table.mini td,table.mini th{padding:6px 8px}
 .desc{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:12px 0;font-size:13px}
 .desc b{color:#fff}footer{max-width:1280px;margin:0 auto;padding:0 20px 40px;color:var(--mut);font-size:12px}
 #loading{text-align:center;padding:60px;color:var(--mut)}
+/* detail page */
+.backbtn{background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:9px 16px;cursor:pointer;font-size:14px;margin-bottom:16px}
+.backbtn:hover{background:#223052}
+.dtop{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.dtk{font-size:28px;font-weight:800}
+.dname{color:var(--mut);font-size:14px;margin-top:4px}
+.dprice{font-size:26px;font-weight:800;text-align:right}
+.dsub{color:var(--mut);font-size:12px;font-weight:400}
+.dscore{display:flex;align-items:center;gap:20px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:16px 0}
+.dnum{font-size:56px;font-weight:800;line-height:1}
+.pill.big{font-size:14px;padding:5px 16px}
+.dscore-sub{color:var(--mut);font-size:12.5px;margin-top:6px}
+.dabout{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:0 0 16px}
+.dabout p{margin:4px 0 12px}
+.dabout p:last-child{margin-bottom:4px}
+.dmetrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+@media(max-width:600px){.dmetrics{grid-template-columns:repeat(2,1fr)}}
+.dm{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.dk{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px}
+.dv{font-size:18px;font-weight:700}
+.dgauges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.dgauges .g{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px;flex:1;min-width:200px}
+.dlists{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:760px){.dlists{grid-template-columns:1fr}}
+.dcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 20px}
+.dcard h3{margin:4px 0 8px;font-size:15px}
+ul.sig{list-style:none;margin:0;padding:0}
+ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
+.sname{flex:1}
+.sval{font-variant-numeric:tabular-nums;color:var(--mut);min-width:64px;text-align:right}
 </style>
 </head>
 <body>
@@ -71,6 +96,7 @@ table.mini{font-size:12.5px}table.mini td,table.mini th{padding:6px 8px}
 </div>
 </header>
 <main>
+<div id="listview">
 <div id="loading">Fetching technicals…</div>
 <div class="tablewrap"><table id="tbl" style="display:none"><thead><tr>
 <th data-s="ticker">Ticker</th><th>Tracks</th>
@@ -78,8 +104,9 @@ table.mini{font-size:12.5px}table.mini td,table.mini th{padding:6px 8px}
 <th class="num" data-s="ytd">YTD</th><th class="num" data-s="m3">3M</th><th class="num" data-s="m6">6M</th>
 <th data-s="score">Score</th><th class="num" data-s="vs50">vs 50DMA</th>
 </tr></thead><tbody id="rows"></tbody></table></div>
+</div>
+<div id="detail" style="display:none"></div>
 </main>
-<div id="overlay"><div id="modal"></div></div>
 <footer>Method: 12 oscillators (RSI-14, Stoch %K, CCI-20, ADX-14, Awesome Oscillator, Momentum-10, MACD, Stoch RSI, Williams %R, Ultimate Oscillator, Bull Power, Bear Power) + 12 moving averages (SMA/EMA 10/20/30/50/100/200). Score = 50 + 50×(buys−sells)/24, mapped to Strong Buy ≥80, Buy ≥60, Neutral ≥40, Sell ≥20, Strong Sell &lt;20. Data: Yahoo Finance daily bars.</footer>
 <script>
 let DATA=[];
@@ -107,31 +134,51 @@ function gaugeBlock(title,counts,score,label){
   <div class="gl">${title}</div><div class="gv ${pill(label)}" style="background:none;padding:0">${label}</div>
   <div class="gc"><span style="color:#ef5350">Sell ${counts.sell}</span> · <span>Neutral ${counts.neutral}</span> · <span style="color:#5b8def">Buy ${counts.buy}</span></div></div>`;
 }
-function miniTable(items){
-  return `<table class="mini"><thead><tr><th>Name</th><th class="num">Value</th><th>Action</th></tr></thead><tbody>`+
-  items.map(i=>`<tr><td>${i.name}</td><td class="num">${typeof i.value==="number"?i.value.toFixed(2):i.value}</td>
-  <td class="${i.action==="Buy"?"abuy":i.action==="Sell"?"asell":"aneu"}">${i.action}</td></tr>`).join("")+`</tbody></table>`;
-}
-function openModal(t){
-  const m=document.getElementById("modal");
-  m.innerHTML=`<button id="mclose">✕ Close</button>
-  <h2>${t.ticker}<span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span> <span class="${t.direction}">${t.direction==="long"?"▲ LONG":"▼ SHORT"}</span></h2>
-  <div class="sub">${t.name}</div>
-  <div class="desc"><b>Tracks:</b> ${t.blurb}<br><b>When to use:</b> ${t.use_when}</div>
-  <div class="gauges">
-    ${gaugeBlock("Oscillators",t.osc_counts,t.osc_counts.buy/(t.osc_counts.buy+t.osc_counts.sell||1)*100||50,
-      t.osc_counts.buy>t.osc_counts.sell+2?"Buy":t.osc_counts.sell>t.osc_counts.buy+2?"Sell":"Neutral")}
-    ${gaugeBlock("Summary",t.sum_counts,t.score,t.rating)}
-    ${gaugeBlock("Moving Averages",t.ma_counts,t.ma_counts.buy/(t.ma_counts.buy+t.ma_counts.sell||1)*100||50,
-      t.ma_counts.buy>t.ma_counts.sell?"Buy":t.ma_counts.sell>t.ma_counts.buy?"Sell":"Neutral")}
+const SHORT={"Relative Strength Index (14)":"RSI (14)","Stochastic %K (14, 3, 3)":"Stoch %K (14, 3, 3)","Commodity Channel Index (20)":"CCI (20)","Average Directional Index (14)":"ADX (14)","Awesome Oscillator":"Awesome Osc","Momentum (10)":"Momentum (10)","MACD Level (12, 26)":"MACD (12, 26)","Stochastic RSI Fast (3, 14, 14)":"Stoch RSI Fast","Williams %R (14)":"Williams %R (14)","Ultimate Oscillator (7, 14, 28)":"Ultimate Osc","Bull Power (13)":"Bull Power (13)","Bear Power (13)":"Bear Power (13)"};
+function shortName(n){const m=n.match(/(Exponential|Simple) Moving Average \((\d+)\)/);if(m)return(m[1][0]==="E"?"EMA ":"SMA ")+m[2];return SHORT[n]||n;}
+function detailHTML(t){
+  const sig=i=>`<li><span class="sname">${shortName(i.name)}</span><span class="sval">${i.value.toFixed(2)}</span><span class="pill ${i.action==="Buy"?"pB":i.action==="Sell"?"pS":"pN"}">${i.action}</span></li>`;
+  const met=(k,v)=>`<div class="dm"><div class="dk">${k}</div><div class="dv">${pc(v)}</div></div>`;
+  const grp=(c)=>c.buy>c.sell+2?"Buy":c.sell>c.buy+2?"Sell":"Neutral";
+  const gpct=(c)=>c.buy/(c.buy+c.sell||1)*100||50;
+  return `<button id="backbtn" class="backbtn">← All ETFs</button>
+  <div class="dtop">
+    <div><div class="dtk">${t.ticker}<span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span> <span class="${t.direction}">${t.direction==="long"?"▲ LONG":"▼ SHORT"}</span></div>
+    <div class="dname">${t.name}</div></div>
+    <div class="dprice">$${t.price.toFixed(2)}<div>${pc(t.today_pct)} <span class="dsub">today</span></div></div>
   </div>
-  <div class="cols"><div><h3 style="margin:6px 0">Oscillators</h3>${miniTable(t.osc)}</div>
-  <div><h3 style="margin:6px 0">Moving Averages</h3>${miniTable(t.ma)}</div></div>
-  <div class="sub" style="margin-top:12px">Price $${t.price} · vs 50DMA ${t.vs_sma50_pct==null?"—":(t.vs_sma50_pct>=0?"+":"")+t.vs_sma50_pct.toFixed(2)+"%"} · vs 200DMA ${t.vs_sma200_pct==null?"—":(t.vs_sma200_pct>=0?"+":"")+t.vs_sma200_pct.toFixed(2)+"%"}</div>`;
-  document.getElementById("overlay").style.display="flex";
-  document.getElementById("mclose").onclick=()=>document.getElementById("overlay").style.display="none";
+  <div class="dscore"><div class="dnum" style="color:${scoreColor(t.score)}">${(t.score/10).toFixed(1)}</div>
+    <div><span class="pill ${pill(t.rating)} big">${t.rating}</span>
+    <div class="dscore-sub">${t.sum_counts.buy} buy · ${t.sum_counts.sell} sell · ${t.sum_counts.neutral} neutral across 24 signals</div></div></div>
+  <div class="dabout"><div><b>Tracks</b><p>${t.blurb}</p></div><div><b>When to use</b><p>${t.use_when}</p></div></div>
+  <div class="dmetrics">${met("YTD",t.ytd_pct)}${met("3 months",t.m3_pct)}${met("6 months",t.m6_pct)}${met("1 year",t.y1_pct)}${met("vs 50-day avg",t.vs_sma50_pct)}${met("vs 200-day avg",t.vs_sma200_pct)}</div>
+  <div class="dgauges">${gaugeBlock("Momentum signals",t.osc_counts,gpct(t.osc_counts),grp(t.osc_counts))}${gaugeBlock("Summary",t.sum_counts,t.score,t.rating)}${gaugeBlock("Trend · moving avgs",t.ma_counts,gpct(t.ma_counts),grp(t.ma_counts))}</div>
+  <div class="dlists">
+    <div class="dcard"><h3>Momentum signals</h3><ul class="sig">${t.osc.map(sig).join("")}</ul></div>
+    <div class="dcard"><h3>Trend · moving averages</h3><ul class="sig">${t.ma.map(sig).join("")}</ul></div>
+  </div>`;
 }
-document.getElementById("overlay").addEventListener("click",e=>{if(e.target.id==="overlay")e.target.style.display="none";});
+function showDetail(t){
+  document.getElementById("listview").style.display="none";
+  document.getElementById("stats").style.display="none";
+  document.getElementById("controls").style.display="none";
+  const d=document.getElementById("detail");d.style.display="";d.innerHTML=detailHTML(t);
+  document.getElementById("backbtn").onclick=()=>{location.hash="";};
+  window.scrollTo(0,0);
+}
+function showList(){
+  document.getElementById("detail").style.display="none";
+  document.getElementById("listview").style.display="";
+  document.getElementById("stats").style.display="";
+  document.getElementById("controls").style.display="";
+  if(!document.getElementById("tbl").style.display)window.scrollTo(0,0);
+}
+function route(){
+  const m=location.hash.match(/^#\/([A-Za-z0-9.-]+)$/);
+  if(m&&DATA.length){const t=DATA.find(x=>x.ticker===m[1].toUpperCase());if(t){showDetail(t);return;}}
+  showList();
+}
+window.addEventListener("hashchange",route);
 const state={q:"",lev:"all",dir:"all",cat:"all",sort:"score"};
 function filtered(){
   let r=DATA.filter(t=>{
@@ -155,7 +202,7 @@ function render(){
     <td class="num">${pc(t.m3_pct)}</td><td class="num">${pc(t.m6_pct)}</td>
     <td><div class="scorecell"><span class="score10" style="color:${scoreColor(t.score)}">${(t.score/10).toFixed(1)}</span><span class="pill ${pill(t.rating)}">${t.rating}</span></div></td>
     <td class="num">${pc(t.vs_sma50_pct)}</td></tr>`).join("");
-  document.querySelectorAll("#rows tr").forEach(tr=>tr.onclick=()=>openModal(DATA.find(t=>t.ticker===tr.dataset.t)));
+  document.querySelectorAll("#rows tr").forEach(tr=>tr.onclick=()=>{location.hash="#/"+tr.dataset.t;});
   document.getElementById("tbl").style.display="";document.getElementById("loading").style.display="none";
 }
 function seg(id,key){document.querySelectorAll("#"+id+" button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#"+id+" button").forEach(x=>x.classList.remove("on"));b.classList.add("on");state[key]=b.dataset.v;render();});}
@@ -175,7 +222,7 @@ fetch("data.json").then(r=>r.json()).then(j=>{
   document.getElementById("cat").onchange=e=>{state.cat=e.target.value;render();};
   document.getElementById("sort").onchange=e=>{state.sort=e.target.value;render();};
   document.querySelectorAll("th[data-s]").forEach(th=>th.onclick=()=>{state.sort=th.dataset.s;document.getElementById("sort").value=th.dataset.s;render();});
-  render();
+  render();route();
 }).catch(e=>{document.getElementById("loading").textContent="Failed to load data: "+e;});
 </script>
 </body>
