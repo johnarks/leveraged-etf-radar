@@ -237,7 +237,7 @@ function detailHTML(t){
   <div class="dcard dchart">
     <div class="chead"><h3>Price chart <span class="dsub">· daily</span></h3>
       <div class="cctrls">
-        <div class="seg" id="cstyle"><button data-v="c" class="on">Candles</button><button data-v="ha">Heikin-Ashi</button></div>
+        <div class="seg" id="cstyle"><button data-v="c">Candles</button><button data-v="ha" class="on">Heikin-Ashi</button></div>
         <div class="seg" id="crange"><button data-v="63">3M</button><button data-v="126">6M</button><button data-v="0" class="on">1Y</button></div>
       </div>
     </div>
@@ -346,7 +346,7 @@ function loadHist(cb){
     .then(j=>{HIST=j.bars||{};const m=msgEl();if(m)m.textContent="";cb();}).catch(msg);
 }
 function initChart(t){
-  CH.ticker=t.ticker;CH.style="c";CH.range=0;CH.hover=-1;
+  CH.ticker=t.ticker;CH.style="ha";CH.range=0;CH.hover=-1;
   const cv=document.getElementById("cprice");if(!cv)return;
   document.querySelectorAll("#cstyle button").forEach(x=>x.onclick=()=>{CH.style=x.dataset.v;CH.hover=-1;segOn("cstyle",x);drawChart();});
   document.querySelectorAll("#crange button").forEach(x=>x.onclick=()=>{CH.range=+x.dataset.v;CH.hover=-1;segOn("crange",x);drawChart();});
