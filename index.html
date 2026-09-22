@@ -103,7 +103,7 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 <input type="text" id="q" placeholder="Search ticker or name…">
 <div class="seg" id="levseg"><button data-v="all" class="on">All</button><button data-v="3">3x</button><button data-v="2">2x</button></div>
 <select id="cat"><option value="all">All categories</option><option value="index">Index</option><option value="sector">Sector</option><option value="commodity">Commodity</option><option value="rates">Bonds/Rates</option><option value="fx">Currency</option><option value="country">Country</option><option value="single-stock">Single-stock</option></select>
-<select id="sort"><option value="score">Sort: Score ↓</option><option value="sent">Sort: Sentiment ↓</option><option value="today">Sort: Today ↓</option><option value="ytd">Sort: YTD ↓</option><option value="m3">Sort: 3M ↓</option><option value="m6">Sort: 6M ↓</option><option value="ticker">Sort: Ticker A–Z</option></select>
+<select id="sort"><option value="score">Sort: Score ↓</option><option value="sent">Sort: Sentiment ↓</option><option value="comp">Sort: Composite ↓</option><option value="today">Sort: Today ↓</option><option value="ytd">Sort: YTD ↓</option><option value="m3">Sort: 3M ↓</option><option value="m6">Sort: 6M ↓</option><option value="ticker">Sort: Ticker A–Z</option></select>
 </div>
 </header>
 <main>
@@ -113,7 +113,7 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 <th data-s="ticker">Ticker</th><th>Tracks</th>
 <th class="num" data-s="price">Price</th><th class="num" data-s="today">Today</th>
 <th class="num" data-s="ytd">YTD</th><th class="num" data-s="m3">3M</th><th class="num" data-s="m6">6M</th>
-<th data-s="score">Score</th><th data-s="sent">Sentiment</th><th class="num" data-s="vs50">vs 50DMA</th>
+<th data-s="score">Score</th><th data-s="sent">Sentiment</th><th data-s="comp" title="50% technical score + 50% news sentiment">Composite</th><th class="num" data-s="vs50">vs 50DMA</th>
 </tr></thead><tbody id="rows"></tbody></table></div>
 </div>
 <div id="detail" style="display:none"></div>
@@ -122,6 +122,10 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 <script>
 let DATA=[];
 const pill=r=>r==="Strong Buy"?"pSB":r==="Buy"?"pB":r==="Neutral"?"pN":r==="Sell"?"pS":"pSS";
+function compScore(t){const tech=t.score/10;return t.sentiment?(tech+t.sentiment.score)/2:tech;} // 50% technical + 50% news sentiment, 0-10
+function compRating(c){const s=c*10;return s>=80?"Strong Buy":s>=60?"Buy":s>=40?"Neutral":s>=20?"Sell":"Strong Sell";}
+function compScore(t){const tech=t.score/10;return t.sentiment?(tech+t.sentiment.score)/2:tech;} // 50% technical + 50% news sentiment, 0-10
+function compRating(c){const s=c*10;return s>=80?"Strong Buy":s>=60?"Buy":s>=40?"Neutral":s>=20?"Sell":"Strong Sell";}
 const pc=v=>v==null?"—":`<span class="${v>=0?"up":"down"}">${v>=0?"+":""}${v.toFixed(2)}%</span>`;
 function scoreColor(s){ // 0-100 → red → amber → green
   const r1=[239,83,80],r2=[245,200,90],r3=[38,166,154];let a,b,f;
@@ -194,7 +198,7 @@ function route(){
   showList();
 }
 window.addEventListener("hashchange",route);
-const state={q:"",lev:"all",cat:"all",sort:"score"};
+const state={q:"",lev:"all",cat:"all",sort:"score",dir:"desc"};
 function filtered(){
   let r=DATA.filter(t=>{
     if(state.lev!=="all"&&String(t.lev)!==state.lev)return false;
@@ -203,13 +207,16 @@ function filtered(){
       if(!(t.ticker.toLowerCase().includes(q)||t.name.toLowerCase().includes(q)||t.underlying.toLowerCase().includes(q)))return false;}
     return true;});
   const key={score:"score",today:"today_pct",ytd:"ytd_pct",m3:"m3_pct",m6:"m6_pct",price:"price",vs50:"vs_sma50_pct",ticker:"ticker"}[state.sort];
-  const val=t=>state.sort==="sent"?(t.sentiment?t.sentiment.score:-1e9):(t[key]??-1e9);
-  r.sort((a,b)=>state.sort==="ticker"?a.ticker.localeCompare(b.ticker):val(b)-val(a));
+  const val=t=>state.sort==="sent"?(t.sentiment?t.sentiment.score:-1e9):state.sort==="comp"?compScore(t):(t[key]??-1e9);
+  const desc=state.dir==="desc";
+  r.sort((a,b)=>state.sort==="ticker"?(desc?b.ticker.localeCompare(a.ticker):a.ticker.localeCompare(b.ticker)):desc?val(b)-val(a):val(a)-val(b));
   return r;
 }
 function render(){
   const rows=filtered();
-  document.getElementById("rows").innerHTML=rows.map(t=>`<tr data-t="${t.ticker}">
+  document.getElementById("rows").innerHTML=rows.map(t=>{
+    const cs=compScore(t),cr=compRating(cs);
+    return `<tr data-t="${t.ticker}">
     <td><span class="tk">${t.ticker}</span><span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span><br><span class="long">▲ long</span></td>
     <td class="uname">${t.underlying}</td>
     <td class="num">$${t.price.toFixed(2)}</td>
@@ -217,11 +224,14 @@ function render(){
     <td class="num">${pc(t.m3_pct)}</td><td class="num">${pc(t.m6_pct)}</td>
     <td><div class="scorecell"><span class="score10" style="color:${scoreColor(t.score)}">${(t.score/10).toFixed(1)}</span><span class="pill ${pill(t.rating)}">${t.rating}</span></div></td>
     <td class="num"><span class="sentlink" data-t="${t.ticker}" title="News sentiment — click for details" style="color:${scoreColor(t.sentiment?t.sentiment.score*10:50)}">${t.sentiment?t.sentiment.score.toFixed(1):"—"}</span></td>
-    <td class="num">${pc(t.vs_sma50_pct)}</td></tr>`).join("");
+    <td title="50% technical score + 50% news sentiment"><div class="scorecell"><span class="score10" style="color:${scoreColor(cs*10)}">${cs.toFixed(1)}</span><span class="pill ${pill(cr)}">${cr}</span></div></td>
+    <td class="num">${pc(t.vs_sma50_pct)}</td></tr>`;}).join("");
   document.querySelectorAll("#rows tr").forEach(tr=>tr.onclick=()=>{location.hash="#/"+tr.dataset.t;});
   document.querySelectorAll(".sentlink").forEach(s=>s.onclick=e=>{e.stopPropagation();location.hash="#/"+s.dataset.t+"!sent";});
   document.getElementById("tbl").style.display="";document.getElementById("loading").style.display="none";
+  updateSortIndicators();
 }
+function updateSortIndicators(){document.querySelectorAll("th[data-s]").forEach(th=>{const b=th.textContent.replace(/ [↑↓]$/,"");th.textContent=th.dataset.s===state.sort?b+" "+(state.dir==="desc"?"↓":"↑"):b;});}
 function seg(id,key){document.querySelectorAll("#"+id+" button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#"+id+" button").forEach(x=>x.classList.remove("on"));b.classList.add("on");state[key]=b.dataset.v;render();});}
 fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(j=>{
   DATA=j.tickers;
@@ -238,8 +248,8 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(j=>{
     <div class="stat"><div class="k">Worst today</div><div class="v ${wt.today_pct>=0?"up":"down"}">${wt.ticker} ${wt.today_pct>=0?"+":""}${wt.today_pct.toFixed(2)}%</div></div>`;
   seg("levseg","lev");  document.getElementById("q").oninput=e=>{state.q=e.target.value;render();};
   document.getElementById("cat").onchange=e=>{state.cat=e.target.value;render();};
-  document.getElementById("sort").onchange=e=>{state.sort=e.target.value;render();};
-  document.querySelectorAll("th[data-s]").forEach(th=>th.onclick=()=>{state.sort=th.dataset.s;document.getElementById("sort").value=th.dataset.s;render();});
+  document.getElementById("sort").onchange=e=>{state.sort=e.target.value;state.dir=e.target.value==="ticker"?"asc":"desc";render();};
+  document.querySelectorAll("th[data-s]").forEach(th=>th.onclick=()=>{const s=th.dataset.s;if(state.sort===s)state.dir=state.dir==="desc"?"asc":"desc";else{state.sort=s;state.dir=s==="ticker"?"asc":"desc";}const sel=document.getElementById("sort");if([...sel.options].some(o=>o.value===s))sel.value=s;render();});
   render();route();
 }).catch(e=>{document.getElementById("loading").textContent="Failed to load data: "+e;});
 </script>
