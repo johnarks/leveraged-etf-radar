@@ -122,6 +122,16 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 tr.pickrow:hover{background:#1b2740}
 tr.thesisrow td{white-space:normal;border-top:0;padding-top:4px}
 .dayline{font-size:15px;margin:8px 0}
+/* price chart */
+.dchart{margin:0 0 16px}
+.chead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.chead h3{margin:4px 0 8px;font-size:15px}
+.cctrls{display:flex;gap:8px;flex-wrap:wrap}
+.clegend{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:2px 0 8px;color:var(--mut);font-size:12px}
+.lg i{display:inline-block;width:18px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.cinfo{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--txt)}
+#cprice{width:100%;height:280px;display:block;cursor:crosshair}
+#crsi{width:100%;height:90px;display:block;margin-top:4px}
 </style>
 </head>
 <body>
@@ -224,6 +234,18 @@ function detailHTML(t){
   <div class="dscore"><div class="dnum" style="color:${scoreColor(t.score)}">${(t.score/10).toFixed(1)}</div>
     <div><span class="pill ${pill(t.rating)} big">${t.rating}</span>
     <div class="dscore-sub">${t.sum_counts.buy} buy · ${t.sum_counts.sell} sell · ${t.sum_counts.neutral} neutral across 24 signals</div></div></div>
+  <div class="dcard dchart">
+    <div class="chead"><h3>Price chart <span class="dsub">· daily</span></h3>
+      <div class="cctrls">
+        <div class="seg" id="cstyle"><button data-v="c" class="on">Candles</button><button data-v="ha">Heikin-Ashi</button></div>
+        <div class="seg" id="crange"><button data-v="63">3M</button><button data-v="126">6M</button><button data-v="0" class="on">1Y</button></div>
+      </div>
+    </div>
+    <div class="clegend"><span class="lg"><i style="background:#f5a623"></i>MA 20</span><span class="lg"><i style="background:#5b8def"></i>MA 50</span><span class="lg"><i style="background:#b388ff"></i>RSI 14</span><span id="cinfo" class="cinfo"></span></div>
+    <canvas id="cprice"></canvas>
+    <canvas id="crsi"></canvas>
+    <div id="cmsg" class="dsub"></div>
+  </div>
   ${sentSection(t)}
   <div class="dabout"><div><b>Tracks</b><p>${t.blurb}</p></div><div><b>When to use</b><p>${t.use_when}</p></div></div>
   <div class="dmetrics">${met("YTD",t.ytd_pct)}${met("3 months",t.m3_pct)}${met("6 months",t.m6_pct)}${met("1 year",t.y1_pct)}${met("vs 50-day avg",t.vs_sma50_pct)}${met("vs 200-day avg",t.vs_sma200_pct)}</div>
@@ -233,6 +255,107 @@ function detailHTML(t){
     <div class="dcard"><h3>Trend · moving averages</h3><ul class="sig">${t.ma.map(sig).join("")}</ul></div>
   </div>`;
 }
+/* ---- price chart (detail view) ---- */
+let HIST=null;
+const CH={ticker:null,style:"c",range:0,hover:-1};
+function segOn(id,btn){document.querySelectorAll("#"+id+" button").forEach(b=>b.classList.toggle("on",b===btn));}
+function smaArr(v,n){const o=new Array(v.length).fill(null);let s=0;for(let i=0;i<v.length;i++){s+=v[i];if(i>=n)s-=v[i-n];if(i>=n-1)o[i]=s/n;}return o;}
+function rsiArr(c,n){const o=new Array(c.length).fill(null);if(c.length<=n)return o;let g=0,l=0;
+  for(let i=1;i<=n;i++){const d=c[i]-c[i-1];if(d>0)g+=d;else l-=d;}g/=n;l/=n;
+  o[n]=l===0?100:100-100/(1+g/l);
+  for(let i=n+1;i<c.length;i++){const d=c[i]-c[i-1];g=(g*(n-1)+(d>0?d:0))/n;l=(l*(n-1)+(d<0?-d:0))/n;o[i]=l===0?100:100-100/(1+g/l);}
+  return o;}
+function haBars(bars){const o=[];let po=null,pc=null;
+  for(const b of bars){const c=(b[1]+b[2]+b[3]+b[4])/4;const oo=po===null?(b[1]+b[4])/2:(po+pc)/2;
+    o.push([b[0],oo,Math.max(b[2],oo,c),Math.min(b[3],oo,c),c,b[5]]);po=oo;pc=c;}
+  return o;}
+function fitCanvas(cv,cssH){const dpr=window.devicePixelRatio||1;const w=cv.clientWidth;
+  cv.width=Math.max(1,Math.round(w*dpr));cv.height=Math.round(cssH*dpr);
+  const x=cv.getContext("2d");x.setTransform(dpr,0,0,dpr,0,0);return[x,w,cssH];}
+function cLine(x,pts,color,width){x.strokeStyle=color;x.lineWidth=width||1.5;x.beginPath();let st=false;
+  for(const p of pts){if(p[1]===null){st=false;continue;}if(!st){x.moveTo(p[0],p[1]);st=true;}else x.lineTo(p[0],p[1]);}x.stroke();}
+function drawChart(){
+  const cv=document.getElementById("cprice"),rv=document.getElementById("crsi");
+  if(!cv||!HIST||!HIST[CH.ticker])return;
+  const bars=HIST[CH.ticker];
+  const n=CH.range>0?Math.min(CH.range,bars.length):bars.length;
+  const b=bars.slice(-n);
+  const disp=(CH.style==="ha"?haBars(bars).slice(-n):b);
+  const closes=b.map(x=>x[4]);
+  const ma20=smaArr(closes,20),ma50=smaArr(closes,50),rsi=rsiArr(closes,14);
+  const UP="#26a69a",DN="#ef5350",MUT="#8b98b3";
+  // ---- price pane ----
+  const[x,W,H]=fitCanvas(cv,280);
+  const padR=58,padB=20,padT=10,volH=(H-padT-padB)*0.22;
+  const pw=W-padR,ph=H-padT-padB;
+  let lo=Infinity,hi=-Infinity;
+  disp.forEach((d,i)=>{lo=Math.min(lo,d[3]);hi=Math.max(hi,d[2]);
+    if(ma20[i]!==null){lo=Math.min(lo,ma20[i]);hi=Math.max(hi,ma20[i]);}
+    if(ma50[i]!==null){lo=Math.min(lo,ma50[i]);hi=Math.max(hi,ma50[i]);}});
+  const pad=(hi-lo)*0.06||1;lo-=pad;hi+=pad;
+  const X=i=>i/(Math.max(1,n-1))*pw, Y=v=>padT+(1-(v-lo)/(hi-lo))*ph;
+  const vmax=Math.max(...b.map(d=>d[5]),1);
+  x.clearRect(0,0,W,H);
+  x.font="11px -apple-system,Segoe UI,Roboto,sans-serif";
+  // grid + y labels
+  x.strokeStyle="#1c2740";x.fillStyle=MUT;x.lineWidth=1;
+  for(let g=0;g<=4;g++){const v=lo+(hi-lo)*g/4,y=Y(v);
+    x.beginPath();x.moveTo(0,y);x.lineTo(pw,y);x.stroke();
+    x.fillText(v>=100?v.toFixed(0):v.toFixed(2),pw+6,y+4);}
+  // volume
+  const vy0=padT+ph;
+  b.forEach((d,i)=>{const up=d[4]>=d[1];x.fillStyle=up?"rgba(38,166,154,.45)":"rgba(239,83,80,.45)";
+    const vh=d[5]/vmax*volH;x.fillRect(X(i)-Math.max(1,pw/n*0.3),vy0-vh,Math.max(1,pw/n*0.6),vh);});
+  // candles
+  const bw=Math.max(1.5,Math.min(14,pw/n*0.62));
+  disp.forEach((d,i)=>{const up=d[4]>=d[1],col=up?UP:DN;x.strokeStyle=col;x.fillStyle=col;
+    const cx=X(i);x.lineWidth=1;x.beginPath();x.moveTo(cx,Y(d[2]));x.lineTo(cx,Y(d[3]));x.stroke();
+    const yO=Y(d[1]),yC=Y(d[4]);
+    x.fillRect(cx-bw/2,Math.min(yO,yC),bw,Math.max(1,Math.abs(yC-yO)));});
+  // moving averages
+  cLine(x,ma20.map((v,i)=>[X(i),v===null?null:Y(v)]),"#f5a623",1.6);
+  cLine(x,ma50.map((v,i)=>[X(i),v===null?null:Y(v)]),"#5b8def",1.6);
+  // x labels (~5)
+  x.fillStyle=MUT;
+  const step=Math.max(1,Math.floor(n/5));
+  for(let i=0;i<n;i+=step){const dt=b[i][0];x.fillText(dt.slice(5),X(i)-14,H-6);}
+  // hover crosshair
+  if(CH.hover>=0&&CH.hover<n){const i=CH.hover;x.strokeStyle="rgba(139,152,179,.6)";x.setLineDash([4,4]);
+    x.beginPath();x.moveTo(X(i),padT);x.lineTo(X(i),padT+ph);x.stroke();x.setLineDash([]);
+    const d=b[i],ch=(d[4]/d[1]-1)*100;
+    document.getElementById("cinfo").textContent=`${d[0]} · O ${d[1].toFixed(2)} H ${d[2].toFixed(2)} L ${d[3].toFixed(2)} C ${d[4].toFixed(2)} (${ch>=0?"+":""}${ch.toFixed(2)}%)`;}
+  // ---- RSI pane ----
+  const[rx,rW,rH]=fitCanvas(rv,90);
+  const rpT=6,rpB=16,rph=rH-rpT-rpB,rpW=rW-padR;
+  const RY=v=>rpT+(1-v/100)*rph;
+  rx.clearRect(0,0,rW,rH);rx.font="10px -apple-system,Segoe UI,Roboto,sans-serif";
+  rx.fillStyle="rgba(179,136,255,.08)";rx.fillRect(0,RY(100),rpW,RY(70)-RY(100));rx.fillRect(0,RY(30),rpW,RY(0)-RY(30));
+  rx.strokeStyle="#1c2740";rx.fillStyle=MUT;rx.setLineDash([4,4]);
+  [70,50,30].forEach(v=>{rx.beginPath();rx.moveTo(0,RY(v));rx.lineTo(rpW,RY(v));rx.stroke();rx.fillText(String(v),rpW+6,RY(v)+3);});
+  rx.setLineDash([]);
+  cLine(rx,rsi.map((v,i)=>[i/(Math.max(1,n-1))*rpW,v===null?null:RY(v)]),"#b388ff",1.6);
+  if(CH.hover>=0&&CH.hover<n&&rsi[CH.hover]!==null){
+    document.getElementById("cinfo").textContent+=` · RSI ${rsi[CH.hover].toFixed(1)}`;}
+}
+function loadHist(cb){
+  if(HIST){cb();return;}
+  const msg=()=>{const m=document.getElementById("cmsg");if(m)m.textContent="Chart data unavailable.";};
+  fetch("history.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();})
+    .then(j=>{HIST=j.bars||{};cb();}).catch(msg);
+}
+function initChart(t){
+  CH.ticker=t.ticker;CH.style="c";CH.range=0;CH.hover=-1;
+  const cv=document.getElementById("cprice");if(!cv)return;
+  document.querySelectorAll("#cstyle button").forEach(x=>x.onclick=()=>{CH.style=x.dataset.v;CH.hover=-1;segOn("cstyle",x);drawChart();});
+  document.querySelectorAll("#crange button").forEach(x=>x.onclick=()=>{CH.range=+x.dataset.v;CH.hover=-1;segOn("crange",x);drawChart();});
+  cv.onmousemove=e=>{const bars=HIST[CH.ticker];if(!bars)return;
+    const r=cv.getBoundingClientRect();const pw=r.width-58;
+    const n=CH.range>0?Math.min(CH.range,bars.length):bars.length;
+    const i=Math.round((e.clientX-r.left)/pw*(n-1));CH.hover=Math.max(0,Math.min(n-1,i));drawChart();};
+  cv.onmouseleave=()=>{CH.hover=-1;document.getElementById("cinfo").textContent="";drawChart();};
+  loadHist(()=>{if(HIST[CH.ticker])drawChart();});
+}
+window.addEventListener("resize",()=>{if(document.getElementById("cprice"))drawChart();});
 function showDetail(t,anchor){
   document.getElementById("listview").style.display="none";
   document.getElementById("picksview").style.display="none";
@@ -241,6 +364,7 @@ function showDetail(t,anchor){
   const d=document.getElementById("detail");d.style.display="";d.innerHTML=detailHTML(t);
   document.getElementById("backbtn").onclick=()=>{location.hash="";};
   window.scrollTo(0,0);
+  initChart(t);
   if(anchor){const el=document.getElementById("sentiment");if(el)el.scrollIntoView();}
 }
 function showList(){
