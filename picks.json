@@ -1,1 +1,51 @@
-{"picks":[],"record":{"avg_return_pct":null,"losses":0,"wins":0},"strategy":{"current":"Initial strategy (2026-09-22): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh positive catalyst in the news. Prefer 3x over 2x when conviction is high, since the goal is the best single-day move. Avoid picks where sentiment is strong but technicals are overbought without a trend, and avoid single-stock ETFs on days with binary event risk. This strategy will be reviewed and adjusted daily based on results.","updated":"2026-09-22"},"updated":null}
+{
+ "picks": [
+  {
+   "date": "2026-09-22",
+   "ticker": "METU",
+   "name": "Direxion Daily META Bull 2X",
+   "lev": 2,
+   "underlying": "Meta (META)",
+   "category": "single-stock",
+   "thesis": "Inaugural pick. METU (2x long Meta) is the highest-conviction setup in the universe this morning.\n\nWhy METU:\n1. Sentiment is the best in the entire 65-ETF universe at 9.1/10. Meta's Muse AI agent topped the App Store ahead of ChatGPT, the stock just posted its best day in over a year (+11%) and its best month in 13 years, and Jefferies ($875) and Wells Fargo ($796) hiked price targets with analysts saying Muse \"flips the narrative\" on AI-spending concerns. This is a fresh, real catalyst \u2014 not stale optimism.\n2. Technicals agree: 77.1 (Buy), price 6 of the last 7 sessions up, and the composite 8.40 leads the whole board. The strategy demands technical+sentiment agreement, and this is the cleanest example of it.\n3. Single-stock 2x structure means the sentiment edge maps directly onto the price \u2014 no dilution from 100+ holdings.\n\nRisks I'm accepting: Meta sits ~44% above its 50-day average, so it's extended and vulnerable to a breather; a 2x single-stock ETF can reverse hard intraday. I considered SOXL (3x semis, also strong at 8.3 sentiment and +3.46% today) but it's already mid-sprint intraday \u2014 more chase risk than METU's steadier trend.\n\nExpectation: Meta's headline momentum carries into the close for a positive day on METU.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 77.1,
+    "rating": "Buy",
+    "sentiment": 9.1,
+    "composite": 8.4,
+    "today_pct": 1.36,
+    "vs_sma50_pct": 43.98,
+    "trend7": [
+     "up",
+     "up",
+     "down",
+     "up",
+     "up",
+     "up",
+     "up"
+    ],
+    "prev_close": 32.86,
+    "data_as_of": "2026-09-22T11:46-04:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
+  }
+ ],
+ "record": {
+  "avg_return_pct": null,
+  "losses": 0,
+  "wins": 0
+ },
+ "strategy": {
+  "current": "Initial strategy (2026-09-22): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh positive catalyst in the news. Prefer 3x over 2x when conviction is high, since the goal is the best single-day move. Avoid picks where sentiment is strong but technicals are overbought without a trend, and avoid single-stock ETFs on days with binary event risk. This strategy will be reviewed and adjusted daily based on results.",
+  "updated": "2026-09-22"
+ },
+ "updated": "2026-09-22T11:52-04:00"
+}
