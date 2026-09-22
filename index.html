@@ -133,6 +133,8 @@ tr.thesisrow td{white-space:normal;border-top:0;padding-top:4px}
 <div id="menudrop" class="menudrop" style="display:none">
 <a href="#/" data-nav="dash">📊 Leveraged ETF Dashboard</a>
 <a href="#/picks" data-nav="picks">🎯 Leveraged ETF Daily Picks</a>
+<a href="https://aimarketmuse.vercel.app" target="_blank" rel="noopener">📈 Daily Stock Pick Newsletter</a>
+<a href="https://ai-sentiment-forecast.vercel.app" target="_blank" rel="noopener">📰 AI Sentiment Forecast</a>
 </div>
 </div>
 </div>
@@ -328,7 +330,7 @@ let PICKS=null;
 const escapeHTML=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 // hamburger menu
 const menubtn=document.getElementById("menubtn"),menudrop=document.getElementById("menudrop");
-function markMenu(){const h=location.hash;const onPicks=(h==="#/picks"||h==="#picks");menudrop.querySelectorAll("a").forEach(a=>{a.classList.toggle("cur",(a.getAttribute("href")==="#/picks")===onPicks);});}
+function markMenu(){const h=location.hash;const onPicks=(h==="#/picks"||h==="#picks");menudrop.querySelectorAll("a").forEach(a=>{const href=a.getAttribute("href");const cur=href.indexOf("http")===0?false:(href==="#/picks")===onPicks;a.classList.toggle("cur",cur);});}
 menubtn.onclick=e=>{e.stopPropagation();menudrop.style.display=menudrop.style.display==="none"?"":"none";markMenu();};
 document.addEventListener("click",e=>{if(menudrop.style.display!=="none"&&!menudrop.contains(e.target))menudrop.style.display="none";});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")menudrop.style.display="none";});
