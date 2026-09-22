@@ -85,6 +85,7 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 /* sentiment */
 .sentlink{font-weight:700;text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer}
 .holdlink{font-weight:700;text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer;color:var(--txt)}
+.holdcell{cursor:pointer}
 .holdtbl{width:100%;border-collapse:collapse}
 .holdtbl td,.holdtbl th{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;font-size:13.5px}
 .wbar{height:8px;background:var(--panel2);border-radius:4px;overflow:hidden;min-width:80px}
@@ -253,7 +254,7 @@ function render(){
     return `<tr data-t="${t.ticker}">
     <td><span class="tk">${t.ticker}</span><span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span><br><span class="long">▲ long</span></td>
     <td class="uname">${t.underlying}</td>
-    <td class="num"><span class="holdlink" data-t="${t.ticker}" title="View underlying holdings">${t.hold_count??"—"}</span></td>
+    <td class="num holdcell" data-t="${t.ticker}"><span class="holdlink" title="View underlying holdings">${t.hold_count??"—"}</span></td>
     <td class="num">$${t.price.toFixed(2)}</td>
     <td class="num">${pc(t.today_pct)}</td><td class="num">${pc(t.ytd_pct)}</td>
     <td class="num">${pc(t.m3_pct)}</td><td class="num">${pc(t.m6_pct)}</td>
@@ -263,7 +264,7 @@ function render(){
     <td class="num">${pc(t.vs_sma50_pct)}</td></tr>`;}).join("");
   document.querySelectorAll("#rows tr").forEach(tr=>tr.onclick=()=>{location.hash="#/"+tr.dataset.t;});
   document.querySelectorAll(".sentlink").forEach(s=>s.onclick=e=>{e.stopPropagation();location.hash="#/"+s.dataset.t+"!sent";});
-  document.querySelectorAll(".holdlink").forEach(s=>s.onclick=e=>{e.stopPropagation();location.hash="#/"+s.dataset.t+"!hold";});
+  document.querySelectorAll(".holdcell").forEach(c=>c.onclick=e=>{e.stopPropagation();location.hash="#/"+c.dataset.t+"!hold";});
   document.getElementById("tbl").style.display="";document.getElementById("loading").style.display="none";
   updateSortIndicators();
 }
