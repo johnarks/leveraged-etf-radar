@@ -163,6 +163,8 @@ tr.thesisrow td{white-space:normal;border-top:0;padding-top:4px}
 <div id="stats"></div>
 <div id="controls">
 <div class="seg" id="viewseg"><button data-v="table" class="on">☰ Table</button><button data-v="charts">📊 Charts</button></div>
+<div class="seg" id="gstyle" style="display:none"><button data-v="c">Candles</button><button data-v="ha">Heikin-Ashi</button></div>
+<div class="seg" id="grange" style="display:none"><button data-v="63">3M</button><button data-v="126">6M</button><button data-v="0">1Y</button></div>
 <input type="text" id="q" placeholder="Search ticker or name…">
 <div class="seg" id="levseg"><button data-v="all" class="on">All</button><button data-v="3">3x</button><button data-v="2">2x</button></div>
 <select id="cat"><option value="all">All categories</option><option value="index">Index</option><option value="sector">Sector</option><option value="commodity">Commodity</option><option value="rates">Bonds/Rates</option><option value="fx">Currency</option><option value="country">Country</option><option value="single-stock">Single-stock</option></select>
@@ -395,9 +397,10 @@ function drawGridChart(cv,bars,style){
 }
 function drawAllGrid(){
   const gv=document.getElementById("gridview");if(!gv||!HIST)return;
+  const n=CH.range>0?CH.range:1e9;
   gv.querySelectorAll("canvas.gchart").forEach(cv=>{
     const bars=HIST[cv.dataset.t];
-    if(bars&&bars.length>5)drawGridChart(cv,bars,CH.style);});
+    if(bars&&bars.length>5)drawGridChart(cv,bars.slice(-n),CH.style);});
 }
 function renderGrid(){
   const gv=document.getElementById("gridview");
@@ -418,11 +421,20 @@ function setView(v){
   document.querySelectorAll("#viewseg button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
   document.getElementById("gridview").classList.toggle("show",v==="charts");
   document.querySelector("#listview .tablewrap").style.display=v==="charts"?"none":"";
-  if(v==="charts")renderGrid();
+  const gctl=v==="charts";
+  document.getElementById("gstyle").style.display=gctl?"":"none";
+  document.getElementById("grange").style.display=gctl?"":"none";
+  if(gctl){
+    document.querySelectorAll("#gstyle button").forEach(b=>b.classList.toggle("on",b.dataset.v===CH.style));
+    document.querySelectorAll("#grange button").forEach(b=>b.classList.toggle("on",+b.dataset.v===CH.range));
+    renderGrid();
+  }
 }
 function initChart(t){
-  CH.ticker=t.ticker;CH.style="ha";CH.range=0;CH.hover=-1;
+  CH.ticker=t.ticker;CH.hover=-1;
   const cv=document.getElementById("cprice");if(!cv)return;
+  document.querySelectorAll("#cstyle button").forEach(x=>x.classList.toggle("on",x.dataset.v===CH.style));
+  document.querySelectorAll("#crange button").forEach(x=>x.classList.toggle("on",+x.dataset.v===CH.range));
   document.querySelectorAll("#cstyle button").forEach(x=>x.onclick=()=>{CH.style=x.dataset.v;CH.hover=-1;segOn("cstyle",x);drawChart();});
   document.querySelectorAll("#crange button").forEach(x=>x.onclick=()=>{CH.range=+x.dataset.v;CH.hover=-1;segOn("crange",x);drawChart();});
   cv.onmousemove=e=>{const bars=HIST[CH.ticker];if(!bars)return;
@@ -607,6 +619,8 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(j=>{
     <div class="stat"><div class="k">Worst today</div><div class="v ${wt.today_pct>=0?"up":"down"}">${wt.ticker} ${wt.today_pct>=0?"+":""}${wt.today_pct.toFixed(2)}%</div></div>`;
   seg("levseg","lev");
   document.querySelectorAll("#viewseg button").forEach(b=>b.onclick=()=>setView(b.dataset.v));
+  document.querySelectorAll("#gstyle button").forEach(b=>b.onclick=()=>{CH.style=b.dataset.v;segOn("gstyle",b);drawAllGrid();});
+  document.querySelectorAll("#grange button").forEach(b=>b.onclick=()=>{CH.range=+b.dataset.v;segOn("grange",b);drawAllGrid();});
   document.getElementById("q").oninput=e=>{state.q=e.target.value;render();};
   document.getElementById("cat").onchange=e=>{state.cat=e.target.value;render();};
   document.getElementById("sort").onchange=e=>{state.sort=e.target.value;state.dir=e.target.value==="ticker"?"asc":"desc";render();};
