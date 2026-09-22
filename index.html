@@ -132,6 +132,16 @@ tr.thesisrow td{white-space:normal;border-top:0;padding-top:4px}
 .cinfo{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--txt)}
 #cprice{width:100%;height:280px;display:block;cursor:crosshair}
 #crsi{width:100%;height:90px;display:block;margin-top:4px}
+/* chart grid view */
+#gridview{display:none;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px;padding-bottom:24px}
+#gridview.show{display:grid}
+.gcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;cursor:pointer}
+.gcard:hover{border-color:#3b5a8f}
+.ghead{display:flex;align-items:center;gap:8px;min-width:0}
+.gname{color:var(--mut);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gscores{display:flex;gap:14px;font-size:11px;color:var(--mut);margin:7px 0 4px;text-transform:uppercase;letter-spacing:.4px}
+.gscores b{font-size:14px;letter-spacing:0;text-transform:none}
+.gchart{width:100%;height:168px;display:block}
 </style>
 </head>
 <body>
@@ -152,6 +162,7 @@ tr.thesisrow td{white-space:normal;border-top:0;padding-top:4px}
 <div class="warn">⚠️ Leveraged ETFs reset <b>daily</b> — they are designed for short-term trading, not buy-and-hold. Compounding and volatility decay can erode returns even if you guess the direction right. This page is for research, not financial advice. Prices ~15-min delayed. Sentiment scores are compiled from recent news headlines.</div>
 <div id="stats"></div>
 <div id="controls">
+<div class="seg" id="viewseg"><button data-v="table" class="on">☰ Table</button><button data-v="charts">📊 Charts</button></div>
 <input type="text" id="q" placeholder="Search ticker or name…">
 <div class="seg" id="levseg"><button data-v="all" class="on">All</button><button data-v="3">3x</button><button data-v="2">2x</button></div>
 <select id="cat"><option value="all">All categories</option><option value="index">Index</option><option value="sector">Sector</option><option value="commodity">Commodity</option><option value="rates">Bonds/Rates</option><option value="fx">Currency</option><option value="country">Country</option><option value="single-stock">Single-stock</option></select>
@@ -167,6 +178,7 @@ tr.thesisrow td{white-space:normal;border-top:0;padding-top:4px}
 <th class="num" data-s="ytd">YTD</th><th class="num" data-s="m3">3M</th><th class="num" data-s="m6">6M</th>
 <th data-s="score">Score</th><th data-s="sent">Sentiment</th><th data-s="comp" title="50% technical score + 50% news sentiment">Composite</th><th class="num" data-s="vs50">vs 50DMA</th><th title="Last 7 trading days — up/down vs prior close, most recent on the left">7D</th>
 </tr></thead><tbody id="rows"></tbody></table></div>
+<div id="gridview"></div>
 </div>
 <div id="detail" style="display:none"></div>
 <div id="picksview" style="display:none"></div>
@@ -257,7 +269,7 @@ function detailHTML(t){
 }
 /* ---- price chart (detail view) ---- */
 let HIST=null;
-const CH={ticker:null,style:"c",range:0,hover:-1};
+const CH={ticker:null,style:"ha",range:0,hover:-1};
 function segOn(id,btn){document.querySelectorAll("#"+id+" button").forEach(b=>b.classList.toggle("on",b===btn));}
 function smaArr(v,n){const o=new Array(v.length).fill(null);let s=0;for(let i=0;i<v.length;i++){s+=v[i];if(i>=n)s-=v[i-n];if(i>=n-1)o[i]=s/n;}return o;}
 function rsiArr(c,n){const o=new Array(c.length).fill(null);if(c.length<=n)return o;let g=0,l=0;
@@ -345,6 +357,69 @@ function loadHist(cb){
   fetch("history.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();})
     .then(j=>{HIST=j.bars||{};const m=msgEl();if(m)m.textContent="";cb();}).catch(msg);
 }
+/* ---- chart grid view ---- */
+let VIEW="table";
+function drawGridChart(cv,bars,style){
+  const n=bars.length;if(n<5)return;
+  const b=bars;
+  const disp=(style==="ha"?haBars(bars):b);
+  const closes=b.map(x=>x[4]);
+  const ma20=smaArr(closes,20),ma50=smaArr(closes,50);
+  const UP="#26a69a",DN="#ef5350",MUT="#8b98b3";
+  const[x,W,H]=fitCanvas(cv,168);
+  const padR=44,padT=6,padB=4,volH=H*0.16;
+  const pw=W-padR,ph=H-padT-padB;
+  let lo=Infinity,hi=-Infinity;
+  disp.forEach((d,i)=>{lo=Math.min(lo,d[3]);hi=Math.max(hi,d[2]);
+    if(ma20[i]!==null){lo=Math.min(lo,ma20[i]);hi=Math.max(hi,ma20[i]);}
+    if(ma50[i]!==null){lo=Math.min(lo,ma50[i]);hi=Math.max(hi,ma50[i]);}});
+  const pd=(hi-lo)*0.06||1;lo-=pd;hi+=pd;
+  const X=i=>i/(Math.max(1,n-1))*pw, Y=v=>padT+(1-(v-lo)/(hi-lo))*ph;
+  const vmax=Math.max(...b.map(d=>d[5]),1);
+  x.clearRect(0,0,W,H);
+  x.font="10px -apple-system,Segoe UI,Roboto,sans-serif";
+  x.strokeStyle="#1c2740";x.fillStyle=MUT;x.lineWidth=1;
+  for(let gi=0;gi<=3;gi++){const v=lo+(hi-lo)*gi/3,y=Y(v);
+    x.beginPath();x.moveTo(0,y);x.lineTo(pw,y);x.stroke();
+    x.fillText(v>=100?v.toFixed(0):v.toFixed(1),pw+4,y+3);}
+  const vy0=padT+ph;
+  b.forEach((d,i)=>{const up=d[4]>=d[1];x.fillStyle=up?"rgba(38,166,154,.4)":"rgba(239,83,80,.4)";
+    const vh=d[5]/vmax*volH;x.fillRect(X(i)-Math.max(.5,pw/n*.3),vy0-vh,Math.max(1,pw/n*.6),vh);});
+  const bw=Math.max(1,Math.min(10,pw/n*0.62));
+  disp.forEach((d,i)=>{const up=d[4]>=d[1],col=up?UP:DN;x.strokeStyle=col;x.fillStyle=col;
+    const cx=X(i);x.lineWidth=1;x.beginPath();x.moveTo(cx,Y(d[2]));x.lineTo(cx,Y(d[3]));x.stroke();
+    const yO=Y(d[1]),yC=Y(d[4]);
+    x.fillRect(cx-bw/2,Math.min(yO,yC),bw,Math.max(1,Math.abs(yC-yO)));});
+  cLine(x,ma20.map((v,i)=>[X(i),v===null?null:Y(v)]),"#f5a623",1.4);
+  cLine(x,ma50.map((v,i)=>[X(i),v===null?null:Y(v)]),"#5b8def",1.4);
+}
+function drawAllGrid(){
+  const gv=document.getElementById("gridview");if(!gv||!HIST)return;
+  gv.querySelectorAll("canvas.gchart").forEach(cv=>{
+    const bars=HIST[cv.dataset.t];
+    if(bars&&bars.length>5)drawGridChart(cv,bars,CH.style);});
+}
+function renderGrid(){
+  const gv=document.getElementById("gridview");
+  if(!HIST){gv.innerHTML='<div class="dsub" style="padding:20px">Loading chart data…</div>';loadHist(renderGrid);return;}
+  const rows=filtered();
+  gv.innerHTML=rows.map(t=>{
+    const cs=compScore(t);
+    const sent=t.sentiment?t.sentiment.score.toFixed(1):"—";
+    return `<div class="gcard" data-t="${t.ticker}">
+    <div class="ghead"><span class="tk">${t.ticker}</span><span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span><span class="gname">${t.name}</span></div>
+    <div class="gscores"><span>Composite <b style="color:${scoreColor(cs*10)}">${cs.toFixed(1)}</b></span><span>Sentiment <b style="color:${scoreColor(t.sentiment?t.sentiment.score*10:50)}">${sent}</b></span><span>Technical <b style="color:${scoreColor(t.score)}">${(t.score/10).toFixed(1)}</b></span></div>
+    <canvas class="gchart" data-t="${t.ticker}"></canvas></div>`;}).join("");
+  gv.querySelectorAll(".gcard").forEach(c=>c.onclick=()=>{location.hash="#/"+c.dataset.t;});
+  drawAllGrid();
+}
+function setView(v){
+  VIEW=v;
+  document.querySelectorAll("#viewseg button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
+  document.getElementById("gridview").classList.toggle("show",v==="charts");
+  document.querySelector("#listview .tablewrap").style.display=v==="charts"?"none":"";
+  if(v==="charts")renderGrid();
+}
 function initChart(t){
   CH.ticker=t.ticker;CH.style="ha";CH.range=0;CH.hover=-1;
   const cv=document.getElementById("cprice");if(!cv)return;
@@ -357,7 +432,7 @@ function initChart(t){
   cv.onmouseleave=()=>{CH.hover=-1;document.getElementById("cinfo").textContent="";drawChart();};
   loadHist(()=>{if(HIST[CH.ticker])drawChart();});
 }
-window.addEventListener("resize",()=>{if(document.getElementById("cprice"))drawChart();});
+window.addEventListener("resize",()=>{if(document.getElementById("cprice"))drawChart();if(VIEW==="charts")drawAllGrid();});
 function showDetail(t,anchor){
   document.getElementById("listview").style.display="none";
   document.getElementById("picksview").style.display="none";
@@ -448,6 +523,7 @@ function render(){
   document.querySelectorAll(".sentlink").forEach(s=>s.onclick=e=>{e.stopPropagation();location.hash="#/"+s.dataset.t+"!sent";});
   document.querySelectorAll(".holdcell").forEach(c=>c.onclick=e=>{e.stopPropagation();location.hash="#/"+c.dataset.t+"!hold";});
   document.getElementById("tbl").style.display="";document.getElementById("loading").style.display="none";
+  if(VIEW==="charts")renderGrid();
   updateSortIndicators();
 }
 function updateSortIndicators(){document.querySelectorAll("th[data-s]").forEach(th=>{const b=th.textContent.replace(/ [↑↓]$/,"");th.textContent=th.dataset.s===state.sort?b+" "+(state.dir==="desc"?"↓":"↑"):b;});}
@@ -529,7 +605,9 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(j=>{
     <div class="stat"><div class="k">Top sentiment</div><div class="v">${ts.ticker} <span style="color:${scoreColor(ts.sentiment.score*10)};font-weight:700">${ts.sentiment.score.toFixed(1)}/10</span></div></div>
     <div class="stat"><div class="k">Best today</div><div class="v ${bt.today_pct>=0?"up":"down"}">${bt.ticker} ${bt.today_pct>=0?"+":""}${bt.today_pct.toFixed(2)}%</div></div>
     <div class="stat"><div class="k">Worst today</div><div class="v ${wt.today_pct>=0?"up":"down"}">${wt.ticker} ${wt.today_pct>=0?"+":""}${wt.today_pct.toFixed(2)}%</div></div>`;
-  seg("levseg","lev");  document.getElementById("q").oninput=e=>{state.q=e.target.value;render();};
+  seg("levseg","lev");
+  document.querySelectorAll("#viewseg button").forEach(b=>b.onclick=()=>setView(b.dataset.v));
+  document.getElementById("q").oninput=e=>{state.q=e.target.value;render();};
   document.getElementById("cat").onchange=e=>{state.cat=e.target.value;render();};
   document.getElementById("sort").onchange=e=>{state.sort=e.target.value;state.dir=e.target.value==="ticker"?"asc":"desc";render();};
   document.querySelectorAll("th[data-s]").forEach(th=>th.onclick=()=>{const s=th.dataset.s;if(state.sort===s)state.dir=state.dir==="desc"?"asc":"desc";else{state.sort=s;state.dir=s==="ticker"?"asc":"desc";}const sel=document.getElementById("sort");if([...sel.options].some(o=>o.value===s))sel.value=s;render();});
