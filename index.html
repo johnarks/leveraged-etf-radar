@@ -32,7 +32,7 @@ tbody tr{cursor:pointer}tbody tr:hover{background:#1b2740}
 .tk{font-weight:800;font-size:14px}
 .badge{display:inline-block;font-size:10.5px;font-weight:700;border-radius:5px;padding:2px 7px;margin-left:6px;vertical-align:2px}
 .b3{background:#7c2d12;color:#ffb59e}.b2{background:#123a6d;color:#9ec5ff}
-.long{color:var(--up);font-weight:700;font-size:11px}.short{color:var(--down);font-weight:700;font-size:11px}
+.long{color:var(--up);font-weight:700;font-size:11px}
 .up{color:var(--up)}.down{color:var(--down)}
 .uname{color:var(--mut);font-size:12px;white-space:normal;min-width:180px}
 .scorecell{display:flex;align-items:center;gap:8px}
@@ -99,7 +99,6 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 <div id="controls">
 <input type="text" id="q" placeholder="Search ticker or name…">
 <div class="seg" id="levseg"><button data-v="all" class="on">All</button><button data-v="3">3x</button><button data-v="2">2x</button></div>
-<div class="seg" id="dirseg"><button data-v="all" class="on">Long+Short</button><button data-v="long">Long</button><button data-v="short">Short</button></div>
 <select id="cat"><option value="all">All categories</option><option value="index">Index</option><option value="sector">Sector</option><option value="commodity">Commodity</option><option value="rates">Bonds/Rates</option><option value="fx">Currency</option><option value="country">Country</option><option value="single-stock">Single-stock</option></select>
 <select id="sort"><option value="score">Sort: Score ↓</option><option value="sent">Sort: Sentiment ↓</option><option value="today">Sort: Today ↓</option><option value="ytd">Sort: YTD ↓</option><option value="m3">Sort: 3M ↓</option><option value="m6">Sort: 6M ↓</option><option value="ticker">Sort: Ticker A–Z</option></select>
 </div>
@@ -116,7 +115,7 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 </div>
 <div id="detail" style="display:none"></div>
 </main>
-<footer>Method: 12 oscillators (RSI-14, Stoch %K, CCI-20, ADX-14, Awesome Oscillator, Momentum-10, MACD, Stoch RSI, Williams %R, Ultimate Oscillator, Bull Power, Bear Power) + 12 moving averages (SMA/EMA 10/20/30/50/100/200). Score = 50 + 50×(buys−sells)/24, mapped to Strong Buy ≥80, Buy ≥60, Neutral ≥40, Sell ≥20, Strong Sell &lt;20. Data: Yahoo Finance daily bars.<br>Sentiment: 1–10 score compiled from the last ~3 days of news headlines for what each ETF tracks (sector news + top holdings for sector funds, company news for single-stock funds). 9–10 very bullish, 7–8.9 bullish, 5.5–6.9 slightly bullish, 4.5–5.4 neutral, 3–4.4 slightly bearish, 1–2.9 bearish. For inverse funds the score describes the underlying — bullish news works against a short fund.</footer>
+<footer>Method: 12 oscillators (RSI-14, Stoch %K, CCI-20, ADX-14, Awesome Oscillator, Momentum-10, MACD, Stoch RSI, Williams %R, Ultimate Oscillator, Bull Power, Bear Power) + 12 moving averages (SMA/EMA 10/20/30/50/100/200). Score = 50 + 50×(buys−sells)/24, mapped to Strong Buy ≥80, Buy ≥60, Neutral ≥40, Sell ≥20, Strong Sell &lt;20. Data: Yahoo Finance daily bars.<br>Sentiment: 1–10 score compiled from the last ~3 days of news headlines for what each ETF tracks (sector news + top holdings for sector funds, company news for single-stock funds). 9–10 very bullish, 7–8.9 bullish, 5.5–6.9 slightly bullish, 4.5–5.4 neutral, 3–4.4 slightly bearish, 1–2.9 bearish.</footer>
 <script>
 let DATA=[];
 const pill=r=>r==="Strong Buy"?"pSB":r==="Buy"?"pB":r==="Neutral"?"pN":r==="Sell"?"pS":"pSS";
@@ -148,12 +147,11 @@ function shortName(n){const m=n.match(/(Exponential|Simple) Moving Average \((\d
 function sentPill(label){return label.indexOf("Bullish")>=0?"pB":label.indexOf("Bearish")>=0?"pS":"pN";}
 function sentSection(t){
   const s=t.sentiment;if(!s)return "";
-  const note=t.direction==="short"?`<p class="dsub" style="margin-top:10px">Note: this is an inverse fund — this score describes the ${s.theme_label.toLowerCase()} it tracks, so bullish news here works against it.</p>`:"";
   return `<div class="dcard dsent" id="sentiment"><h3>News sentiment <span class="dsub">· what the headlines say about ${s.theme_label}</span></h3>
   <div class="dsent-top"><div class="dnum" style="font-size:44px;color:${scoreColor(s.score*10)}">${s.score.toFixed(1)}</div>
   <div><span class="pill ${sentPill(s.label)} big">${s.label}</span><div class="dscore-sub">Compiled from recent headlines · ${s.as_of}</div></div></div>
   <p>${s.summary}</p>
-  <ul class="hl">${s.headlines.map(h=>`<li><b>${h.title}</b><div class="dsub">${h.source} — ${h.why}</div></li>`).join("")}</ul>${note}</div>`;
+  <ul class="hl">${s.headlines.map(h=>`<li><b>${h.title}</b><div class="dsub">${h.source} — ${h.why}</div></li>`).join("")}</ul></div>`;
 }
 function detailHTML(t){
   const sig=i=>`<li><span class="sname">${shortName(i.name)}</span><span class="sval">${i.value.toFixed(2)}</span><span class="pill ${i.action==="Buy"?"pB":i.action==="Sell"?"pS":"pN"}">${i.action}</span></li>`;
@@ -162,7 +160,7 @@ function detailHTML(t){
   const gpct=(c)=>c.buy/(c.buy+c.sell||1)*100||50;
   return `<button id="backbtn" class="backbtn">← All ETFs</button>
   <div class="dtop">
-    <div><div class="dtk">${t.ticker}<span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span> <span class="${t.direction}">${t.direction==="long"?"▲ LONG":"▼ SHORT"}</span></div>
+    <div><div class="dtk">${t.ticker}<span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span> <span class="long">▲ LONG</span></div>
     <div class="dname">${t.name}</div></div>
     <div class="dprice">$${t.price.toFixed(2)}<div>${pc(t.today_pct)} <span class="dsub">today</span></div></div>
   </div>
@@ -200,11 +198,10 @@ function route(){
   showList();
 }
 window.addEventListener("hashchange",route);
-const state={q:"",lev:"all",dir:"all",cat:"all",sort:"score"};
+const state={q:"",lev:"all",cat:"all",sort:"score"};
 function filtered(){
   let r=DATA.filter(t=>{
     if(state.lev!=="all"&&String(t.lev)!==state.lev)return false;
-    if(state.dir!=="all"&&t.direction!==state.dir)return false;
     if(state.cat!=="all"&&t.category!==state.cat)return false;
     if(state.q){const q=state.q.toLowerCase();
       if(!(t.ticker.toLowerCase().includes(q)||t.name.toLowerCase().includes(q)||t.underlying.toLowerCase().includes(q)))return false;}
@@ -217,7 +214,7 @@ function filtered(){
 function render(){
   const rows=filtered();
   document.getElementById("rows").innerHTML=rows.map(t=>`<tr data-t="${t.ticker}">
-    <td><span class="tk">${t.ticker}</span><span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span><br><span class="${t.direction}">${t.direction==="long"?"▲ long":"▼ short"}</span></td>
+    <td><span class="tk">${t.ticker}</span><span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span><br><span class="long">▲ long</span></td>
     <td class="uname">${t.underlying}</td>
     <td class="num">$${t.price.toFixed(2)}</td>
     <td class="num">${pc(t.today_pct)}</td><td class="num">${pc(t.ytd_pct)}</td>
@@ -243,8 +240,7 @@ fetch("data.json").then(r=>r.json()).then(j=>{
     <div class="stat"><div class="k">Top sentiment</div><div class="v">${ts.ticker} <span style="color:${scoreColor(ts.sentiment.score*10)};font-weight:700">${ts.sentiment.score.toFixed(1)}/10</span></div></div>
     <div class="stat"><div class="k">Best today</div><div class="v ${bt.today_pct>=0?"up":"down"}">${bt.ticker} ${bt.today_pct>=0?"+":""}${bt.today_pct.toFixed(2)}%</div></div>
     <div class="stat"><div class="k">Worst today</div><div class="v ${wt.today_pct>=0?"up":"down"}">${wt.ticker} ${wt.today_pct>=0?"+":""}${wt.today_pct.toFixed(2)}%</div></div>`;
-  seg("levseg","lev");seg("dirseg","dir");
-  document.getElementById("q").oninput=e=>{state.q=e.target.value;render();};
+  seg("levseg","lev");  document.getElementById("q").oninput=e=>{state.q=e.target.value;render();};
   document.getElementById("cat").onchange=e=>{state.cat=e.target.value;render();};
   document.getElementById("sort").onchange=e=>{state.sort=e.target.value;render();};
   document.querySelectorAll("th[data-s]").forEach(th=>th.onclick=()=>{state.sort=th.dataset.s;document.getElementById("sort").value=th.dataset.s;render();});
