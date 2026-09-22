@@ -71,6 +71,9 @@ table.mini{font-size:12.5px}table.mini td,table.mini th{padding:6px 8px}
 .dv{font-size:18px;font-weight:700}
 .dgauges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
 .dgauges .g{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px;flex:1;min-width:200px}
+.dgauges .g .dnum{margin:6px 0}
+.sbar{display:flex;height:8px;border-radius:4px;overflow:hidden;margin:10px 0 8px}
+.sbar span{display:block;height:100%}
 .dlists{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:760px){.dlists{grid-template-columns:1fr}}
 .dcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 20px}
@@ -126,22 +129,16 @@ function scoreColor(s){ // 0-100 → red → amber → green
   const c=a.map((v,i)=>Math.round(v+(b[i]-v)*f));
   return `rgb(${c[0]},${c[1]},${c[2]})`;
 }
-function gauge(score,size){
-  size=size||120;const cx=size/2,cy=size/2,R=size/2-8;
-  const pol=(a,r)=>[cx+r*Math.cos(a),cy+r*Math.sin(a)];
-  const arc=(a0,a1,col)=>{const[x0,y0]=pol(a0,R),[x1,y1]=pol(a1,R);
-    return `<path d="M${x0.toFixed(1)},${y0.toFixed(1)} A${R},${R} 0 0 1 ${x1.toFixed(1)},${y1.toFixed(1)}" stroke="${col}" stroke-width="10" fill="none" stroke-linecap="round"/>`;};
-  const a=Math.PI-(score/100)*Math.PI,[nx,ny]=pol(a,R-14);
-  return `<svg width="${size}" height="${size*0.62}" viewBox="0 0 ${size} ${size*0.62}">
-    ${arc(Math.PI,Math.PI*0.72,"#ef5350")}${arc(Math.PI*0.72,Math.PI*0.28,"#787b86")}${arc(Math.PI*0.28,0,"#2962ff")}
-    <line x1="${cx}" y1="${cy}" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}" stroke="#dbe4f3" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="${cx}" cy="${cy}" r="5" fill="#dbe4f3"/></svg>`;
+function scoreCard(title,counts,score,label){
+  const tot=counts.buy+counts.sell+counts.neutral||1;
+  const bp=counts.buy/tot*100,sp=counts.sell/tot*100,np=counts.neutral/tot*100;
+  return `<div class="g"><div class="gl">${title}</div>
+  <div class="dnum" style="font-size:40px;color:${scoreColor(score*10)}">${score.toFixed(1)}<span style="font-size:15px;color:var(--mut);font-weight:400">/10</span></div>
+  <div class="gv ${pill(label)}" style="background:none;padding:0">${label}</div>
+  <div class="sbar"><span style="width:${bp}%;background:#2962ff"></span><span style="width:${np}%;background:#787b86"></span><span style="width:${sp}%;background:#ef5350"></span></div>
+  <div class="gc"><span style="color:#5b8def">Buy ${counts.buy}</span> · <span>Neutral ${counts.neutral}</span> · <span style="color:#ef5350">Sell ${counts.sell}</span></div></div>`;
 }
-function gaugeBlock(title,counts,score,label){
-  return `<div class="g">${gauge(score,130)}
-  <div class="gl">${title}</div><div class="gv ${pill(label)}" style="background:none;padding:0">${label}</div>
-  <div class="gc"><span style="color:#ef5350">Sell ${counts.sell}</span> · <span>Neutral ${counts.neutral}</span> · <span style="color:#5b8def">Buy ${counts.buy}</span></div></div>`;
-}
+function grpScore(c){const tot=c.buy+c.sell+c.neutral||1;return 5+5*(c.buy-c.sell)/tot;}
 const SHORT={"Relative Strength Index (14)":"RSI (14)","Stochastic %K (14, 3, 3)":"Stoch %K (14, 3, 3)","Commodity Channel Index (20)":"CCI (20)","Average Directional Index (14)":"ADX (14)","Awesome Oscillator":"Awesome Osc","Momentum (10)":"Momentum (10)","MACD Level (12, 26)":"MACD (12, 26)","Stochastic RSI Fast (3, 14, 14)":"Stoch RSI Fast","Williams %R (14)":"Williams %R (14)","Ultimate Oscillator (7, 14, 28)":"Ultimate Osc","Bull Power (13)":"Bull Power (13)","Bear Power (13)":"Bear Power (13)"};
 function shortName(n){const m=n.match(/(Exponential|Simple) Moving Average \((\d+)\)/);if(m)return(m[1][0]==="E"?"EMA ":"SMA ")+m[2];return SHORT[n]||n;}
 function sentPill(label){return label.indexOf("Bullish")>=0?"pB":label.indexOf("Bearish")>=0?"pS":"pN";}
@@ -157,7 +154,6 @@ function detailHTML(t){
   const sig=i=>`<li><span class="sname">${shortName(i.name)}</span><span class="sval">${i.value.toFixed(2)}</span><span class="pill ${i.action==="Buy"?"pB":i.action==="Sell"?"pS":"pN"}">${i.action}</span></li>`;
   const met=(k,v)=>`<div class="dm"><div class="dk">${k}</div><div class="dv">${pc(v)}</div></div>`;
   const grp=(c)=>c.buy>c.sell+2?"Buy":c.sell>c.buy+2?"Sell":"Neutral";
-  const gpct=(c)=>c.buy/(c.buy+c.sell||1)*100||50;
   return `<button id="backbtn" class="backbtn">← All ETFs</button>
   <div class="dtop">
     <div><div class="dtk">${t.ticker}<span class="badge ${t.lev===3?"b3":"b2"}">${t.lev}x</span> <span class="long">▲ LONG</span></div>
@@ -170,7 +166,7 @@ function detailHTML(t){
   ${sentSection(t)}
   <div class="dabout"><div><b>Tracks</b><p>${t.blurb}</p></div><div><b>When to use</b><p>${t.use_when}</p></div></div>
   <div class="dmetrics">${met("YTD",t.ytd_pct)}${met("3 months",t.m3_pct)}${met("6 months",t.m6_pct)}${met("1 year",t.y1_pct)}${met("vs 50-day avg",t.vs_sma50_pct)}${met("vs 200-day avg",t.vs_sma200_pct)}</div>
-  <div class="dgauges">${gaugeBlock("Momentum signals",t.osc_counts,gpct(t.osc_counts),grp(t.osc_counts))}${gaugeBlock("Summary",t.sum_counts,t.score,t.rating)}${gaugeBlock("Trend · moving avgs",t.ma_counts,gpct(t.ma_counts),grp(t.ma_counts))}</div>
+  <div class="dgauges">${scoreCard("Momentum signals",t.osc_counts,grpScore(t.osc_counts),grp(t.osc_counts))}${scoreCard("Summary",t.sum_counts,t.score/10,t.rating)}${scoreCard("Trend · moving avgs",t.ma_counts,grpScore(t.ma_counts),grp(t.ma_counts))}</div>
   <div class="dlists">
     <div class="dcard"><h3>Momentum signals</h3><ul class="sig">${t.osc.map(sig).join("")}</ul></div>
     <div class="dcard"><h3>Trend · moving averages</h3><ul class="sig">${t.ma.map(sig).join("")}</ul></div>
