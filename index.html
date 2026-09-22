@@ -339,9 +339,11 @@ function drawChart(){
 }
 function loadHist(cb){
   if(HIST){cb();return;}
-  const msg=()=>{const m=document.getElementById("cmsg");if(m)m.textContent="Chart data unavailable.";};
+  const msgEl=()=>document.getElementById("cmsg");
+  const m0=msgEl();if(m0)m0.textContent="Loading chart data…";
+  const msg=()=>{const m=msgEl();if(m)m.textContent="Chart data unavailable.";};
   fetch("history.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json();})
-    .then(j=>{HIST=j.bars||{};cb();}).catch(msg);
+    .then(j=>{HIST=j.bars||{};const m=msgEl();if(m)m.textContent="";cb();}).catch(msg);
 }
 function initChart(t){
   CH.ticker=t.ticker;CH.style="c";CH.range=0;CH.hover=-1;
