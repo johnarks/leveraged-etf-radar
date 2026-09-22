@@ -223,7 +223,7 @@ function render(){
   document.getElementById("tbl").style.display="";document.getElementById("loading").style.display="none";
 }
 function seg(id,key){document.querySelectorAll("#"+id+" button").forEach(b=>b.onclick=()=>{document.querySelectorAll("#"+id+" button").forEach(x=>x.classList.remove("on"));b.classList.add("on");state[key]=b.dataset.v;render();});}
-fetch("data.json").then(r=>r.json()).then(j=>{
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(j=>{
   DATA=j.tickers;
   document.getElementById("asof").textContent=`${j.count} leveraged ETFs · data as of ${new Date(j.as_of).toLocaleString()} · ${j.note}`;
   const top=[...DATA].sort((a,b)=>b.score-a.score)[0];
