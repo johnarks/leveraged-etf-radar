@@ -36,6 +36,43 @@
    "spy_return_pct": -0.08,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-09-23",
+   "ticker": "TQQQ",
+   "name": "ProShares UltraPro QQQ",
+   "lev": 3,
+   "underlying": "Nasdaq-100",
+   "category": "index",
+   "thesis": "Pick: TQQQ (ProShares UltraPro QQQ, 3x long Nasdaq-100).\n\nWhy TQQQ:\n1. Top-decile composite at 7.50 with clean tech+sentiment agreement \u2014 technical score 77.1 (Buy) and news sentiment 7.3 (Bullish). The 7D trend is 5 up / 2 down and price sits +14.1% above the 50-day average, so the trend is intact without being absurdly extended.\n2. The AI-capex boom thesis still has the tape: record Nasdaq-100 close driven by Meta's Muse App Store breakout (+11% Monday, ~$190B added), Palantir's +11% post-earnings pop, record ASML orders, AMD's 187%-YTD run to new highs. The overnight premarket scan found no material negative shock for broad mega-cap tech \u2014 futures are flat and the semis weakness is profit-taking after Monday's surge, not new news.\n3. Deliberately passed on the higher-composite semis (SOXL 7.80, USD 8.00): Tuesday's semis session was profit-taking, BofA warns chip stocks are ~13% overweight with 10% SOX downside risk, and tomorrow's Trump\u2013Xi meeting covers semiconductor supply chains \u2014 event risk I don't want on a 3x single-theme pick. Also deliberately passed on METU (8.40, yesterday's winner): Meta Connect is today, which is binary single-stock event risk, and the strategy says avoid single-stock picks on binary-event days. TQQQ keeps the Meta/AI exposure (META ~6% of Nasdaq-100 weight) diluted across 100 names.\n4. Strategy says prefer 3x over 2x when conviction is high. The broad-market setup (record highs, intact AI trade, no fresh macro shock) warrants the 3x.\n\nRisks I'm accepting: TQQQ is +14% above its 50DMA with stochastic/Williams oscillators in overbought territory on the underlying \u2014 a continuation fade is possible. 3x daily reset means any intraday reversal gets amplified. The same Trump\u2013Xi headline risk that vetoes SOXL could spill into the broader Nasdaq-100; futures-flat could break either way at the open.\n\nExpectation: The AI-trade momentum carries over from Monday/Tuesday's record run; a small positive day on the Nasdaq-100 gets tripled into a green TQQQ day.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 77.1,
+    "rating": "Buy",
+    "sentiment": 7.3,
+    "composite": 7.5,
+    "today_pct": 2.43,
+    "vs_sma50_pct": 14.14,
+    "trend7": [
+     "up",
+     "up",
+     "up",
+     "up",
+     "up",
+     "down",
+     "down"
+    ],
+    "prev_close": 80.83,
+    "data_as_of": "2026-09-22T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -47,5 +84,5 @@
   "current": "Initial strategy (2026-09-22): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh positive catalyst in the news. Prefer 3x over 2x when conviction is high, since the goal is the best single-day move. Avoid picks where sentiment is strong but technicals are overbought without a trend, and avoid single-stock ETFs on days with binary event risk. This strategy will be reviewed and adjusted daily based on results.",
   "updated": "2026-09-22"
  },
- "updated": "2026-09-22T16:52-04:00"
+ "updated": "2026-09-23T09:18-04:00"
 }
