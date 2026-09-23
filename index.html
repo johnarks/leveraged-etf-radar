@@ -559,7 +559,18 @@ function showPicks(){
 }
 function pickHeroHTML(p){
   const s=p.snapshot||{};
-  const vd=p.verdict==="good"?'<span class="pill pB">✓ Good pick</span>':p.verdict==="miss"?'<span class="pill pS">✗ Miss</span>':'<span class="pill pN">In progress</span>';
+  const so=p.verdict==="stayed_out"||p.status==="stayed_out";
+  const vd=so?'<span class="pill pN">⏸ Stayed out</span>':p.verdict==="good"?'<span class="pill pB">✓ Good pick</span>':p.verdict==="miss"?'<span class="pill pS">✗ Miss</span>':'<span class="pill pN">In progress</span>';
+  if(so){
+    const spy=p.spy_return_pct!=null?`SPY day: <b class="${p.spy_return_pct>=0?"up":"down"}">${p.spy_return_pct>=0?"+":""}${p.spy_return_pct.toFixed(2)}%</b>`:`SPY day: <span class='dsub'>settles at close</span>`;
+    return `<div class="pickhero">
+    <div class="dsub">${escapeHTML(p.date)} · Meta's call for today</div>
+    <h2>⏸ Staying out today ${vd}</h2>
+    <div class="dsub">No position taken — the tape said sit out. Not a win, not a loss.</div>
+    <div class="thesis">${escapeHTML(p.thesis)}</div>
+    <div class="dayline">${spy}</div>
+  </div>`;
+  }
   const chips=[
     s.composite!=null?`Composite <b>${Number(s.composite).toFixed(1)}</b>`:"",
     s.sentiment!=null?`Sentiment <b>${Number(s.sentiment).toFixed(1)}/10</b>`:"",
@@ -585,16 +596,18 @@ function renderPicks(){
   const rec=PICKS.record||{wins:0,losses:0};
   const n=(rec.wins||0)+(rec.losses||0),wr=n?Math.round(rec.wins/n*100):null;
   let h=`<div class="pickhero"><h2>🎯 Leveraged ETF Daily Picks</h2>
-  <div class="dsub">One ETF picked each trading morning at 9 AM ET from scores, technicals, sentiment and holdings — tracked open to close. Record: <b>${rec.wins||0}–${rec.losses||0}</b>${wr===null?"":" · win rate "+wr+"%"}${rec.avg_return_pct==null?"":" · avg day "+(rec.avg_return_pct>=0?"+":"")+Number(rec.avg_return_pct).toFixed(2)+"%"}</div></div>`;
+  <div class="dsub">One ETF picked each trading morning at 9 AM ET from scores, technicals, sentiment and holdings — or a stay-out call when the tape says sit out. Tracked open to close. Record: <b>${rec.wins||0}–${rec.losses||0}</b>${wr===null?"":" · win rate "+wr+"%"}${rec.avg_return_pct==null?"":" · avg day "+(rec.avg_return_pct>=0?"+":"")+Number(rec.avg_return_pct).toFixed(2)+"%"}</div></div>`;
   const latest=ps[ps.length-1];
   h+=latest?pickHeroHTML(latest):'<div class="pickhero"><div class="dsub">No picks yet — the first pick drops at the next 9 AM ET market open.</div></div>';
   const st=PICKS.strategy||{};
   h+=`<div class="strategy"><h3>📈 Current strategy${st.updated?` <span class="dsub">· updated ${escapeHTML(st.updated)}</span>`:""}</h3><div class="thesis">${escapeHTML(st.current||"—")}</div><div class="dsub" style="margin-top:8px">Reviewed every morning against past results and adjusted to improve.</div></div>`;
   h+=`<div class="pickhero"><h3>History</h3><div class="tablewrap"><table class="picktable"><thead><tr><th>Date</th><th>Pick</th><th class="num">Open</th><th class="num">Close</th><th class="num">Day</th><th class="num">SPY</th><th>Result</th></tr></thead><tbody>`;
   ps.map((p,i)=>({p,i})).reverse().forEach(({p,i})=>{
-    const vd=p.verdict==="good"?'<span class="verdict-good">✓ Good</span>':p.verdict==="miss"?'<span class="verdict-miss">✗ Miss</span>':'<span class="dsub">—</span>';
-    h+=`<tr class="pickrow" data-i="${i}"><td>${escapeHTML(p.date)}</td><td><span class="tk">${escapeHTML(p.ticker)}</span> <span class="badge ${p.lev===3?"b3":"b2"}">${p.lev}x</span></td><td class="num">${p.open!=null?"$"+Number(p.open).toFixed(2):"—"}</td><td class="num">${p.close!=null?"$"+Number(p.close).toFixed(2):"—"}</td><td class="num">${p.day_return_pct!=null?pc(p.day_return_pct):"—"}</td><td class="num">${p.spy_return_pct!=null?pc(p.spy_return_pct):"—"}</td><td>${vd}</td></tr>`;
-    h+=`<tr class="thesisrow" id="pthrow-${i}" style="display:none"><td colspan="7"><b>Thesis (${escapeHTML(p.date)} · ${escapeHTML(p.ticker)}):</b><div class="thesis">${escapeHTML(p.thesis||"")}</div>${p.strategy_notes?`<div class="dsub" style="margin-top:6px"><b>Strategy notes:</b> ${escapeHTML(p.strategy_notes)}</div>`:""}</td></tr>`;
+    const so=p.verdict==="stayed_out"||p.status==="stayed_out";
+    const vd=so?'<span class="dsub">⏸ Stayed out</span>':p.verdict==="good"?'<span class="verdict-good">✓ Good</span>':p.verdict==="miss"?'<span class="verdict-miss">✗ Miss</span>':'<span class="dsub">—</span>';
+    const pickcell=so?'<span class="dsub">— stayed out</span>':`<span class="tk">${escapeHTML(p.ticker)}</span> <span class="badge ${p.lev===3?"b3":"b2"}">${p.lev}x</span>`;
+    h+=`<tr class="pickrow" data-i="${i}"><td>${escapeHTML(p.date)}</td><td>${pickcell}</td><td class="num">${p.open!=null?"$"+Number(p.open).toFixed(2):"—"}</td><td class="num">${p.close!=null?"$"+Number(p.close).toFixed(2):"—"}</td><td class="num">${p.day_return_pct!=null?pc(p.day_return_pct):"—"}</td><td class="num">${p.spy_return_pct!=null?pc(p.spy_return_pct):"—"}</td><td>${vd}</td></tr>`;
+    h+=`<tr class="thesisrow" id="pthrow-${i}" style="display:none"><td colspan="7"><b>${so?"Stay-out call":"Thesis"} (${escapeHTML(p.date)}${so?"":" · "+escapeHTML(p.ticker)}):</b><div class="thesis">${escapeHTML(p.thesis||"")}</div>${p.strategy_notes?`<div class="dsub" style="margin-top:6px"><b>Strategy notes:</b> ${escapeHTML(p.strategy_notes)}</div>`:""}</td></tr>`;
   });
   h+=`</tbody></table></div><div class="dsub" style="margin-top:8px">Click a row to read the full thesis.</div></div>`;
   v.innerHTML=h;
