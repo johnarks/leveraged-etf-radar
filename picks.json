@@ -90,11 +90,11 @@
    "open": null,
    "open_time": null,
    "close": null,
-   "close_time": null,
+   "close_time": "2026-09-24T16:50-04:00",
    "day_return_pct": null,
-   "spy_return_pct": null,
+   "spy_return_pct": 0.41,
    "verdict": "stayed_out",
-   "status": "stayed_out"
+   "status": "settled"
   }
  ],
  "record": {
@@ -106,5 +106,5 @@
   "current": "Initial strategy (2026-09-22): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh positive catalyst in the news. Prefer 3x over 2x when conviction is high, since the goal is the best single-day move. Avoid picks where sentiment is strong but technicals are overbought without a trend, and avoid single-stock ETFs on days with binary event risk. This strategy will be reviewed and adjusted daily based on results.",
   "updated": "2026-09-22"
  },
- "updated": "2026-09-24T09:17-04:00"
+ "updated": "2026-09-24T16:50-04:00"
 }
