@@ -73,6 +73,28 @@
    "spy_return_pct": -0.64,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-09-24",
+   "ticker": null,
+   "name": null,
+   "lev": null,
+   "underlying": null,
+   "category": null,
+   "thesis": "Staying out today (Thu 2026-09-24).\n\nMarket sentiment gate (standing directive): the AI Sentiment Pre-Market report for today (posted 9:01 AM ET) scores the tape 34/100, \"Firmly Bearish\". That is well below the 45 override threshold, so the default is no long position.\n\nWhy the default holds \u2014 no strong enough override case:\n1. Overnight macro is broad risk-off, not stock-specific: global bond rout pushed the US 30-year Treasury yield to its highest since 2004; the NY Fed president signaled one more 2026 rate hike; oil jumped above $100 on stalled US-Iran talks with warnings of wider conflict. These hit equities as a class, and a 2x/3x leveraged long amplifies that downside.\n2. The best-scoring names in the universe (PLTU 2x Palantir, score 83.3 / news 8.2; NVDL 2x Nvidia, score 83.3; UCO 2x crude, score 87.5) have no catalyst strong or specific enough to fight the tape. PLTU's Meta AI shopping deal is positive but modest next to a yield rout; NVDA itself snapped a 5-day winning streak after a $300M insider sale, which undercuts NVDL; UCO is a levered oil bet into a geopolitical headline market, not a clean long.\n3. Breadth and hedging signals agree: yesterday's post-close edition flagged the narrowest market breadth since the dot-com peak and soaring Nvidia credit-swap hedging demand. Buying 3x equity beta into that is the opposite of what the tape is doing.\n\nVerdict: I would genuinely rather hold cash than own the best candidate today. A leveraged long into a Firmly Bearish, rate-driven, oil-shock premarket has a poor risk/reward skew \u2014 the upside cases (PLTU deal momentum) are ordinary while the downside scenario (yield spike escalation, Trump-Xi summit surprise) is severe and multiplied by leverage.",
+   "strategy_notes": "",
+   "snapshot": {
+    "data_as_of": "2026-09-23T20:31+00:00",
+    "call": "stay_out"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": "stayed_out",
+   "status": "stayed_out"
   }
  ],
  "record": {
@@ -84,5 +106,5 @@
   "current": "Initial strategy (2026-09-22): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh positive catalyst in the news. Prefer 3x over 2x when conviction is high, since the goal is the best single-day move. Avoid picks where sentiment is strong but technicals are overbought without a trend, and avoid single-stock ETFs on days with binary event risk. This strategy will be reviewed and adjusted daily based on results.",
   "updated": "2026-09-22"
  },
- "updated": "2026-09-23T16:51-04:00"
+ "updated": "2026-09-24T09:17-04:00"
 }
