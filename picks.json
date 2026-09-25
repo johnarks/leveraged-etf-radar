@@ -95,6 +95,43 @@
    "spy_return_pct": 0.41,
    "verdict": "stayed_out",
    "status": "settled"
+  },
+  {
+   "date": "2026-09-25",
+   "ticker": "PLTU",
+   "name": "Direxion Daily PLTR Bull 2X",
+   "lev": 2,
+   "underlying": "Palantir (PLTR)",
+   "category": "single-stock",
+   "thesis": "Pick: PLTU (Direxion Daily PLTR Bull 2X, 2x long Palantir).\n\nWhy PLTU:\n1. Best news sentiment in the entire 65-ETF universe at 8.7/10 (label: Bullish), with fresh, same-day catalyst: Rosenblatt reaffirmed Buy with a $225 target today (Sept 25, +16.8% implied upside) and UBS raised its target to $250 on Sept 15 calling PLTR the best AI enabler. This is a real, dated analyst-driven catalyst \u2014 not recycled optimism.\n2. Technicals agree: 79.2 (near the top of the board), price +34% above the 50-day average, and the 7D trend is 6 up / 1 down \u2014 the cleanest trend among today's candidates. Single-stock 2x means the sentiment edge maps directly onto the price.\n3. Tape support: the AI-infrastructure bid is back this morning (Akamai +21% premarket on the $11.6B Anthropic cloud deal; memory names rallying per the AI Sentiment Pre-Market report), and the market-wide Pre-Market score is 58/100 (Risk-On Tilt) \u2014 above the 45 gate, so a long pick is the default, not an override.\n4. I considered WEBL (3x Dow Jones Internet, 7.1 sentiment, direct AKAM-deal read-through) but its 7D trend is 3 up / 4 down \u2014 fails the strategy's trend requirement. METU (8.2 sentiment) is up 8.86% already today \u2014 pure chase risk. SOXL/TECL have solid technicals but weaker sentiment (6.4\u20136.7) and choppier trends.\n\nRisks I'm accepting: PLTU is +34% above its 50-day average, so it's extended and can snap back hard; a single-stock 2x ETF can gap against me on any PLTR-specific news. Yesterday's FAA-deal headlines show PLTR is headline-sensitive. The Palantir web search returned mostly stale syndicated pieces, so I'm relying on the 8 AM sentiment headlines (Rosenblatt/UBS) as the grounded catalyst \u2014 no invented headlines.\n\nExpectation: AI-infra rotation and today's analyst catalyst carry PLTR into the close for a positive day on PLTU.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 79.2,
+    "rating": "Buy",
+    "sentiment": 8.7,
+    "composite": 8.31,
+    "today_pct": 0.76,
+    "vs_sma50_pct": 33.97,
+    "trend7": [
+     "up",
+     "up",
+     "up",
+     "up",
+     "up",
+     "up",
+     "down"
+    ],
+    "prev_close": 59.75,
+    "data_as_of": "2026-09-24T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -106,5 +143,5 @@
   "current": "Initial strategy (2026-09-22): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh positive catalyst in the news. Prefer 3x over 2x when conviction is high, since the goal is the best single-day move. Avoid picks where sentiment is strong but technicals are overbought without a trend, and avoid single-stock ETFs on days with binary event risk. This strategy will be reviewed and adjusted daily based on results.",
   "updated": "2026-09-22"
  },
- "updated": "2026-09-24T16:50-04:00"
+ "updated": "2026-09-25T09:18-04:00"
 }
