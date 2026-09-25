@@ -1,1 +1,4880 @@
-{"SPY": {"proxy": "SPY", "name": "State Street SPDR S&P 500 ETF", "count": 505, "as_of": "2026-09-22", "items": [{"t": "NVDA", "n": "NVIDIA Corporation", "w": 8.16}, {"t": "AAPL", "n": "Apple Inc.", "w": 7.44}, {"t": "MSFT", "n": "Microsoft Corporation", "w": 5.56}, {"t": "AMZN", "n": "Amazon.com, Inc.", "w": 3.78}, {"t": "GOOGL", "n": "Alphabet Inc.", "w": 3.11}, {"t": "AVGO", "n": "Broadcom Inc.", "w": 2.58}, {"t": "GOOG", "n": "Alphabet Inc.", "w": 2.48}, {"t": "META", "n": "Meta Platforms, Inc.", "w": 2.23}, {"t": "MU", "n": "Micron Technology, Inc.", "w": 1.74}, {"t": "TSLA", "n": "Tesla, Inc.", "w": 1.56}, {"t": "BRK.B", "n": "Berkshire Hathaway Inc.", "w": 1.44}, {"t": "JPM", "n": "JPMorgan Chase & Co.", "w": 1.41}, {"t": "LLY", "n": "Eli Lilly and Company", "w": 1.4}, {"t": "AMD", "n": "Advanced Micro Devices, Inc.", "w": 1.39}, {"t": "XOM", "n": "ExxonMobil Holdings Corporation", "w": 1.02}, {"t": "JNJ", "n": "Johnson & Johnson", "w": 0.99}, {"t": "V", "n": "Visa Inc.", "w": 0.95}, {"t": "INTC", "n": "Intel Corporation", "w": 0.82}, {"t": "WMT", "n": "Walmart Inc.", "w": 0.72}, {"t": "ABBV", "n": "AbbVie Inc.", "w": 0.71}, {"t": "MA", "n": "Mastercard Incorporated", "w": 0.69}, {"t": "CSCO", "n": "Cisco Systems, Inc.", "w": 0.65}, {"t": "CVX", "n": "Chevron Corporation", "w": 0.63}, {"t": "PLTR", "n": "Palantir Technologies Inc.", "w": 0.62}, {"t": "COST", "n": "Costco Wholesale Corporation", "w": 0.6}]}, "QQQ": {"proxy": "QQQ", "name": "Invesco QQQ Trust Series I", "count": 104, "as_of": "2026-09-22", "items": [{"t": "NVDA", "n": "NVIDIA Corporation", "w": 8.52}, {"t": "AAPL", "n": "Apple Inc.", "w": 7.82}, {"t": "MSFT", "n": "Microsoft Corporation", "w": 5.81}, {"t": "MU", "n": "Micron Technology, Inc.", "w": 5.01}, {"t": "AMZN", "n": "Amazon.com, Inc.", "w": 4.32}, {"t": "AMD", "n": "Advanced Micro Devices, Inc.", "w": 3.99}, {"t": "GOOGL", "n": "Alphabet Inc.", "w": 3.22}, {"t": "META", "n": "Meta Platforms, Inc.", "w": 3.12}, {"t": "GOOG", "n": "Alphabet Inc.", "w": 2.97}, {"t": "TSLA", "n": "Tesla, Inc.", "w": 2.88}, {"t": "AVGO", "n": "Broadcom Inc.", "w": 2.68}, {"t": "INTC", "n": "Intel Corporation", "w": 2.39}, {"t": "WMT", "n": "Walmart Inc.", "w": 2.28}, {"t": "CSCO", "n": "Cisco Systems, Inc.", "w": 1.89}, {"t": "PLTR", "n": "Palantir Technologies Inc.", "w": 1.78}, {"t": "COST", "n": "Costco Wholesale Corporation", "w": 1.74}, {"t": "LRCX", "n": "Lam Research Corporation", "w": 1.57}, {"t": "AMAT", "n": "Applied Materials, Inc.", "w": 1.54}, {"t": "NFLX", "n": "Netflix, Inc.", "w": 1.32}, {"t": "PANW", "n": "Palo Alto Networks, Inc.", "w": 1.3}, {"t": "SPCX", "n": "Space Exploration Technologies Corp.", "w": 1.28}, {"t": "SNDK", "n": "Sandisk Corporation", "w": 1.16}, {"t": "TXN", "n": "Texas Instruments Incorporated", "w": 1.06}, {"t": "CRWD", "n": "CrowdStrike Holdings, Inc.", "w": 1.06}, {"t": "KLAC", "n": "KLA Corporation", "w": 1.01}]}, "IWM": {"proxy": "IWM", "name": "iShares Russell 2000 ETF", "count": 1990, "as_of": "2026-09-22", "items": [{"t": "TWST", "n": "Twist Bioscience Corporation", "w": 0.36}, {"t": "MOG.A", "n": "Moog Inc.", "w": 0.34}, {"t": "HUT", "n": "Hut 8 Corp.", "w": 0.33}, {"t": "FROG", "n": "JFrog Ltd.", "w": 0.33}, {"t": "UMBF", "n": "UMB Financial Corporation", "w": 0.33}, {"t": "VSAT", "n": "Viasat, Inc.", "w": 0.32}, {"t": "BTSG", "n": "BrightSpring Health Services, Inc.", "w": 0.31}, {"t": "GKOS", "n": "Glaukos Corporation", "w": 0.31}, {"t": "CYTK", "n": "Cytokinetics, Incorporated", "w": 0.3}, {"t": "SM", "n": "SM Energy Company", "w": 0.3}, {"t": "CTRE", "n": "CareTrust REIT, Inc.", "w": 0.3}, {"t": "TXG", "n": "10x Genomics, Inc.", "w": 0.29}, {"t": "FCFS", "n": "FirstCash Holdings, Inc.", "w": 0.29}, {"t": "ONB", "n": "Old National Bancorp", "w": 0.29}, {"t": "PTGX", "n": "Protagonist Therapeutics, Inc.", "w": 0.29}, {"t": "KRYS", "n": "Krystal Biotech, Inc.", "w": 0.29}, {"t": "EAT", "n": "Brinker International, Inc.", "w": 0.28}, {"t": "RIOT", "n": "Riot Platforms, Inc.", "w": 0.28}, {"t": "IDCC", "n": "InterDigital, Inc.", "w": 0.28}, {"t": "JXN", "n": "Jackson Financial Inc.", "w": 0.28}, {"t": "RHP", "n": "Ryman Hospitality Properties, Inc.", "w": 0.27}, {"t": "TGTX", "n": "TG Therapeutics, Inc.", "w": 0.27}, {"t": "HQY", "n": "HealthEquity, Inc.", "w": 0.26}, {"t": "OSCR", "n": "Oscar Health, Inc.", "w": 0.25}, {"t": "FLR", "n": "Fluor Corporation", "w": 0.25}]}, "DIA": {"proxy": "DIA", "name": "State Street SPDR Dow Jones Industrial Average ETF Trust", "count": 31, "as_of": "2026-09-22", "items": [{"t": "GS", "n": "The Goldman Sachs Group, Inc.", "w": 10.83}, {"t": "CAT", "n": "Caterpillar Inc.", "w": 9.3}, {"t": "MSFT", "n": "Microsoft Corporation", "w": 5.68}, {"t": "AMGN", "n": "Amgen Inc.", "w": 4.43}, {"t": "UNH", "n": "UnitedHealth Group Incorporated", "w": 4.33}, {"t": "TRV", "n": "The Travelers Companies, Inc.", "w": 4.31}, {"t": "V", "n": "Visa Inc.", "w": 4.23}, {"t": "JPM", "n": "JPMorgan Chase & Co.", "w": 4.02}, {"t": "GOOGL", "n": "Alphabet Inc.", "w": 4.02}, {"t": "AAPL", "n": "Apple Inc.", "w": 3.86}, {"t": "SHW", "n": "The Sherwin-Williams Company", "w": 3.69}, {"t": "AXP", "n": "American Express Company", "w": 3.58}, {"t": "HD", "n": "The Home Depot, Inc.", "w": 3.45}, {"t": "JNJ", "n": "Johnson & Johnson", "w": 3.1}, {"t": "AMZN", "n": "Amazon.com, Inc.", "w": 2.92}, {"t": "MCD", "n": "McDonald's Corporation", "w": 2.85}, {"t": "CRM", "n": "Salesforce, Inc.", "w": 2.74}, {"t": "IBM", "n": "International Business Machines Corporation", "w": 2.64}, {"t": "NVDA", "n": "NVIDIA Corporation", "w": 2.56}, {"t": "CVX", "n": "Chevron Corporation", "w": 2.41}, {"t": "HON", "n": "Honeywell International Inc.", "w": 2.37}, {"t": "BA", "n": "The Boeing Company", "w": 2.28}, {"t": "MMM", "n": "3M Company", "w": 1.91}, {"t": "MRK", "n": "Merck & Co., Inc.", "w": 1.69}, {"t": "PG", "n": "The Procter & Gamble Company", "w": 1.68}]}, "MDY": {"proxy": "MDY", "name": "State Street SPDR S&P MIDCAP 400 ETF Trust", "count": 401, "as_of": "2026-09-22", "items": [{"t": "TWLO", "n": "Twilio Inc.", "w": 1.06}, {"t": "ILMN", "n": "Illumina, Inc.", "w": 1.04}, {"t": "P", "n": "Everpure, Inc.", "w": 0.94}, {"t": "OKTA", "n": "Okta, Inc.", "w": 0.88}, {"t": "FTI", "n": "TechnipFMC plc", "w": 0.82}, {"t": "ATI", "n": "ATI Inc.", "w": 0.75}, {"t": "NVT", "n": "nVent Electric plc", "w": 0.73}, {"t": "THC", "n": "Tenet Healthcare Corporation", "w": 0.65}, {"t": "ENTG", "n": "Entegris, Inc.", "w": 0.62}, {"t": "UTHR", "n": "United Therapeutics Corporation", "w": 0.6}, {"t": "CW", "n": "Curtiss-Wright Corporation", "w": 0.6}, {"t": "USFD", "n": "US Foods Holding Corp.", "w": 0.59}, {"t": "XPO", "n": "XPO, Inc.", "w": 0.59}, {"t": "CDE", "n": "Coeur Mining, Inc.", "w": 0.59}, {"t": "RGLD", "n": "Royal Gold, Inc.", "w": 0.58}, {"t": "CRS", "n": "Carpenter Technology Corporation", "w": 0.58}, {"t": "ROKU", "n": "Roku, Inc.", "w": 0.58}, {"t": "RS", "n": "Reliance, Inc.", "w": 0.57}, {"t": "SNX", "n": "TD SYNNEX Corporation", "w": 0.57}, {"t": "WWD", "n": "Woodward, Inc.", "w": 0.55}, {"t": "NTNX", "n": "Nutanix, Inc.", "w": 0.53}, {"t": "ITT", "n": "ITT Inc.", "w": 0.52}, {"t": "MTSI", "n": "MACOM Technology Solutions Holdings, Inc.", "w": 0.52}, {"t": "ROIV", "n": "Roivant Sciences Ltd.", "w": 0.51}]}, "SPHB": {"proxy": "SPHB", "name": "Invesco S&P 500 High Beta ETF", "count": 103, "as_of": "2026-09-22", "items": [{"t": "SNDK", "n": "Sandisk Corporation", "w": 2.75}, {"t": "MRNA", "n": "Moderna, Inc.", "w": 2.27}, {"t": "SMCI", "n": "Super Micro Computer, Inc.", "w": 2.02}, {"t": "MU", "n": "Micron Technology, Inc.", "w": 1.93}, {"t": "COIN", "n": "Coinbase Global, Inc.", "w": 1.9}, {"t": "AMD", "n": "Advanced Micro Devices, Inc.", "w": 1.89}, {"t": "HOOD", "n": "Robinhood Markets, Inc.", "w": 1.86}, {"t": "MRVL", "n": "Marvell Technology, Inc.", "w": 1.77}, {"t": "INTC", "n": "Intel Corporation", "w": 1.6}, {"t": "TER", "n": "Teradyne, Inc.", "w": 1.5}, {"t": "WDC", "n": "Western Digital Corporation", "w": 1.49}, {"t": "LITE", "n": "Lumentum Holdings Inc.", "w": 1.48}, {"t": "COHR", "n": "Coherent Corp.", "w": 1.41}, {"t": "LRCX", "n": "Lam Research Corporation", "w": 1.4}, {"t": "TSLA", "n": "Tesla, Inc.", "w": 1.32}, {"t": "DELL", "n": "Dell Technologies Inc.", "w": 1.31}, {"t": "FLEX", "n": "Flex Ltd.", "w": 1.28}, {"t": "GLW", "n": "Corning Incorporated", "w": 1.24}, {"t": "APP", "n": "AppLovin Corporation", "w": 1.22}, {"t": "FCX", "n": "Freeport-McMoRan Inc.", "w": 1.2}, {"t": "QCOM", "n": "QUALCOMM Incorporated", "w": 1.2}, {"t": "FIX", "n": "Comfort Systems USA, Inc.", "w": 1.2}, {"t": "KLAC", "n": "KLA Corporation", "w": 1.2}, {"t": "VRT", "n": "Vertiv Holdings Co", "w": 1.18}, {"t": "STX", "n": "Seagate Technology Holdings plc", "w": 1.18}]}, "TLT": {"proxy": "TLT", "name": "iShares 20+ Year Treasury Bond ETF", "count": 48, "as_of": "2026-09-22", "items": [{"t": "\u2014", "n": "TREASURY BOND - 4.75 2055-05-15", "w": 4.54}, {"t": "\u2014", "n": "TREASURY BOND - 4.63 2054-05-15", "w": 4.3}, {"t": "\u2014", "n": "TREASURY BOND - 4.13 2053-08-15", "w": 4.21}, {"t": "\u2014", "n": "TREASURY BOND (2OLD) - 4.75 2056-02-15", "w": 4.16}, {"t": "\u2014", "n": "TREASURY BOND - 4.25 2054-02-15", "w": 4.06}, {"t": "\u2014", "n": "TREASURY BOND (OLD) - 5.0 2056-05-15", "w": 4.05}, {"t": "\u2014", "n": "TREASURY BOND - 4.75 2053-11-15", "w": 4.0}, {"t": "\u2014", "n": "TREASURY BOND - 4.25 2054-08-15", "w": 3.97}, {"t": "\u2014", "n": "TREASURY BOND - 4.63 2055-11-15", "w": 3.87}, {"t": "\u2014", "n": "TREASURY BOND - 4.63 2055-02-15", "w": 3.83}, {"t": "\u2014", "n": "TREASURY BOND - 4.5 2054-11-15", "w": 3.82}, {"t": "\u2014", "n": "TREASURY BOND - 1.88 2051-11-15", "w": 3.82}, {"t": "\u2014", "n": "TREASURY BOND - 4.75 2055-08-15", "w": 3.44}, {"t": "\u2014", "n": "TREASURY BOND - 2.0 2051-08-15", "w": 3.27}, {"t": "\u2014", "n": "TREASURY BOND - 3.63 2053-05-15", "w": 3.18}, {"t": "\u2014", "n": "TREASURY BOND - 4.0 2052-11-15", "w": 3.0}, {"t": "\u2014", "n": "TREASURY BOND - 3.0 2048-08-15", "w": 2.76}, {"t": "\u2014", "n": "TREASURY BOND - 3.63 2053-02-15", "w": 2.61}, {"t": "\u2014", "n": "TREASURY BOND - 3.0 2049-02-15", "w": 2.51}, {"t": "\u2014", "n": "TREASURY BOND - 1.88 2051-02-15", "w": 2.49}, {"t": "\u2014", "n": "TREASURY BOND - 3.13 2048-05-15", "w": 2.4}, {"t": "\u2014", "n": "TREASURY BOND - 1.38 2050-08-15", "w": 2.37}, {"t": "\u2014", "n": "TREASURY BOND - 1.63 2050-11-15", "w": 2.24}, {"t": "\u2014", "n": "TREASURY BOND - 3.0 2048-02-15", "w": 2.13}, {"t": "\u2014", "n": "TREASURY BOND - 3.38 2048-11-15", "w": 1.93}]}, "IEF": {"proxy": "IEF", "name": "iShares 7-10 Year Treasury Bond ETF", "count": 17, "as_of": "2026-09-22", "items": [{"t": "\u2014", "n": "TREASURY NOTE (2OLD) - 4.13 2036-02-15", "w": 9.02}, {"t": "\u2014", "n": "TREASURY NOTE - 4.63 2035-02-15", "w": 8.79}, {"t": "\u2014", "n": "TREASURY NOTE - 4.25 2034-11-15", "w": 8.77}, {"t": "\u2014", "n": "TREASURY NOTE - 4.25 2035-05-15", "w": 8.71}, {"t": "\u2014", "n": "TREASURY NOTE - 4.0 2035-11-15", "w": 8.66}, {"t": "\u2014", "n": "TREASURY NOTE (OLD) - 4.38 2036-05-15", "w": 8.65}, {"t": "\u2014", "n": "TREASURY NOTE - 4.38 2034-05-15", "w": 8.46}, {"t": "\u2014", "n": "TREASURY NOTE - 4.0 2034-02-15", "w": 8.42}, {"t": "\u2014", "n": "TREASURY NOTE - 4.25 2035-08-15", "w": 8.29}, {"t": "\u2014", "n": "TREASURY NOTE - 4.5 2033-11-15", "w": 7.05}, {"t": "\u2014", "n": "TREASURY NOTE - 3.88 2034-08-15", "w": 6.97}, {"t": "\u2014", "n": "TREASURY NOTE (OTR) - 4.63 2036-08-15", "w": 3.85}, {"t": "\u2014", "n": "TREASURY NOTE - 3.88 2033-08-15", "w": 3.08}, {"t": "\u2014", "n": "TREASURY BOND - 4.5 2036-02-15", "w": 0.77}, {"t": "\u2014", "n": "TREASURY NOTE - 3.38 2033-05-15", "w": 0.52}, {"t": "\u2014", "n": "BLK CSH FND TREASURY SL AGENCY", "w": 0.0}, {"t": "\u2014", "n": "TREASURY NOTE (OLD) - 4.38 2033-07-31", "w": 0.0}]}, "XLK": {"proxy": "XLK", "name": "State Street Technology Select Sector SPDR ETF", "count": 77, "as_of": "2026-09-22", "items": [{"t": "NVDA", "n": "NVIDIA Corporation", "w": 15.53}, {"t": "AAPL", "n": "Apple Inc.", "w": 14.16}, {"t": "MSFT", "n": "Microsoft Corporation", "w": 10.59}, {"t": "AVGO", "n": "Broadcom Inc.", "w": 4.9}, {"t": "AMD", "n": "Advanced Micro Devices, Inc.", "w": 4.78}, {"t": "MU", "n": "Micron Technology, Inc.", "w": 4.39}, {"t": "INTC", "n": "Intel Corporation", "w": 3.15}, {"t": "CSCO", "n": "Cisco Systems, Inc.", "w": 2.52}, {"t": "PLTR", "n": "Palantir Technologies Inc.", "w": 2.39}, {"t": "LRCX", "n": "Lam Research Corporation", "w": 2.11}, {"t": "AMAT", "n": "Applied Materials, Inc.", "w": 2.06}, {"t": "PANW", "n": "Palo Alto Networks, Inc.", "w": 1.73}, {"t": "SNDK", "n": "Sandisk Corporation", "w": 1.53}, {"t": "ORCL", "n": "Oracle Corporation", "w": 1.49}, {"t": "TXN", "n": "Texas Instruments Incorporated", "w": 1.42}, {"t": "CRWD", "n": "CrowdStrike Holdings, Inc.", "w": 1.41}, {"t": "KLAC", "n": "KLA Corporation", "w": 1.35}, {"t": "IBM", "n": "International Business Machines Corporation", "w": 1.26}, {"t": "MRVL", "n": "Marvell Technology, Inc.", "w": 1.25}, {"t": "ANET", "n": "Arista Networks, Inc.", "w": 1.22}, {"t": "CRM", "n": "Salesforce, Inc.", "w": 1.14}, {"t": "STX", "n": "Seagate Technology Holdings plc", "w": 1.14}, {"t": "APH", "n": "Amphenol Corporation", "w": 1.12}, {"t": "QCOM", "n": "QUALCOMM Incorporated", "w": 1.11}, {"t": "ADI", "n": "Analog Devices, Inc.", "w": 1.07}]}, "SOXX": {"proxy": "SOXX", "name": "iShares Semiconductor ETF", "count": 34, "as_of": "2026-09-22", "items": [{"t": "INTC", "n": "Intel Corporation", "w": 9.23}, {"t": "AMD", "n": "Advanced Micro Devices, Inc.", "w": 9.05}, {"t": "MU", "n": "Micron Technology, Inc.", "w": 8.06}, {"t": "NVDA", "n": "NVIDIA Corporation", "w": 7.66}, {"t": "AVGO", "n": "Broadcom Inc.", "w": 7.35}, {"t": "MRVL", "n": "Marvell Technology, Inc.", "w": 4.39}, {"t": "QCOM", "n": "QUALCOMM Incorporated", "w": 3.97}, {"t": "ADI", "n": "Analog Devices, Inc.", "w": 3.95}, {"t": "TXN", "n": "Texas Instruments Incorporated", "w": 3.89}, {"t": "KLAC", "n": "KLA Corporation", "w": 3.84}, {"t": "AMAT", "n": "Applied Materials, Inc.", "w": 3.69}, {"t": "LRCX", "n": "Lam Research Corporation", "w": 3.64}, {"t": "SKHY", "n": "SK hynix Inc.", "w": 3.32}, {"t": "TSM", "n": "Taiwan Semiconductor Manufacturing Company Limited", "w": 3.05}, {"t": "MPWR", "n": "Monolithic Power Systems, Inc.", "w": 3.04}, {"t": "TER", "n": "Teradyne, Inc.", "w": 3.03}, {"t": "NXPI", "n": "NXP Semiconductors N.V.", "w": 3.02}, {"t": "ALAB", "n": "Astera Labs, Inc.", "w": 2.27}, {"t": "MCHP", "n": "Microchip Technology Incorporated", "w": 2.06}, {"t": "CRDO", "n": "Credo Technology Group Holding Ltd", "w": 1.56}, {"t": "ASML", "n": "ASML Holding N.V.", "w": 1.44}, {"t": "ON", "n": "ON Semiconductor Corporation", "w": 1.42}, {"t": "ENTG", "n": "Entegris, Inc.", "w": 1.14}, {"t": "MTSI", "n": "MACOM Technology Solutions Holdings, Inc.", "w": 1.03}]}, "XLF": {"proxy": "XLF", "name": "State Street Financial Select Sector SPDR ETF", "count": 80, "as_of": "2026-09-22", "items": [{"t": "JPM", "n": "JPMorgan Chase & Co.", "w": 11.87}, {"t": "BRK.B", "n": "Berkshire Hathaway Inc.", "w": 11.86}, {"t": "V", "n": "Visa Inc.", "w": 8.0}, {"t": "MA", "n": "Mastercard Incorporated", "w": 5.82}, {"t": "BAC", "n": "Bank of America Corporation", "w": 4.78}, {"t": "GS", "n": "The Goldman Sachs Group, Inc.", "w": 3.54}, {"t": "WFC", "n": "Wells Fargo & Company", "w": 3.32}, {"t": "MS", "n": "Morgan Stanley", "w": 3.12}, {"t": "C", "n": "Citigroup Inc.", "w": 2.87}, {"t": "SCHW", "n": "The Charles Schwab Corporation", "w": 2.2}, {"t": "AXP", "n": "American Express Company", "w": 2.09}, {"t": "BLK", "n": "BlackRock, Inc.", "w": 1.99}, {"t": "COF", "n": "Capital One Financial Corporation", "w": 1.59}, {"t": "PGR", "n": "The Progressive Corporation", "w": 1.56}, {"t": "SPGI", "n": "S&P Global Inc.", "w": 1.55}, {"t": "CB", "n": "Chubb Limited", "w": 1.5}, {"t": "BNY", "n": "The Bank of New York Mellon Corporation", "w": 1.32}, {"t": "CME", "n": "CME Group Inc.", "w": 1.26}, {"t": "HOOD", "n": "Robinhood Markets, Inc.", "w": 1.24}, {"t": "BX", "n": "Blackstone Inc.", "w": 1.2}, {"t": "USB", "n": "U.S. Bancorp", "w": 1.19}, {"t": "PNC", "n": "The PNC Financial Services Group, Inc.", "w": 1.18}, {"t": "ICE", "n": "Intercontinental Exchange, Inc.", "w": 1.11}, {"t": "MRSH", "n": "Marsh & McLennan Companies, Inc.", "w": 1.05}, {"t": "TRV", "n": "The Travelers Companies, Inc.", "w": 0.98}]}, "XLE": {"proxy": "XLE", "name": "State Street Energy Select Sector SPDR ETF", "count": 24, "as_of": "2026-09-22", "items": [{"t": "XOM", "n": "ExxonMobil Holdings Corporation", "w": 23.09}, {"t": "CVX", "n": "Chevron Corporation", "w": 17.71}, {"t": "COP", "n": "ConocoPhillips", "w": 6.78}, {"t": "MPC", "n": "Marathon Petroleum Corporation", "w": 4.83}, {"t": "VLO", "n": "Valero Energy Corporation", "w": 4.82}, {"t": "PSX", "n": "Phillips 66", "w": 4.75}, {"t": "WMB", "n": "The Williams Companies, Inc.", "w": 4.35}, {"t": "SLB", "n": "SLB N.V.", "w": 3.87}, {"t": "EOG", "n": "EOG Resources, Inc.", "w": 3.86}, {"t": "TRGP", "n": "Targa Resources Corp.", "w": 3.19}, {"t": "KMI", "n": "Kinder Morgan, Inc.", "w": 3.18}, {"t": "OKE", "n": "ONEOK, Inc.", "w": 3.0}, {"t": "BKR", "n": "Baker Hughes Company", "w": 2.9}, {"t": "DVN", "n": "Devon Energy Corporation", "w": 2.73}, {"t": "OXY", "n": "Occidental Petroleum Corporation", "w": 2.19}, {"t": "FANG", "n": "Diamondback Energy, Inc.", "w": 2.01}, {"t": "EQT", "n": "EQT Corporation", "w": 1.59}, {"t": "HAL", "n": "Halliburton Company", "w": 1.43}, {"t": "TPL", "n": "Texas Pacific Land Corporation", "w": 1.05}, {"t": "EXE", "n": "Expand Energy Corporation", "w": 1.03}, {"t": "APA", "n": "APA Corporation", "w": 0.8}]}, "XBI": {"proxy": "XBI", "name": "State Street SPDR S&P Biotech ETF", "count": 167, "as_of": "2026-09-22", "items": [{"t": "TWST", "n": "Twist Bioscience Corporation", "w": 1.91}, {"t": "MRNA", "n": "Moderna, Inc.", "w": 1.63}, {"t": "NTRA", "n": "Natera, Inc.", "w": 1.61}, {"t": "ABBV", "n": "AbbVie Inc.", "w": 1.51}, {"t": "HALO", "n": "Halozyme Therapeutics, Inc.", "w": 1.51}, {"t": "TGTX", "n": "TG Therapeutics, Inc.", "w": 1.5}, {"t": "CRSP", "n": "CRISPR Therapeutics AG", "w": 1.5}, {"t": "SYRE", "n": "Spyre Therapeutics, Inc.", "w": 1.49}, {"t": "ORKA", "n": "Oruka Therapeutics, Inc.", "w": 1.49}, {"t": "GILD", "n": "Gilead Sciences, Inc.", "w": 1.48}, {"t": "BIIB", "n": "Biogen Inc.", "w": 1.47}, {"t": "EXEL", "n": "Exelixis, Inc.", "w": 1.44}, {"t": "INCY", "n": "Incyte Corporation", "w": 1.43}, {"t": "BMRN", "n": "BioMarin Pharmaceutical Inc.", "w": 1.43}, {"t": "AMGN", "n": "Amgen Inc.", "w": 1.42}, {"t": "PTGX", "n": "Protagonist Therapeutics, Inc.", "w": 1.41}, {"t": "UTHR", "n": "United Therapeutics Corporation", "w": 1.4}, {"t": "VRTX", "n": "Vertex Pharmaceuticals Incorporated", "w": 1.4}, {"t": "MDGL", "n": "Madrigal Pharmaceuticals, Inc.", "w": 1.4}, {"t": "REGN", "n": "Regeneron Pharmaceuticals, Inc.", "w": 1.4}, {"t": "PTCT", "n": "PTC Therapeutics, Inc.", "w": 1.39}, {"t": "KRYS", "n": "Krystal Biotech, Inc.", "w": 1.39}, {"t": "ALKS", "n": "Alkermes plc", "w": 1.38}, {"t": "ROIV", "n": "Roivant Sciences Ltd.", "w": 1.37}, {"t": "TVTX", "n": "Travere Therapeutics, Inc.", "w": 1.36}]}, "XRT": {"proxy": "XRT", "name": "State Street SPDR S&P Retail ETF", "count": 76, "as_of": "2026-09-22", "items": [{"t": "GME", "n": "GameStop Corp.", "w": 1.65}, {"t": "EBAY", "n": "eBay Inc.", "w": 1.57}, {"t": "KR", "n": "The Kroger Co.", "w": 1.54}, {"t": "RVLV", "n": "Revolve Group, Inc.", "w": 1.54}, {"t": "BBY", "n": "Best Buy Co., Inc.", "w": 1.53}, {"t": "OLLI", "n": "Ollie's Bargain Outlet Holdings, Inc.", "w": 1.52}, {"t": "ACI", "n": "Albertsons Companies, Inc.", "w": 1.51}, {"t": "BJ", "n": "BJ's Wholesale Club Holdings, Inc.", "w": 1.51}, {"t": "WMK", "n": "Weis Markets, Inc.", "w": 1.5}, {"t": "VSXY", "n": "Victoria's Secret & Co.", "w": 1.49}, {"t": "IMKTA", "n": "Ingles Markets, Incorporated", "w": 1.48}, {"t": "DDS", "n": "Dillard's, Inc.", "w": 1.48}, {"t": "M", "n": "Macy's, Inc.", "w": 1.48}, {"t": "ETSY", "n": "Etsy, Inc.", "w": 1.48}, {"t": "MUSA", "n": "Murphy USA Inc.", "w": 1.47}, {"t": "TJX", "n": "The TJX Companies, Inc.", "w": 1.46}, {"t": "WMT", "n": "Walmart Inc.", "w": 1.46}, {"t": "HZO", "n": "MarineMax, Inc.", "w": 1.46}, {"t": "ROST", "n": "Ross Stores, Inc.", "w": 1.46}, {"t": "AMZN", "n": "Amazon.com, Inc.", "w": 1.46}, {"t": "TGT", "n": "Target Corporation", "w": 1.46}, {"t": "ULTA", "n": "Ulta Beauty, Inc.", "w": 1.45}, {"t": "GO", "n": "Grocery Outlet Holding Corp.", "w": 1.45}, {"t": "PTRN", "n": "Pattern Group Inc.", "w": 1.44}, {"t": "CHWY", "n": "Chewy, Inc.", "w": 1.44}]}, "XLV": {"proxy": "XLV", "name": "State Street Health Care Select Sector SPDR ETF", "count": 64, "as_of": "2026-09-22", "items": [{"t": "LLY", "n": "Eli Lilly and Company", "w": 15.17}, {"t": "JNJ", "n": "Johnson & Johnson", "w": 10.57}, {"t": "ABBV", "n": "AbbVie Inc.", "w": 7.61}, {"t": "MRK", "n": "Merck & Co., Inc.", "w": 6.0}, {"t": "UNH", "n": "UnitedHealth Group Incorporated", "w": 5.52}, {"t": "TMO", "n": "Thermo Fisher Scientific Inc.", "w": 3.96}, {"t": "AMGN", "n": "Amgen Inc.", "w": 3.46}, {"t": "GILD", "n": "Gilead Sciences, Inc.", "w": 3.04}, {"t": "ABT", "n": "Abbott Laboratories", "w": 2.9}, {"t": "PFE", "n": "Pfizer Inc.", "w": 2.57}, {"t": "ISRG", "n": "Intuitive Surgical, Inc.", "w": 2.31}, {"t": "DHR", "n": "Danaher Corporation", "w": 2.2}, {"t": "VRTX", "n": "Vertex Pharmaceuticals Incorporated", "w": 2.11}, {"t": "BMY", "n": "Bristol-Myers Squibb Company", "w": 2.08}, {"t": "MDT", "n": "Medtronic plc", "w": 1.91}, {"t": "CVS", "n": "CVS Health Corporation", "w": 1.82}, {"t": "MCK", "n": "McKesson Corporation", "w": 1.68}, {"t": "SYK", "n": "Stryker Corporation", "w": 1.56}, {"t": "ELV", "n": "Elevance Health, Inc.", "w": 1.44}, {"t": "REGN", "n": "Regeneron Pharmaceuticals, Inc.", "w": 1.27}, {"t": "CI", "n": "The Cigna Group", "w": 1.18}, {"t": "MRNA", "n": "Moderna, Inc.", "w": 1.05}, {"t": "BSX", "n": "Boston Scientific Corporation", "w": 1.03}, {"t": "HCA", "n": "HCA Healthcare, Inc.", "w": 1.02}, {"t": "COR", "n": "Cencora, Inc.", "w": 0.98}]}, "XLRE": {"proxy": "XLRE", "name": "State Street Real Estate Select Sector SPDR ETF", "count": 33, "as_of": "2026-09-22", "items": [{"t": "WELL", "n": "Welltower Inc.", "w": 11.33}, {"t": "PLD", "n": "Prologis, Inc.", "w": 8.71}, {"t": "EQIX", "n": "Equinix, Inc.", "w": 7.04}, {"t": "AMT", "n": "American Tower Corporation", "w": 5.49}, {"t": "CBRE", "n": "CBRE Group, Inc.", "w": 4.61}, {"t": "PSA", "n": "Public Storage", "w": 4.58}, {"t": "SPG", "n": "Simon Property Group, Inc.", "w": 4.55}, {"t": "DLR", "n": "Digital Realty Trust, Inc.", "w": 4.48}, {"t": "VTR", "n": "Ventas, Inc.", "w": 4.42}, {"t": "VMRK", "n": "Vivmark Residential", "w": 4.29}, {"t": "O", "n": "Realty Income Corporation", "w": 4.28}, {"t": "IRM", "n": "Iron Mountain Incorporated", "w": 3.93}, {"t": "CCI", "n": "Crown Castle Inc.", "w": 3.52}, {"t": "EXR", "n": "Extra Space Storage Inc.", "w": 3.28}, {"t": "VICI", "n": "VICI Properties Inc.", "w": 2.99}, {"t": "SBAC", "n": "SBA Communications Corporation", "w": 2.11}, {"t": "ESS", "n": "Essex Property Trust, Inc.", "w": 1.97}, {"t": "HST", "n": "Host Hotels & Resorts, Inc.", "w": 1.73}, {"t": "WY", "n": "Weyerhaeuser Company", "w": 1.71}, {"t": "KIM", "n": "Kimco Realty Corporation", "w": 1.71}, {"t": "INVH", "n": "Invitation Homes Inc.", "w": 1.64}, {"t": "DOC", "n": "Healthpeak Properties, Inc.", "w": 1.61}, {"t": "MAA", "n": "Mid-America Apartment Communities, Inc.", "w": 1.56}, {"t": "REG", "n": "Regency Centers Corporation", "w": 1.37}, {"t": "CSGP", "n": "CoStar Group, Inc.", "w": 1.33}]}, "XPH": {"proxy": "XPH", "name": "State Street SPDR S&P Pharmaceuticals ETF", "count": 65, "as_of": "2026-09-22", "items": [{"t": "AMRX", "n": "Amneal Pharmaceuticals, Inc.", "w": 2.08}, {"t": "ANIP", "n": "ANI Pharmaceuticals, Inc.", "w": 2.06}, {"t": "MANE", "n": "Veradermics, Incorporated", "w": 2.05}, {"t": "XERS", "n": "Xeris Biopharma Holdings, Inc.", "w": 2.04}, {"t": "EWTX", "n": "Edgewise Therapeutics, Inc.", "w": 2.0}, {"t": "VTRS", "n": "Viatris Inc.", "w": 1.97}, {"t": "LLY", "n": "Eli Lilly and Company", "w": 1.96}, {"t": "DFTX", "n": "Definium Therapeutics, Inc.", "w": 1.95}, {"t": "JNJ", "n": "Johnson & Johnson", "w": 1.93}, {"t": "HRMY", "n": "Harmony Biosciences Holdings, Inc.", "w": 1.93}, {"t": "INDV", "n": "Indivior Pharmaceuticals, Inc.", "w": 1.92}, {"t": "OGN", "n": "Organon & Co.", "w": 1.92}, {"t": "INVA", "n": "Innoviva, Inc.", "w": 1.91}, {"t": "AMLX", "n": "Amylyx Pharmaceuticals, Inc.", "w": 1.91}, {"t": "MBX", "n": "MBX Biosciences, Inc.", "w": 1.91}, {"t": "SUPN", "n": "Supernus Pharmaceuticals, Inc.", "w": 1.91}, {"t": "JAZZ", "n": "Jazz Pharmaceuticals plc", "w": 1.91}, {"t": "PFE", "n": "Pfizer Inc.", "w": 1.91}, {"t": "MRK", "n": "Merck & Co., Inc.", "w": 1.91}, {"t": "AXSM", "n": "Axsome Therapeutics, Inc.", "w": 1.89}, {"t": "LGND", "n": "Ligand Pharmaceuticals Incorporated", "w": 1.88}, {"t": "BMY", "n": "Bristol-Myers Squibb Company", "w": 1.87}, {"t": "ZTS", "n": "Zoetis Inc.", "w": 1.86}, {"t": "LQDA", "n": "Liquidia Corporation", "w": 1.85}, {"t": "RPRX", "n": "Royalty Pharma plc", "w": 1.84}]}, "XLY": {"proxy": "XLY", "name": "State Street Consumer Discretionary Select Sector SPDR ETF", "count": 50, "as_of": "2026-09-22", "items": [{"t": "AMZN", "n": "Amazon.com, Inc.", "w": 24.68}, {"t": "TSLA", "n": "Tesla, Inc.", "w": 18.02}, {"t": "HD", "n": "The Home Depot, Inc.", "w": 5.27}, {"t": "MCD", "n": "McDonald's Corporation", "w": 4.02}, {"t": "BKNG", "n": "Booking Holdings Inc.", "w": 3.47}, {"t": "TJX", "n": "The TJX Companies, Inc.", "w": 3.45}, {"t": "SBUX", "n": "Starbucks Corporation", "w": 2.89}, {"t": "LOW", "n": "Lowe's Companies, Inc.", "w": 2.85}, {"t": "GM", "n": "General Motors Company", "w": 2.05}, {"t": "ROST", "n": "Ross Stores, Inc.", "w": 1.94}, {"t": "DASH", "n": "DoorDash, Inc.", "w": 1.93}, {"t": "MAR", "n": "Marriott International, Inc.", "w": 1.92}, {"t": "ORLY", "n": "O'Reilly Automotive, Inc.", "w": 1.84}, {"t": "ABNB", "n": "Airbnb, Inc.", "w": 1.82}, {"t": "HLT", "n": "Hilton Worldwide Holdings Inc.", "w": 1.81}, {"t": "RCL", "n": "Royal Caribbean Cruises Ltd.", "w": 1.63}, {"t": "F", "n": "Ford Motor Company", "w": 1.4}, {"t": "EBAY", "n": "eBay Inc.", "w": 1.31}, {"t": "CVNA", "n": "Carvana Co.", "w": 1.24}, {"t": "AZO", "n": "AutoZone, Inc.", "w": 1.23}, {"t": "GRMN", "n": "Garmin Ltd.", "w": 1.18}, {"t": "NKE", "n": "NIKE, Inc.", "w": 1.14}, {"t": "CMG", "n": "Chipotle Mexican Grill, Inc.", "w": 1.13}, {"t": "YUM", "n": "Yum! Brands, Inc.", "w": 0.98}, {"t": "DHI", "n": "D.R. Horton, Inc.", "w": 0.97}]}, "FDN": {"proxy": "FDN", "name": "First Trust Dow Jones Internet Index Fund", "count": 43, "as_of": "2026-09-22", "items": [{"t": "META", "n": "Meta Platforms, Inc.", "w": 10.18}, {"t": "AMZN", "n": "Amazon.com, Inc.", "w": 10.05}, {"t": "CSCO", "n": "Cisco Systems, Inc.", "w": 8.71}, {"t": "NFLX", "n": "Netflix, Inc.", "w": 5.94}, {"t": "GOOGL", "n": "Alphabet Inc.", "w": 5.86}, {"t": "GOOG", "n": "Alphabet Inc.", "w": 4.67}, {"t": "ANET", "n": "Arista Networks, Inc.", "w": 4.65}, {"t": "CRM", "n": "Salesforce, Inc.", "w": 4.38}, {"t": "BKNG", "n": "Booking Holdings Inc.", "w": 4.31}, {"t": "ORCL", "n": "Oracle Corporation", "w": 4.11}, {"t": "SNOW", "n": "Snowflake Inc.", "w": 3.93}, {"t": "NET", "n": "Cloudflare, Inc.", "w": 3.55}, {"t": "DDOG", "n": "Datadog, Inc.", "w": 2.64}, {"t": "DASH", "n": "DoorDash, Inc.", "w": 2.48}, {"t": "ABNB", "n": "Airbnb, Inc.", "w": 2.38}, {"t": "CIEN", "n": "Ciena Corporation", "w": 1.7}, {"t": "CVNA", "n": "Carvana Co.", "w": 1.6}, {"t": "PYPL", "n": "PayPal Holdings, Inc.", "w": 1.52}, {"t": "EBAY", "n": "eBay Inc.", "w": 1.52}, {"t": "WDAY", "n": "Workday, Inc.", "w": 1.33}, {"t": "VEEV", "n": "Veeva Systems Inc.", "w": 1.32}, {"t": "RBLX", "n": "Roblox Corporation", "w": 1.09}, {"t": "CRWV", "n": "CoreWeave, Inc.", "w": 1.06}, {"t": "TEAM", "n": "Atlassian Corporation", "w": 1.05}, {"t": "OKTA", "n": "Okta, Inc.", "w": 1.04}]}, "KRE": {"proxy": "KRE", "name": "State Street SPDR S&P Regional Banking ETF", "count": 169, "as_of": "2026-09-22", "items": [{"t": "FIBK", "n": "First Interstate BancSystem, Inc.", "w": 1.13}, {"t": "HWC", "n": "Hancock Whitney Corporation", "w": 1.12}, {"t": "FHB", "n": "First Hawaiian, Inc.", "w": 1.12}, {"t": "UBSI", "n": "United Bankshares, Inc.", "w": 1.12}, {"t": "COLB", "n": "Columbia Banking System, Inc.", "w": 1.12}, {"t": "HOMB", "n": "Home BancShares, Inc.", "w": 1.12}, {"t": "FULT", "n": "Fulton Financial Corporation", "w": 1.11}, {"t": "WSFS", "n": "WSFS Financial Corporation", "w": 1.11}, {"t": "BANC", "n": "Banc of California, Inc.", "w": 1.11}, {"t": "EBC", "n": "Eastern Bankshares, Inc.", "w": 1.11}, {"t": "ONB", "n": "Old National Bancorp", "w": 1.11}, {"t": "ABCB", "n": "Ameris Bancorp", "w": 1.11}, {"t": "FBP", "n": "First BanCorp.", "w": 1.11}, {"t": "BKU", "n": "BankUnited, Inc.", "w": 1.1}, {"t": "UCB", "n": "United Community Banks, Inc.", "w": 1.1}, {"t": "EWBC", "n": "East West Bancorp, Inc.", "w": 1.1}, {"t": "VLY", "n": "Valley National Bancorp", "w": 1.1}, {"t": "CFR", "n": "Cullen/Frost Bankers, Inc.", "w": 1.1}, {"t": "AUB", "n": "Atlantic Union Bankshares Corporation", "w": 1.1}, {"t": "BOKF", "n": "BOK Financial Corporation", "w": 1.1}, {"t": "WAL", "n": "Western Alliance Bancorporation", "w": 1.1}, {"t": "FNB", "n": "F.N.B. Corporation", "w": 1.1}, {"t": "NIC", "n": "Nicolet Bankshares, Inc.", "w": 1.1}, {"t": "OZK", "n": "Bank OZK", "w": 1.09}, {"t": "CBSH", "n": "Commerce Bancshares, Inc.", "w": 1.09}]}, "XHB": {"proxy": "XHB", "name": "State Street SPDR S&P Homebuilders ETF", "count": 37, "as_of": "2026-09-22", "items": [{"t": "W", "n": "Wayfair Inc.", "w": 3.34}, {"t": "SKY", "n": "Champion Homes, Inc.", "w": 3.31}, {"t": "MOD", "n": "Modine Manufacturing Company", "w": 3.31}, {"t": "ALLE", "n": "Allegion plc", "w": 3.28}, {"t": "NVR", "n": "NVR, Inc.", "w": 3.24}, {"t": "DHI", "n": "D.R. Horton, Inc.", "w": 3.24}, {"t": "MTH", "n": "Meritage Homes Corporation", "w": 3.23}, {"t": "JCI", "n": "Johnson Controls International plc", "w": 3.22}, {"t": "PHM", "n": "PulteGroup, Inc.", "w": 3.22}, {"t": "WSM", "n": "Williams-Sonoma, Inc.", "w": 3.22}, {"t": "CVCO", "n": "Cavco Industries, Inc.", "w": 3.22}, {"t": "TOL", "n": "Toll Brothers, Inc.", "w": 3.22}, {"t": "MAS", "n": "Masco Corporation", "w": 3.2}, {"t": "SN", "n": "SharkNinja, Inc.", "w": 3.2}, {"t": "SSD", "n": "Simpson Manufacturing Co., Inc.", "w": 3.16}, {"t": "LOW", "n": "Lowe's Companies, Inc.", "w": 3.16}, {"t": "HD", "n": "The Home Depot, Inc.", "w": 3.15}, {"t": "TT", "n": "Trane Technologies plc", "w": 3.15}, {"t": "OC", "n": "Owens Corning", "w": 3.14}, {"t": "WMS", "n": "Advanced Drainage Systems, Inc.", "w": 3.12}, {"t": "LII", "n": "Lennox International Inc.", "w": 3.12}, {"t": "MHO", "n": "M/I Homes, Inc.", "w": 3.1}, {"t": "KBH", "n": "KB Home", "w": 3.09}, {"t": "BLDR", "n": "Builders FirstSource, Inc.", "w": 3.09}, {"t": "LEN", "n": "Lennar Corporation", "w": 3.09}]}, "XOP": {"proxy": "XOP", "name": "State Street SPDR S&P Oil & Gas Exploration & Production ETF", "count": 54, "as_of": "2026-09-22", "items": [{"t": "DINO", "n": "HF Sinclair Corporation", "w": 2.89}, {"t": "MPC", "n": "Marathon Petroleum Corporation", "w": 2.87}, {"t": "VLO", "n": "Valero Energy Corporation", "w": 2.87}, {"t": "PSX", "n": "Phillips 66", "w": 2.83}, {"t": "DK", "n": "Delek US Holdings, Inc.", "w": 2.8}, {"t": "PARR", "n": "Par Pacific Holdings, Inc.", "w": 2.74}, {"t": "PBF", "n": "PBF Energy Inc.", "w": 2.72}, {"t": "APA", "n": "APA Corporation", "w": 2.7}, {"t": "XOM", "n": "ExxonMobil Holdings Corporation", "w": 2.69}, {"t": "DVN", "n": "Devon Energy Corporation", "w": 2.68}, {"t": "EOG", "n": "EOG Resources, Inc.", "w": 2.65}, {"t": "CVX", "n": "Chevron Corporation", "w": 2.64}, {"t": "CRGY", "n": "Crescent Energy Company", "w": 2.63}, {"t": "SM", "n": "SM Energy Company", "w": 2.63}, {"t": "MUR", "n": "Murphy Oil Corporation", "w": 2.62}, {"t": "OVV", "n": "Ovintiv Inc.", "w": 2.61}, {"t": "CHRD", "n": "Chord Energy Corporation", "w": 2.61}, {"t": "COP", "n": "ConocoPhillips", "w": 2.61}, {"t": "PR", "n": "Permian Resources Corporation", "w": 2.6}, {"t": "OXY", "n": "Occidental Petroleum Corporation", "w": 2.59}, {"t": "FANG", "n": "Diamondback Energy, Inc.", "w": 2.56}, {"t": "TPL", "n": "Texas Pacific Land Corporation", "w": 2.54}, {"t": "MTDR", "n": "Matador Resources Company", "w": 2.53}, {"t": "VNOM", "n": "Viper Energy, Inc.", "w": 2.52}, {"t": "RRC", "n": "Range Resources Corporation", "w": 2.48}]}, "XLI": {"proxy": "XLI", "name": "State Street Industrial Select Sector SPDR ETF", "count": 86, "as_of": "2026-09-22", "items": [{"t": "CAT", "n": "Caterpillar Inc.", "w": 6.88}, {"t": "GE", "n": "GE Aerospace", "w": 6.03}, {"t": "RTX", "n": "RTX Corporation", "w": 4.84}, {"t": "GEV", "n": "GE Vernova Inc.", "w": 4.63}, {"t": "DE", "n": "Deere & Company", "w": 3.18}, {"t": "UNP", "n": "Union Pacific Corporation", "w": 3.07}, {"t": "ETN", "n": "Eaton Corporation plc", "w": 3.05}, {"t": "BA", "n": "The Boeing Company", "w": 2.9}, {"t": "UBER", "n": "Uber Technologies, Inc.", "w": 2.66}, {"t": "PH", "n": "Parker-Hannifin Corporation", "w": 2.2}, {"t": "LMT", "n": "Lockheed Martin Corporation", "w": 2.0}, {"t": "ADP", "n": "Automatic Data Processing, Inc.", "w": 1.99}, {"t": "VRT", "n": "Vertiv Holdings Co", "w": 1.78}, {"t": "PWR", "n": "Quanta Services, Inc.", "w": 1.77}, {"t": "TT", "n": "Trane Technologies plc", "w": 1.75}, {"t": "HWM", "n": "Howmet Aerospace Inc.", "w": 1.69}, {"t": "GD", "n": "General Dynamics Corporation", "w": 1.66}, {"t": "CSX", "n": "CSX Corporation", "w": 1.61}, {"t": "JCI", "n": "Johnson Controls International plc", "w": 1.6}, {"t": "MMM", "n": "3M Company", "w": 1.58}, {"t": "EMR", "n": "Emerson Electric Co.", "w": 1.55}, {"t": "WM", "n": "Waste Management, Inc.", "w": 1.45}, {"t": "BE", "n": "Bloom Energy Corporation", "w": 1.45}, {"t": "UPS", "n": "United Parcel Service, Inc.", "w": 1.37}, {"t": "CMI", "n": "Cummins Inc.", "w": 1.36}]}, "XLP": {"proxy": "XLP", "name": "State Street Consumer Staples Select Sector SPDR ETF", "count": 37, "as_of": "2026-09-22", "items": [{"t": "WMT", "n": "Walmart Inc.", "w": 10.54}, {"t": "COST", "n": "Costco Wholesale Corporation", "w": 8.8}, {"t": "KO", "n": "The Coca-Cola Company", "w": 7.57}, {"t": "PG", "n": "The Procter & Gamble Company", "w": 7.54}, {"t": "PM", "n": "Philip Morris International Inc.", "w": 6.51}, {"t": "MO", "n": "Altria Group, Inc.", "w": 4.58}, {"t": "TGT", "n": "Target Corporation", "w": 4.49}, {"t": "CL", "n": "Colgate-Palmolive Company", "w": 4.44}, {"t": "MDLZ", "n": "Mondelez International, Inc.", "w": 4.36}, {"t": "PEP", "n": "PepsiCo, Inc.", "w": 4.24}, {"t": "MNST", "n": "Monster Beverage Corporation", "w": 4.07}, {"t": "KDP", "n": "Keurig Dr Pepper Inc.", "w": 2.68}, {"t": "ADM", "n": "Archer-Daniels-Midland Company", "w": 2.62}, {"t": "SYY", "n": "Sysco Corporation", "w": 2.41}, {"t": "KR", "n": "The Kroger Co.", "w": 2.18}, {"t": "KVUE", "n": "Kenvue Inc.", "w": 2.15}, {"t": "KMB", "n": "Kimberly-Clark Corporation", "w": 2.07}, {"t": "DG", "n": "Dollar General Corporation", "w": 1.72}, {"t": "HSY", "n": "The Hershey Company", "w": 1.58}, {"t": "EL", "n": "The Est\u00e9e Lauder Companies Inc.", "w": 1.47}, {"t": "CHD", "n": "Church & Dwight Co., Inc.", "w": 1.43}, {"t": "CASY", "n": "Casey's General Stores, Inc.", "w": 1.41}, {"t": "DLTR", "n": "Dollar Tree, Inc.", "w": 1.37}, {"t": "KHC", "n": "The Kraft Heinz Company", "w": 1.35}, {"t": "GIS", "n": "General Mills, Inc.", "w": 1.24}]}, "GDX": {"proxy": "GDX", "name": "VanEck Gold Miners ETF", "count": 62, "as_of": "2026-09-22", "items": [{"t": "NEM", "n": "Newmont Corporation", "w": 10.91}, {"t": "TSX: AEM", "n": "Agnico Eagle Mines Limited", "w": 10.89}, {"t": "TSX: ABX", "n": "Barrick Mining Corporation", "w": 7.44}, {"t": "TSX: WPM", "n": "Wheaton Precious Metals Corp.", "w": 5.98}, {"t": "AU", "n": "AngloGold Ashanti plc", "w": 5.02}, {"t": "TSX: FNV", "n": "Franco-Nevada Corporation", "w": 4.92}, {"t": "TSX: K", "n": "Kinross Gold Corporation", "w": 4.17}, {"t": "\u2014", "n": "Gold Fields Ltd ADR", "w": 4.13}, {"t": "TSX: PAAS", "n": "Pan American Silver Corp.", "w": 2.59}, {"t": "ASX: NST", "n": "Northern Star Resources Limited", "w": 2.44}, {"t": "CDE", "n": "Coeur Mining, Inc.", "w": 2.29}, {"t": "RGLD", "n": "Royal Gold, Inc.", "w": 1.93}, {"t": "TSX: AGI", "n": "Alamos Gold Inc.", "w": 1.75}, {"t": "EQX", "n": "Equinox Gold Corp.", "w": 1.65}, {"t": "ASX: EVN", "n": "Evolution Mining Limited", "w": 1.48}, {"t": "TSX: ELD", "n": "Eldorado Gold Corporation", "w": 1.4}, {"t": "BMV: PE&OLES", "n": "Industrias Pe\u00f1oles, S.A.B. de C.V.", "w": 1.39}, {"t": "TSX: EDV", "n": "Endeavour Mining plc", "w": 1.39}, {"t": "TSX: IMG", "n": "IAMGOLD Corporation", "w": 1.38}, {"t": "HL", "n": "Hecla Mining Company", "w": 1.34}, {"t": "TSX: AG", "n": "First Majestic Silver Corp.", "w": 1.29}, {"t": "TSX: GMIN", "n": "G Mining Ventures Corp.", "w": 1.18}, {"t": "\u2014", "n": "Harmony Gold Mining Co Ltd ADR", "w": 1.11}, {"t": "HKG: 2259", "n": "Zijin Gold International Company Limited", "w": 1.09}, {"t": "LON: FRES", "n": "Fresnillo plc", "w": 1.08}]}, "GDXJ": {"proxy": "GDXJ", "name": "VanEck Junior Gold Miners ETF", "count": 161, "as_of": "2026-09-22", "items": [{"t": "EQX", "n": "Equinox Gold Corp.", "w": 7.11}, {"t": "TSX: AGI", "n": "Alamos Gold Inc.", "w": 5.88}, {"t": "TSX: EDV", "n": "Endeavour Mining plc", "w": 5.43}, {"t": "ASX: EVN", "n": "Evolution Mining Limited", "w": 5.3}, {"t": "CDE", "n": "Coeur Mining, Inc.", "w": 5.05}, {"t": "BMV: PE&OLES", "n": "Industrias Pe\u00f1oles, S.A.B. de C.V.", "w": 2.7}, {"t": "TSX: IMG", "n": "IAMGOLD Corporation", "w": 2.67}, {"t": "HL", "n": "Hecla Mining Company", "w": 2.59}, {"t": "TSX: AG", "n": "First Majestic Silver Corp.", "w": 2.5}, {"t": "TSX: ELD", "n": "Eldorado Gold Corporation", "w": 2.43}, {"t": "\u2014", "n": "Harmony Gold Mining Co Ltd ADR", "w": 2.16}, {"t": "TSX: GMIN", "n": "G Mining Ventures Corp.", "w": 1.94}, {"t": "TSX: LUG", "n": "Lundin Gold Inc.", "w": 1.88}, {"t": "TSX: DPM", "n": "DPM Metals Inc.", "w": 1.82}, {"t": "TSX: BTO", "n": "B2Gold Corp.", "w": 1.77}, {"t": "\u2014", "n": "Discovery Mining Ltd Common Stock", "w": 1.67}, {"t": "TSX: OGC", "n": "OceanaGold Corporation", "w": 1.66}, {"t": "SSRM", "n": "SSR Mining Inc.", "w": 1.64}, {"t": "BVN", "n": "Compa\u00f1\u00eda de Minas Buenaventura S.A.A.", "w": 1.42}, {"t": "TSX: OR", "n": "OR Royalties Inc.", "w": 1.3}, {"t": "ASX: PRU", "n": "Perseus Mining Limited", "w": 1.29}, {"t": "HKG: 1818", "n": "Zhaojin Mining Industry Company Limited", "w": 1.22}, {"t": "\u2014", "n": "Montage Gold Corp Common Stock", "w": 1.15}, {"t": "TSXV: ARTG", "n": "Artemis Gold Inc.", "w": 1.15}, {"t": "TSX: KNT", "n": "K92 Mining Inc.", "w": 1.12}]}, "USO": {"proxy": "USO", "name": "United States Oil Fund LP", "count": 24, "as_of": "2026-09-22", "items": [{"t": "\u2014", "n": "Crude Oil Future Nov 26", "w": 47.81}, {"t": "\u2014", "n": "Cash", "w": 8.26}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 5.36}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 5.36}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 4.03}, {"t": "\u2014", "n": "Trs Macquarie Mqcp361e 07212026", "w": 4.03}, {"t": "\u2014", "n": "Trs Soc Gen Sgixcwti 06182026", "w": 3.69}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 2.98}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 2.7}, {"t": "\u2014", "n": "Bny Cash Reserve", "w": 2.68}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 2.17}, {"t": "\u2014", "n": "Drey Inst Pref Gov Mm Inst 6546", "w": 1.93}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.89}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.76}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.76}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.63}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.35}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.34}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.34}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.34}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.22}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 0.95}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 0.81}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 0.23}]}, "UNG": {"proxy": "UNG", "name": "United States Natural Gas Fund LP", "count": 16, "as_of": "2026-09-22", "items": [{"t": "\u2014", "n": "Future on Natural Gas", "w": 45.36}, {"t": "\u2014", "n": "Drey Inst Pref Gov Mm Inst 6546", "w": 13.12}, {"t": "\u2014", "n": "Cash", "w": 9.1}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 6.51}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 6.51}, {"t": "\u2014", "n": "Trs Soc Gen Sgixcng1 03262026", "w": 4.72}, {"t": "\u2014", "n": "Bny Cash Reserve", "w": 4.58}, {"t": "\u2014", "n": "Trs Scotia Snovng1 08312026", "w": 4.57}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 2.34}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 2.34}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 2.07}, {"t": "\u2014", "n": "Morgan Stanley Liq Govt Inst 8302", "w": 2.04}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.88}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.88}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 1.41}, {"t": "\u2014", "n": "United States Treasury Bills 0%", "w": 0.94}]}, "EWZ": {"proxy": "EWZ", "name": "iShares MSCI Brazil ETF", "count": 51, "as_of": "2026-09-22", "items": [{"t": "BVMF: VALE3", "n": "Vale S.A.", "w": 9.29}, {"t": "NU", "n": "Nu Holdings Ltd.", "w": 8.6}, {"t": "BVMF: ITUB4", "n": "Ita\u00fa Unibanco Holding S.A.", "w": 7.98}, {"t": "BVMF: PETR4", "n": "Petr\u00f3leo Brasileiro S.A. - Petrobras", "w": 7.36}, {"t": "BVMF: PETR3", "n": "Petr\u00f3leo Brasileiro S.A. - Petrobras", "w": 6.85}, {"t": "BVMF: BBDC4", "n": "Banco Bradesco S.A.", "w": 3.67}, {"t": "BVMF: B3SA3", "n": "B3 S.A. - Brasil, Bolsa, Balc\u00e3o", "w": 3.54}, {"t": "BVMF: WEGE3", "n": "WEG S.A.", "w": 3.32}, {"t": "BVMF: AXIA3", "n": "AXIA Energia SA", "w": 3.16}, {"t": "BVMF: BPAC11", "n": "Banco BTG Pactual S.A.", "w": 2.84}, {"t": "BVMF: ABEV3", "n": "Ambev S.A.", "w": 2.8}, {"t": "BVMF: EMBJ3", "n": "Embraer S.A.", "w": 2.65}, {"t": "BVMF: SBSP3", "n": "Companhia de Saneamento B\u00e1sico do Estado de S\u00e3o Paulo - SABESP", "w": 2.59}, {"t": "BVMF: ITSA4", "n": "Ita\u00fasa S.A.", "w": 2.48}, {"t": "BVMF: PRIO3", "n": "Prio S.A.", "w": 2.04}, {"t": "BVMF: EQTL3", "n": "Equatorial S.A.", "w": 1.85}, {"t": "BVMF: VBBR3", "n": "Vibra Energia S.A.", "w": 1.74}, {"t": "XP", "n": "XP Inc.", "w": 1.57}, {"t": "BVMF: BBAS3", "n": "Banco do Brasil S.A.", "w": 1.56}, {"t": "BVMF: GGBR4", "n": "Gerdau S.A.", "w": 1.35}, {"t": "BVMF: SUZB3", "n": "Suzano S.A.", "w": 1.33}, {"t": "BVMF: RENT3", "n": "Localiza Rent a Car S.A.", "w": 1.32}, {"t": "\u2014", "n": "BRL CASH", "w": 1.23}, {"t": "BVMF: UGPA3", "n": "Ultrapar Participa\u00e7\u00f5es S.A.", "w": 1.23}, {"t": "BVMF: RDOR3", "n": "Rede D'Or S\u00e3o Luiz S.A.", "w": 1.19}]}, "FXI": {"proxy": "FXI", "name": "iShares China Large-Cap ETF", "count": 60, "as_of": "2026-09-22", "items": [{"t": "HKG: 9988", "n": "Alibaba Group Holding Limited", "w": 9.2}, {"t": "HKG: 0939", "n": "China Construction Bank Corporation", "w": 8.9}, {"t": "HKG: 0700", "n": "Tencent Holdings Limited", "w": 8.85}, {"t": "HKG: 1398", "n": "Industrial and Commercial Bank of China Limited", "w": 6.24}, {"t": "HKG: 1810", "n": "Xiaomi Corporation", "w": 4.73}, {"t": "HKG: 3988", "n": "Bank of China Limited", "w": 4.45}, {"t": "HKG: 3690", "n": "Meituan", "w": 4.41}, {"t": "HKG: 9999", "n": "NetEase, Inc.", "w": 3.74}, {"t": "HKG: 2318", "n": "Ping An Insurance (Group) Company of China, Ltd.", "w": 3.61}, {"t": "HKG: 1211", "n": "BYD Company Limited", "w": 3.39}, {"t": "HKG: 9618", "n": "JD.com, Inc.", "w": 2.91}, {"t": "HKG: 2628", "n": "China Life Insurance Company Limited", "w": 2.47}, {"t": "HKG: 2899", "n": "Zijin Mining Group Company Limited", "w": 2.3}, {"t": "HKG: 0857", "n": "PetroChina Company Limited", "w": 2.23}, {"t": "HKG: 3968", "n": "China Merchants Bank Co., Ltd.", "w": 2.19}, {"t": "HKG: 9961", "n": "Trip.com Group Limited", "w": 2.18}, {"t": "HKG: 9888", "n": "Baidu, Inc.", "w": 2.07}, {"t": "HKG: 6160", "n": "BeOne Medicines AG", "w": 1.95}, {"t": "HKG: 1088", "n": "China Shenhua Energy Company Limited", "w": 1.7}, {"t": "HKG: 1288", "n": "Agricultural Bank of China Limited", "w": 1.53}, {"t": "HKG: 2328", "n": "PICC Property and Casualty Company Limited", "w": 1.31}, {"t": "HKG: 3750", "n": "Contemporary Amperex Technology Co., Limited", "w": 1.22}, {"t": "HKG: 9992", "n": "Pop Mart International Group Limited", "w": 1.18}, {"t": "HKG: 0386", "n": "China Petroleum & Chemical Corporation", "w": 1.14}, {"t": "HKG: 2020", "n": "ANTA Sports Products Limited", "w": 1.0}]}, "INDA": {"proxy": "INDA", "name": "iShares MSCI India ETF", "count": 173, "as_of": "2026-09-22", "items": [{"t": "NSE: HDFCBANK", "n": "HDFC Bank Limited", "w": 6.61}, {"t": "NSE: ICICIBANK", "n": "ICICI Bank Limited", "w": 5.64}, {"t": "NSE: RELIANCE", "n": "Reliance Industries Limited", "w": 5.41}, {"t": "NSE: BHARTIARTL", "n": "Bharti Airtel Limited", "w": 4.08}, {"t": "\u2014", "n": "BLK CSH FND TREASURY SL AGENCY", "w": 3.83}, {"t": "\u2014", "n": "INR CASH", "w": 2.7}, {"t": "NSE: INFY", "n": "Infosys Limited", "w": 2.45}, {"t": "NSE: AXISBANK", "n": "Axis Bank Limited", "w": 2.29}, {"t": "NSE: M&M", "n": "Mahindra & Mahindra Limited", "w": 2.04}, {"t": "NSE: LT", "n": "Larsen & Toubro Limited", "w": 2.01}, {"t": "NSE: BAJFINANCE", "n": "Bajaj Finance Limited", "w": 1.99}, {"t": "NSE: KOTAKBANK", "n": "Kotak Mahindra Bank Limited", "w": 1.73}, {"t": "NSE: SBIN", "n": "State Bank of India", "w": 1.41}, {"t": "NSE: TCS", "n": "Tata Consultancy Services Limited", "w": 1.31}, {"t": "NSE: TITAN", "n": "Titan Company Limited", "w": 1.31}, {"t": "NSE: SUNPHARMA", "n": "Sun Pharmaceutical Industries Limited", "w": 1.27}, {"t": "NSE: ETERNAL", "n": "Eternal Limited", "w": 1.2}, {"t": "NSE: MARUTI", "n": "Maruti Suzuki India Limited", "w": 1.1}, {"t": "NSE: SHRIRAMFIN", "n": "Shriram Finance Limited", "w": 1.09}, {"t": "NSE: NTPC", "n": "NTPC Limited", "w": 1.08}, {"t": "NSE: TATASTEEL", "n": "Tata Steel Limited", "w": 1.07}, {"t": "NSE: BEL", "n": "Bharat Electronics Limited", "w": 1.05}, {"t": "NSE: HINDUNILVR", "n": "Hindustan Unilever Limited", "w": 1.05}, {"t": "NSE: HINDALCO", "n": "Hindalco Industries Limited", "w": 0.98}, {"t": "NSE: ULTRACEMCO", "n": "UltraTech Cement Limited", "w": 0.87}]}, "EWY": {"proxy": "EWY", "name": "iShares MSCI South Korea ETF", "count": 89, "as_of": "2026-09-22", "items": [{"t": "KRX: 000660", "n": "SK hynix Inc.", "w": 24.54}, {"t": "KRX: 005930", "n": "Samsung Electronics Co., Ltd.", "w": 21.97}, {"t": "\u2014", "n": "KRW CASH", "w": 3.1}, {"t": "KRX: 402340", "n": "SK Square Co., Ltd.", "w": 2.93}, {"t": "KRX: 009150", "n": "Samsung Electro-Mechanics Co., Ltd.", "w": 2.49}, {"t": "KRX: 105560", "n": "KB Financial Group Inc.", "w": 1.98}, {"t": "KRX: 055550", "n": "Shinhan Financial Group Co., Ltd.", "w": 1.61}, {"t": "KRX: 005380", "n": "Hyundai Motor Company", "w": 1.53}, {"t": "KRX: 086790", "n": "Hana Financial Group Inc.", "w": 1.32}, {"t": "KRX: 034020", "n": "Doosan Enerbility Co., Ltd.", "w": 1.3}, {"t": "KRX: 012450", "n": "Hanwha Aerospace Co., Ltd.", "w": 1.26}, {"t": "KRX: 006400", "n": "Samsung SDI Co., Ltd.", "w": 1.19}, {"t": "KRX: 035420", "n": "NAVER Corporation", "w": 1.08}, {"t": "KRX: 028260", "n": "Samsung C&T Corporation", "w": 1.07}, {"t": "KRX: 068270", "n": "Celltrion, Inc.", "w": 1.05}, {"t": "KRX: 000270", "n": "Kia Corporation", "w": 1.03}, {"t": "KRX: 316140", "n": "Woori Financial Group Inc.", "w": 0.99}, {"t": "KRX: 032830", "n": "Samsung Life Insurance Co., Ltd.", "w": 0.91}, {"t": "KRX: 066570", "n": "LG Electronics Inc.", "w": 0.89}, {"t": "KRX: 005490", "n": "POSCO Holdings Inc.", "w": 0.87}, {"t": "KRX: 000810", "n": "Samsung Fire & Marine Insurance Co., Ltd.", "w": 0.85}, {"t": "KRX: 012330", "n": "Hyundai Mobis Co.,Ltd", "w": 0.84}, {"t": "KRX: 373220", "n": "LG Energy Solution, Ltd.", "w": 0.75}, {"t": "KRX: 033780", "n": "KT&G Corporation", "w": 0.74}, {"t": "KRX: 207940", "n": "Samsung Biologics Co.,Ltd.", "w": 0.73}]}, "EEM": {"proxy": "EEM", "name": "iShares MSCI Emerging Markets ETF", "count": 1214, "as_of": "2026-09-22", "items": [{"t": "TPE: 2330", "n": "Taiwan Semiconductor Manufacturing Company Limited", "w": 15.44}, {"t": "KRX: 005930", "n": "Samsung Electronics Co., Ltd.", "w": 7.14}, {"t": "KRX: 000660", "n": "SK hynix Inc.", "w": 6.0}, {"t": "HKG: 0700", "n": "Tencent Holdings Limited", "w": 2.65}, {"t": "HKG: 9988", "n": "Alibaba Group Holding Limited", "w": 1.89}, {"t": "TPE: 2454", "n": "MediaTek Inc.", "w": 1.73}, {"t": "\u2014", "n": "SAMSUNG ELECTRONICS NON VOTING PRE", "w": 0.92}, {"t": "TPE: 2308", "n": "Delta Electronics, Inc.", "w": 0.86}, {"t": "HKG: 0939", "n": "China Construction Bank Corporation", "w": 0.83}, {"t": "TPE: 2317", "n": "Hon Hai Precision Industry Co., Ltd.", "w": 0.78}, {"t": "NSE: HDFCBANK", "n": "HDFC Bank Limited", "w": 0.7}, {"t": "NSE: RELIANCE", "n": "Reliance Industries Limited", "w": 0.6}, {"t": "NSE: ICICIBANK", "n": "ICICI Bank Limited", "w": 0.59}, {"t": "KRX: 402340", "n": "SK Square Co., Ltd.", "w": 0.58}, {"t": "TPE: 3711", "n": "ASE Technology Holding Co., Ltd.", "w": 0.54}, {"t": "HKG: 1398", "n": "Industrial and Commercial Bank of China Limited", "w": 0.5}, {"t": "HKG: 1810", "n": "Xiaomi Corporation", "w": 0.46}, {"t": "KRX: 009150", "n": "Samsung Electro-Mechanics Co., Ltd.", "w": 0.46}, {"t": "TPE: 2303", "n": "United Microelectronics Corporation", "w": 0.45}, {"t": "NSE: BHARTIARTL", "n": "Bharti Airtel Limited", "w": 0.45}, {"t": "TADAWUL: 1120", "n": "Al Rajhi Banking and Investment Corporation", "w": 0.42}, {"t": "BVMF: VALE3", "n": "Vale S.A.", "w": 0.42}, {"t": "HKG: 3988", "n": "Bank of China Limited", "w": 0.41}, {"t": "JSE: ANG", "n": "AngloGold Ashanti plc", "w": 0.41}, {"t": "NU", "n": "Nu Holdings Ltd.", "w": 0.4}]}, "VGK": {"proxy": "VGK", "name": "Vanguard FTSE Europe ETF", "count": 1231, "as_of": "2026-09-22", "items": [{"t": "AMS: ASML", "n": "ASML Holding N.V.", "w": 4.02}, {"t": "LON: HSBA", "n": "HSBC Holdings plc", "w": 2.16}, {"t": "SWX: ROP", "n": "Roche Holding AG", "w": 1.88}, {"t": "SWX: NOVN", "n": "Novartis AG", "w": 1.74}, {"t": "LON: SHEL", "n": "Shell plc", "w": 1.58}, {"t": "SWX: NESN", "n": "Nestl\u00e9 S.A.", "w": 1.54}, {"t": "ETR: SIE", "n": "Siemens Aktiengesellschaft", "w": 1.49}, {"t": "LON: AZN", "n": "AstraZeneca PLC", "w": 1.49}, {"t": "ETR: SAP", "n": "SAP SE", "w": 1.39}, {"t": "BME: SAN", "n": "Banco Santander, S.A.", "w": 1.33}, {"t": "ETR: ALV", "n": "Allianz SE", "w": 1.22}, {"t": "EPA: SU", "n": "Schneider Electric S.E.", "w": 1.14}, {"t": "SWX: UBSG", "n": "UBS Group AG", "w": 1.05}, {"t": "LON: RR", "n": "Rolls-Royce Holdings plc", "w": 1.05}, {"t": "EPA: TTE", "n": "TotalEnergies SE", "w": 1.04}, {"t": "BME: BBVA", "n": "Banco Bilbao Vizcaya Argentaria, S.A.", "w": 1.0}, {"t": "BME: IBE", "n": "Iberdrola, S.A.", "w": 0.98}, {"t": "SWX: ABBN", "n": "ABB Ltd", "w": 0.93}, {"t": "BIT: UCG", "n": "UniCredit S.p.A.", "w": 0.91}, {"t": "CPH: NOVO.B", "n": "Novo Nordisk A/S", "w": 0.89}, {"t": "LON: ULVR", "n": "Unilever PLC", "w": 0.83}, {"t": "EPA: SAF", "n": "Safran SA", "w": 0.83}, {"t": "EPA: AIR", "n": "Airbus SE", "w": 0.82}, {"t": "EPA: MC", "n": "LVMH Mo\u00ebt Hennessy - Louis Vuitton, Soci\u00e9t\u00e9 Europ\u00e9enne", "w": 0.8}, {"t": "SWX: CFR", "n": "Compagnie Financi\u00e8re Richemont SA", "w": 0.78}]}, "ASHR": {"proxy": "ASHR", "name": "Xtrackers Harvest CSI 300 China A-Shares ETF", "count": 288, "as_of": "2026-09-22", "items": [{"t": "SHE: 300308", "n": "Zhongji Innolight Co., Ltd.", "w": 3.87}, {"t": "SHE: 300750", "n": "Contemporary Amperex Technology Co., Limited", "w": 3.13}, {"t": "SHA: 600519", "n": "Kweichow Moutai Co., Ltd.", "w": 3.08}, {"t": "SHE: 300502", "n": "Eoptolink Technology Inc., Ltd.", "w": 2.31}, {"t": "SHA: 601318", "n": "Ping An Insurance (Group) Company of China, Ltd.", "w": 2.2}, {"t": "\u2014", "n": "Chinese Yuan", "w": 2.19}, {"t": "SHA: 601899", "n": "Zijin Mining Group Company Limited", "w": 1.99}, {"t": "SHA: 600036", "n": "China Merchants Bank Co., Ltd.", "w": 1.96}, {"t": "SHE: 000333", "n": "Midea Group Co., Ltd.", "w": 1.65}, {"t": "SHA: 603259", "n": "WuXi AppTec Co., Ltd.", "w": 1.55}, {"t": "SHA: 688256", "n": "Cambricon Technologies Corporation Limited", "w": 1.36}, {"t": "SHA: 600900", "n": "China Yangtze Power Co., Ltd.", "w": 1.36}, {"t": "SHA: 601166", "n": "Industrial Bank Co., Ltd.", "w": 1.17}, {"t": "SHE: 002371", "n": "NAURA Technology Group Co., Ltd.", "w": 1.17}, {"t": "SHA: 688012", "n": "Advanced Micro-Fabrication Equipment Inc. China", "w": 1.04}, {"t": "SHE: 002475", "n": "Luxshare Precision Industry Co., Ltd.", "w": 1.04}, {"t": "SHA: 601398", "n": "Industrial and Commercial Bank of China Limited", "w": 1.02}, {"t": "SHA: 600030", "n": "CITIC Securities Company Limited", "w": 1.02}, {"t": "SHE: 002384", "n": "Suzhou Dongshan Precision Manufacturing Co., Ltd.", "w": 0.98}, {"t": "SHA: 603986", "n": "GigaDevice Semiconductor Inc.", "w": 0.97}, {"t": "SHA: 601138", "n": "Foxconn Industrial Internet Co., Ltd.", "w": 0.97}, {"t": "SHE: 300059", "n": "East Money Information Co.,Ltd.", "w": 0.91}, {"t": "SHE: 002594", "n": "BYD Company Limited", "w": 0.91}, {"t": "SHA: 688008", "n": "Montage Technology Co., Ltd.", "w": 0.88}, {"t": "SHA: 688041", "n": "Hygon Information Technology Co., Ltd.", "w": 0.86}]}, "EFA": {"proxy": "EFA", "name": "iShares MSCI EAFE ETF", "count": 688, "as_of": "2026-09-22", "items": [{"t": "AMS: ASML", "n": "ASML Holding N.V.", "w": 2.96}, {"t": "LON: HSBA", "n": "HSBC Holdings plc", "w": 1.6}, {"t": "SWX: ROP", "n": "Roche Holding AG", "w": 1.4}, {"t": "LON: SHEL", "n": "Shell plc", "w": 1.26}, {"t": "SWX: NOVN", "n": "Novartis AG", "w": 1.18}, {"t": "LON: AZN", "n": "AstraZeneca PLC", "w": 1.16}, {"t": "TYO: 8306", "n": "Mitsubishi UFJ Financial Group, Inc.", "w": 1.13}, {"t": "SWX: NESN", "n": "Nestl\u00e9 S.A.", "w": 1.1}, {"t": "ASX: BHP", "n": "BHP Group Limited", "w": 1.01}, {"t": "ETR: SIE", "n": "Siemens Aktiengesellschaft", "w": 1.01}, {"t": "ETR: SAP", "n": "SAP SE", "w": 0.98}, {"t": "BME: SAN", "n": "Banco Santander, S.A.", "w": 0.94}, {"t": "ETR: ALV", "n": "Allianz SE", "w": 0.89}, {"t": "TYO: 7203", "n": "Toyota Motor Corporation", "w": 0.84}, {"t": "ASX: CBA", "n": "Commonwealth Bank of Australia", "w": 0.83}, {"t": "EPA: SU", "n": "Schneider Electric S.E.", "w": 0.83}, {"t": "EPA: TTE", "n": "TotalEnergies SE", "w": 0.81}, {"t": "LON: RR", "n": "Rolls-Royce Holdings plc", "w": 0.74}, {"t": "BME: BBVA", "n": "Banco Bilbao Vizcaya Argentaria, S.A.", "w": 0.73}, {"t": "TYO: 8316", "n": "Sumitomo Mitsui Financial Group, Inc.", "w": 0.73}, {"t": "SWX: UBSG", "n": "UBS Group AG", "w": 0.72}, {"t": "TYO: 6501", "n": "Hitachi, Ltd.", "w": 0.71}, {"t": "SWX: ABBN", "n": "ABB Ltd", "w": 0.7}, {"t": "TYO: 8035", "n": "Tokyo Electron Limited", "w": 0.69}, {"t": "TYO: 6857", "n": "Advantest Corporation", "w": 0.69}]}, "GLD": {"proxy": "GLD", "name": "SPDR Gold Shares", "count": 1, "as_of": "2026-09-22", "note": "Physically backed \u2014 holds gold bullion", "items": [{"t": "\u2014", "n": "Gold bullion", "w": 100.0}]}, "SLV": {"proxy": "SLV", "name": "iShares Silver Trust", "count": 1, "as_of": "2026-09-22", "note": "Physically backed \u2014 holds silver bullion", "items": [{"t": "\u2014", "n": "Silver bullion", "w": 100.0}]}, "TSLA": {"proxy": "TSLA", "name": "Tesla", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "TSLA", "n": "Tesla", "w": 100.0}]}, "NVDA": {"proxy": "NVDA", "name": "Nvidia", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "NVDA", "n": "Nvidia", "w": 100.0}]}, "AAPL": {"proxy": "AAPL", "name": "Apple", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "AAPL", "n": "Apple", "w": 100.0}]}, "AMZN": {"proxy": "AMZN", "name": "Amazon", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "AMZN", "n": "Amazon", "w": 100.0}]}, "MSFT": {"proxy": "MSFT", "name": "Microsoft", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "MSFT", "n": "Microsoft", "w": 100.0}]}, "GOOGL": {"proxy": "GOOGL", "name": "Alphabet", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "GOOGL", "n": "Alphabet", "w": 100.0}]}, "META": {"proxy": "META", "name": "Meta", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "META", "n": "Meta", "w": 100.0}]}, "NFLX": {"proxy": "NFLX", "name": "Netflix", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "NFLX", "n": "Netflix", "w": 100.0}]}, "AVGO": {"proxy": "AVGO", "name": "Broadcom", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "AVGO", "n": "Broadcom", "w": 100.0}]}, "PLTR": {"proxy": "PLTR", "name": "Palantir", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "PLTR", "n": "Palantir", "w": 100.0}]}, "SMCI": {"proxy": "SMCI", "name": "Super Micro", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "SMCI", "n": "Super Micro", "w": 100.0}]}, "MSTR": {"proxy": "MSTR", "name": "Strategy", "count": 1, "as_of": "2026-09-22", "note": "Single-stock fund", "items": [{"t": "MSTR", "n": "Strategy", "w": 100.0}]}}
+{
+ "SPY": {
+  "proxy": "SPY",
+  "name": "State Street SPDR S&P 500 ETF",
+  "count": 505,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "NVDA",
+    "n": "NVIDIA Corporation",
+    "w": 8.16
+   },
+   {
+    "t": "AAPL",
+    "n": "Apple Inc.",
+    "w": 7.44
+   },
+   {
+    "t": "MSFT",
+    "n": "Microsoft Corporation",
+    "w": 5.56
+   },
+   {
+    "t": "AMZN",
+    "n": "Amazon.com, Inc.",
+    "w": 3.78
+   },
+   {
+    "t": "GOOGL",
+    "n": "Alphabet Inc.",
+    "w": 3.11
+   },
+   {
+    "t": "AVGO",
+    "n": "Broadcom Inc.",
+    "w": 2.58
+   },
+   {
+    "t": "GOOG",
+    "n": "Alphabet Inc.",
+    "w": 2.48
+   },
+   {
+    "t": "META",
+    "n": "Meta Platforms, Inc.",
+    "w": 2.23
+   },
+   {
+    "t": "MU",
+    "n": "Micron Technology, Inc.",
+    "w": 1.74
+   },
+   {
+    "t": "TSLA",
+    "n": "Tesla, Inc.",
+    "w": 1.56
+   },
+   {
+    "t": "BRK.B",
+    "n": "Berkshire Hathaway Inc.",
+    "w": 1.44
+   },
+   {
+    "t": "JPM",
+    "n": "JPMorgan Chase & Co.",
+    "w": 1.41
+   },
+   {
+    "t": "LLY",
+    "n": "Eli Lilly and Company",
+    "w": 1.4
+   },
+   {
+    "t": "AMD",
+    "n": "Advanced Micro Devices, Inc.",
+    "w": 1.39
+   },
+   {
+    "t": "XOM",
+    "n": "ExxonMobil Holdings Corporation",
+    "w": 1.02
+   },
+   {
+    "t": "JNJ",
+    "n": "Johnson & Johnson",
+    "w": 0.99
+   },
+   {
+    "t": "V",
+    "n": "Visa Inc.",
+    "w": 0.95
+   },
+   {
+    "t": "INTC",
+    "n": "Intel Corporation",
+    "w": 0.82
+   },
+   {
+    "t": "WMT",
+    "n": "Walmart Inc.",
+    "w": 0.72
+   },
+   {
+    "t": "ABBV",
+    "n": "AbbVie Inc.",
+    "w": 0.71
+   },
+   {
+    "t": "MA",
+    "n": "Mastercard Incorporated",
+    "w": 0.69
+   },
+   {
+    "t": "CSCO",
+    "n": "Cisco Systems, Inc.",
+    "w": 0.65
+   },
+   {
+    "t": "CVX",
+    "n": "Chevron Corporation",
+    "w": 0.63
+   },
+   {
+    "t": "PLTR",
+    "n": "Palantir Technologies Inc.",
+    "w": 0.62
+   },
+   {
+    "t": "COST",
+    "n": "Costco Wholesale Corporation",
+    "w": 0.6
+   }
+  ]
+ },
+ "QQQ": {
+  "proxy": "QQQ",
+  "name": "Invesco QQQ Trust Series I",
+  "count": 104,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "NVDA",
+    "n": "NVIDIA Corporation",
+    "w": 8.52
+   },
+   {
+    "t": "AAPL",
+    "n": "Apple Inc.",
+    "w": 7.82
+   },
+   {
+    "t": "MSFT",
+    "n": "Microsoft Corporation",
+    "w": 5.81
+   },
+   {
+    "t": "MU",
+    "n": "Micron Technology, Inc.",
+    "w": 5.01
+   },
+   {
+    "t": "AMZN",
+    "n": "Amazon.com, Inc.",
+    "w": 4.32
+   },
+   {
+    "t": "AMD",
+    "n": "Advanced Micro Devices, Inc.",
+    "w": 3.99
+   },
+   {
+    "t": "GOOGL",
+    "n": "Alphabet Inc.",
+    "w": 3.22
+   },
+   {
+    "t": "META",
+    "n": "Meta Platforms, Inc.",
+    "w": 3.12
+   },
+   {
+    "t": "GOOG",
+    "n": "Alphabet Inc.",
+    "w": 2.97
+   },
+   {
+    "t": "TSLA",
+    "n": "Tesla, Inc.",
+    "w": 2.88
+   },
+   {
+    "t": "AVGO",
+    "n": "Broadcom Inc.",
+    "w": 2.68
+   },
+   {
+    "t": "INTC",
+    "n": "Intel Corporation",
+    "w": 2.39
+   },
+   {
+    "t": "WMT",
+    "n": "Walmart Inc.",
+    "w": 2.28
+   },
+   {
+    "t": "CSCO",
+    "n": "Cisco Systems, Inc.",
+    "w": 1.89
+   },
+   {
+    "t": "PLTR",
+    "n": "Palantir Technologies Inc.",
+    "w": 1.78
+   },
+   {
+    "t": "COST",
+    "n": "Costco Wholesale Corporation",
+    "w": 1.74
+   },
+   {
+    "t": "LRCX",
+    "n": "Lam Research Corporation",
+    "w": 1.57
+   },
+   {
+    "t": "AMAT",
+    "n": "Applied Materials, Inc.",
+    "w": 1.54
+   },
+   {
+    "t": "NFLX",
+    "n": "Netflix, Inc.",
+    "w": 1.32
+   },
+   {
+    "t": "PANW",
+    "n": "Palo Alto Networks, Inc.",
+    "w": 1.3
+   },
+   {
+    "t": "SPCX",
+    "n": "Space Exploration Technologies Corp.",
+    "w": 1.28
+   },
+   {
+    "t": "SNDK",
+    "n": "Sandisk Corporation",
+    "w": 1.16
+   },
+   {
+    "t": "TXN",
+    "n": "Texas Instruments Incorporated",
+    "w": 1.06
+   },
+   {
+    "t": "CRWD",
+    "n": "CrowdStrike Holdings, Inc.",
+    "w": 1.06
+   },
+   {
+    "t": "KLAC",
+    "n": "KLA Corporation",
+    "w": 1.01
+   }
+  ]
+ },
+ "IWM": {
+  "proxy": "IWM",
+  "name": "iShares Russell 2000 ETF",
+  "count": 1990,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "TWST",
+    "n": "Twist Bioscience Corporation",
+    "w": 0.36
+   },
+   {
+    "t": "MOG.A",
+    "n": "Moog Inc.",
+    "w": 0.34
+   },
+   {
+    "t": "HUT",
+    "n": "Hut 8 Corp.",
+    "w": 0.33
+   },
+   {
+    "t": "FROG",
+    "n": "JFrog Ltd.",
+    "w": 0.33
+   },
+   {
+    "t": "UMBF",
+    "n": "UMB Financial Corporation",
+    "w": 0.33
+   },
+   {
+    "t": "VSAT",
+    "n": "Viasat, Inc.",
+    "w": 0.32
+   },
+   {
+    "t": "BTSG",
+    "n": "BrightSpring Health Services, Inc.",
+    "w": 0.31
+   },
+   {
+    "t": "GKOS",
+    "n": "Glaukos Corporation",
+    "w": 0.31
+   },
+   {
+    "t": "CYTK",
+    "n": "Cytokinetics, Incorporated",
+    "w": 0.3
+   },
+   {
+    "t": "SM",
+    "n": "SM Energy Company",
+    "w": 0.3
+   },
+   {
+    "t": "CTRE",
+    "n": "CareTrust REIT, Inc.",
+    "w": 0.3
+   },
+   {
+    "t": "TXG",
+    "n": "10x Genomics, Inc.",
+    "w": 0.29
+   },
+   {
+    "t": "FCFS",
+    "n": "FirstCash Holdings, Inc.",
+    "w": 0.29
+   },
+   {
+    "t": "ONB",
+    "n": "Old National Bancorp",
+    "w": 0.29
+   },
+   {
+    "t": "PTGX",
+    "n": "Protagonist Therapeutics, Inc.",
+    "w": 0.29
+   },
+   {
+    "t": "KRYS",
+    "n": "Krystal Biotech, Inc.",
+    "w": 0.29
+   },
+   {
+    "t": "EAT",
+    "n": "Brinker International, Inc.",
+    "w": 0.28
+   },
+   {
+    "t": "RIOT",
+    "n": "Riot Platforms, Inc.",
+    "w": 0.28
+   },
+   {
+    "t": "IDCC",
+    "n": "InterDigital, Inc.",
+    "w": 0.28
+   },
+   {
+    "t": "JXN",
+    "n": "Jackson Financial Inc.",
+    "w": 0.28
+   },
+   {
+    "t": "RHP",
+    "n": "Ryman Hospitality Properties, Inc.",
+    "w": 0.27
+   },
+   {
+    "t": "TGTX",
+    "n": "TG Therapeutics, Inc.",
+    "w": 0.27
+   },
+   {
+    "t": "HQY",
+    "n": "HealthEquity, Inc.",
+    "w": 0.26
+   },
+   {
+    "t": "OSCR",
+    "n": "Oscar Health, Inc.",
+    "w": 0.25
+   },
+   {
+    "t": "FLR",
+    "n": "Fluor Corporation",
+    "w": 0.25
+   }
+  ]
+ },
+ "DIA": {
+  "proxy": "DIA",
+  "name": "State Street SPDR Dow Jones Industrial Average ETF Trust",
+  "count": 31,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "GS",
+    "n": "The Goldman Sachs Group, Inc.",
+    "w": 10.83
+   },
+   {
+    "t": "CAT",
+    "n": "Caterpillar Inc.",
+    "w": 9.3
+   },
+   {
+    "t": "MSFT",
+    "n": "Microsoft Corporation",
+    "w": 5.68
+   },
+   {
+    "t": "AMGN",
+    "n": "Amgen Inc.",
+    "w": 4.43
+   },
+   {
+    "t": "UNH",
+    "n": "UnitedHealth Group Incorporated",
+    "w": 4.33
+   },
+   {
+    "t": "TRV",
+    "n": "The Travelers Companies, Inc.",
+    "w": 4.31
+   },
+   {
+    "t": "V",
+    "n": "Visa Inc.",
+    "w": 4.23
+   },
+   {
+    "t": "JPM",
+    "n": "JPMorgan Chase & Co.",
+    "w": 4.02
+   },
+   {
+    "t": "GOOGL",
+    "n": "Alphabet Inc.",
+    "w": 4.02
+   },
+   {
+    "t": "AAPL",
+    "n": "Apple Inc.",
+    "w": 3.86
+   },
+   {
+    "t": "SHW",
+    "n": "The Sherwin-Williams Company",
+    "w": 3.69
+   },
+   {
+    "t": "AXP",
+    "n": "American Express Company",
+    "w": 3.58
+   },
+   {
+    "t": "HD",
+    "n": "The Home Depot, Inc.",
+    "w": 3.45
+   },
+   {
+    "t": "JNJ",
+    "n": "Johnson & Johnson",
+    "w": 3.1
+   },
+   {
+    "t": "AMZN",
+    "n": "Amazon.com, Inc.",
+    "w": 2.92
+   },
+   {
+    "t": "MCD",
+    "n": "McDonald's Corporation",
+    "w": 2.85
+   },
+   {
+    "t": "CRM",
+    "n": "Salesforce, Inc.",
+    "w": 2.74
+   },
+   {
+    "t": "IBM",
+    "n": "International Business Machines Corporation",
+    "w": 2.64
+   },
+   {
+    "t": "NVDA",
+    "n": "NVIDIA Corporation",
+    "w": 2.56
+   },
+   {
+    "t": "CVX",
+    "n": "Chevron Corporation",
+    "w": 2.41
+   },
+   {
+    "t": "HON",
+    "n": "Honeywell International Inc.",
+    "w": 2.37
+   },
+   {
+    "t": "BA",
+    "n": "The Boeing Company",
+    "w": 2.28
+   },
+   {
+    "t": "MMM",
+    "n": "3M Company",
+    "w": 1.91
+   },
+   {
+    "t": "MRK",
+    "n": "Merck & Co., Inc.",
+    "w": 1.69
+   },
+   {
+    "t": "PG",
+    "n": "The Procter & Gamble Company",
+    "w": 1.68
+   }
+  ]
+ },
+ "MDY": {
+  "proxy": "MDY",
+  "name": "State Street SPDR S&P MIDCAP 400 ETF Trust",
+  "count": 401,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "TWLO",
+    "n": "Twilio Inc.",
+    "w": 1.06
+   },
+   {
+    "t": "ILMN",
+    "n": "Illumina, Inc.",
+    "w": 1.04
+   },
+   {
+    "t": "P",
+    "n": "Everpure, Inc.",
+    "w": 0.94
+   },
+   {
+    "t": "OKTA",
+    "n": "Okta, Inc.",
+    "w": 0.88
+   },
+   {
+    "t": "FTI",
+    "n": "TechnipFMC plc",
+    "w": 0.82
+   },
+   {
+    "t": "ATI",
+    "n": "ATI Inc.",
+    "w": 0.75
+   },
+   {
+    "t": "NVT",
+    "n": "nVent Electric plc",
+    "w": 0.73
+   },
+   {
+    "t": "THC",
+    "n": "Tenet Healthcare Corporation",
+    "w": 0.65
+   },
+   {
+    "t": "ENTG",
+    "n": "Entegris, Inc.",
+    "w": 0.62
+   },
+   {
+    "t": "UTHR",
+    "n": "United Therapeutics Corporation",
+    "w": 0.6
+   },
+   {
+    "t": "CW",
+    "n": "Curtiss-Wright Corporation",
+    "w": 0.6
+   },
+   {
+    "t": "USFD",
+    "n": "US Foods Holding Corp.",
+    "w": 0.59
+   },
+   {
+    "t": "XPO",
+    "n": "XPO, Inc.",
+    "w": 0.59
+   },
+   {
+    "t": "CDE",
+    "n": "Coeur Mining, Inc.",
+    "w": 0.59
+   },
+   {
+    "t": "RGLD",
+    "n": "Royal Gold, Inc.",
+    "w": 0.58
+   },
+   {
+    "t": "CRS",
+    "n": "Carpenter Technology Corporation",
+    "w": 0.58
+   },
+   {
+    "t": "ROKU",
+    "n": "Roku, Inc.",
+    "w": 0.58
+   },
+   {
+    "t": "RS",
+    "n": "Reliance, Inc.",
+    "w": 0.57
+   },
+   {
+    "t": "SNX",
+    "n": "TD SYNNEX Corporation",
+    "w": 0.57
+   },
+   {
+    "t": "WWD",
+    "n": "Woodward, Inc.",
+    "w": 0.55
+   },
+   {
+    "t": "NTNX",
+    "n": "Nutanix, Inc.",
+    "w": 0.53
+   },
+   {
+    "t": "ITT",
+    "n": "ITT Inc.",
+    "w": 0.52
+   },
+   {
+    "t": "MTSI",
+    "n": "MACOM Technology Solutions Holdings, Inc.",
+    "w": 0.52
+   },
+   {
+    "t": "ROIV",
+    "n": "Roivant Sciences Ltd.",
+    "w": 0.51
+   }
+  ]
+ },
+ "SPHB": {
+  "proxy": "SPHB",
+  "name": "Invesco S&P 500 High Beta ETF",
+  "count": 103,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "SNDK",
+    "n": "Sandisk Corporation",
+    "w": 2.75
+   },
+   {
+    "t": "MRNA",
+    "n": "Moderna, Inc.",
+    "w": 2.27
+   },
+   {
+    "t": "SMCI",
+    "n": "Super Micro Computer, Inc.",
+    "w": 2.02
+   },
+   {
+    "t": "MU",
+    "n": "Micron Technology, Inc.",
+    "w": 1.93
+   },
+   {
+    "t": "COIN",
+    "n": "Coinbase Global, Inc.",
+    "w": 1.9
+   },
+   {
+    "t": "AMD",
+    "n": "Advanced Micro Devices, Inc.",
+    "w": 1.89
+   },
+   {
+    "t": "HOOD",
+    "n": "Robinhood Markets, Inc.",
+    "w": 1.86
+   },
+   {
+    "t": "MRVL",
+    "n": "Marvell Technology, Inc.",
+    "w": 1.77
+   },
+   {
+    "t": "INTC",
+    "n": "Intel Corporation",
+    "w": 1.6
+   },
+   {
+    "t": "TER",
+    "n": "Teradyne, Inc.",
+    "w": 1.5
+   },
+   {
+    "t": "WDC",
+    "n": "Western Digital Corporation",
+    "w": 1.49
+   },
+   {
+    "t": "LITE",
+    "n": "Lumentum Holdings Inc.",
+    "w": 1.48
+   },
+   {
+    "t": "COHR",
+    "n": "Coherent Corp.",
+    "w": 1.41
+   },
+   {
+    "t": "LRCX",
+    "n": "Lam Research Corporation",
+    "w": 1.4
+   },
+   {
+    "t": "TSLA",
+    "n": "Tesla, Inc.",
+    "w": 1.32
+   },
+   {
+    "t": "DELL",
+    "n": "Dell Technologies Inc.",
+    "w": 1.31
+   },
+   {
+    "t": "FLEX",
+    "n": "Flex Ltd.",
+    "w": 1.28
+   },
+   {
+    "t": "GLW",
+    "n": "Corning Incorporated",
+    "w": 1.24
+   },
+   {
+    "t": "APP",
+    "n": "AppLovin Corporation",
+    "w": 1.22
+   },
+   {
+    "t": "FCX",
+    "n": "Freeport-McMoRan Inc.",
+    "w": 1.2
+   },
+   {
+    "t": "QCOM",
+    "n": "QUALCOMM Incorporated",
+    "w": 1.2
+   },
+   {
+    "t": "FIX",
+    "n": "Comfort Systems USA, Inc.",
+    "w": 1.2
+   },
+   {
+    "t": "KLAC",
+    "n": "KLA Corporation",
+    "w": 1.2
+   },
+   {
+    "t": "VRT",
+    "n": "Vertiv Holdings Co",
+    "w": 1.18
+   },
+   {
+    "t": "STX",
+    "n": "Seagate Technology Holdings plc",
+    "w": 1.18
+   }
+  ]
+ },
+ "TLT": {
+  "proxy": "TLT",
+  "name": "iShares 20+ Year Treasury Bond ETF",
+  "count": 48,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.75 2055-05-15",
+    "w": 4.54
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.63 2054-05-15",
+    "w": 4.3
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.13 2053-08-15",
+    "w": 4.21
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND (2OLD) - 4.75 2056-02-15",
+    "w": 4.16
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.25 2054-02-15",
+    "w": 4.06
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND (OLD) - 5.0 2056-05-15",
+    "w": 4.05
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.75 2053-11-15",
+    "w": 4.0
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.25 2054-08-15",
+    "w": 3.97
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.63 2055-11-15",
+    "w": 3.87
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.63 2055-02-15",
+    "w": 3.83
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.5 2054-11-15",
+    "w": 3.82
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 1.88 2051-11-15",
+    "w": 3.82
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.75 2055-08-15",
+    "w": 3.44
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 2.0 2051-08-15",
+    "w": 3.27
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 3.63 2053-05-15",
+    "w": 3.18
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.0 2052-11-15",
+    "w": 3.0
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 3.0 2048-08-15",
+    "w": 2.76
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 3.63 2053-02-15",
+    "w": 2.61
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 3.0 2049-02-15",
+    "w": 2.51
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 1.88 2051-02-15",
+    "w": 2.49
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 3.13 2048-05-15",
+    "w": 2.4
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 1.38 2050-08-15",
+    "w": 2.37
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 1.63 2050-11-15",
+    "w": 2.24
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 3.0 2048-02-15",
+    "w": 2.13
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 3.38 2048-11-15",
+    "w": 1.93
+   }
+  ]
+ },
+ "IEF": {
+  "proxy": "IEF",
+  "name": "iShares 7-10 Year Treasury Bond ETF",
+  "count": 17,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE (2OLD) - 4.13 2036-02-15",
+    "w": 9.02
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 4.63 2035-02-15",
+    "w": 8.79
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 4.25 2034-11-15",
+    "w": 8.77
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 4.25 2035-05-15",
+    "w": 8.71
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 4.0 2035-11-15",
+    "w": 8.66
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE (OLD) - 4.38 2036-05-15",
+    "w": 8.65
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 4.38 2034-05-15",
+    "w": 8.46
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 4.0 2034-02-15",
+    "w": 8.42
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 4.25 2035-08-15",
+    "w": 8.29
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 4.5 2033-11-15",
+    "w": 7.05
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 3.88 2034-08-15",
+    "w": 6.97
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE (OTR) - 4.63 2036-08-15",
+    "w": 3.85
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 3.88 2033-08-15",
+    "w": 3.08
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY BOND - 4.5 2036-02-15",
+    "w": 0.77
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE - 3.38 2033-05-15",
+    "w": 0.52
+   },
+   {
+    "t": "\u2014",
+    "n": "BLK CSH FND TREASURY SL AGENCY",
+    "w": 0.0
+   },
+   {
+    "t": "\u2014",
+    "n": "TREASURY NOTE (OLD) - 4.38 2033-07-31",
+    "w": 0.0
+   }
+  ]
+ },
+ "XLK": {
+  "proxy": "XLK",
+  "name": "State Street Technology Select Sector SPDR ETF",
+  "count": 77,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "NVDA",
+    "n": "NVIDIA Corporation",
+    "w": 15.53
+   },
+   {
+    "t": "AAPL",
+    "n": "Apple Inc.",
+    "w": 14.16
+   },
+   {
+    "t": "MSFT",
+    "n": "Microsoft Corporation",
+    "w": 10.59
+   },
+   {
+    "t": "AVGO",
+    "n": "Broadcom Inc.",
+    "w": 4.9
+   },
+   {
+    "t": "AMD",
+    "n": "Advanced Micro Devices, Inc.",
+    "w": 4.78
+   },
+   {
+    "t": "MU",
+    "n": "Micron Technology, Inc.",
+    "w": 4.39
+   },
+   {
+    "t": "INTC",
+    "n": "Intel Corporation",
+    "w": 3.15
+   },
+   {
+    "t": "CSCO",
+    "n": "Cisco Systems, Inc.",
+    "w": 2.52
+   },
+   {
+    "t": "PLTR",
+    "n": "Palantir Technologies Inc.",
+    "w": 2.39
+   },
+   {
+    "t": "LRCX",
+    "n": "Lam Research Corporation",
+    "w": 2.11
+   },
+   {
+    "t": "AMAT",
+    "n": "Applied Materials, Inc.",
+    "w": 2.06
+   },
+   {
+    "t": "PANW",
+    "n": "Palo Alto Networks, Inc.",
+    "w": 1.73
+   },
+   {
+    "t": "SNDK",
+    "n": "Sandisk Corporation",
+    "w": 1.53
+   },
+   {
+    "t": "ORCL",
+    "n": "Oracle Corporation",
+    "w": 1.49
+   },
+   {
+    "t": "TXN",
+    "n": "Texas Instruments Incorporated",
+    "w": 1.42
+   },
+   {
+    "t": "CRWD",
+    "n": "CrowdStrike Holdings, Inc.",
+    "w": 1.41
+   },
+   {
+    "t": "KLAC",
+    "n": "KLA Corporation",
+    "w": 1.35
+   },
+   {
+    "t": "IBM",
+    "n": "International Business Machines Corporation",
+    "w": 1.26
+   },
+   {
+    "t": "MRVL",
+    "n": "Marvell Technology, Inc.",
+    "w": 1.25
+   },
+   {
+    "t": "ANET",
+    "n": "Arista Networks, Inc.",
+    "w": 1.22
+   },
+   {
+    "t": "CRM",
+    "n": "Salesforce, Inc.",
+    "w": 1.14
+   },
+   {
+    "t": "STX",
+    "n": "Seagate Technology Holdings plc",
+    "w": 1.14
+   },
+   {
+    "t": "APH",
+    "n": "Amphenol Corporation",
+    "w": 1.12
+   },
+   {
+    "t": "QCOM",
+    "n": "QUALCOMM Incorporated",
+    "w": 1.11
+   },
+   {
+    "t": "ADI",
+    "n": "Analog Devices, Inc.",
+    "w": 1.07
+   }
+  ]
+ },
+ "SOXX": {
+  "proxy": "SOXX",
+  "name": "iShares Semiconductor ETF",
+  "count": 34,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "INTC",
+    "n": "Intel Corporation",
+    "w": 9.23
+   },
+   {
+    "t": "AMD",
+    "n": "Advanced Micro Devices, Inc.",
+    "w": 9.05
+   },
+   {
+    "t": "MU",
+    "n": "Micron Technology, Inc.",
+    "w": 8.06
+   },
+   {
+    "t": "NVDA",
+    "n": "NVIDIA Corporation",
+    "w": 7.66
+   },
+   {
+    "t": "AVGO",
+    "n": "Broadcom Inc.",
+    "w": 7.35
+   },
+   {
+    "t": "MRVL",
+    "n": "Marvell Technology, Inc.",
+    "w": 4.39
+   },
+   {
+    "t": "QCOM",
+    "n": "QUALCOMM Incorporated",
+    "w": 3.97
+   },
+   {
+    "t": "ADI",
+    "n": "Analog Devices, Inc.",
+    "w": 3.95
+   },
+   {
+    "t": "TXN",
+    "n": "Texas Instruments Incorporated",
+    "w": 3.89
+   },
+   {
+    "t": "KLAC",
+    "n": "KLA Corporation",
+    "w": 3.84
+   },
+   {
+    "t": "AMAT",
+    "n": "Applied Materials, Inc.",
+    "w": 3.69
+   },
+   {
+    "t": "LRCX",
+    "n": "Lam Research Corporation",
+    "w": 3.64
+   },
+   {
+    "t": "SKHY",
+    "n": "SK hynix Inc.",
+    "w": 3.32
+   },
+   {
+    "t": "TSM",
+    "n": "Taiwan Semiconductor Manufacturing Company Limited",
+    "w": 3.05
+   },
+   {
+    "t": "MPWR",
+    "n": "Monolithic Power Systems, Inc.",
+    "w": 3.04
+   },
+   {
+    "t": "TER",
+    "n": "Teradyne, Inc.",
+    "w": 3.03
+   },
+   {
+    "t": "NXPI",
+    "n": "NXP Semiconductors N.V.",
+    "w": 3.02
+   },
+   {
+    "t": "ALAB",
+    "n": "Astera Labs, Inc.",
+    "w": 2.27
+   },
+   {
+    "t": "MCHP",
+    "n": "Microchip Technology Incorporated",
+    "w": 2.06
+   },
+   {
+    "t": "CRDO",
+    "n": "Credo Technology Group Holding Ltd",
+    "w": 1.56
+   },
+   {
+    "t": "ASML",
+    "n": "ASML Holding N.V.",
+    "w": 1.44
+   },
+   {
+    "t": "ON",
+    "n": "ON Semiconductor Corporation",
+    "w": 1.42
+   },
+   {
+    "t": "ENTG",
+    "n": "Entegris, Inc.",
+    "w": 1.14
+   },
+   {
+    "t": "MTSI",
+    "n": "MACOM Technology Solutions Holdings, Inc.",
+    "w": 1.03
+   }
+  ]
+ },
+ "XLF": {
+  "proxy": "XLF",
+  "name": "State Street Financial Select Sector SPDR ETF",
+  "count": 80,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "JPM",
+    "n": "JPMorgan Chase & Co.",
+    "w": 11.87
+   },
+   {
+    "t": "BRK.B",
+    "n": "Berkshire Hathaway Inc.",
+    "w": 11.86
+   },
+   {
+    "t": "V",
+    "n": "Visa Inc.",
+    "w": 8.0
+   },
+   {
+    "t": "MA",
+    "n": "Mastercard Incorporated",
+    "w": 5.82
+   },
+   {
+    "t": "BAC",
+    "n": "Bank of America Corporation",
+    "w": 4.78
+   },
+   {
+    "t": "GS",
+    "n": "The Goldman Sachs Group, Inc.",
+    "w": 3.54
+   },
+   {
+    "t": "WFC",
+    "n": "Wells Fargo & Company",
+    "w": 3.32
+   },
+   {
+    "t": "MS",
+    "n": "Morgan Stanley",
+    "w": 3.12
+   },
+   {
+    "t": "C",
+    "n": "Citigroup Inc.",
+    "w": 2.87
+   },
+   {
+    "t": "SCHW",
+    "n": "The Charles Schwab Corporation",
+    "w": 2.2
+   },
+   {
+    "t": "AXP",
+    "n": "American Express Company",
+    "w": 2.09
+   },
+   {
+    "t": "BLK",
+    "n": "BlackRock, Inc.",
+    "w": 1.99
+   },
+   {
+    "t": "COF",
+    "n": "Capital One Financial Corporation",
+    "w": 1.59
+   },
+   {
+    "t": "PGR",
+    "n": "The Progressive Corporation",
+    "w": 1.56
+   },
+   {
+    "t": "SPGI",
+    "n": "S&P Global Inc.",
+    "w": 1.55
+   },
+   {
+    "t": "CB",
+    "n": "Chubb Limited",
+    "w": 1.5
+   },
+   {
+    "t": "BNY",
+    "n": "The Bank of New York Mellon Corporation",
+    "w": 1.32
+   },
+   {
+    "t": "CME",
+    "n": "CME Group Inc.",
+    "w": 1.26
+   },
+   {
+    "t": "HOOD",
+    "n": "Robinhood Markets, Inc.",
+    "w": 1.24
+   },
+   {
+    "t": "BX",
+    "n": "Blackstone Inc.",
+    "w": 1.2
+   },
+   {
+    "t": "USB",
+    "n": "U.S. Bancorp",
+    "w": 1.19
+   },
+   {
+    "t": "PNC",
+    "n": "The PNC Financial Services Group, Inc.",
+    "w": 1.18
+   },
+   {
+    "t": "ICE",
+    "n": "Intercontinental Exchange, Inc.",
+    "w": 1.11
+   },
+   {
+    "t": "MRSH",
+    "n": "Marsh & McLennan Companies, Inc.",
+    "w": 1.05
+   },
+   {
+    "t": "TRV",
+    "n": "The Travelers Companies, Inc.",
+    "w": 0.98
+   }
+  ]
+ },
+ "XLE": {
+  "proxy": "XLE",
+  "name": "State Street Energy Select Sector SPDR ETF",
+  "count": 24,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "XOM",
+    "n": "ExxonMobil Holdings Corporation",
+    "w": 23.09
+   },
+   {
+    "t": "CVX",
+    "n": "Chevron Corporation",
+    "w": 17.71
+   },
+   {
+    "t": "COP",
+    "n": "ConocoPhillips",
+    "w": 6.78
+   },
+   {
+    "t": "MPC",
+    "n": "Marathon Petroleum Corporation",
+    "w": 4.83
+   },
+   {
+    "t": "VLO",
+    "n": "Valero Energy Corporation",
+    "w": 4.82
+   },
+   {
+    "t": "PSX",
+    "n": "Phillips 66",
+    "w": 4.75
+   },
+   {
+    "t": "WMB",
+    "n": "The Williams Companies, Inc.",
+    "w": 4.35
+   },
+   {
+    "t": "SLB",
+    "n": "SLB N.V.",
+    "w": 3.87
+   },
+   {
+    "t": "EOG",
+    "n": "EOG Resources, Inc.",
+    "w": 3.86
+   },
+   {
+    "t": "TRGP",
+    "n": "Targa Resources Corp.",
+    "w": 3.19
+   },
+   {
+    "t": "KMI",
+    "n": "Kinder Morgan, Inc.",
+    "w": 3.18
+   },
+   {
+    "t": "OKE",
+    "n": "ONEOK, Inc.",
+    "w": 3.0
+   },
+   {
+    "t": "BKR",
+    "n": "Baker Hughes Company",
+    "w": 2.9
+   },
+   {
+    "t": "DVN",
+    "n": "Devon Energy Corporation",
+    "w": 2.73
+   },
+   {
+    "t": "OXY",
+    "n": "Occidental Petroleum Corporation",
+    "w": 2.19
+   },
+   {
+    "t": "FANG",
+    "n": "Diamondback Energy, Inc.",
+    "w": 2.01
+   },
+   {
+    "t": "EQT",
+    "n": "EQT Corporation",
+    "w": 1.59
+   },
+   {
+    "t": "HAL",
+    "n": "Halliburton Company",
+    "w": 1.43
+   },
+   {
+    "t": "TPL",
+    "n": "Texas Pacific Land Corporation",
+    "w": 1.05
+   },
+   {
+    "t": "EXE",
+    "n": "Expand Energy Corporation",
+    "w": 1.03
+   },
+   {
+    "t": "APA",
+    "n": "APA Corporation",
+    "w": 0.8
+   }
+  ]
+ },
+ "XBI": {
+  "proxy": "XBI",
+  "name": "State Street SPDR S&P Biotech ETF",
+  "count": 167,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "TWST",
+    "n": "Twist Bioscience Corporation",
+    "w": 1.91
+   },
+   {
+    "t": "MRNA",
+    "n": "Moderna, Inc.",
+    "w": 1.63
+   },
+   {
+    "t": "NTRA",
+    "n": "Natera, Inc.",
+    "w": 1.61
+   },
+   {
+    "t": "ABBV",
+    "n": "AbbVie Inc.",
+    "w": 1.51
+   },
+   {
+    "t": "HALO",
+    "n": "Halozyme Therapeutics, Inc.",
+    "w": 1.51
+   },
+   {
+    "t": "TGTX",
+    "n": "TG Therapeutics, Inc.",
+    "w": 1.5
+   },
+   {
+    "t": "CRSP",
+    "n": "CRISPR Therapeutics AG",
+    "w": 1.5
+   },
+   {
+    "t": "SYRE",
+    "n": "Spyre Therapeutics, Inc.",
+    "w": 1.49
+   },
+   {
+    "t": "ORKA",
+    "n": "Oruka Therapeutics, Inc.",
+    "w": 1.49
+   },
+   {
+    "t": "GILD",
+    "n": "Gilead Sciences, Inc.",
+    "w": 1.48
+   },
+   {
+    "t": "BIIB",
+    "n": "Biogen Inc.",
+    "w": 1.47
+   },
+   {
+    "t": "EXEL",
+    "n": "Exelixis, Inc.",
+    "w": 1.44
+   },
+   {
+    "t": "INCY",
+    "n": "Incyte Corporation",
+    "w": 1.43
+   },
+   {
+    "t": "BMRN",
+    "n": "BioMarin Pharmaceutical Inc.",
+    "w": 1.43
+   },
+   {
+    "t": "AMGN",
+    "n": "Amgen Inc.",
+    "w": 1.42
+   },
+   {
+    "t": "PTGX",
+    "n": "Protagonist Therapeutics, Inc.",
+    "w": 1.41
+   },
+   {
+    "t": "UTHR",
+    "n": "United Therapeutics Corporation",
+    "w": 1.4
+   },
+   {
+    "t": "VRTX",
+    "n": "Vertex Pharmaceuticals Incorporated",
+    "w": 1.4
+   },
+   {
+    "t": "MDGL",
+    "n": "Madrigal Pharmaceuticals, Inc.",
+    "w": 1.4
+   },
+   {
+    "t": "REGN",
+    "n": "Regeneron Pharmaceuticals, Inc.",
+    "w": 1.4
+   },
+   {
+    "t": "PTCT",
+    "n": "PTC Therapeutics, Inc.",
+    "w": 1.39
+   },
+   {
+    "t": "KRYS",
+    "n": "Krystal Biotech, Inc.",
+    "w": 1.39
+   },
+   {
+    "t": "ALKS",
+    "n": "Alkermes plc",
+    "w": 1.38
+   },
+   {
+    "t": "ROIV",
+    "n": "Roivant Sciences Ltd.",
+    "w": 1.37
+   },
+   {
+    "t": "TVTX",
+    "n": "Travere Therapeutics, Inc.",
+    "w": 1.36
+   }
+  ]
+ },
+ "XRT": {
+  "proxy": "XRT",
+  "name": "State Street SPDR S&P Retail ETF",
+  "count": 76,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "GME",
+    "n": "GameStop Corp.",
+    "w": 1.65
+   },
+   {
+    "t": "EBAY",
+    "n": "eBay Inc.",
+    "w": 1.57
+   },
+   {
+    "t": "KR",
+    "n": "The Kroger Co.",
+    "w": 1.54
+   },
+   {
+    "t": "RVLV",
+    "n": "Revolve Group, Inc.",
+    "w": 1.54
+   },
+   {
+    "t": "BBY",
+    "n": "Best Buy Co., Inc.",
+    "w": 1.53
+   },
+   {
+    "t": "OLLI",
+    "n": "Ollie's Bargain Outlet Holdings, Inc.",
+    "w": 1.52
+   },
+   {
+    "t": "ACI",
+    "n": "Albertsons Companies, Inc.",
+    "w": 1.51
+   },
+   {
+    "t": "BJ",
+    "n": "BJ's Wholesale Club Holdings, Inc.",
+    "w": 1.51
+   },
+   {
+    "t": "WMK",
+    "n": "Weis Markets, Inc.",
+    "w": 1.5
+   },
+   {
+    "t": "VSXY",
+    "n": "Victoria's Secret & Co.",
+    "w": 1.49
+   },
+   {
+    "t": "IMKTA",
+    "n": "Ingles Markets, Incorporated",
+    "w": 1.48
+   },
+   {
+    "t": "DDS",
+    "n": "Dillard's, Inc.",
+    "w": 1.48
+   },
+   {
+    "t": "M",
+    "n": "Macy's, Inc.",
+    "w": 1.48
+   },
+   {
+    "t": "ETSY",
+    "n": "Etsy, Inc.",
+    "w": 1.48
+   },
+   {
+    "t": "MUSA",
+    "n": "Murphy USA Inc.",
+    "w": 1.47
+   },
+   {
+    "t": "TJX",
+    "n": "The TJX Companies, Inc.",
+    "w": 1.46
+   },
+   {
+    "t": "WMT",
+    "n": "Walmart Inc.",
+    "w": 1.46
+   },
+   {
+    "t": "HZO",
+    "n": "MarineMax, Inc.",
+    "w": 1.46
+   },
+   {
+    "t": "ROST",
+    "n": "Ross Stores, Inc.",
+    "w": 1.46
+   },
+   {
+    "t": "AMZN",
+    "n": "Amazon.com, Inc.",
+    "w": 1.46
+   },
+   {
+    "t": "TGT",
+    "n": "Target Corporation",
+    "w": 1.46
+   },
+   {
+    "t": "ULTA",
+    "n": "Ulta Beauty, Inc.",
+    "w": 1.45
+   },
+   {
+    "t": "GO",
+    "n": "Grocery Outlet Holding Corp.",
+    "w": 1.45
+   },
+   {
+    "t": "PTRN",
+    "n": "Pattern Group Inc.",
+    "w": 1.44
+   },
+   {
+    "t": "CHWY",
+    "n": "Chewy, Inc.",
+    "w": 1.44
+   }
+  ]
+ },
+ "XLV": {
+  "proxy": "XLV",
+  "name": "State Street Health Care Select Sector SPDR ETF",
+  "count": 64,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "LLY",
+    "n": "Eli Lilly and Company",
+    "w": 15.17
+   },
+   {
+    "t": "JNJ",
+    "n": "Johnson & Johnson",
+    "w": 10.57
+   },
+   {
+    "t": "ABBV",
+    "n": "AbbVie Inc.",
+    "w": 7.61
+   },
+   {
+    "t": "MRK",
+    "n": "Merck & Co., Inc.",
+    "w": 6.0
+   },
+   {
+    "t": "UNH",
+    "n": "UnitedHealth Group Incorporated",
+    "w": 5.52
+   },
+   {
+    "t": "TMO",
+    "n": "Thermo Fisher Scientific Inc.",
+    "w": 3.96
+   },
+   {
+    "t": "AMGN",
+    "n": "Amgen Inc.",
+    "w": 3.46
+   },
+   {
+    "t": "GILD",
+    "n": "Gilead Sciences, Inc.",
+    "w": 3.04
+   },
+   {
+    "t": "ABT",
+    "n": "Abbott Laboratories",
+    "w": 2.9
+   },
+   {
+    "t": "PFE",
+    "n": "Pfizer Inc.",
+    "w": 2.57
+   },
+   {
+    "t": "ISRG",
+    "n": "Intuitive Surgical, Inc.",
+    "w": 2.31
+   },
+   {
+    "t": "DHR",
+    "n": "Danaher Corporation",
+    "w": 2.2
+   },
+   {
+    "t": "VRTX",
+    "n": "Vertex Pharmaceuticals Incorporated",
+    "w": 2.11
+   },
+   {
+    "t": "BMY",
+    "n": "Bristol-Myers Squibb Company",
+    "w": 2.08
+   },
+   {
+    "t": "MDT",
+    "n": "Medtronic plc",
+    "w": 1.91
+   },
+   {
+    "t": "CVS",
+    "n": "CVS Health Corporation",
+    "w": 1.82
+   },
+   {
+    "t": "MCK",
+    "n": "McKesson Corporation",
+    "w": 1.68
+   },
+   {
+    "t": "SYK",
+    "n": "Stryker Corporation",
+    "w": 1.56
+   },
+   {
+    "t": "ELV",
+    "n": "Elevance Health, Inc.",
+    "w": 1.44
+   },
+   {
+    "t": "REGN",
+    "n": "Regeneron Pharmaceuticals, Inc.",
+    "w": 1.27
+   },
+   {
+    "t": "CI",
+    "n": "The Cigna Group",
+    "w": 1.18
+   },
+   {
+    "t": "MRNA",
+    "n": "Moderna, Inc.",
+    "w": 1.05
+   },
+   {
+    "t": "BSX",
+    "n": "Boston Scientific Corporation",
+    "w": 1.03
+   },
+   {
+    "t": "HCA",
+    "n": "HCA Healthcare, Inc.",
+    "w": 1.02
+   },
+   {
+    "t": "COR",
+    "n": "Cencora, Inc.",
+    "w": 0.98
+   }
+  ]
+ },
+ "XLRE": {
+  "proxy": "XLRE",
+  "name": "State Street Real Estate Select Sector SPDR ETF",
+  "count": 33,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "WELL",
+    "n": "Welltower Inc.",
+    "w": 11.33
+   },
+   {
+    "t": "PLD",
+    "n": "Prologis, Inc.",
+    "w": 8.71
+   },
+   {
+    "t": "EQIX",
+    "n": "Equinix, Inc.",
+    "w": 7.04
+   },
+   {
+    "t": "AMT",
+    "n": "American Tower Corporation",
+    "w": 5.49
+   },
+   {
+    "t": "CBRE",
+    "n": "CBRE Group, Inc.",
+    "w": 4.61
+   },
+   {
+    "t": "PSA",
+    "n": "Public Storage",
+    "w": 4.58
+   },
+   {
+    "t": "SPG",
+    "n": "Simon Property Group, Inc.",
+    "w": 4.55
+   },
+   {
+    "t": "DLR",
+    "n": "Digital Realty Trust, Inc.",
+    "w": 4.48
+   },
+   {
+    "t": "VTR",
+    "n": "Ventas, Inc.",
+    "w": 4.42
+   },
+   {
+    "t": "VMRK",
+    "n": "Vivmark Residential",
+    "w": 4.29
+   },
+   {
+    "t": "O",
+    "n": "Realty Income Corporation",
+    "w": 4.28
+   },
+   {
+    "t": "IRM",
+    "n": "Iron Mountain Incorporated",
+    "w": 3.93
+   },
+   {
+    "t": "CCI",
+    "n": "Crown Castle Inc.",
+    "w": 3.52
+   },
+   {
+    "t": "EXR",
+    "n": "Extra Space Storage Inc.",
+    "w": 3.28
+   },
+   {
+    "t": "VICI",
+    "n": "VICI Properties Inc.",
+    "w": 2.99
+   },
+   {
+    "t": "SBAC",
+    "n": "SBA Communications Corporation",
+    "w": 2.11
+   },
+   {
+    "t": "ESS",
+    "n": "Essex Property Trust, Inc.",
+    "w": 1.97
+   },
+   {
+    "t": "HST",
+    "n": "Host Hotels & Resorts, Inc.",
+    "w": 1.73
+   },
+   {
+    "t": "WY",
+    "n": "Weyerhaeuser Company",
+    "w": 1.71
+   },
+   {
+    "t": "KIM",
+    "n": "Kimco Realty Corporation",
+    "w": 1.71
+   },
+   {
+    "t": "INVH",
+    "n": "Invitation Homes Inc.",
+    "w": 1.64
+   },
+   {
+    "t": "DOC",
+    "n": "Healthpeak Properties, Inc.",
+    "w": 1.61
+   },
+   {
+    "t": "MAA",
+    "n": "Mid-America Apartment Communities, Inc.",
+    "w": 1.56
+   },
+   {
+    "t": "REG",
+    "n": "Regency Centers Corporation",
+    "w": 1.37
+   },
+   {
+    "t": "CSGP",
+    "n": "CoStar Group, Inc.",
+    "w": 1.33
+   }
+  ]
+ },
+ "XPH": {
+  "proxy": "XPH",
+  "name": "State Street SPDR S&P Pharmaceuticals ETF",
+  "count": 65,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "AMRX",
+    "n": "Amneal Pharmaceuticals, Inc.",
+    "w": 2.08
+   },
+   {
+    "t": "ANIP",
+    "n": "ANI Pharmaceuticals, Inc.",
+    "w": 2.06
+   },
+   {
+    "t": "MANE",
+    "n": "Veradermics, Incorporated",
+    "w": 2.05
+   },
+   {
+    "t": "XERS",
+    "n": "Xeris Biopharma Holdings, Inc.",
+    "w": 2.04
+   },
+   {
+    "t": "EWTX",
+    "n": "Edgewise Therapeutics, Inc.",
+    "w": 2.0
+   },
+   {
+    "t": "VTRS",
+    "n": "Viatris Inc.",
+    "w": 1.97
+   },
+   {
+    "t": "LLY",
+    "n": "Eli Lilly and Company",
+    "w": 1.96
+   },
+   {
+    "t": "DFTX",
+    "n": "Definium Therapeutics, Inc.",
+    "w": 1.95
+   },
+   {
+    "t": "JNJ",
+    "n": "Johnson & Johnson",
+    "w": 1.93
+   },
+   {
+    "t": "HRMY",
+    "n": "Harmony Biosciences Holdings, Inc.",
+    "w": 1.93
+   },
+   {
+    "t": "INDV",
+    "n": "Indivior Pharmaceuticals, Inc.",
+    "w": 1.92
+   },
+   {
+    "t": "OGN",
+    "n": "Organon & Co.",
+    "w": 1.92
+   },
+   {
+    "t": "INVA",
+    "n": "Innoviva, Inc.",
+    "w": 1.91
+   },
+   {
+    "t": "AMLX",
+    "n": "Amylyx Pharmaceuticals, Inc.",
+    "w": 1.91
+   },
+   {
+    "t": "MBX",
+    "n": "MBX Biosciences, Inc.",
+    "w": 1.91
+   },
+   {
+    "t": "SUPN",
+    "n": "Supernus Pharmaceuticals, Inc.",
+    "w": 1.91
+   },
+   {
+    "t": "JAZZ",
+    "n": "Jazz Pharmaceuticals plc",
+    "w": 1.91
+   },
+   {
+    "t": "PFE",
+    "n": "Pfizer Inc.",
+    "w": 1.91
+   },
+   {
+    "t": "MRK",
+    "n": "Merck & Co., Inc.",
+    "w": 1.91
+   },
+   {
+    "t": "AXSM",
+    "n": "Axsome Therapeutics, Inc.",
+    "w": 1.89
+   },
+   {
+    "t": "LGND",
+    "n": "Ligand Pharmaceuticals Incorporated",
+    "w": 1.88
+   },
+   {
+    "t": "BMY",
+    "n": "Bristol-Myers Squibb Company",
+    "w": 1.87
+   },
+   {
+    "t": "ZTS",
+    "n": "Zoetis Inc.",
+    "w": 1.86
+   },
+   {
+    "t": "LQDA",
+    "n": "Liquidia Corporation",
+    "w": 1.85
+   },
+   {
+    "t": "RPRX",
+    "n": "Royalty Pharma plc",
+    "w": 1.84
+   }
+  ]
+ },
+ "XLY": {
+  "proxy": "XLY",
+  "name": "State Street Consumer Discretionary Select Sector SPDR ETF",
+  "count": 50,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "AMZN",
+    "n": "Amazon.com, Inc.",
+    "w": 24.68
+   },
+   {
+    "t": "TSLA",
+    "n": "Tesla, Inc.",
+    "w": 18.02
+   },
+   {
+    "t": "HD",
+    "n": "The Home Depot, Inc.",
+    "w": 5.27
+   },
+   {
+    "t": "MCD",
+    "n": "McDonald's Corporation",
+    "w": 4.02
+   },
+   {
+    "t": "BKNG",
+    "n": "Booking Holdings Inc.",
+    "w": 3.47
+   },
+   {
+    "t": "TJX",
+    "n": "The TJX Companies, Inc.",
+    "w": 3.45
+   },
+   {
+    "t": "SBUX",
+    "n": "Starbucks Corporation",
+    "w": 2.89
+   },
+   {
+    "t": "LOW",
+    "n": "Lowe's Companies, Inc.",
+    "w": 2.85
+   },
+   {
+    "t": "GM",
+    "n": "General Motors Company",
+    "w": 2.05
+   },
+   {
+    "t": "ROST",
+    "n": "Ross Stores, Inc.",
+    "w": 1.94
+   },
+   {
+    "t": "DASH",
+    "n": "DoorDash, Inc.",
+    "w": 1.93
+   },
+   {
+    "t": "MAR",
+    "n": "Marriott International, Inc.",
+    "w": 1.92
+   },
+   {
+    "t": "ORLY",
+    "n": "O'Reilly Automotive, Inc.",
+    "w": 1.84
+   },
+   {
+    "t": "ABNB",
+    "n": "Airbnb, Inc.",
+    "w": 1.82
+   },
+   {
+    "t": "HLT",
+    "n": "Hilton Worldwide Holdings Inc.",
+    "w": 1.81
+   },
+   {
+    "t": "RCL",
+    "n": "Royal Caribbean Cruises Ltd.",
+    "w": 1.63
+   },
+   {
+    "t": "F",
+    "n": "Ford Motor Company",
+    "w": 1.4
+   },
+   {
+    "t": "EBAY",
+    "n": "eBay Inc.",
+    "w": 1.31
+   },
+   {
+    "t": "CVNA",
+    "n": "Carvana Co.",
+    "w": 1.24
+   },
+   {
+    "t": "AZO",
+    "n": "AutoZone, Inc.",
+    "w": 1.23
+   },
+   {
+    "t": "GRMN",
+    "n": "Garmin Ltd.",
+    "w": 1.18
+   },
+   {
+    "t": "NKE",
+    "n": "NIKE, Inc.",
+    "w": 1.14
+   },
+   {
+    "t": "CMG",
+    "n": "Chipotle Mexican Grill, Inc.",
+    "w": 1.13
+   },
+   {
+    "t": "YUM",
+    "n": "Yum! Brands, Inc.",
+    "w": 0.98
+   },
+   {
+    "t": "DHI",
+    "n": "D.R. Horton, Inc.",
+    "w": 0.97
+   }
+  ]
+ },
+ "FDN": {
+  "proxy": "FDN",
+  "name": "First Trust Dow Jones Internet Index Fund",
+  "count": 43,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "META",
+    "n": "Meta Platforms, Inc.",
+    "w": 10.18
+   },
+   {
+    "t": "AMZN",
+    "n": "Amazon.com, Inc.",
+    "w": 10.05
+   },
+   {
+    "t": "CSCO",
+    "n": "Cisco Systems, Inc.",
+    "w": 8.71
+   },
+   {
+    "t": "NFLX",
+    "n": "Netflix, Inc.",
+    "w": 5.94
+   },
+   {
+    "t": "GOOGL",
+    "n": "Alphabet Inc.",
+    "w": 5.86
+   },
+   {
+    "t": "GOOG",
+    "n": "Alphabet Inc.",
+    "w": 4.67
+   },
+   {
+    "t": "ANET",
+    "n": "Arista Networks, Inc.",
+    "w": 4.65
+   },
+   {
+    "t": "CRM",
+    "n": "Salesforce, Inc.",
+    "w": 4.38
+   },
+   {
+    "t": "BKNG",
+    "n": "Booking Holdings Inc.",
+    "w": 4.31
+   },
+   {
+    "t": "ORCL",
+    "n": "Oracle Corporation",
+    "w": 4.11
+   },
+   {
+    "t": "SNOW",
+    "n": "Snowflake Inc.",
+    "w": 3.93
+   },
+   {
+    "t": "NET",
+    "n": "Cloudflare, Inc.",
+    "w": 3.55
+   },
+   {
+    "t": "DDOG",
+    "n": "Datadog, Inc.",
+    "w": 2.64
+   },
+   {
+    "t": "DASH",
+    "n": "DoorDash, Inc.",
+    "w": 2.48
+   },
+   {
+    "t": "ABNB",
+    "n": "Airbnb, Inc.",
+    "w": 2.38
+   },
+   {
+    "t": "CIEN",
+    "n": "Ciena Corporation",
+    "w": 1.7
+   },
+   {
+    "t": "CVNA",
+    "n": "Carvana Co.",
+    "w": 1.6
+   },
+   {
+    "t": "PYPL",
+    "n": "PayPal Holdings, Inc.",
+    "w": 1.52
+   },
+   {
+    "t": "EBAY",
+    "n": "eBay Inc.",
+    "w": 1.52
+   },
+   {
+    "t": "WDAY",
+    "n": "Workday, Inc.",
+    "w": 1.33
+   },
+   {
+    "t": "VEEV",
+    "n": "Veeva Systems Inc.",
+    "w": 1.32
+   },
+   {
+    "t": "RBLX",
+    "n": "Roblox Corporation",
+    "w": 1.09
+   },
+   {
+    "t": "CRWV",
+    "n": "CoreWeave, Inc.",
+    "w": 1.06
+   },
+   {
+    "t": "TEAM",
+    "n": "Atlassian Corporation",
+    "w": 1.05
+   },
+   {
+    "t": "OKTA",
+    "n": "Okta, Inc.",
+    "w": 1.04
+   }
+  ]
+ },
+ "KRE": {
+  "proxy": "KRE",
+  "name": "State Street SPDR S&P Regional Banking ETF",
+  "count": 169,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "FIBK",
+    "n": "First Interstate BancSystem, Inc.",
+    "w": 1.13
+   },
+   {
+    "t": "HWC",
+    "n": "Hancock Whitney Corporation",
+    "w": 1.12
+   },
+   {
+    "t": "FHB",
+    "n": "First Hawaiian, Inc.",
+    "w": 1.12
+   },
+   {
+    "t": "UBSI",
+    "n": "United Bankshares, Inc.",
+    "w": 1.12
+   },
+   {
+    "t": "COLB",
+    "n": "Columbia Banking System, Inc.",
+    "w": 1.12
+   },
+   {
+    "t": "HOMB",
+    "n": "Home BancShares, Inc.",
+    "w": 1.12
+   },
+   {
+    "t": "FULT",
+    "n": "Fulton Financial Corporation",
+    "w": 1.11
+   },
+   {
+    "t": "WSFS",
+    "n": "WSFS Financial Corporation",
+    "w": 1.11
+   },
+   {
+    "t": "BANC",
+    "n": "Banc of California, Inc.",
+    "w": 1.11
+   },
+   {
+    "t": "EBC",
+    "n": "Eastern Bankshares, Inc.",
+    "w": 1.11
+   },
+   {
+    "t": "ONB",
+    "n": "Old National Bancorp",
+    "w": 1.11
+   },
+   {
+    "t": "ABCB",
+    "n": "Ameris Bancorp",
+    "w": 1.11
+   },
+   {
+    "t": "FBP",
+    "n": "First BanCorp.",
+    "w": 1.11
+   },
+   {
+    "t": "BKU",
+    "n": "BankUnited, Inc.",
+    "w": 1.1
+   },
+   {
+    "t": "UCB",
+    "n": "United Community Banks, Inc.",
+    "w": 1.1
+   },
+   {
+    "t": "EWBC",
+    "n": "East West Bancorp, Inc.",
+    "w": 1.1
+   },
+   {
+    "t": "VLY",
+    "n": "Valley National Bancorp",
+    "w": 1.1
+   },
+   {
+    "t": "CFR",
+    "n": "Cullen/Frost Bankers, Inc.",
+    "w": 1.1
+   },
+   {
+    "t": "AUB",
+    "n": "Atlantic Union Bankshares Corporation",
+    "w": 1.1
+   },
+   {
+    "t": "BOKF",
+    "n": "BOK Financial Corporation",
+    "w": 1.1
+   },
+   {
+    "t": "WAL",
+    "n": "Western Alliance Bancorporation",
+    "w": 1.1
+   },
+   {
+    "t": "FNB",
+    "n": "F.N.B. Corporation",
+    "w": 1.1
+   },
+   {
+    "t": "NIC",
+    "n": "Nicolet Bankshares, Inc.",
+    "w": 1.1
+   },
+   {
+    "t": "OZK",
+    "n": "Bank OZK",
+    "w": 1.09
+   },
+   {
+    "t": "CBSH",
+    "n": "Commerce Bancshares, Inc.",
+    "w": 1.09
+   }
+  ]
+ },
+ "XHB": {
+  "proxy": "XHB",
+  "name": "State Street SPDR S&P Homebuilders ETF",
+  "count": 37,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "W",
+    "n": "Wayfair Inc.",
+    "w": 3.34
+   },
+   {
+    "t": "SKY",
+    "n": "Champion Homes, Inc.",
+    "w": 3.31
+   },
+   {
+    "t": "MOD",
+    "n": "Modine Manufacturing Company",
+    "w": 3.31
+   },
+   {
+    "t": "ALLE",
+    "n": "Allegion plc",
+    "w": 3.28
+   },
+   {
+    "t": "NVR",
+    "n": "NVR, Inc.",
+    "w": 3.24
+   },
+   {
+    "t": "DHI",
+    "n": "D.R. Horton, Inc.",
+    "w": 3.24
+   },
+   {
+    "t": "MTH",
+    "n": "Meritage Homes Corporation",
+    "w": 3.23
+   },
+   {
+    "t": "JCI",
+    "n": "Johnson Controls International plc",
+    "w": 3.22
+   },
+   {
+    "t": "PHM",
+    "n": "PulteGroup, Inc.",
+    "w": 3.22
+   },
+   {
+    "t": "WSM",
+    "n": "Williams-Sonoma, Inc.",
+    "w": 3.22
+   },
+   {
+    "t": "CVCO",
+    "n": "Cavco Industries, Inc.",
+    "w": 3.22
+   },
+   {
+    "t": "TOL",
+    "n": "Toll Brothers, Inc.",
+    "w": 3.22
+   },
+   {
+    "t": "MAS",
+    "n": "Masco Corporation",
+    "w": 3.2
+   },
+   {
+    "t": "SN",
+    "n": "SharkNinja, Inc.",
+    "w": 3.2
+   },
+   {
+    "t": "SSD",
+    "n": "Simpson Manufacturing Co., Inc.",
+    "w": 3.16
+   },
+   {
+    "t": "LOW",
+    "n": "Lowe's Companies, Inc.",
+    "w": 3.16
+   },
+   {
+    "t": "HD",
+    "n": "The Home Depot, Inc.",
+    "w": 3.15
+   },
+   {
+    "t": "TT",
+    "n": "Trane Technologies plc",
+    "w": 3.15
+   },
+   {
+    "t": "OC",
+    "n": "Owens Corning",
+    "w": 3.14
+   },
+   {
+    "t": "WMS",
+    "n": "Advanced Drainage Systems, Inc.",
+    "w": 3.12
+   },
+   {
+    "t": "LII",
+    "n": "Lennox International Inc.",
+    "w": 3.12
+   },
+   {
+    "t": "MHO",
+    "n": "M/I Homes, Inc.",
+    "w": 3.1
+   },
+   {
+    "t": "KBH",
+    "n": "KB Home",
+    "w": 3.09
+   },
+   {
+    "t": "BLDR",
+    "n": "Builders FirstSource, Inc.",
+    "w": 3.09
+   },
+   {
+    "t": "LEN",
+    "n": "Lennar Corporation",
+    "w": 3.09
+   }
+  ]
+ },
+ "XOP": {
+  "proxy": "XOP",
+  "name": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
+  "count": 54,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "DINO",
+    "n": "HF Sinclair Corporation",
+    "w": 2.89
+   },
+   {
+    "t": "MPC",
+    "n": "Marathon Petroleum Corporation",
+    "w": 2.87
+   },
+   {
+    "t": "VLO",
+    "n": "Valero Energy Corporation",
+    "w": 2.87
+   },
+   {
+    "t": "PSX",
+    "n": "Phillips 66",
+    "w": 2.83
+   },
+   {
+    "t": "DK",
+    "n": "Delek US Holdings, Inc.",
+    "w": 2.8
+   },
+   {
+    "t": "PARR",
+    "n": "Par Pacific Holdings, Inc.",
+    "w": 2.74
+   },
+   {
+    "t": "PBF",
+    "n": "PBF Energy Inc.",
+    "w": 2.72
+   },
+   {
+    "t": "APA",
+    "n": "APA Corporation",
+    "w": 2.7
+   },
+   {
+    "t": "XOM",
+    "n": "ExxonMobil Holdings Corporation",
+    "w": 2.69
+   },
+   {
+    "t": "DVN",
+    "n": "Devon Energy Corporation",
+    "w": 2.68
+   },
+   {
+    "t": "EOG",
+    "n": "EOG Resources, Inc.",
+    "w": 2.65
+   },
+   {
+    "t": "CVX",
+    "n": "Chevron Corporation",
+    "w": 2.64
+   },
+   {
+    "t": "CRGY",
+    "n": "Crescent Energy Company",
+    "w": 2.63
+   },
+   {
+    "t": "SM",
+    "n": "SM Energy Company",
+    "w": 2.63
+   },
+   {
+    "t": "MUR",
+    "n": "Murphy Oil Corporation",
+    "w": 2.62
+   },
+   {
+    "t": "OVV",
+    "n": "Ovintiv Inc.",
+    "w": 2.61
+   },
+   {
+    "t": "CHRD",
+    "n": "Chord Energy Corporation",
+    "w": 2.61
+   },
+   {
+    "t": "COP",
+    "n": "ConocoPhillips",
+    "w": 2.61
+   },
+   {
+    "t": "PR",
+    "n": "Permian Resources Corporation",
+    "w": 2.6
+   },
+   {
+    "t": "OXY",
+    "n": "Occidental Petroleum Corporation",
+    "w": 2.59
+   },
+   {
+    "t": "FANG",
+    "n": "Diamondback Energy, Inc.",
+    "w": 2.56
+   },
+   {
+    "t": "TPL",
+    "n": "Texas Pacific Land Corporation",
+    "w": 2.54
+   },
+   {
+    "t": "MTDR",
+    "n": "Matador Resources Company",
+    "w": 2.53
+   },
+   {
+    "t": "VNOM",
+    "n": "Viper Energy, Inc.",
+    "w": 2.52
+   },
+   {
+    "t": "RRC",
+    "n": "Range Resources Corporation",
+    "w": 2.48
+   }
+  ]
+ },
+ "XLI": {
+  "proxy": "XLI",
+  "name": "State Street Industrial Select Sector SPDR ETF",
+  "count": 86,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "CAT",
+    "n": "Caterpillar Inc.",
+    "w": 6.88
+   },
+   {
+    "t": "GE",
+    "n": "GE Aerospace",
+    "w": 6.03
+   },
+   {
+    "t": "RTX",
+    "n": "RTX Corporation",
+    "w": 4.84
+   },
+   {
+    "t": "GEV",
+    "n": "GE Vernova Inc.",
+    "w": 4.63
+   },
+   {
+    "t": "DE",
+    "n": "Deere & Company",
+    "w": 3.18
+   },
+   {
+    "t": "UNP",
+    "n": "Union Pacific Corporation",
+    "w": 3.07
+   },
+   {
+    "t": "ETN",
+    "n": "Eaton Corporation plc",
+    "w": 3.05
+   },
+   {
+    "t": "BA",
+    "n": "The Boeing Company",
+    "w": 2.9
+   },
+   {
+    "t": "UBER",
+    "n": "Uber Technologies, Inc.",
+    "w": 2.66
+   },
+   {
+    "t": "PH",
+    "n": "Parker-Hannifin Corporation",
+    "w": 2.2
+   },
+   {
+    "t": "LMT",
+    "n": "Lockheed Martin Corporation",
+    "w": 2.0
+   },
+   {
+    "t": "ADP",
+    "n": "Automatic Data Processing, Inc.",
+    "w": 1.99
+   },
+   {
+    "t": "VRT",
+    "n": "Vertiv Holdings Co",
+    "w": 1.78
+   },
+   {
+    "t": "PWR",
+    "n": "Quanta Services, Inc.",
+    "w": 1.77
+   },
+   {
+    "t": "TT",
+    "n": "Trane Technologies plc",
+    "w": 1.75
+   },
+   {
+    "t": "HWM",
+    "n": "Howmet Aerospace Inc.",
+    "w": 1.69
+   },
+   {
+    "t": "GD",
+    "n": "General Dynamics Corporation",
+    "w": 1.66
+   },
+   {
+    "t": "CSX",
+    "n": "CSX Corporation",
+    "w": 1.61
+   },
+   {
+    "t": "JCI",
+    "n": "Johnson Controls International plc",
+    "w": 1.6
+   },
+   {
+    "t": "MMM",
+    "n": "3M Company",
+    "w": 1.58
+   },
+   {
+    "t": "EMR",
+    "n": "Emerson Electric Co.",
+    "w": 1.55
+   },
+   {
+    "t": "WM",
+    "n": "Waste Management, Inc.",
+    "w": 1.45
+   },
+   {
+    "t": "BE",
+    "n": "Bloom Energy Corporation",
+    "w": 1.45
+   },
+   {
+    "t": "UPS",
+    "n": "United Parcel Service, Inc.",
+    "w": 1.37
+   },
+   {
+    "t": "CMI",
+    "n": "Cummins Inc.",
+    "w": 1.36
+   }
+  ]
+ },
+ "XLP": {
+  "proxy": "XLP",
+  "name": "State Street Consumer Staples Select Sector SPDR ETF",
+  "count": 37,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "WMT",
+    "n": "Walmart Inc.",
+    "w": 10.54
+   },
+   {
+    "t": "COST",
+    "n": "Costco Wholesale Corporation",
+    "w": 8.8
+   },
+   {
+    "t": "KO",
+    "n": "The Coca-Cola Company",
+    "w": 7.57
+   },
+   {
+    "t": "PG",
+    "n": "The Procter & Gamble Company",
+    "w": 7.54
+   },
+   {
+    "t": "PM",
+    "n": "Philip Morris International Inc.",
+    "w": 6.51
+   },
+   {
+    "t": "MO",
+    "n": "Altria Group, Inc.",
+    "w": 4.58
+   },
+   {
+    "t": "TGT",
+    "n": "Target Corporation",
+    "w": 4.49
+   },
+   {
+    "t": "CL",
+    "n": "Colgate-Palmolive Company",
+    "w": 4.44
+   },
+   {
+    "t": "MDLZ",
+    "n": "Mondelez International, Inc.",
+    "w": 4.36
+   },
+   {
+    "t": "PEP",
+    "n": "PepsiCo, Inc.",
+    "w": 4.24
+   },
+   {
+    "t": "MNST",
+    "n": "Monster Beverage Corporation",
+    "w": 4.07
+   },
+   {
+    "t": "KDP",
+    "n": "Keurig Dr Pepper Inc.",
+    "w": 2.68
+   },
+   {
+    "t": "ADM",
+    "n": "Archer-Daniels-Midland Company",
+    "w": 2.62
+   },
+   {
+    "t": "SYY",
+    "n": "Sysco Corporation",
+    "w": 2.41
+   },
+   {
+    "t": "KR",
+    "n": "The Kroger Co.",
+    "w": 2.18
+   },
+   {
+    "t": "KVUE",
+    "n": "Kenvue Inc.",
+    "w": 2.15
+   },
+   {
+    "t": "KMB",
+    "n": "Kimberly-Clark Corporation",
+    "w": 2.07
+   },
+   {
+    "t": "DG",
+    "n": "Dollar General Corporation",
+    "w": 1.72
+   },
+   {
+    "t": "HSY",
+    "n": "The Hershey Company",
+    "w": 1.58
+   },
+   {
+    "t": "EL",
+    "n": "The Est\u00e9e Lauder Companies Inc.",
+    "w": 1.47
+   },
+   {
+    "t": "CHD",
+    "n": "Church & Dwight Co., Inc.",
+    "w": 1.43
+   },
+   {
+    "t": "CASY",
+    "n": "Casey's General Stores, Inc.",
+    "w": 1.41
+   },
+   {
+    "t": "DLTR",
+    "n": "Dollar Tree, Inc.",
+    "w": 1.37
+   },
+   {
+    "t": "KHC",
+    "n": "The Kraft Heinz Company",
+    "w": 1.35
+   },
+   {
+    "t": "GIS",
+    "n": "General Mills, Inc.",
+    "w": 1.24
+   }
+  ]
+ },
+ "GDX": {
+  "proxy": "GDX",
+  "name": "VanEck Gold Miners ETF",
+  "count": 62,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "NEM",
+    "n": "Newmont Corporation",
+    "w": 10.91
+   },
+   {
+    "t": "TSX: AEM",
+    "n": "Agnico Eagle Mines Limited",
+    "w": 10.89
+   },
+   {
+    "t": "TSX: ABX",
+    "n": "Barrick Mining Corporation",
+    "w": 7.44
+   },
+   {
+    "t": "TSX: WPM",
+    "n": "Wheaton Precious Metals Corp.",
+    "w": 5.98
+   },
+   {
+    "t": "AU",
+    "n": "AngloGold Ashanti plc",
+    "w": 5.02
+   },
+   {
+    "t": "TSX: FNV",
+    "n": "Franco-Nevada Corporation",
+    "w": 4.92
+   },
+   {
+    "t": "TSX: K",
+    "n": "Kinross Gold Corporation",
+    "w": 4.17
+   },
+   {
+    "t": "\u2014",
+    "n": "Gold Fields Ltd ADR",
+    "w": 4.13
+   },
+   {
+    "t": "TSX: PAAS",
+    "n": "Pan American Silver Corp.",
+    "w": 2.59
+   },
+   {
+    "t": "ASX: NST",
+    "n": "Northern Star Resources Limited",
+    "w": 2.44
+   },
+   {
+    "t": "CDE",
+    "n": "Coeur Mining, Inc.",
+    "w": 2.29
+   },
+   {
+    "t": "RGLD",
+    "n": "Royal Gold, Inc.",
+    "w": 1.93
+   },
+   {
+    "t": "TSX: AGI",
+    "n": "Alamos Gold Inc.",
+    "w": 1.75
+   },
+   {
+    "t": "EQX",
+    "n": "Equinox Gold Corp.",
+    "w": 1.65
+   },
+   {
+    "t": "ASX: EVN",
+    "n": "Evolution Mining Limited",
+    "w": 1.48
+   },
+   {
+    "t": "TSX: ELD",
+    "n": "Eldorado Gold Corporation",
+    "w": 1.4
+   },
+   {
+    "t": "BMV: PE&OLES",
+    "n": "Industrias Pe\u00f1oles, S.A.B. de C.V.",
+    "w": 1.39
+   },
+   {
+    "t": "TSX: EDV",
+    "n": "Endeavour Mining plc",
+    "w": 1.39
+   },
+   {
+    "t": "TSX: IMG",
+    "n": "IAMGOLD Corporation",
+    "w": 1.38
+   },
+   {
+    "t": "HL",
+    "n": "Hecla Mining Company",
+    "w": 1.34
+   },
+   {
+    "t": "TSX: AG",
+    "n": "First Majestic Silver Corp.",
+    "w": 1.29
+   },
+   {
+    "t": "TSX: GMIN",
+    "n": "G Mining Ventures Corp.",
+    "w": 1.18
+   },
+   {
+    "t": "\u2014",
+    "n": "Harmony Gold Mining Co Ltd ADR",
+    "w": 1.11
+   },
+   {
+    "t": "HKG: 2259",
+    "n": "Zijin Gold International Company Limited",
+    "w": 1.09
+   },
+   {
+    "t": "LON: FRES",
+    "n": "Fresnillo plc",
+    "w": 1.08
+   }
+  ]
+ },
+ "GDXJ": {
+  "proxy": "GDXJ",
+  "name": "VanEck Junior Gold Miners ETF",
+  "count": 161,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "EQX",
+    "n": "Equinox Gold Corp.",
+    "w": 7.11
+   },
+   {
+    "t": "TSX: AGI",
+    "n": "Alamos Gold Inc.",
+    "w": 5.88
+   },
+   {
+    "t": "TSX: EDV",
+    "n": "Endeavour Mining plc",
+    "w": 5.43
+   },
+   {
+    "t": "ASX: EVN",
+    "n": "Evolution Mining Limited",
+    "w": 5.3
+   },
+   {
+    "t": "CDE",
+    "n": "Coeur Mining, Inc.",
+    "w": 5.05
+   },
+   {
+    "t": "BMV: PE&OLES",
+    "n": "Industrias Pe\u00f1oles, S.A.B. de C.V.",
+    "w": 2.7
+   },
+   {
+    "t": "TSX: IMG",
+    "n": "IAMGOLD Corporation",
+    "w": 2.67
+   },
+   {
+    "t": "HL",
+    "n": "Hecla Mining Company",
+    "w": 2.59
+   },
+   {
+    "t": "TSX: AG",
+    "n": "First Majestic Silver Corp.",
+    "w": 2.5
+   },
+   {
+    "t": "TSX: ELD",
+    "n": "Eldorado Gold Corporation",
+    "w": 2.43
+   },
+   {
+    "t": "\u2014",
+    "n": "Harmony Gold Mining Co Ltd ADR",
+    "w": 2.16
+   },
+   {
+    "t": "TSX: GMIN",
+    "n": "G Mining Ventures Corp.",
+    "w": 1.94
+   },
+   {
+    "t": "TSX: LUG",
+    "n": "Lundin Gold Inc.",
+    "w": 1.88
+   },
+   {
+    "t": "TSX: DPM",
+    "n": "DPM Metals Inc.",
+    "w": 1.82
+   },
+   {
+    "t": "TSX: BTO",
+    "n": "B2Gold Corp.",
+    "w": 1.77
+   },
+   {
+    "t": "\u2014",
+    "n": "Discovery Mining Ltd Common Stock",
+    "w": 1.67
+   },
+   {
+    "t": "TSX: OGC",
+    "n": "OceanaGold Corporation",
+    "w": 1.66
+   },
+   {
+    "t": "SSRM",
+    "n": "SSR Mining Inc.",
+    "w": 1.64
+   },
+   {
+    "t": "BVN",
+    "n": "Compa\u00f1\u00eda de Minas Buenaventura S.A.A.",
+    "w": 1.42
+   },
+   {
+    "t": "TSX: OR",
+    "n": "OR Royalties Inc.",
+    "w": 1.3
+   },
+   {
+    "t": "ASX: PRU",
+    "n": "Perseus Mining Limited",
+    "w": 1.29
+   },
+   {
+    "t": "HKG: 1818",
+    "n": "Zhaojin Mining Industry Company Limited",
+    "w": 1.22
+   },
+   {
+    "t": "\u2014",
+    "n": "Montage Gold Corp Common Stock",
+    "w": 1.15
+   },
+   {
+    "t": "TSXV: ARTG",
+    "n": "Artemis Gold Inc.",
+    "w": 1.15
+   },
+   {
+    "t": "TSX: KNT",
+    "n": "K92 Mining Inc.",
+    "w": 1.12
+   }
+  ]
+ },
+ "USO": {
+  "proxy": "USO",
+  "name": "United States Oil Fund LP",
+  "count": 24,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "\u2014",
+    "n": "Crude Oil Future Nov 26",
+    "w": 47.81
+   },
+   {
+    "t": "\u2014",
+    "n": "Cash",
+    "w": 8.26
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 5.36
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 5.36
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 4.03
+   },
+   {
+    "t": "\u2014",
+    "n": "Trs Macquarie Mqcp361e 07212026",
+    "w": 4.03
+   },
+   {
+    "t": "\u2014",
+    "n": "Trs Soc Gen Sgixcwti 06182026",
+    "w": 3.69
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 2.98
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 2.7
+   },
+   {
+    "t": "\u2014",
+    "n": "Bny Cash Reserve",
+    "w": 2.68
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 2.17
+   },
+   {
+    "t": "\u2014",
+    "n": "Drey Inst Pref Gov Mm Inst 6546",
+    "w": 1.93
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.89
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.76
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.76
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.63
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.35
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.34
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.34
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.34
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.22
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 0.95
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 0.81
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 0.23
+   }
+  ]
+ },
+ "UNG": {
+  "proxy": "UNG",
+  "name": "United States Natural Gas Fund LP",
+  "count": 16,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "\u2014",
+    "n": "Future on Natural Gas",
+    "w": 45.36
+   },
+   {
+    "t": "\u2014",
+    "n": "Drey Inst Pref Gov Mm Inst 6546",
+    "w": 13.12
+   },
+   {
+    "t": "\u2014",
+    "n": "Cash",
+    "w": 9.1
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 6.51
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 6.51
+   },
+   {
+    "t": "\u2014",
+    "n": "Trs Soc Gen Sgixcng1 03262026",
+    "w": 4.72
+   },
+   {
+    "t": "\u2014",
+    "n": "Bny Cash Reserve",
+    "w": 4.58
+   },
+   {
+    "t": "\u2014",
+    "n": "Trs Scotia Snovng1 08312026",
+    "w": 4.57
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 2.34
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 2.34
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 2.07
+   },
+   {
+    "t": "\u2014",
+    "n": "Morgan Stanley Liq Govt Inst 8302",
+    "w": 2.04
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.88
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.88
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 1.41
+   },
+   {
+    "t": "\u2014",
+    "n": "United States Treasury Bills 0%",
+    "w": 0.94
+   }
+  ]
+ },
+ "EWZ": {
+  "proxy": "EWZ",
+  "name": "iShares MSCI Brazil ETF",
+  "count": 51,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "BVMF: VALE3",
+    "n": "Vale S.A.",
+    "w": 9.29
+   },
+   {
+    "t": "NU",
+    "n": "Nu Holdings Ltd.",
+    "w": 8.6
+   },
+   {
+    "t": "BVMF: ITUB4",
+    "n": "Ita\u00fa Unibanco Holding S.A.",
+    "w": 7.98
+   },
+   {
+    "t": "BVMF: PETR4",
+    "n": "Petr\u00f3leo Brasileiro S.A. - Petrobras",
+    "w": 7.36
+   },
+   {
+    "t": "BVMF: PETR3",
+    "n": "Petr\u00f3leo Brasileiro S.A. - Petrobras",
+    "w": 6.85
+   },
+   {
+    "t": "BVMF: BBDC4",
+    "n": "Banco Bradesco S.A.",
+    "w": 3.67
+   },
+   {
+    "t": "BVMF: B3SA3",
+    "n": "B3 S.A. - Brasil, Bolsa, Balc\u00e3o",
+    "w": 3.54
+   },
+   {
+    "t": "BVMF: WEGE3",
+    "n": "WEG S.A.",
+    "w": 3.32
+   },
+   {
+    "t": "BVMF: AXIA3",
+    "n": "AXIA Energia SA",
+    "w": 3.16
+   },
+   {
+    "t": "BVMF: BPAC11",
+    "n": "Banco BTG Pactual S.A.",
+    "w": 2.84
+   },
+   {
+    "t": "BVMF: ABEV3",
+    "n": "Ambev S.A.",
+    "w": 2.8
+   },
+   {
+    "t": "BVMF: EMBJ3",
+    "n": "Embraer S.A.",
+    "w": 2.65
+   },
+   {
+    "t": "BVMF: SBSP3",
+    "n": "Companhia de Saneamento B\u00e1sico do Estado de S\u00e3o Paulo - SABESP",
+    "w": 2.59
+   },
+   {
+    "t": "BVMF: ITSA4",
+    "n": "Ita\u00fasa S.A.",
+    "w": 2.48
+   },
+   {
+    "t": "BVMF: PRIO3",
+    "n": "Prio S.A.",
+    "w": 2.04
+   },
+   {
+    "t": "BVMF: EQTL3",
+    "n": "Equatorial S.A.",
+    "w": 1.85
+   },
+   {
+    "t": "BVMF: VBBR3",
+    "n": "Vibra Energia S.A.",
+    "w": 1.74
+   },
+   {
+    "t": "XP",
+    "n": "XP Inc.",
+    "w": 1.57
+   },
+   {
+    "t": "BVMF: BBAS3",
+    "n": "Banco do Brasil S.A.",
+    "w": 1.56
+   },
+   {
+    "t": "BVMF: GGBR4",
+    "n": "Gerdau S.A.",
+    "w": 1.35
+   },
+   {
+    "t": "BVMF: SUZB3",
+    "n": "Suzano S.A.",
+    "w": 1.33
+   },
+   {
+    "t": "BVMF: RENT3",
+    "n": "Localiza Rent a Car S.A.",
+    "w": 1.32
+   },
+   {
+    "t": "\u2014",
+    "n": "BRL CASH",
+    "w": 1.23
+   },
+   {
+    "t": "BVMF: UGPA3",
+    "n": "Ultrapar Participa\u00e7\u00f5es S.A.",
+    "w": 1.23
+   },
+   {
+    "t": "BVMF: RDOR3",
+    "n": "Rede D'Or S\u00e3o Luiz S.A.",
+    "w": 1.19
+   }
+  ]
+ },
+ "FXI": {
+  "proxy": "FXI",
+  "name": "iShares China Large-Cap ETF",
+  "count": 60,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "HKG: 9988",
+    "n": "Alibaba Group Holding Limited",
+    "w": 9.2
+   },
+   {
+    "t": "HKG: 0939",
+    "n": "China Construction Bank Corporation",
+    "w": 8.9
+   },
+   {
+    "t": "HKG: 0700",
+    "n": "Tencent Holdings Limited",
+    "w": 8.85
+   },
+   {
+    "t": "HKG: 1398",
+    "n": "Industrial and Commercial Bank of China Limited",
+    "w": 6.24
+   },
+   {
+    "t": "HKG: 1810",
+    "n": "Xiaomi Corporation",
+    "w": 4.73
+   },
+   {
+    "t": "HKG: 3988",
+    "n": "Bank of China Limited",
+    "w": 4.45
+   },
+   {
+    "t": "HKG: 3690",
+    "n": "Meituan",
+    "w": 4.41
+   },
+   {
+    "t": "HKG: 9999",
+    "n": "NetEase, Inc.",
+    "w": 3.74
+   },
+   {
+    "t": "HKG: 2318",
+    "n": "Ping An Insurance (Group) Company of China, Ltd.",
+    "w": 3.61
+   },
+   {
+    "t": "HKG: 1211",
+    "n": "BYD Company Limited",
+    "w": 3.39
+   },
+   {
+    "t": "HKG: 9618",
+    "n": "JD.com, Inc.",
+    "w": 2.91
+   },
+   {
+    "t": "HKG: 2628",
+    "n": "China Life Insurance Company Limited",
+    "w": 2.47
+   },
+   {
+    "t": "HKG: 2899",
+    "n": "Zijin Mining Group Company Limited",
+    "w": 2.3
+   },
+   {
+    "t": "HKG: 0857",
+    "n": "PetroChina Company Limited",
+    "w": 2.23
+   },
+   {
+    "t": "HKG: 3968",
+    "n": "China Merchants Bank Co., Ltd.",
+    "w": 2.19
+   },
+   {
+    "t": "HKG: 9961",
+    "n": "Trip.com Group Limited",
+    "w": 2.18
+   },
+   {
+    "t": "HKG: 9888",
+    "n": "Baidu, Inc.",
+    "w": 2.07
+   },
+   {
+    "t": "HKG: 6160",
+    "n": "BeOne Medicines AG",
+    "w": 1.95
+   },
+   {
+    "t": "HKG: 1088",
+    "n": "China Shenhua Energy Company Limited",
+    "w": 1.7
+   },
+   {
+    "t": "HKG: 1288",
+    "n": "Agricultural Bank of China Limited",
+    "w": 1.53
+   },
+   {
+    "t": "HKG: 2328",
+    "n": "PICC Property and Casualty Company Limited",
+    "w": 1.31
+   },
+   {
+    "t": "HKG: 3750",
+    "n": "Contemporary Amperex Technology Co., Limited",
+    "w": 1.22
+   },
+   {
+    "t": "HKG: 9992",
+    "n": "Pop Mart International Group Limited",
+    "w": 1.18
+   },
+   {
+    "t": "HKG: 0386",
+    "n": "China Petroleum & Chemical Corporation",
+    "w": 1.14
+   },
+   {
+    "t": "HKG: 2020",
+    "n": "ANTA Sports Products Limited",
+    "w": 1.0
+   }
+  ]
+ },
+ "INDA": {
+  "proxy": "INDA",
+  "name": "iShares MSCI India ETF",
+  "count": 173,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "NSE: HDFCBANK",
+    "n": "HDFC Bank Limited",
+    "w": 6.61
+   },
+   {
+    "t": "NSE: ICICIBANK",
+    "n": "ICICI Bank Limited",
+    "w": 5.64
+   },
+   {
+    "t": "NSE: RELIANCE",
+    "n": "Reliance Industries Limited",
+    "w": 5.41
+   },
+   {
+    "t": "NSE: BHARTIARTL",
+    "n": "Bharti Airtel Limited",
+    "w": 4.08
+   },
+   {
+    "t": "\u2014",
+    "n": "BLK CSH FND TREASURY SL AGENCY",
+    "w": 3.83
+   },
+   {
+    "t": "\u2014",
+    "n": "INR CASH",
+    "w": 2.7
+   },
+   {
+    "t": "NSE: INFY",
+    "n": "Infosys Limited",
+    "w": 2.45
+   },
+   {
+    "t": "NSE: AXISBANK",
+    "n": "Axis Bank Limited",
+    "w": 2.29
+   },
+   {
+    "t": "NSE: M&M",
+    "n": "Mahindra & Mahindra Limited",
+    "w": 2.04
+   },
+   {
+    "t": "NSE: LT",
+    "n": "Larsen & Toubro Limited",
+    "w": 2.01
+   },
+   {
+    "t": "NSE: BAJFINANCE",
+    "n": "Bajaj Finance Limited",
+    "w": 1.99
+   },
+   {
+    "t": "NSE: KOTAKBANK",
+    "n": "Kotak Mahindra Bank Limited",
+    "w": 1.73
+   },
+   {
+    "t": "NSE: SBIN",
+    "n": "State Bank of India",
+    "w": 1.41
+   },
+   {
+    "t": "NSE: TCS",
+    "n": "Tata Consultancy Services Limited",
+    "w": 1.31
+   },
+   {
+    "t": "NSE: TITAN",
+    "n": "Titan Company Limited",
+    "w": 1.31
+   },
+   {
+    "t": "NSE: SUNPHARMA",
+    "n": "Sun Pharmaceutical Industries Limited",
+    "w": 1.27
+   },
+   {
+    "t": "NSE: ETERNAL",
+    "n": "Eternal Limited",
+    "w": 1.2
+   },
+   {
+    "t": "NSE: MARUTI",
+    "n": "Maruti Suzuki India Limited",
+    "w": 1.1
+   },
+   {
+    "t": "NSE: SHRIRAMFIN",
+    "n": "Shriram Finance Limited",
+    "w": 1.09
+   },
+   {
+    "t": "NSE: NTPC",
+    "n": "NTPC Limited",
+    "w": 1.08
+   },
+   {
+    "t": "NSE: TATASTEEL",
+    "n": "Tata Steel Limited",
+    "w": 1.07
+   },
+   {
+    "t": "NSE: BEL",
+    "n": "Bharat Electronics Limited",
+    "w": 1.05
+   },
+   {
+    "t": "NSE: HINDUNILVR",
+    "n": "Hindustan Unilever Limited",
+    "w": 1.05
+   },
+   {
+    "t": "NSE: HINDALCO",
+    "n": "Hindalco Industries Limited",
+    "w": 0.98
+   },
+   {
+    "t": "NSE: ULTRACEMCO",
+    "n": "UltraTech Cement Limited",
+    "w": 0.87
+   }
+  ]
+ },
+ "EWY": {
+  "proxy": "EWY",
+  "name": "iShares MSCI South Korea ETF",
+  "count": 89,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "KRX: 000660",
+    "n": "SK hynix Inc.",
+    "w": 24.54
+   },
+   {
+    "t": "KRX: 005930",
+    "n": "Samsung Electronics Co., Ltd.",
+    "w": 21.97
+   },
+   {
+    "t": "\u2014",
+    "n": "KRW CASH",
+    "w": 3.1
+   },
+   {
+    "t": "KRX: 402340",
+    "n": "SK Square Co., Ltd.",
+    "w": 2.93
+   },
+   {
+    "t": "KRX: 009150",
+    "n": "Samsung Electro-Mechanics Co., Ltd.",
+    "w": 2.49
+   },
+   {
+    "t": "KRX: 105560",
+    "n": "KB Financial Group Inc.",
+    "w": 1.98
+   },
+   {
+    "t": "KRX: 055550",
+    "n": "Shinhan Financial Group Co., Ltd.",
+    "w": 1.61
+   },
+   {
+    "t": "KRX: 005380",
+    "n": "Hyundai Motor Company",
+    "w": 1.53
+   },
+   {
+    "t": "KRX: 086790",
+    "n": "Hana Financial Group Inc.",
+    "w": 1.32
+   },
+   {
+    "t": "KRX: 034020",
+    "n": "Doosan Enerbility Co., Ltd.",
+    "w": 1.3
+   },
+   {
+    "t": "KRX: 012450",
+    "n": "Hanwha Aerospace Co., Ltd.",
+    "w": 1.26
+   },
+   {
+    "t": "KRX: 006400",
+    "n": "Samsung SDI Co., Ltd.",
+    "w": 1.19
+   },
+   {
+    "t": "KRX: 035420",
+    "n": "NAVER Corporation",
+    "w": 1.08
+   },
+   {
+    "t": "KRX: 028260",
+    "n": "Samsung C&T Corporation",
+    "w": 1.07
+   },
+   {
+    "t": "KRX: 068270",
+    "n": "Celltrion, Inc.",
+    "w": 1.05
+   },
+   {
+    "t": "KRX: 000270",
+    "n": "Kia Corporation",
+    "w": 1.03
+   },
+   {
+    "t": "KRX: 316140",
+    "n": "Woori Financial Group Inc.",
+    "w": 0.99
+   },
+   {
+    "t": "KRX: 032830",
+    "n": "Samsung Life Insurance Co., Ltd.",
+    "w": 0.91
+   },
+   {
+    "t": "KRX: 066570",
+    "n": "LG Electronics Inc.",
+    "w": 0.89
+   },
+   {
+    "t": "KRX: 005490",
+    "n": "POSCO Holdings Inc.",
+    "w": 0.87
+   },
+   {
+    "t": "KRX: 000810",
+    "n": "Samsung Fire & Marine Insurance Co., Ltd.",
+    "w": 0.85
+   },
+   {
+    "t": "KRX: 012330",
+    "n": "Hyundai Mobis Co.,Ltd",
+    "w": 0.84
+   },
+   {
+    "t": "KRX: 373220",
+    "n": "LG Energy Solution, Ltd.",
+    "w": 0.75
+   },
+   {
+    "t": "KRX: 033780",
+    "n": "KT&G Corporation",
+    "w": 0.74
+   },
+   {
+    "t": "KRX: 207940",
+    "n": "Samsung Biologics Co.,Ltd.",
+    "w": 0.73
+   }
+  ]
+ },
+ "EEM": {
+  "proxy": "EEM",
+  "name": "iShares MSCI Emerging Markets ETF",
+  "count": 1214,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "TPE: 2330",
+    "n": "Taiwan Semiconductor Manufacturing Company Limited",
+    "w": 15.44
+   },
+   {
+    "t": "KRX: 005930",
+    "n": "Samsung Electronics Co., Ltd.",
+    "w": 7.14
+   },
+   {
+    "t": "KRX: 000660",
+    "n": "SK hynix Inc.",
+    "w": 6.0
+   },
+   {
+    "t": "HKG: 0700",
+    "n": "Tencent Holdings Limited",
+    "w": 2.65
+   },
+   {
+    "t": "HKG: 9988",
+    "n": "Alibaba Group Holding Limited",
+    "w": 1.89
+   },
+   {
+    "t": "TPE: 2454",
+    "n": "MediaTek Inc.",
+    "w": 1.73
+   },
+   {
+    "t": "\u2014",
+    "n": "SAMSUNG ELECTRONICS NON VOTING PRE",
+    "w": 0.92
+   },
+   {
+    "t": "TPE: 2308",
+    "n": "Delta Electronics, Inc.",
+    "w": 0.86
+   },
+   {
+    "t": "HKG: 0939",
+    "n": "China Construction Bank Corporation",
+    "w": 0.83
+   },
+   {
+    "t": "TPE: 2317",
+    "n": "Hon Hai Precision Industry Co., Ltd.",
+    "w": 0.78
+   },
+   {
+    "t": "NSE: HDFCBANK",
+    "n": "HDFC Bank Limited",
+    "w": 0.7
+   },
+   {
+    "t": "NSE: RELIANCE",
+    "n": "Reliance Industries Limited",
+    "w": 0.6
+   },
+   {
+    "t": "NSE: ICICIBANK",
+    "n": "ICICI Bank Limited",
+    "w": 0.59
+   },
+   {
+    "t": "KRX: 402340",
+    "n": "SK Square Co., Ltd.",
+    "w": 0.58
+   },
+   {
+    "t": "TPE: 3711",
+    "n": "ASE Technology Holding Co., Ltd.",
+    "w": 0.54
+   },
+   {
+    "t": "HKG: 1398",
+    "n": "Industrial and Commercial Bank of China Limited",
+    "w": 0.5
+   },
+   {
+    "t": "HKG: 1810",
+    "n": "Xiaomi Corporation",
+    "w": 0.46
+   },
+   {
+    "t": "KRX: 009150",
+    "n": "Samsung Electro-Mechanics Co., Ltd.",
+    "w": 0.46
+   },
+   {
+    "t": "TPE: 2303",
+    "n": "United Microelectronics Corporation",
+    "w": 0.45
+   },
+   {
+    "t": "NSE: BHARTIARTL",
+    "n": "Bharti Airtel Limited",
+    "w": 0.45
+   },
+   {
+    "t": "TADAWUL: 1120",
+    "n": "Al Rajhi Banking and Investment Corporation",
+    "w": 0.42
+   },
+   {
+    "t": "BVMF: VALE3",
+    "n": "Vale S.A.",
+    "w": 0.42
+   },
+   {
+    "t": "HKG: 3988",
+    "n": "Bank of China Limited",
+    "w": 0.41
+   },
+   {
+    "t": "JSE: ANG",
+    "n": "AngloGold Ashanti plc",
+    "w": 0.41
+   },
+   {
+    "t": "NU",
+    "n": "Nu Holdings Ltd.",
+    "w": 0.4
+   }
+  ]
+ },
+ "VGK": {
+  "proxy": "VGK",
+  "name": "Vanguard FTSE Europe ETF",
+  "count": 1231,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "AMS: ASML",
+    "n": "ASML Holding N.V.",
+    "w": 4.02
+   },
+   {
+    "t": "LON: HSBA",
+    "n": "HSBC Holdings plc",
+    "w": 2.16
+   },
+   {
+    "t": "SWX: ROP",
+    "n": "Roche Holding AG",
+    "w": 1.88
+   },
+   {
+    "t": "SWX: NOVN",
+    "n": "Novartis AG",
+    "w": 1.74
+   },
+   {
+    "t": "LON: SHEL",
+    "n": "Shell plc",
+    "w": 1.58
+   },
+   {
+    "t": "SWX: NESN",
+    "n": "Nestl\u00e9 S.A.",
+    "w": 1.54
+   },
+   {
+    "t": "ETR: SIE",
+    "n": "Siemens Aktiengesellschaft",
+    "w": 1.49
+   },
+   {
+    "t": "LON: AZN",
+    "n": "AstraZeneca PLC",
+    "w": 1.49
+   },
+   {
+    "t": "ETR: SAP",
+    "n": "SAP SE",
+    "w": 1.39
+   },
+   {
+    "t": "BME: SAN",
+    "n": "Banco Santander, S.A.",
+    "w": 1.33
+   },
+   {
+    "t": "ETR: ALV",
+    "n": "Allianz SE",
+    "w": 1.22
+   },
+   {
+    "t": "EPA: SU",
+    "n": "Schneider Electric S.E.",
+    "w": 1.14
+   },
+   {
+    "t": "SWX: UBSG",
+    "n": "UBS Group AG",
+    "w": 1.05
+   },
+   {
+    "t": "LON: RR",
+    "n": "Rolls-Royce Holdings plc",
+    "w": 1.05
+   },
+   {
+    "t": "EPA: TTE",
+    "n": "TotalEnergies SE",
+    "w": 1.04
+   },
+   {
+    "t": "BME: BBVA",
+    "n": "Banco Bilbao Vizcaya Argentaria, S.A.",
+    "w": 1.0
+   },
+   {
+    "t": "BME: IBE",
+    "n": "Iberdrola, S.A.",
+    "w": 0.98
+   },
+   {
+    "t": "SWX: ABBN",
+    "n": "ABB Ltd",
+    "w": 0.93
+   },
+   {
+    "t": "BIT: UCG",
+    "n": "UniCredit S.p.A.",
+    "w": 0.91
+   },
+   {
+    "t": "CPH: NOVO.B",
+    "n": "Novo Nordisk A/S",
+    "w": 0.89
+   },
+   {
+    "t": "LON: ULVR",
+    "n": "Unilever PLC",
+    "w": 0.83
+   },
+   {
+    "t": "EPA: SAF",
+    "n": "Safran SA",
+    "w": 0.83
+   },
+   {
+    "t": "EPA: AIR",
+    "n": "Airbus SE",
+    "w": 0.82
+   },
+   {
+    "t": "EPA: MC",
+    "n": "LVMH Mo\u00ebt Hennessy - Louis Vuitton, Soci\u00e9t\u00e9 Europ\u00e9enne",
+    "w": 0.8
+   },
+   {
+    "t": "SWX: CFR",
+    "n": "Compagnie Financi\u00e8re Richemont SA",
+    "w": 0.78
+   }
+  ]
+ },
+ "ASHR": {
+  "proxy": "ASHR",
+  "name": "Xtrackers Harvest CSI 300 China A-Shares ETF",
+  "count": 288,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "SHE: 300308",
+    "n": "Zhongji Innolight Co., Ltd.",
+    "w": 3.87
+   },
+   {
+    "t": "SHE: 300750",
+    "n": "Contemporary Amperex Technology Co., Limited",
+    "w": 3.13
+   },
+   {
+    "t": "SHA: 600519",
+    "n": "Kweichow Moutai Co., Ltd.",
+    "w": 3.08
+   },
+   {
+    "t": "SHE: 300502",
+    "n": "Eoptolink Technology Inc., Ltd.",
+    "w": 2.31
+   },
+   {
+    "t": "SHA: 601318",
+    "n": "Ping An Insurance (Group) Company of China, Ltd.",
+    "w": 2.2
+   },
+   {
+    "t": "\u2014",
+    "n": "Chinese Yuan",
+    "w": 2.19
+   },
+   {
+    "t": "SHA: 601899",
+    "n": "Zijin Mining Group Company Limited",
+    "w": 1.99
+   },
+   {
+    "t": "SHA: 600036",
+    "n": "China Merchants Bank Co., Ltd.",
+    "w": 1.96
+   },
+   {
+    "t": "SHE: 000333",
+    "n": "Midea Group Co., Ltd.",
+    "w": 1.65
+   },
+   {
+    "t": "SHA: 603259",
+    "n": "WuXi AppTec Co., Ltd.",
+    "w": 1.55
+   },
+   {
+    "t": "SHA: 688256",
+    "n": "Cambricon Technologies Corporation Limited",
+    "w": 1.36
+   },
+   {
+    "t": "SHA: 600900",
+    "n": "China Yangtze Power Co., Ltd.",
+    "w": 1.36
+   },
+   {
+    "t": "SHA: 601166",
+    "n": "Industrial Bank Co., Ltd.",
+    "w": 1.17
+   },
+   {
+    "t": "SHE: 002371",
+    "n": "NAURA Technology Group Co., Ltd.",
+    "w": 1.17
+   },
+   {
+    "t": "SHA: 688012",
+    "n": "Advanced Micro-Fabrication Equipment Inc. China",
+    "w": 1.04
+   },
+   {
+    "t": "SHE: 002475",
+    "n": "Luxshare Precision Industry Co., Ltd.",
+    "w": 1.04
+   },
+   {
+    "t": "SHA: 601398",
+    "n": "Industrial and Commercial Bank of China Limited",
+    "w": 1.02
+   },
+   {
+    "t": "SHA: 600030",
+    "n": "CITIC Securities Company Limited",
+    "w": 1.02
+   },
+   {
+    "t": "SHE: 002384",
+    "n": "Suzhou Dongshan Precision Manufacturing Co., Ltd.",
+    "w": 0.98
+   },
+   {
+    "t": "SHA: 603986",
+    "n": "GigaDevice Semiconductor Inc.",
+    "w": 0.97
+   },
+   {
+    "t": "SHA: 601138",
+    "n": "Foxconn Industrial Internet Co., Ltd.",
+    "w": 0.97
+   },
+   {
+    "t": "SHE: 300059",
+    "n": "East Money Information Co.,Ltd.",
+    "w": 0.91
+   },
+   {
+    "t": "SHE: 002594",
+    "n": "BYD Company Limited",
+    "w": 0.91
+   },
+   {
+    "t": "SHA: 688008",
+    "n": "Montage Technology Co., Ltd.",
+    "w": 0.88
+   },
+   {
+    "t": "SHA: 688041",
+    "n": "Hygon Information Technology Co., Ltd.",
+    "w": 0.86
+   }
+  ]
+ },
+ "EFA": {
+  "proxy": "EFA",
+  "name": "iShares MSCI EAFE ETF",
+  "count": 688,
+  "as_of": "2026-09-22",
+  "items": [
+   {
+    "t": "AMS: ASML",
+    "n": "ASML Holding N.V.",
+    "w": 2.96
+   },
+   {
+    "t": "LON: HSBA",
+    "n": "HSBC Holdings plc",
+    "w": 1.6
+   },
+   {
+    "t": "SWX: ROP",
+    "n": "Roche Holding AG",
+    "w": 1.4
+   },
+   {
+    "t": "LON: SHEL",
+    "n": "Shell plc",
+    "w": 1.26
+   },
+   {
+    "t": "SWX: NOVN",
+    "n": "Novartis AG",
+    "w": 1.18
+   },
+   {
+    "t": "LON: AZN",
+    "n": "AstraZeneca PLC",
+    "w": 1.16
+   },
+   {
+    "t": "TYO: 8306",
+    "n": "Mitsubishi UFJ Financial Group, Inc.",
+    "w": 1.13
+   },
+   {
+    "t": "SWX: NESN",
+    "n": "Nestl\u00e9 S.A.",
+    "w": 1.1
+   },
+   {
+    "t": "ASX: BHP",
+    "n": "BHP Group Limited",
+    "w": 1.01
+   },
+   {
+    "t": "ETR: SIE",
+    "n": "Siemens Aktiengesellschaft",
+    "w": 1.01
+   },
+   {
+    "t": "ETR: SAP",
+    "n": "SAP SE",
+    "w": 0.98
+   },
+   {
+    "t": "BME: SAN",
+    "n": "Banco Santander, S.A.",
+    "w": 0.94
+   },
+   {
+    "t": "ETR: ALV",
+    "n": "Allianz SE",
+    "w": 0.89
+   },
+   {
+    "t": "TYO: 7203",
+    "n": "Toyota Motor Corporation",
+    "w": 0.84
+   },
+   {
+    "t": "ASX: CBA",
+    "n": "Commonwealth Bank of Australia",
+    "w": 0.83
+   },
+   {
+    "t": "EPA: SU",
+    "n": "Schneider Electric S.E.",
+    "w": 0.83
+   },
+   {
+    "t": "EPA: TTE",
+    "n": "TotalEnergies SE",
+    "w": 0.81
+   },
+   {
+    "t": "LON: RR",
+    "n": "Rolls-Royce Holdings plc",
+    "w": 0.74
+   },
+   {
+    "t": "BME: BBVA",
+    "n": "Banco Bilbao Vizcaya Argentaria, S.A.",
+    "w": 0.73
+   },
+   {
+    "t": "TYO: 8316",
+    "n": "Sumitomo Mitsui Financial Group, Inc.",
+    "w": 0.73
+   },
+   {
+    "t": "SWX: UBSG",
+    "n": "UBS Group AG",
+    "w": 0.72
+   },
+   {
+    "t": "TYO: 6501",
+    "n": "Hitachi, Ltd.",
+    "w": 0.71
+   },
+   {
+    "t": "SWX: ABBN",
+    "n": "ABB Ltd",
+    "w": 0.7
+   },
+   {
+    "t": "TYO: 8035",
+    "n": "Tokyo Electron Limited",
+    "w": 0.69
+   },
+   {
+    "t": "TYO: 6857",
+    "n": "Advantest Corporation",
+    "w": 0.69
+   }
+  ]
+ },
+ "GLD": {
+  "proxy": "GLD",
+  "name": "SPDR Gold Shares",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Physically backed \u2014 holds gold bullion",
+  "items": [
+   {
+    "t": "\u2014",
+    "n": "Gold bullion",
+    "w": 100.0
+   }
+  ]
+ },
+ "SLV": {
+  "proxy": "SLV",
+  "name": "iShares Silver Trust",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Physically backed \u2014 holds silver bullion",
+  "items": [
+   {
+    "t": "\u2014",
+    "n": "Silver bullion",
+    "w": 100.0
+   }
+  ]
+ },
+ "TSLA": {
+  "proxy": "TSLA",
+  "name": "Tesla",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "TSLA",
+    "n": "Tesla",
+    "w": 100.0
+   }
+  ]
+ },
+ "NVDA": {
+  "proxy": "NVDA",
+  "name": "Nvidia",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "NVDA",
+    "n": "Nvidia",
+    "w": 100.0
+   }
+  ]
+ },
+ "AAPL": {
+  "proxy": "AAPL",
+  "name": "Apple",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "AAPL",
+    "n": "Apple",
+    "w": 100.0
+   }
+  ]
+ },
+ "AMZN": {
+  "proxy": "AMZN",
+  "name": "Amazon",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "AMZN",
+    "n": "Amazon",
+    "w": 100.0
+   }
+  ]
+ },
+ "MSFT": {
+  "proxy": "MSFT",
+  "name": "Microsoft",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "MSFT",
+    "n": "Microsoft",
+    "w": 100.0
+   }
+  ]
+ },
+ "GOOGL": {
+  "proxy": "GOOGL",
+  "name": "Alphabet",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "GOOGL",
+    "n": "Alphabet",
+    "w": 100.0
+   }
+  ]
+ },
+ "META": {
+  "proxy": "META",
+  "name": "Meta",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "META",
+    "n": "Meta",
+    "w": 100.0
+   }
+  ]
+ },
+ "NFLX": {
+  "proxy": "NFLX",
+  "name": "Netflix",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "NFLX",
+    "n": "Netflix",
+    "w": 100.0
+   }
+  ]
+ },
+ "AVGO": {
+  "proxy": "AVGO",
+  "name": "Broadcom",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "AVGO",
+    "n": "Broadcom",
+    "w": 100.0
+   }
+  ]
+ },
+ "PLTR": {
+  "proxy": "PLTR",
+  "name": "Palantir",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "PLTR",
+    "n": "Palantir",
+    "w": 100.0
+   }
+  ]
+ },
+ "SMCI": {
+  "proxy": "SMCI",
+  "name": "Super Micro",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "SMCI",
+    "n": "Super Micro",
+    "w": 100.0
+   }
+  ]
+ },
+ "MSTR": {
+  "proxy": "MSTR",
+  "name": "Strategy",
+  "count": 1,
+  "as_of": "2026-09-22",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "MSTR",
+    "n": "Strategy",
+    "w": 100.0
+   }
+  ]
+ },
+ "ASST": {
+  "proxy": "ASST",
+  "name": "Strive, Inc.",
+  "count": 1,
+  "as_of": "2026-09-25",
+  "note": "Single-stock fund",
+  "items": [
+   {
+    "t": "ASST",
+    "n": "Strive, Inc.",
+    "w": 100.0
+   }
+  ]
+ }
+}
