@@ -132,6 +132,28 @@
    "spy_return_pct": 0.33,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-09-28",
+   "ticker": null,
+   "name": null,
+   "lev": null,
+   "underlying": null,
+   "category": null,
+   "thesis": "STAY OUT \u2014 Monday 2026-09-28.\n\nMarket sentiment gate (43/100, \"Risk-Off Tilt\") sets the default to cash, and nothing in the premarket scan overrides it.\n\n- Futures are red into the open (S&P -0.5%, Dow -0.6%), Brent +3.3% after Trump rejected the Iran peace proposal, and the 10-year yield sits at 5.22%, its highest since 2007 \u2014 a classic risk-off cocktail.\n- The single best candidate was NVDL (2x NVDA): composite top of the board (tech 85.4, sentiment 8.2 Bullish) on the record $150B buyback, and NVDA is up ~1-2% premarket. But the catalyst is already fully public and priced into the premarket print \u2014 the pick is scored from the 9:50 open to the close, so there is no fresh intraday edge left to capture, and the broader AI tape is weak this morning (Intel -2.3%, SNDK -2.8%, AMD/Micron down), meaning NVDA would have to fight the tape all day.\n- MSFU (2x MSFT, sentiment 8.1) has no fresh catalyst \u2014 the Copilot redesign was Friday's news and already rallied 3.7% Friday; MSFT is down ~0.4% premarket. UCO (2x oil, sentiment 8.1) would be a geopolitics chase on a 2x that whipsaws with headlines.\n- Recent history argues the same way: both single-stock/3x momentum picks last week (TQQQ -2.32, PLTU -3.0) were run over by choppy risk-off tape, while the 9/24 stay-out avoided a red day.\n\nThere is no strong, specific reason to be long today that beats the tape. Cash is the right position.",
+   "strategy_notes": "",
+   "snapshot": {
+    "data_as_of": "2026-09-25T20:59+00:00",
+    "call": "stay_out"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": "stayed_out",
+   "status": "stayed_out"
   }
  ],
  "record": {
@@ -143,5 +165,5 @@
   "current": "Initial strategy (2026-09-22): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh positive catalyst in the news. Prefer 3x over 2x when conviction is high, since the goal is the best single-day move. Avoid picks where sentiment is strong but technicals are overbought without a trend, and avoid single-stock ETFs on days with binary event risk. This strategy will be reviewed and adjusted daily based on results.",
   "updated": "2026-09-22"
  },
- "updated": "2026-09-25T16:50-04:00"
+ "updated": "2026-09-28T09:16-04:00"
 }
