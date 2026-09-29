@@ -154,6 +154,43 @@
    "spy_return_pct": -0.36,
    "verdict": "stayed_out",
    "status": "settled"
+  },
+  {
+   "date": "2026-09-29",
+   "ticker": "NVDL",
+   "name": "GraniteShares 2x Long NVDA",
+   "lev": 2,
+   "underlying": "Nvidia (NVDA)",
+   "category": "single-stock",
+   "thesis": "Pick: NVDL (GraniteShares 2x Long NVDA) \u2014 Tuesday 2026-09-29.\n\nMarket sentiment gate: today's AI Sentiment Pre-Market edition scored 56/100 (\"Risk-On Tilt\"), above the 45 threshold \u2014 picking normally, no stay-out default.\n\nWhy NVDL:\n1. Top-of-board composite 8.41: technical score 81.2 with news sentiment 8.7/10 (Bullish) \u2014 full tech+sentiment agreement, the strategy's core filter. 7D trend 5 up / 2 down; price +9.3% above the 50DMA (momentum intact, not overbought).\n2. Fresh, verified catalyst: Nvidia authorized a record $150B buyback increase Monday (largest single authorization on record; total auth $235B through FY2028). NVDA was the lone semiconductor gainer Monday (+1.7% as SOX fell 1.6%), premarket Tuesday +0.7\u20131% to ~$231, within striking distance of the $236.54 record. Barron's: 10-day SMA crossed above the 20-day, both above 50/200-day \u2014 all technical indicators flashing green. Chip sector broadly +~1% premarket (MRVL, MU, AVGO).\n3. AI bid has company today: Jensen Huang at the White House AI meeting with Trump and OpenAI's DevDay keynote at 1 PM ET keep AI news flow bullish intraday.\n4. No 3x alternative qualifies: TQQQ/TECL/SOXL fail the tech+sentiment agreement gate (sentiment 3.8/5.9/3.3), and CURE's healthcare catalysts don't out-convict the tape leader \u2014 so 2x is the right leverage today, not forced 3x.\n\nWhy not the alternatives: PLTU scored composite 8.52 but its bullish headline (Palantir Q-earnings beat \"today\") could not be confirmed \u2014 PLTR is flat/down in premarket (~$187, -0.2%) with no real earnings catalyst, so that headline is treated as unreliable and PLTU's case collapses. PLTU also missed on 9/25; not repeating two trading days later on a shaky source. UCO (2x crude) has agreement (8.26) but carries binary US-Iran headline risk with talks unresolved and today's 10 AM labor data (JOLTS/confidence) able to flip the risk script \u2014 fails the binary-event-risk rule.\n\nRisks: 10 AM ET JOLTS/consumer confidence + today's labor report could lift yields and pressure tech; Burry's AI puts and the Anthropic IPO-loss headlines are live AI-skepticism overhangs. Mitigant: the buyback + record-high proximity is a stock-specific, not macro, driver.",
+   "strategy_notes": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
+   "snapshot": {
+    "score": 81.2,
+    "rating": "Strong Buy",
+    "sentiment": 8.7,
+    "composite": 8.41,
+    "today_pct": 3.3,
+    "vs_sma50_pct": 9.28,
+    "trend7": [
+     "up",
+     "up",
+     "down",
+     "down",
+     "up",
+     "up",
+     "up"
+    ],
+    "prev_close": 36.9,
+    "data_as_of": "2026-09-28T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -162,8 +199,8 @@
   "wins": 1
  },
  "strategy": {
-  "current": "Initial strategy (2026-09-22): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh positive catalyst in the news. Prefer 3x over 2x when conviction is high, since the goal is the best single-day move. Avoid picks where sentiment is strong but technicals are overbought without a trend, and avoid single-stock ETFs on days with binary event risk. This strategy will be reviewed and adjusted daily based on results.",
-  "updated": "2026-09-22"
+  "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
+  "updated": "2026-09-29"
  },
- "updated": "2026-09-28T16:50-04:00"
+ "updated": "2026-09-29T09:16-04:00"
 }
