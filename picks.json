@@ -191,6 +191,43 @@
    "spy_return_pct": -0.34,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-09-30",
+   "ticker": "TQQQ",
+   "name": "ProShares UltraPro QQQ",
+   "lev": 3,
+   "underlying": "Nasdaq-100",
+   "category": "index",
+   "thesis": "Pick: TQQQ (ProShares UltraPro QQQ, 3x long Nasdaq-100) \u2014 Wednesday 2026-09-30.\n\nMarket sentiment gate: today's AI Sentiment Pre-Market edition scores 60/100 (\"Risk-On Tilt\"), above the 45 threshold, so picking normally (no override needed).\n\nWhy TQQQ:\n1. Top-decile composite (85.4, 3rd of 65) with technicals and news sentiment in agreement; 3x leverage is preferred by the standing strategy when the 3x candidate passes the gate.\n2. 7D trend is 4 up / 3 down days; price sits +8.5% above the 50-day moving average \u2014 extended but not parabolically so.\n3. Fresh, verified positive macro catalyst THIS morning: August core PCE printed +0.2% m/m vs 0.3% expected (annual core 3.0%, cooler than expected), ADP private payrolls beat at +90k vs ~70k expected. After the 8:30 AM print, Dow/S&P/Nasdaq futures all jumped ~0.3-0.4%, yields fell (10Y down to ~5.23%, 2Y to 4.86%), and October hike odds collapsed from ~70% to a coin flip (Reuters, Barron's, IBD \u2014 all this morning). Tech is the direct beneficiary of the cooler-inflation/easier-yields combo.\n4. No disqualifying headline: AI skepticism cross-currents exist (Burry puts, DeepSeek/Huawei moat talk) but they are priced-in, ongoing narratives \u2014 not new shocks. Micron reports after the close; that is a post-session event, not a premarket veto, and MU is a small QQQ weight.\n\nWhy not the alternatives:\n- PLTU (87.5 composite): 2x Palantir \u2014 missed pick from 9/25 is within the 3-trading-day no-repeat window edge, +21% above 50DMA (chase risk), and overnight news is soft-negative (Gartner FDE warning; FAA SMART contract went elsewhere). Fails the catalyst leg.\n- METU (87.5 composite): 2x Meta \u2014 premarket tape is mixed-to-negative (StoneX Hold note on Muse capex/ROIC + OpenAI \"Dots\" launch; Barron's reports shares slid premarket), sentiment is 4.0 Slightly Bearish, and +36.8% above 50DMA is extreme. Chasing.\n- NVDL (83.3 composite): 2x Nvidia \u2014 sentiment 7.0 Bullish but re-pick barred within 3 trading days of yesterday's 9/29 miss. Excluded by the standing rule.\n\nStrategy: unchanged from 2026-09-29 (favor composite-top-decile agreement + positive 7D trend + above 50DMA + fresh verified catalyst; prefer qualifying 3x; 3-day no-repeat after a miss). This pick follows it directly.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 85.4,
+    "rating": "Strong Buy",
+    "sentiment": 5.2,
+    "composite": 6.87,
+    "today_pct": 0.55,
+    "vs_sma50_pct": 8.47,
+    "trend7": [
+     "up",
+     "down",
+     "up",
+     "down",
+     "down",
+     "up",
+     "up"
+    ],
+    "prev_close": 77.46,
+    "data_as_of": "2026-09-29T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -202,5 +239,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-09-29T16:50-04:00"
+ "updated": "2026-09-30T09:16-04:00"
 }
