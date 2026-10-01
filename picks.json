@@ -228,6 +228,43 @@
    "spy_return_pct": -0.5,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-01",
+   "ticker": "SOXL",
+   "name": "Direxion Daily Semiconductor Bull 3X",
+   "lev": 3,
+   "underlying": "PHLX Semiconductor Sector",
+   "category": "sector",
+   "thesis": "Pick: SOXL (Direxion Daily Semiconductor Bull 3X) \u2014 Thursday 2026-10-01.\n\nMARKET SENTIMENT GATE: The AI Sentiment Pre-Market edition for today scores 43/100 (\"Risk-Off Tilt\") \u2014 below the 45 threshold, so the standing directive sets the DEFAULT to stay out.\n\nOVERRIDE: I am overriding market sentiment 43/100 (Risk-Off Tilt) because the semiconductor theme carries today's single strongest fresh, independently verified catalyst in the morning news: Micron posted a record fiscal Q4 (Q1 guide $61.5B) and CEO Sanjay Mehrotra told analysts the company has 75% of its 2027 supply already sold and no \"line of sight\" to supply/demand balance \u2014 tight memory conditions through 2028 on AI demand (Barron's, WSJ Market Talk, stocktwits, Meyka, all this morning). The theme-level read-through is confirming in premarket trade: Synopsys +2%+ on strong long-term targets (~15% CAGR through FY30, OpenAI chip-design collaboration), Oracle +2% (Tencent 100k-chip lease), European semis green (ASML +1.2%, ASM Int'l +1.8%, Infineon +1.5%), plus Broadcom's $42B Anthropic chip-lease deal and HPE's raised networking outlook on a $1.2B Vultr AI order. The pre-market report itself flags this AI-hardware momentum as the documented offset to the bond rout (futures rising premarket). This is a real, verifiable event with independent premarket confirmation \u2014 not a headline about something that didn't happen (the 9/29 PLTU lesson).\n\nWHY SOXL (3x long ICE Semiconductor Index):\n1. Techs and sentiment agree: composite 77.1 (top qualifying tier after disqualified tickers), news sentiment 7.2/10 Bullish \u2014 highest theme-level sentiment in the universe. 3x is preferred by the standing strategy when a 3x candidate passes the agreement gate.\n2. 7D trend 5 up / 2 down days; price +16.5% above the 50-day moving average \u2014 extended but with fresh fundamental backing, not parabolic drift.\n3. Theme/index ETF: no single-stock binary event risk (Tesla deliveries today, Netflix CEO comments \u2014 none touch this index).\n\nDISQUALIFIED ALTERNATIVES:\n- HIBL (85.4 comp) and METU (85.4): sentiment bearish/neutral \u2014 techs/sentiment disagreement kills both.\n- PLTU (87.5): top composite but sentiment 4.9 Neutral \u2014 same disagreement gate.\n- MSFU (85.4): 7D trend 3 up/4 down \u2014 fails the trend gate.\n- NVDL (83.3, 7.5 bullish): NVDA-moat pressure headlines (DeepSeek/Huawei targeting AI dominance) plus too recent after the 9/29 NVDL pick.\n- TQQQ (83.3): solid but picked yesterday; SOXL's case is theme-specific to today's strongest catalyst.\n- UCO (85.4, 6.8): no fresh verifiable catalyst; \"Middle East oil flows recovering\" is a mixed-to-bearish driver for crude.\n\nRISK ACKNOWLEDGED: the bond rout is deepening (10Y highest since 2002, DXY 18-month high), and ISM manufacturing + jobless claims + five Fed speeches today are macro event risk. MU itself is flat/down slightly premarket (margin-guidance nitpick after a ~6x run) \u2014 the pick leans on the theme, not the single name. If AI-hardware momentum fails to offset rates today, this loses. Record stands at 1 win / 4 losses, avg -1.41% \u2014 this override is made under the gate's explicit exception clause, not as a default.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 77.1,
+    "rating": "Buy",
+    "sentiment": 7.2,
+    "composite": 7.46,
+    "today_pct": 0.59,
+    "vs_sma50_pct": 16.49,
+    "trend7": [
+     "up",
+     "up",
+     "down",
+     "up",
+     "up",
+     "down",
+     "up"
+    ],
+    "prev_close": 147.86,
+    "data_as_of": "2026-09-30T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -239,5 +276,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-09-30T16:50-04:00"
+ "updated": "2026-10-01T09:16-04:00"
 }
