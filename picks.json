@@ -265,6 +265,43 @@
    "spy_return_pct": -0.05,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-02",
+   "ticker": "SOXL",
+   "name": "Direxion Daily Semiconductor Bull 3X",
+   "lev": 3,
+   "underlying": "PHLX Semiconductor Sector",
+   "category": "sector",
+   "thesis": "PICK: SOXL (Direxion Daily Semiconductor Bull 3X Shares) \u2014 Friday 2026-10-02.\n\nMarket gate: AI Sentiment Pre-Market 60/100 \"Risk-On Tilt\" (>= 45) \u2014 pick normally, no override needed.\n\nWhy SOXL: 3x leverage (preferred when a 3x candidate passes the gate), news sentiment 6.7/10 Slightly Bullish (3rd-highest in the 65-ETF universe), technical score 75.0 Buy, 7D trend 5 up-days of 7, price +21.2% above the 50DMA \u2014 tech and news agree, trend and level confirm.\n\nFresh, verifiable catalysts confirmed by independent sources this morning: Micron's FQ4 beat + $32B customer order book with memory supply tight through FY27/28 (D.A. Davidson: \"good indication for the whole data center build-out ecosystem\"); Morgan Stanley reinstated Nvidia as its Top Pick in semis ($300 PT, NVDA +2% premarket); Bloomberg reports Broadcom lining up $60B in AI chip financing; On Semiconductor buying Synaptics for $5.7B all-cash (ON +6-8%, SYNA +14-15% premarket); SOXX +1.5% premarket; Korea September exports +83.5% YoY on memory semis. Tailwinds: 10Y yield backed off its 24-year high (5.34% -> ~5.24%) and weak payrolls (+29k) lifted futures on rate-relief repricing.\n\nRisks: +21.2% above 50DMA is stretched; LITE/STX/WDC fell on the Toshiba HDD-expansion report (memory-adjacent names could drag); a September jobs report surprise or yield spike could flip the tape. Diversified semi exposure (not single-stock), and yesterday's SOXL pick scored \"good\", so momentum carries \u2014 re-pick rule only bars post-miss re-picks (N/A here).",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 75.0,
+    "rating": "Buy",
+    "sentiment": 6.7,
+    "composite": 7.1,
+    "today_pct": 3.94,
+    "vs_sma50_pct": 21.22,
+    "trend7": [
+     "up",
+     "up",
+     "up",
+     "down",
+     "up",
+     "up",
+     "down"
+    ],
+    "prev_close": 153.69,
+    "data_as_of": "2026-10-01T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -276,5 +313,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-01T16:50-04:00"
+ "updated": "2026-10-02T09:16-04:00"
 }
