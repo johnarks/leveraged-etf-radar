@@ -324,6 +324,43 @@
    "spy_return_pct": 0.67,
    "verdict": "stayed_out",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-06",
+   "ticker": "TQQQ",
+   "name": "ProShares UltraPro QQQ",
+   "lev": 3,
+   "underlying": "Nasdaq-100",
+   "category": "index",
+   "thesis": "PICK: TQQQ (ProShares UltraPro QQQ, 3x long Nasdaq-100) \u2014 Tuesday 2026-10-06.\n\nWHY THIS CANDIDATE: Agreement gate fully satisfied \u2014 technical score 77.1 (Buy; 17 buy vs 4 sell signals, all 12 moving averages Buy), news sentiment 7.2/10 (top of the 3x universe), 6 of last 7 days up, price +14.8% above the 50DMA. It is a 3x ETF that itself passes the gate, so per strategy 3x is preferred over the qualifying 2x alternatives (SPXL/UPRO score well too, but the Nasdaq tape is the market leader).\n\nFRESH CATALYST: The tape this morning is decisively risk-on for tech. Nasdaq closed at a record Monday and Nasdaq-100 futures are up ~0.6% premarket; the 10-year yield pulled back to ~5.27% from a 24-year high above 5.35%; WTI fell ~3% toward $87; NVDA is trading near a record (~$5.8T, approaching $6T); AMD is up ~2% premarket on a Citi price-target hike ($575\u2192$800) tied to Meta's Muse AI agent demand; S&P 500 sits ~0.3% from its own record. AI sentiment score 62/100 (\"Risk-On Tilt\") is above the 45 gate, so a normal pick is warranted \u2014 no stay-out default applies.\n\nRISKS: The AI trade is crowded and the 10Y remains above 5.2%; any yield re-spike or an Houthi/Gulf escalation could reverse the relief bid. Q3 earnings kickoff next week means positioning is thin. If tech rolls over, 3x leverage punishes fast.\n\nALTERNATIVES CONSIDERED: SPXL (3x S&P 500, tech 81.2, sent 7.1) \u2014 runner-up, weaker tape leadership. TECL (3x tech, tech 77.1, sent 6.0) \u2014 decent but lower sentiment. SOXL excluded by strategy rule (re-pick within 3 trading days of the 10/2 miss).",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 77.1,
+    "rating": "Buy",
+    "sentiment": 7.2,
+    "composite": 7.46,
+    "today_pct": 2.6,
+    "vs_sma50_pct": 14.8,
+    "trend7": [
+     "up",
+     "up",
+     "up",
+     "up",
+     "up",
+     "down",
+     "up"
+    ],
+    "prev_close": 83.12,
+    "data_as_of": "2026-10-05T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -335,5 +372,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-05T16:50-04:00"
+ "updated": "2026-10-06T09:16-04:00"
 }
