@@ -383,6 +383,43 @@
    "spy_return_pct": 0.19,
    "verdict": "stayed_out",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-08",
+   "ticker": "UCO",
+   "name": "ProShares Ultra Bloomberg Crude Oil",
+   "lev": 2,
+   "underlying": "WTI Crude Oil",
+   "category": "commodity",
+   "thesis": "ETF Radar daily pick \u2014 Thursday 2026-10-08: UCO (2x WTI crude)\n\nOVERRIDE OF MARKET SENTIMENT GATE: AI Sentiment Pre-Market score today is 40/100\n(\"Risk-Off Tilt\") \u2014 below the 45 default stay-out threshold. Overriding because the\npremarket scan plus UCO's theme sentiment gives a genuinely strong, specific reason\nto be long crude today: WTI futures are surging ~4-5% this morning (~$91-92.45/bbl,\nBrent >$104-105) on fresh, same-day, multi-source verified developments:\n- Trump said he no longer wants to make a deal with Iran to end the war; The\n  Atlantic reported the White House asked the Pentagon to develop Iran strike\n  options exercisable before the midterms (WSJ, Moneyweb, IBD live coverage).\n- UKMTO reported a tanker struck by multiple projectiles 51nm north of Qatar on\n  Wednesday, with casualties \u2014 attacks on Gulf shipping at their highest weekly\n  rate since the Iran war began (Reuters, WSJ).\n- Houthi attacks damaged two Saudi airports (Riyadh included, 3 killed, 36 wounded)\n  and Saudi coalition destroyed 82 Houthi targets in response (WSJ).\n- Hurricane Isaias forced >510,000 bpd of Gulf of Mexico output shut in (Reuters,\n  TradingView/Invezz).\nThis is not a stale or unconfirmed headline: it is a live, escalating supply-shock\nstory confirmed by premarket price action itself, which satisfies the strategy's\nheadline-verification rule (treat sentiment headlines as neutral unless confirmed\nby independent current market sources).\n\nUCO AGREEMENT-GATE CHECK (highest composite in the 65-ETF universe at 8.06):\n- Technical score 81.2 (\"Strong Buy\"), sentiment 8.0/10 (highest in universe),\n  rating Buy.\n- 7D trend: 4 up / 3 down (more up than down); price +16.8% above 50-DMA.\n- Commodity exposure, not a single-stock ETF \u2014 no single-name binary-event risk.\n- Never picked before, so no re-pick-within-3-days-of-miss issue (recent misses\n  PLTU 9/25, NVDL 9/29, TQQQ 9/30 & 10/06, SOXL 10/01 & 10/02 are all other tickers;\n  TQQQ's 10/06 miss also rules it out today).\n- 2x leverage: no 3x crude ETF passes the gate (GUSH comp 7.55 is 3x energy\n  equities, a less direct read on this specific WTI futures spike; refiners were\n  downgraded by Mizuho today), so the highest-composite qualifying vehicle is 2x.\n\nRISKS ACKNOWLEDGED: war-risk oil rallies can fade intraday on any Trump\nde-escalation headline or larger IEA releases; we are buying into a ~5% gap-up in\nthe underlying; equity futures are down (Dow -0.7-1%) and 10Y/30Y yields are at\nmulti-decade highs on stagflation fears. The override is deliberate and limited:\none-day long on the single theme whose underlying is actively ripping premarket.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 81.2,
+    "rating": "Strong Buy",
+    "sentiment": 8.0,
+    "composite": 8.06,
+    "today_pct": 0.31,
+    "vs_sma50_pct": 16.8,
+    "trend7": [
+     "up",
+     "up",
+     "down",
+     "down",
+     "up",
+     "up",
+     "down"
+    ],
+    "prev_close": 54.6,
+    "data_as_of": "2026-10-07T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -394,5 +431,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-07T16:50-04:00"
+ "updated": "2026-10-08T09:18-04:00"
 }
