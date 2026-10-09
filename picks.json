@@ -420,6 +420,43 @@
    "spy_return_pct": -0.12,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-09",
+   "ticker": "BRZU",
+   "name": "Direxion Daily MSCI Brazil Bull 3X",
+   "lev": 3,
+   "underlying": "MSCI Brazil",
+   "category": "country",
+   "thesis": "ETF Radar daily pick \u2014 Friday 2026-10-09: BRZU (Direxion Daily MSCI Brazil Bull 2X Shares)\n\nMARKET SENTIMENT GATE: AI Sentiment Pre-Market edition for today (posted ~8:45 AM ET) scored 58/100, \"Risk-On Tilt\" \u2014 above the 45 threshold, so pick normally. No override needed. Tape: futures higher into the open, AI-bubble jitters fading, crude slipping on Trump's no-Iran-strike pledge.\n\nWHY BRZU \u2014 agreement gate fully satisfied:\n1. Composite 80.0/100, the TOP of the entire 65-ETF universe this morning (tech score 75 Buy blended with news sentiment).\n2. News sentiment 8.5/10, labeled Bullish \u2014 the highest in the universe.\n3. Technical score 75/100, rating Buy; 7D trend 5 up / 2 down; price +30.4% above the 50-day moving average.\n4. Fresh, verified, independent positive catalyst: Senator Flavio Bolsonaro's surprise first-round presidential win on Sunday (47.0% vs Lula 45.2%, well ahead of polls) triggered a historic repricing Monday \u2014 Bovespa +8-9% to a record, EWZ +12-14% (its strongest session since March 2020), BRZU +27%, and a record single-day ~$700M inflow into EWZ. Prediction markets now give Bolsonaro 80-85% odds for the October 25 runoff; CNBC (Oct 7) floated an \"Argentina-style\" political-risk repricing. Headlines confirmed by multiple independent sources (Reuters Morning Bid 10/9, TradingView/Benzinga, mutualfunds.com). This is not a headline about an event that didn't happen \u2014 it happened and printed.\n5. Leverage preference: strategy prefers 3x over 2x when a 3x candidate passes the agreement gate. BRZU is the only 3x in the top decile (TQQQ is barred \u2014 miss within 3 trading days; SOXL composite only 52.7, sentiment neutral 4.5).\n\nRUNNER-UP: MSFU (2x MSFT, comp 79.2, Strong Buy tech, 7.5/10 sentiment, 6u/1d, +8.4% vs 50DMA, MSFT +1.15% premarket on the tech rebound and a Melius Hold-to-Buy upgrade) \u2014 cleaner extension but 2x and second-best composite.\n\nRISKS (documented): BRZU is chasing a very large Monday move and sits +30.4% above its 50DMA; some commentators flag overbought conditions and runoff uncertainty on Oct 25. The daily leverage resets, so this is a one-day momentum call on a risk-on Friday, not a position thesis. A sharp pullback day is the known failure mode; the gate accepts it because every qualifying criterion is met and the tape is supportive.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 75.0,
+    "rating": "Buy",
+    "sentiment": 8.5,
+    "composite": 8.0,
+    "today_pct": 1.0,
+    "vs_sma50_pct": 30.37,
+    "trend7": [
+     "up",
+     "down",
+     "up",
+     "up",
+     "up",
+     "down",
+     "up"
+    ],
+    "prev_close": 130.04,
+    "data_as_of": "2026-10-08T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -431,5 +468,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-08T16:50-04:00"
+ "updated": "2026-10-09T09:17-04:00"
 }
