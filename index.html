@@ -117,6 +117,10 @@ ul.sig li{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px 
 .strategy{background:#181a2e;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:14px 0}
 .strategy h3{margin:0 0 6px;font-size:15px}
 .picktable{min-width:720px}
+.picktable tfoot td{border-top:2px solid var(--line);font-weight:700;background:#141a30}
+.totals{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px;align-items:center}
+.total{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:13px;color:var(--mut)}
+.total b{color:var(--txt);font-size:14px}
 .verdict-good{color:var(--up);font-weight:700}
 .verdict-miss{color:var(--down);font-weight:700}
 tr.pickrow:hover{background:#1b2740}
@@ -647,7 +651,15 @@ function renderPicks(){
   h+=latest?pickHeroHTML(latest):'<div class="pickhero"><div class="dsub">No picks yet — the first pick drops at the next 9 AM ET market open.</div></div>';
   const st=PICKS.strategy||{};
   h+=`<div class="strategy"><h3>📈 Current strategy${st.updated?` <span class="dsub">· updated ${escapeHTML(st.updated)}</span>`:""}</h3><div class="thesis">${escapeHTML(st.current||"—")}</div><div class="dsub" style="margin-top:8px">Reviewed every morning against past results and adjusted to improve.</div></div>`;
-  h+=`<div class="pickhero"><h3>History</h3><div class="tablewrap"><table class="picktable"><thead><tr><th>Date</th><th>Pick</th><th class="num">Open</th><th class="num">Close</th><th class="num">Day</th><th class="num">SPY</th><th>Result</th></tr></thead><tbody>`;
+  // Totals: compounded pick return vs SPY over settled days (stay-out counts as 0% cash)
+  let gP=1,gS=1,nD=0;
+  ps.forEach(p=>{if(p.status!=="settled"||p.spy_return_pct==null)return;const pr=p.day_return_pct==null?0:p.day_return_pct;gP*=1+pr/100;gS*=1+p.spy_return_pct/100;nD++;});
+  const tP=(gP-1)*100,tS=(gS-1)*100,ex=tP-tS;
+  const money=v=>"$"+Math.round(10000*(1+v/100)).toLocaleString("en-US");
+  const tverdict=nD===0?'<span class="dsub">—</span>':ex>0.005?'<span class="verdict-good">▲ OUTPERFORMING</span>':ex<-0.005?'<span class="verdict-miss">▼ UNDERPERFORMING</span>':'<span class="dsub">≈ EVEN</span>';
+  const totalsStrip=nD?`<div class="totals"><span class="total">Picks total <b class="${tP>=0?"up":"down"}">${tP>=0?"+":""}${tP.toFixed(2)}%</b></span><span class="total">SPY total <b class="${tS>=0?"up":"down"}">${tS>=0?"+":""}${tS.toFixed(2)}%</b></span><span class="total">Excess <b class="${ex>=0?"up":"down"}">${ex>=0?"+":""}${ex.toFixed(2)} pp</b></span><span class="total">$10K → <b>${money(tP)}</b> vs <b>${money(tS)}</b></span><span class="total">${tverdict}</span><span class="dsub">${nD} settled day${nD===1?"":"s"} · compounded · stay-out = 0%</span></div>`:"";
+  const totalsFoot=nD?`<tfoot><tr><td colspan="4">Totals (${nD}d)</td><td class="num">${pc(tP)}</td><td class="num">${pc(tS)}</td><td>${tverdict}</td></tr></tfoot>`:"";
+  h+=`<div class="pickhero"><h3>History</h3>${totalsStrip}<div class="tablewrap"><table class="picktable"><thead><tr><th>Date</th><th>Pick</th><th class="num">Open</th><th class="num">Close</th><th class="num">Day</th><th class="num">SPY</th><th>Result</th></tr></thead><tbody>`;
   ps.map((p,i)=>({p,i})).reverse().forEach(({p,i})=>{
     const so=p.verdict==="stayed_out"||p.status==="stayed_out";
     const vd=so?'<span class="dsub">⏸ Stayed out</span>':p.verdict==="good"?'<span class="verdict-good">✓ Good</span>':p.verdict==="miss"?'<span class="verdict-miss">✗ Miss</span>':'<span class="dsub">—</span>';
@@ -655,7 +667,7 @@ function renderPicks(){
     h+=`<tr class="pickrow" data-i="${i}"><td>${escapeHTML(p.date)}</td><td>${pickcell}</td><td class="num">${p.open!=null?"$"+Number(p.open).toFixed(2):"—"}</td><td class="num">${p.close!=null?"$"+Number(p.close).toFixed(2):"—"}</td><td class="num">${p.day_return_pct!=null?pc(p.day_return_pct):"—"}</td><td class="num">${p.spy_return_pct!=null?pc(p.spy_return_pct):"—"}</td><td>${vd}</td></tr>`;
     h+=`<tr class="thesisrow" id="pthrow-${i}" style="display:none"><td colspan="7"><b>${so?"Stay-out call":"Thesis"} (${escapeHTML(p.date)}${so?"":" · "+escapeHTML(p.ticker)}):</b><div class="thesis">${escapeHTML(p.thesis||"")}</div>${p.strategy_notes?`<div class="dsub" style="margin-top:6px"><b>Strategy notes:</b> ${escapeHTML(p.strategy_notes)}</div>`:""}</td></tr>`;
   });
-  h+=`</tbody></table></div><div class="dsub" style="margin-top:8px">Click a row to read the full thesis.</div></div>`;
+  h+=`</tbody>${totalsFoot}</table></div><div class="dsub" style="margin-top:8px">Click a row to read the full thesis.</div></div>`;
   v.innerHTML=h;
   v.querySelectorAll(".pickrow").forEach(r=>r.onclick=()=>{const t=document.getElementById("pthrow-"+r.dataset.i);t.style.display=t.style.display==="none"?"":"none";});
 }
