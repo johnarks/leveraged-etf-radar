@@ -457,6 +457,43 @@
    "spy_return_pct": 0.3,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-12",
+   "ticker": "AMZU",
+   "name": "Direxion Daily AMZN Bull 2X",
+   "lev": 2,
+   "underlying": "Amazon (AMZN)",
+   "category": "single-stock",
+   "thesis": "ETF Radar pick for Monday 2026-10-12: AMZU (Direxion Daily AMZN Bull 2X).\n\nSELECTION: Technical score 77.1 + news sentiment 7.0 agree (top-decile composite), 7D trend 5 up / 2 down, price only +0.7% above the 50DMA (not extended), and a fresh, verifiable catalyst: the WSJ reported Amazon is in talks to acquire AI startup Decart for ~$7B to bolster its custom Trainium AI chips. Premarket reads are neutral-to-flat on a flat tape (futures flat; Treasury markets closed for Columbus Day, stocks open) \u2014 no veto from the tape.\n\nGATE CHECKS: Per-theme sentiment as_of = 2026-10-12 for all 65 tickers (8 AM refresh healthy). Market-wide AI Sentiment Pre-Market (today): 47/100, \"Neutral \u2014 Risk-Off Lean\" \u2014 at/above the 45 stay-out threshold, so a normal long pick is allowed; no override needed.\n\nWHY NOT THE ALTERNATIVES: PLTU (Palantir 2x) had the highest sentiment (7.4) with real fresh news (Goldman Buy upgrade, Barclays Overweight initiation, Regna AI JV announced today), but PLTR is +35.1% above its 50DMA at record highs after a +10.8% week, and premarket action was flat (-0.3%) \u2014 the 9/29 incident lesson (headline not confirmed by premarket action) says don't chase it. CURE (healthcare 3x) had strong confirmed catalysts (BMY +4.4% on trial hit, BIIB +4.1% on JPM upgrade) but failed the strategy's 7D gate (3 up / 4 down). No 3x candidate passed the full agreement gate, so per strategy the highest-composite qualifying 2x (AMZU) gets the nod.\n\nRISK: Single-stock 2x ETF; the Decart talks are unconfirmed (no formal agreement yet) and a flat premarket means the catalyst isn't yet moving the stock \u2014 this is a modest, not a screaming, long.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 77.1,
+    "rating": "Buy",
+    "sentiment": 7.0,
+    "composite": 7.35,
+    "today_pct": 6.44,
+    "vs_sma50_pct": 0.7,
+    "trend7": [
+     "up",
+     "down",
+     "up",
+     "up",
+     "up",
+     "up",
+     "down"
+    ],
+    "prev_close": 37.5,
+    "data_as_of": "2026-10-09T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -468,5 +505,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-09T16:50-04:00"
+ "updated": "2026-10-12T09:18-04:00"
 }
