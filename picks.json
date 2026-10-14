@@ -516,6 +516,28 @@
    "spy_return_pct": 0.09,
    "verdict": "stayed_out",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-14",
+   "ticker": null,
+   "name": null,
+   "lev": null,
+   "underlying": null,
+   "category": null,
+   "thesis": "STAY OUT \u2014 Wednesday 2026-10-14.\n\nMARKET SENTIMENT GATE (user directive): AI Sentiment Pre-Market (today, posted ~8:45 AM ET) scored 40/100, label \"Risk-Off Tilt\" \u2014 below the 45 threshold. Default is stay-out; no pick qualifies as a genuinely strong documented long override.\n\nWHY CASH BEATS THE BEST CANDIDATE TODAY:\n\n1. Fresh macro shock this morning: September CPI printed HOT \u2014 headline 3.7% YoY vs 3.6% expected, core 2.6% vs 2.5% expected. Futures flipped red (Nasdaq -0.6%, S&P/Dow -0.2/-0.3%), the 10-year Treasury jumped to ~5.31% from 5.19%, and FedWatch odds of a rate hike in two weeks doubled from 22% to 44% (96% chance of a hike by December). This is a rate-repricing day, not a stock-buying day.\n\n2. The top technical+sentiment candidates (AAPU 85.4/7.7, METU 83.3/7.8) are mega-cap tech \u2014 the most rate-sensitive corner of the market on a day rates spike. Chips are already selling off: the semiconductor ETF fell 1.9% premarket (7th straight down day), Micron -1.5%, Intel -2.5% premarket; ASML's raised guidance failed to revive the sector (\"AI dilemma\": demand vs margin/valuation risk). Being long 2-3x tech into a hike-repricing day is exactly the wrong side of the tape.\n\n3. The only possible override case was energy (GUSH 79.2/7.7, DIG 77.1/7.5) on the Houthi/Saudi escalation: WTI up ~2% to $95.90 premarket. But the oil rally is modest \u2014 Brent inched only +0.2% to ~$105.9 after the IEA forecast a sharp fall in demand, and WSJ described oil prices as \"steady\" despite the Aramco administrative-building strike. A +2% commodity bid is not a genuinely strong reason to hold 3x leveraged equity exposure on a macro risk-off day when energy stocks still drag with the broader selloff.\n\n4. Strategy discipline: \"avoid single-stock ETFs on days with binary event risk\" \u2014 and today is the textbook binary macro-event day (CPI surprise, hike repricing, bank earnings mixed). Yesterday's identical gate setup (43/100) produced a stay-out, and the tape confirmed it. Staying out again is the consistent call.\n\nPosition: none. Cash for the day.",
+   "strategy_notes": "",
+   "snapshot": {
+    "data_as_of": "2026-10-13T20:31+00:00",
+    "call": "stay_out"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": "stayed_out",
+   "status": "stayed_out"
   }
  ],
  "record": {
@@ -527,5 +549,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-13T16:50-04:00"
+ "updated": "2026-10-14T09:21-04:00"
 }
