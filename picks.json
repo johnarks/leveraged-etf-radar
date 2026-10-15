@@ -538,6 +538,28 @@
    "spy_return_pct": -0.69,
    "verdict": "stayed_out",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-15",
+   "ticker": null,
+   "name": null,
+   "lev": null,
+   "underlying": null,
+   "category": null,
+   "thesis": "Staying out today \u2014 cash beats the best candidate.\n\nMarket-wide sentiment is 35/100 (Firmly Bearish) on today's AI Sentiment Pre-Market edition (posted ~8:45 AM ET), well below the 45 stay-out threshold. This is a FIRM downside tape, not a soft one: the September PPI printed hotter than expected at 8:30 AM (largest jump in 4 years per one wire), a 50bp December Fed hike is back on the table, Nasdaq futures are down ~1% on day two of the tech selloff, and the AI funding-debt panic is deepening (CoreWeave unraveling, global chip rout). No shock-orthogonal long case cleared the bar: the one candidate with elevated theme sentiment was energy (ERX, sent 7.5, tech 77.1), but premarket price action vetoed it \u2014 Brent and WTI are both down 1.3-1.6% this morning (Bloomberg/Reuters via moneyweb) as Mideast supply fears ease and the IEA flagged slowing demand, which contradicts any bullish energy thesis. The strategy's post-9/29 rule requires premarket price action to confirm a bullish headline, so energy is disqualified rather than weakened. Biotech (LABU, sent 7.1) has no fresh, verifiable positive catalyst and offers no refuge from rate-hike repricing. With hike bets spiking and day-two de-risking underway, owning a 2-3x long into the open risks compounding a miss \u2014 cash is the better position.",
+   "strategy_notes": "",
+   "snapshot": {
+    "data_as_of": "2026-10-14T20:33+00:00",
+    "call": "stay_out"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": "stayed_out",
+   "status": "stayed_out"
   }
  ],
  "record": {
@@ -549,5 +571,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-14T16:50-04:00"
+ "updated": "2026-10-15T09:16-04:00"
 }
