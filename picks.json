@@ -560,6 +560,43 @@
    "spy_return_pct": 0.72,
    "verdict": "stayed_out",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-16",
+   "ticker": "CURE",
+   "name": "Direxion Daily Healthcare Bull 3X",
+   "lev": 3,
+   "underlying": "Health Care",
+   "category": "sector",
+   "thesis": "ETF Radar daily pick \u2014 Friday 2026-10-16: CURE (Direxion Daily Healthcare Bull 3X)\n\nMARKET SENTIMENT GATE: AI Sentiment Pre-Market today is 47/100 \"Neutral \u2014 Cautious\" (>= 45) \u2014 picking normally.\n\nSELECTION: Technical score 77.1 (Buy) and news sentiment 7.9/10 (highest in the 65-ETF universe) agree \u2014 composite 7.80, top decile. 7D trend 5 up / 2 down, +12.2% above the 50DMA. Holdings sentiment is broadly green (ABBV 8.4, MRK 8.7, TMO 8.7, UNH 7.7, LLY 6.9).\n\nFRESH CATALYST (verified this morning): Thursday's tape was a textbook defensive rotation \u2014 XLV gapped to an intraday record (first since mid-August) on the same morning the Nasdaq fell >1%; ALNY +4%, LLY +3% led. Friday premarket coverage (Reuters/Barron's/Barchart) shows the rotation continuing: Dow futures +0.3% while Nasdaq futures sag, with traders \"diverting toward healthcare and consumer staples\" as CoreWeave's AI-credit unwind deepens (CRWV -4% premarket) and chip/AI-infrastructure names keep sliding. Healthcare demand is inelastic and insulated from the AI-debt financing fear driving the selloff.\n\nWHY 3X: strategy prefers 3x over 2x when a 3x candidate passes the agreement gate \u2014 CURE is that candidate. The 2x alternatives (MSFU comp 8.03 on UBS's $675 MSFT target hike, UGE comp 7.81) are solid but the 3x healthcare trade has the stronger same-day tape. MSFU also carries a mild regulatory overhang (UK CMA considering tighter Microsoft business-software rules this morning).\n\nRISKS: a Warsh-relief risk-on reversal could rotate back into tech and flatten healthcare; XLV record print could mean-take-profit. Single-stock healthcare blowups are not concentrated (broad sector ETF, no binary event today). Not a re-pick within 3 trading days of a miss.\n\nCALL: long CURE 3x \u2014 riding the verified defensive rotation into the close.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 77.1,
+    "rating": "Buy",
+    "sentiment": 7.9,
+    "composite": 7.8,
+    "today_pct": 5.53,
+    "vs_sma50_pct": 12.24,
+    "trend7": [
+     "up",
+     "up",
+     "down",
+     "up",
+     "up",
+     "down",
+     "up"
+    ],
+    "prev_close": 148.74,
+    "data_as_of": "2026-10-15T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -571,5 +608,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-15T16:50-04:00"
+ "updated": "2026-10-16T09:18-04:00"
 }
