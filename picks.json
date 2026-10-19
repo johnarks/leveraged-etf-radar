@@ -597,6 +597,43 @@
    "spy_return_pct": -1.29,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "UGE",
+   "name": "ProShares Ultra Consumer Staples",
+   "lev": 2,
+   "underlying": "U.S. Consumer Staples",
+   "category": "sector",
+   "thesis": "ETF Radar daily pick \u2014 Monday 2026-10-19: UGE (ProShares Ultra Consumer Staples, 2x)\n\nThesis: UGE tops the 65-ETF board with composite 7.85 \u2014 technical score 77.1 (Buy) and news sentiment 8.0/10 (Bullish) agree, satisfying the strategy's top-decile agreement gate. The 7D trend shows 5 up days of 7 and price sits +8.6% above the 50-day moving average.\n\nFresh, verifiable positive catalyst: XLP rose 5% last week \u2014 its best week since February \u2014 and the staples sector closed Friday at its highest level since March, as investors rotated out of the AI-led selloff into defensives (MarketWatch, Morningstar, Stocktwits, 2026-10-17/18). Procter & Gamble and Philip Morris report earnings this week, a near-term catalyst for the sector.\n\nMarket sentiment gate: today's AI Sentiment Pre-Market score is 53/100 (Neutral), above the 45 line \u2014 pick normally, no override needed.\n\nVetoes: AAPU (2x Apple, composite 7.81) is disqualified \u2014 KeyBanc cut Apple to Underweight with a $250 target (implies ~-27%, reported by Barron's this morning) on iPhone 18 demand-weakness headlines (Nikkei order cuts); the strategy bars single-stock ETFs on binary event risk. CURE (composite 7.80) is disqualified by the 3-trading-day re-pick rule after Friday's miss. BRZU (7.21) fails the 7D gate (3 up of 7). Energy names face a negative tilt: Brent is easing off its 5-month high on Trump's Russia sanctions waiver.\n\n2x over 3x: no 3x candidate passes the agreement gate today, so the highest-composite qualifying 2x (UGE) is the pick per strategy.\n\nRisk: futures point to a Monday bounce \u2014 chips are rallying premarket (CRWV +6.5% on a Goldman upgrade to Buy, Intel upgraded) after their worst week since Liberation Day. A strong rotation back into tech could leave defensives lagging for the session.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 77.1,
+    "rating": "Buy",
+    "sentiment": 8.0,
+    "composite": 7.85,
+    "today_pct": 1.94,
+    "vs_sma50_pct": 8.58,
+    "trend7": [
+     "up",
+     "up",
+     "up",
+     "down",
+     "up",
+     "down",
+     "up"
+    ],
+    "prev_close": 20.39,
+    "data_as_of": "2026-10-16T20:31+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -608,5 +645,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-16T16:50-04:00"
+ "updated": "2026-10-19T09:16-04:00"
 }
