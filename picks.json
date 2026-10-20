@@ -665,22 +665,22 @@
    },
    "open": 123.47,
    "open_time": "2026-10-20T09:50-04:00",
-   "close": null,
-   "close_time": null,
-   "day_return_pct": null,
-   "spy_return_pct": null,
-   "verdict": null,
-   "status": "open"
+   "close": 121.92,
+   "close_time": "2026-10-20T16:50-04:00",
+   "day_return_pct": -1.26,
+   "spy_return_pct": 0.42,
+   "verdict": "miss",
+   "status": "settled"
   }
  ],
  "record": {
-  "avg_return_pct": -0.45,
-  "losses": 8,
+  "avg_return_pct": -0.51,
+  "losses": 9,
   "wins": 5
  },
  "strategy": {
-  "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
-  "updated": "2026-09-29"
+  "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
+  "updated": "2026-10-20"
  },
- "updated": "2026-10-20T09:50-04:00"
+ "updated": "2026-10-20T16:50-04:00"
 }
