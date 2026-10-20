@@ -634,6 +634,43 @@
    "spy_return_pct": -0.1,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "ERX",
+   "name": "Direxion Daily Energy Bull 3X",
+   "lev": 3,
+   "underlying": "Energy",
+   "category": "sector",
+   "thesis": "ETF Radar daily pick \u2014 Tuesday 2026-10-20: ERX (Direxion Daily Energy Bull 3X)\n\nMARKET SENTIMENT GATE (user directive): AI Sentiment Pre-Market today is 40/100 \"Risk-Off Tilt\" (< 45) \u2014 the default is STAY OUT. I am OVERRIDING the gate today, explicitly: \"overriding market sentiment 40/100 (Risk-Off Tilt) because the tape's risk-off drivers are either unrelated to energy (AI debt scare in Asia, GM -6.5% premarket on tariffs, NFLX earnings risk today, France short-seller target) or are the energy catalyst itself \u2014 the oil supply shock driving defensiveness is directly bullish for energy equities.\" Energy stocks rose Friday (+1.8% S&P 500 energy index; XOM +1.9%, CVX +2.2%) while tech fell, and this morning's premarket tape confirms the divergence (Nasdaq-100 futures -0.62% while Brent holds $110+). This is the specific case the override clause exists for: a fresh, independently verified, energy-specific driver on a risk-off tape.\n\nSELECTION: ERX passes every gate in the strategy. Technical score 79.2 (strong) and news sentiment 6.5/10 (Slightly Bullish) agree \u2014 composite 72.1, top decile of the 65-ETF universe. 7D trend 4 up of 7, price +12.7% above the 50DMA (+34.5% above the 200DMA).\n\nFRESH CATALYST (verified this morning, not recycled): Brent +0.5% to $110.10 Tuesday premarket after hitting $110.70 \u2014 a 5-month high \u2014 on a live supply shock: Houthis claimed six attacks on Saudi targets in 48 hours (Aramco Yanbu, Shaybah oilfield, Riyadh/Abha airports; Saudi unconfirmed, Reuters unverified); an IRGC-claimed tanker mine strike in the Strait of Hormuz; Kpler reports at least 18 vessels attacked in two weeks with Hormuz flows at ~8.5M bpd vs 20M+ normally. ING: \"Oil prices remain well-supported... Clearly, there are no signs of this yet\" (premium erosion). Sources: Reuters via multiple outlets, Kpler, ING, Tuesday 2026-10-20 premarket coverage. Premarket price action confirms the headline (Brent rising this morning), satisfying the strategy's confirmation rule.\n\nWHY 3X / WHY ERX over UCO: ERX (3x energy equities) passes the agreement gate, so strategy prefers it over 2x UCO (composite 77.5, sentiment 7.8 \u2014 highest in universe, but 2x). WTI November expiry is today, adding futures-roll noise to UCO; energy equities track the earnings upside more cleanly (Halliburton beat, Citgo raising profit outlook $2B per today's AI Sentiment Pre-Market report). GUSH (3x E&P, tech 81.2) fails the 7D gate at 3 up of 7.\n\nVETOES: AMZU (composite 79.1) is a single-stock ETF with no fresh catalyst today and binary event risk on the tape \u2014 excluded. DIG is 2x where a qualifying 3x exists \u2014 excluded. Not a re-pick within 3 trading days of a miss (ERX has no recent pick). Yesterday's winner UGE was 2x defensives; today the tape favors the energy driver directly.\n\nRISKS: (1) ING's own caveat \u2014 if Hormuz flows normalize, the geopolitical premium erodes and ERX reverses fast at 3x. (2) A broad risk-off equity selloff can drag energy stocks down with the market regardless of the oil price (equity beta). (3) Saudi has not confirmed the Houthi claims; unverified-claim deflation is possible, though the tanker/mine incidents and Kpler flow data are independently observed. (4) 3x daily-reset leverage is punitive in chop \u2014 this is a one-day directional call on the supply shock holding through the close.\n\nCALL: long ERX 3x \u2014 riding the verified oil supply shock into the close, with the 40/100 risk-off gate explicitly overridden as documented above.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 79.2,
+    "rating": "Buy",
+    "sentiment": 6.5,
+    "composite": 7.21,
+    "today_pct": -1.44,
+    "vs_sma50_pct": 12.74,
+    "trend7": [
+     "down",
+     "up",
+     "down",
+     "up",
+     "up",
+     "up",
+     "down"
+    ],
+    "prev_close": 121.2,
+    "data_as_of": "2026-10-19T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -645,5 +682,5 @@
   "current": "Updated strategy (2026-09-29): favor ETFs where technical score and news sentiment agree (composite in the top decile), the 7D trend shows more up days than down, price sits above the 50-day moving average, and the theme has a fresh, verifiable positive catalyst in the news. Prefer 3x over 2x when a 3x candidate itself passes the agreement gate \u2014 do not force 3x leverage when none does; take the highest-composite qualifying 2x instead. Treat a sentiment headline as neutral unless it is confirmed by an independent, current market source (e.g. premarket price action); after the 9/29 PLTU incident, a bullish headline about an event that did not happen (Palantir \"earnings today\" while PLTR sat flat in premarket) disqualifies the pick rather than merely weakening it. Avoid single-stock ETFs on days with binary event risk, and avoid re-picking a ticker within 3 trading days of a miss.",
   "updated": "2026-09-29"
  },
- "updated": "2026-10-19T16:50-04:00"
+ "updated": "2026-10-20T09:18-04:00"
 }
