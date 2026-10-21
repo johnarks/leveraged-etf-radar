@@ -671,6 +671,45 @@
    "spy_return_pct": 0.42,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "UCO",
+   "name": "ProShares Ultra Bloomberg Crude Oil",
+   "lev": 2,
+   "underlying": "WTI Crude Oil",
+   "category": "commodity",
+   "direction": "long",
+   "thesis": "ETF Radar pick \u2014 Wednesday 2026-10-21: UCO (ProShares Ultra Bloomberg Crude Oil, 2x).\n\nMARKET SENTIMENT GATE: AI Sentiment Pre-Market score 58/100 (\"Risk-On Tilt\") \u2014 above 55, so the Strategy V2 normal-pick band applies (long side allowed).\n\nSELECTION: UCO scores tech 77.1 (Buy) with news sentiment 7.7 (Bullish) \u2014 agreement on both, and it is a commodity fund, i.e. neither the index-3x beta nor the single-stock-2x class V2 demotes. It also clears the hard no-chase rule: the prior completed session moved -0.74% (well under the +2% chase cutoff that went 0-6 in the audit).\n\nFRESH VERIFIED CATALYST (verified this morning, Reuters 2026-10-21): Brent crude +1.5% to $110.38 and WTI +1.4% to $99.18 overnight on escalating Middle East supply fears \u2014 18+ vessel attacks in two weeks per Kpler, Houthis claiming strikes on an Aramco site in Yanbu, the Shaybah oilfield, and Saudi airports, Iran refusing talks until demands are met, plus API data showing continued US crude and product drawdowns. Brent fell Tuesday on mediation hopes after hitting a five-month high; overnight headlines firmly re-escalated the supply narrative.\n\nRISK: oil is riding a two-session seesaw \u2014 a confirmed ceasefire/mediated deal would unwind the geopolitical premium fast. Leveraged 2x oil will amplify any reversal.\n\nCandidates screened out by V2 filters: AMZU (81.2/8.1 but single-stock 2x \u2014 demoted class, and its catalyst is Monday's Morgan Stanley call, not fresh), BRZU/CURE/RETL/DDM/UDOW (all prior-day +2% or more \u2014 no-chase violation), ERX/GUSH/DIG (sentiment 6.5-6.6, below the >=7 long gate), AMZU-class and index-3x excluded per audit record 5-14 (record since V2: 5W-9L, avg -0.51%/day; strategy V2 unchanged today).",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 77.1,
+    "rating": "Buy",
+    "direction": "long",
+    "sentiment": 7.7,
+    "composite": 7.71,
+    "today_pct": -0.74,
+    "vs_sma50_pct": 24.88,
+    "trend7": [
+     "down",
+     "up",
+     "up",
+     "up",
+     "down",
+     "up",
+     "up"
+    ],
+    "prev_close": 63.36,
+    "data_as_of": "2026-10-20T20:31+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -682,5 +721,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-10-20T16:50-04:00"
+ "updated": "2026-10-21T09:32-04:00"
 }
