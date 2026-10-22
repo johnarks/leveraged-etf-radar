@@ -710,6 +710,45 @@
    "spy_return_pct": 0.25,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "SQQQ",
+   "name": "ProShares UltraPro Short QQQ",
+   "lev": 3,
+   "underlying": "Nasdaq-100",
+   "category": "index",
+   "direction": "inverse",
+   "thesis": "ETF Radar pick 2026-10-22 \u2014 SQQQ (ProShares UltraPro Short QQQ, 3x inverse Nasdaq-100)\n\nMarket sentiment gate: AI Sentiment Pre-Market 2026-10-22 scores 30/100 (\"Firmly Bearish\"). Below 45, so Strategy V2 default is INVERSE-or-cash. This is not an override day \u2014 it is the default case.\n\nWhy the inverse setup qualifies (same tests in reverse, per STRATEGY_V2_NOTES.md):\n1. Inverse fund trending up on its own technicals: SQQQ technical score 66.7 (\"Buy\"), 5 of last 7 sessions up, above its 50-day MA (+0.04%).\n2. Direction-adjusted sentiment 7.6/10 (Bullish, \u22657 threshold): sector 9.2 for Nasdaq-100/mega-cap tech theme, 100% holdings coverage. A 7.6 means \"favorable to hold this fund today.\"\n3. Fresh, verified same-day bearish catalyst for the underlying: Meta beat revenue but guided capex to $135-145B, showed a $2.1B FCF deficit, and announced a new class of non-voting shares to fund the AI push \u2014 META down ~2.9% premarket. Tesla cut 2026 capex to ~$20B (from $25B+) raising AI/robotics doubts \u2014 TSLA down ~3.6% premarket. Nasdaq-100 E-minis down ~1.9%, chips (INTC -5.1%, NVDA -2.4%, AMD/QCOM/AVGO/MU -3 to -5%) and Mag-7 all selling; Asia sold tech (KOSPI -4%, Nikkei -2.65%). Brent +3% to $112 on Houthi attacks on Saudi Arabia deepens risk-off. This is a mega-cap-tech-led break \u2014 SQQQ is the matched instrument, not a blunt bet.\n4. No-chase rule: SQQQ's prior completed session moved -3.18% (it fell as QQQ rallied Wednesday), so this is NOT chasing yesterday's spike \u2014 it is buying the inverse fund on its down-day into fresh overnight bearish news.\n\nWhy not the other inverses: SOXS (6.3) and TECS (6.0) fail the \u22657 direction-adjusted sentiment bar; SPXS (6.2, technical Sell), TZA (6.0), FAZ (3.6, Sell), LABD (4.9, Sell) fail agreement. Why not a long override: no single specific long catalyst exists to justify overriding a 30/100 \"Firmly Bearish\" tape \u2014 the audit's successful overrides both had one. Why not cash: the V2 audit showed sector-matched inverses were where the down-day money was, and every inverse filter passes here.\n\nRisk: SQQQ is -44.7% YTD on decay; a sharp intraday reversal (e.g., dip-buying at the open on yesterday's +1.1% Nasdaq momentum) would hurt. The 8:30 AM claims print already landed (near 60-year lows) and the tape is still selling, so the macro-reversal risk is lower than a typical bearish morning.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 66.7,
+    "rating": "Buy",
+    "direction": "inverse",
+    "sentiment": 7.6,
+    "composite": 7.13,
+    "today_pct": -3.18,
+    "vs_sma50_pct": 0.04,
+    "trend7": [
+     "down",
+     "up",
+     "down",
+     "up",
+     "up",
+     "up",
+     "up"
+    ],
+    "prev_close": 36.48,
+    "data_as_of": "2026-10-21T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -721,5 +760,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-10-21T16:50-04:00"
+ "updated": "2026-10-22T09:17-04:00"
 }
