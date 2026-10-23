@@ -749,6 +749,45 @@
    "spy_return_pct": -0.31,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "UCO",
+   "name": "ProShares Ultra Bloomberg Crude Oil",
+   "lev": 2,
+   "underlying": "WTI Crude Oil",
+   "category": "commodity",
+   "direction": "long",
+   "thesis": "ETF Radar pick \u2014 Fri 2026-10-23: UCO (ProShares Ultra Bloomberg Crude Oil, 2x crude)\n\nOverriding market sentiment 36/100 (Risk-Off Tilt) because the single freshest verified same-day catalyst in the pre-market tape is a crude-supply escalation, and energy is the one long group that historically hedges this exact risk-off tape.\n\nMARKET SENTIMENT GATE (Strategy V2): 36/100 (Risk-Off Tilt), Pre-Market edition for 2026-10-23 (posted ~8:47 AM ET). Below 45 \u2192 default inverse-or-cash.\nINVERSE CHECK (reverse agreement test): all four high-scoring inverse funds are disqualified by the hard no-chase rule after Thursday's rout \u2014 SQQQ +8.55, SPXS +3.64, SOXS +20.68, TECS +9.98 (each \u2265+2% prior session; audit 0-6 on chased spikes). The only unchased inverse, TZA (-0.19), fails the reverse agreement test: direction-adjusted sentiment 5.2 (<7), 7-day trend 4-of-7 down, score 64.6. No inverse setup qualifies \u2192 long requires a documented specific-catalyst override.\nTHE OVERRIDE: UCO.\n- Fresh verified catalyst (Reuters, Oct 23): oil rose 1%+ this morning after Houthi attacks in Saudi Arabia stoked supply-disruption fears. Brent $114.47 (+1.2%, highest close since May 4 on Thursday), WTI $100.84 (+1.4%), both set for another up week. Aramco evacuated its Dhahran HQ Thursday; ING this morning: \"re-escalation seems the most likely path... keep a sizeable geopolitical risk premium embedded in prices.\" Libya pipeline valve shut, cutting Hamada/Tahara output.\n- V2 filters: prior session +0.35% (<+2% \u2014 not chased) \u2713; sentiment 8.3 (\u22657) \u2713; score 77.1 (Buy), 7-day trend 5 up of 7 \u2713; 2x commodity \u2014 catalyst-specific sector/commodity picks supplied 4 of the 5 V2-era wins, and this exact fund won the 10-08 sub-45 crude-supply-shock override (gate 40, +1.21%).\n- Note: UCO was also picked 10-21 and finished flat (-0.02) \u2014 yesterday crude faded intraday. Today's setup is materially different: the escalation is fresher (attacks + Aramco evacuation news Thursday, morning bid confirmed 0639 GMT) and the tape is even more risk-off, which historically bids energy as the hedge (XLE +0.45% Thursday while Nasdaq fell 3%).\nRISKS: a broad AI-rout cascade could drag crude lower at the open; any de-escalation headline intraday would unwind the geopolitical premium fast. This is the documented-override trade, not a tape trade.\nSTRATEGY: unchanged \u2014 Strategy V2 stands (no /tmp/pick_strategy.txt written). Yesterday's SQQQ +3.58 winner confirms the rule working: it was picked unchased (10-21 move -3.2%) and is excluded today by the same rule (+8.55%).",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 77.1,
+    "rating": "Buy",
+    "direction": "long",
+    "sentiment": 8.3,
+    "composite": 8.0,
+    "today_pct": 0.35,
+    "vs_sma50_pct": 23.55,
+    "trend7": [
+     "up",
+     "up",
+     "down",
+     "up",
+     "up",
+     "up",
+     "down"
+    ],
+    "prev_close": 63.77,
+    "data_as_of": "2026-10-22T20:31+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -760,5 +799,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-10-22T16:50-04:00"
+ "updated": "2026-10-23T09:22-04:00"
 }
