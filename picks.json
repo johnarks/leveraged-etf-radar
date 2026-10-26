@@ -788,6 +788,45 @@
    "spy_return_pct": 0.01,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "AAPU",
+   "name": "Direxion Daily AAPL Bull 2X",
+   "lev": 2,
+   "underlying": "Apple (AAPL)",
+   "category": "single-stock",
+   "direction": "long",
+   "thesis": "ETF Radar daily pick \u2014 Monday 2026-10-26: AAPU (Direxion Daily AAPL Bull 2X).\n\nMARKET SENTIMENT GATE: AI Sentiment Pre-Market edition for today 2026-10-26 scores 47/100 (\"Neutral, Cautious Undertone\") \u2014 the 45-55 selective band, not below 45, so the inverse-or-cash default does NOT apply. In this band V2 says pick selectively: defensive or catalyst-specific names. AAPU is a catalyst-specific pick, not broad beta.\n\nWHY AAPU: It is the cleanest agreement setup on today's board. Direction-adjusted news sentiment 8.0/10 \u2014 the highest long score in the 72-fund universe and above V2's >=7 long bar \u2014 with technical score 79.2 (joint-top tier). Prior completed session (Friday) AAPU moved only -0.38%, comfortably passing the hard no-chase rule (prior < +2%; every >=+2% chase in the audit lost, 0-6). It is not chasing a spike, unlike the audit's losing single-stock picks (AMZU +6.44%, NVDL +3.30% the day before they were picked).\n\nFRESH CATALYST (today, 2026-10-26, from this morning's sentiment refresh): Apple reportedly increased iPhone Duo production orders by 30% after launch demand, following the $1,999 foldable selling out US preorder stock within minutes Friday with deliveries into January 2027. AAPL fell just 0.14% Friday, outperforming most Mag 7, and is the Mag 7 YTD leader (+34%).\n\nWHY NOT THE ALTERNATIVES: SOXS (inverse semis, sentiment 7.3, tech 66.7, Morgan Stanley warning of 10-15% lower semi support) fails the Monday tape check \u2014 futures are higher, SOXX is up ~1.4-1.5% premarket with NVDA +~1% and AMD +~0.8%, so the bearish setup is not confirming this morning, and the gate is not below 45. TSLL has a fresh Barclays upgrade catalyst (TSLA +2.1% premarket) but technical score only 43.8, failing the tech+sentiment agreement test. BRZU is vetoed outright: sentiment collapsed to 1.0 after the overnight Brazil shock (EWZ -27.6% on Lula's surprise re-election win). UCO/energy, Friday's winner, carries only 2.7 sentiment today and crude pulled back ~2% premarket.\n\nRISKS, STATED PLAINLY: Single-stock 2x is a demoted category in V2 (audit 1-3, avg -1.7%) \u2014 concentration risk is real. The tape is fragile: AI-bubble anxiety, a Brazil shock overnight, and a Fed decision plus Big Tech earnings barrage this week can swamp a single-name catalyst. This pick is taken because it is the one setup that passes every V2 filter (sentiment >=7, agreement, no-chase, fresh verified catalyst) on a selective-band day \u2014 not because single-stock 2x is favored generally.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 79.2,
+    "rating": "Buy",
+    "direction": "long",
+    "sentiment": 8.0,
+    "composite": 7.96,
+    "today_pct": -0.38,
+    "vs_sma50_pct": 9.93,
+    "trend7": [
+     "down",
+     "up",
+     "up",
+     "down",
+     "down",
+     "up",
+     "down"
+    ],
+    "prev_close": 47.82,
+    "data_as_of": "2026-10-23T20:31+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -799,5 +838,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-10-23T16:50-04:00"
+ "updated": "2026-10-26T09:16-04:00"
 }
