@@ -827,6 +827,45 @@
    "spy_return_pct": 0.41,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "UGE",
+   "name": "ProShares Ultra Consumer Staples",
+   "lev": 2,
+   "underlying": "U.S. Consumer Staples",
+   "category": "sector",
+   "direction": "long",
+   "thesis": "ETF Radar daily pick \u2014 Tuesday 2026-10-27: UGE (ProShares Ultra Consumer Staples, 2x)\n\nMARKET SENTIMENT GATE: AI Sentiment Pre-Market edition for today 2026-10-27 scores 58/100, \"Risk-On Tilt\" \u2014 above 55, so Strategy V2's normal-pick band applies. No override needed, and no inverse case: futures are higher (Dow +0.2-0.3%, S&P +0.2%, Nasdaq +0.3-0.4% per premarket reads), oil is easing on Middle East diplomacy signals, and every inverse fund's direction-adjusted sentiment is below 7 (best: TZA 6.0).\n\nWHY UGE \u2014 the cleanest board setup that is not a chase:\n1. Composite 7.72, #1 of the 72-fund universe (technical score 85.4, the strongest in the universe, blended with news sentiment). Top-decile composite, no-chase: prior completed session -0.63%, well under the +2% cutoff that went 0-6 in the V2 audit.\n2. HONEST SOFT SPOT, STATED PLAINLY: news sentiment is 6.9/10 (\"Slightly Bullish\"), 0.1 below V2's 7.0 line \u2014 sector 7.3, holdings 6.5. This is the one filter UGE does not fully clear. It is taken anyway because it is #1 on composite by a clear margin, its technicals are the board's best, it is not a chase, and it carries a fresh same-day catalyst (below) \u2014 whereas the only sentiment-7.0 names, TMF/UBT, sit at composite rank 9-10 (outside the top decile) on a placeholder sector score with 0% holdings coverage, into tomorrow's Fed decision.\n3. FRESH, VERIFIED, SAME-DAY CATALYST: Coca-Cola \u2014 a top UGE holding (news score 8.6 in data.json) \u2014 raised its annual profit forecast with its earnings this morning, shares +0.3% premarket (Reuters premarket report, Oct 27). UPS also raised its 2026 outlook. No staples-negative headline in the premarket scan; WMT (-0.35%) and COST (-0.51%) are only fractionally soft premarket, not a veto.\n4. Not a demoted class: UGE is a 2x sector fund, not index-3x beta or single-stock 2x. It last won as a pick on 2026-10-19 (+1.35% vs SPY -0.10%), more than 3 trading days ago, so no re-pick rule is triggered. Price +8.6% above the 50DMA \u2014 extension did not predict losses in the audit; the one-day spike did, and there is none here.\n\nWHY NOT THE ALTERNATIVES:\n- TSLL (sentiment 8.0): DISQUALIFIED by the hard no-chase rule \u2014 prior session +10.25% after Monday's Barclays upgrade spike. Single-stock 2x is demoted in V2 anyway.\n- SOXL (7.8), AVGU (8.5), NVDL (7.8), KORU (8.4): all fail no-chase (prior +8.31%, +4.94%, +2.93%, +4.72% respectively); NVDL/AVGU/KORU also fail agreement with technical scores of 29.2/20.8/16.7.\n- TMF/UBT (sentiment 7.0, prior +1.16%/+0.96%): second choice \u2014 composite rank 9-10, sentiment is a sector placeholder, and tomorrow's Fed decision (hold ~90% priced) is a binary that can push yields either way. The JPM AM \"bond market is a buy\" call today is noted but does not beat UGE's #1 composite.\n- FAS/UYG (financials): vetoed by the fresh HSBC miss \u2014 HSBC -7% premarket, dragging European banks.\n- CURE (composite 7.21, prior -0.04%): sentiment 6.5, below the line, and no fresh same-day healthcare catalyst found in the scan.\n\nRISKS, STATED PLAINLY: On a risk-on tape, defensive staples can lag beta \u2014 UGE can win its sector and still trail a broad rally. The 6.9 sentiment is a genuine near-miss on V2's threshold, not a rounding trick. Fed week (decision Wednesday) and Big Tech earnings (MSFT/GOOGL Wednesday, AMZN Thursday) can swamp a single-sector call. This is a one-day trade on the board's best non-chase setup, not a conviction call on staples.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 85.4,
+    "rating": "Strong Buy",
+    "direction": "long",
+    "sentiment": 6.9,
+    "composite": 7.72,
+    "today_pct": -0.63,
+    "vs_sma50_pct": 8.58,
+    "trend7": [
+     "down",
+     "down",
+     "up",
+     "down",
+     "up",
+     "down",
+     "up"
+    ],
+    "prev_close": 20.55,
+    "data_as_of": "2026-10-26T20:30+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -838,5 +877,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-10-26T16:50-04:00"
+ "updated": "2026-10-27T09:16-04:00"
 }
