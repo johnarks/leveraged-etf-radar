@@ -944,6 +944,45 @@
    "spy_return_pct": 0.07,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-10-30",
+   "ticker": "UCO",
+   "name": "ProShares Ultra Bloomberg Crude Oil",
+   "lev": 2,
+   "underlying": "WTI Crude Oil",
+   "category": "commodity",
+   "direction": "long",
+   "thesis": "ETF Radar daily pick \u2014 Friday 2026-10-30: UCO (ProShares Ultra Bloomberg Crude Oil, 2x)\n\nOVERRIDING market sentiment 33/100 (Firmly Bearish) because of a specific, verified, same-morning crude-supply catalyst \u2014 the documented sub-45 long override path in Strategy V2.\n\nMARKET SENTIMENT GATE (Strategy V2): AI Sentiment Pre-Market edition for today 2026-10-30 scores 33/100, \"Firmly Bearish\" \u2014 below 45, so the default is inverse-or-cash.\nINVERSE CHECK (reverse agreement test): no inverse setup qualifies.\n- SQQQ (direction-adjusted sentiment 7.6, tech 66.7 Buy) is DISQUALIFIED by the hard no-chase rule: prior completed session +4.27% (audit: every >=+2% chase lost, 0-6).\n- TECS (8.0) and SOXS (7.4) are likewise disqualified: prior sessions +3.43% and +4.80%, and neither is trending up (2 of 7 up; tech Neutral/Sell).\n- SPXS (7.3, prior +1.21% passes no-chase) fails the reverse agreement test on its other legs: technical score 47.9 Neutral (not Buy), 7-day trend only 3 of 7 up, and price -0.16% below its 50DMA \u2014 the fund itself is not trending up. The broad tape is also not breaking down uniformly (Dow futures flat, S&P futures ~-1% vs Nasdaq-100 futures -2.4%), so a blunt S&P inverse is a weaker match than the Nasdaq/tech inverses, which are all chased.\n- FAZ (6.1), TZA (4.9), LABD (4.1) all fail the >=7 sentiment bar.\nNo inverse passes all three legs, so cash is the default \u2014 unless a documented specific-catalyst long override applies. One does.\n\nTHE OVERRIDE: UCO.\n- Fresh verified catalyst this morning (Reuters, Oct 30): crude rose in early trade on escalating Middle East supply fears \u2014 Brent +0.75% to $115.74, WTI +0.71% to $102.72 in early Asian trade, later Brent $116.08 / WTI $103.37 \u2014 as Houthi attacks on Saudi Arabia stepped up, UKMTO verified explosives attached to a tanker's hull in the Strait of Hormuz (engine-room fire), and the Wall Street Journal reported US Central Command briefed the President on military options concerning Iran. Both benchmarks head for a fourth straight monthly gain (Brent ~+14% in October, WTI ~+15%), closing above $100 for the first time since April. This is a fresh, independently verified, commodity-specific driver, not a recycled headline.\n- V2 filters, all passed: news sentiment 8.7 (>=7) in agreement with technical score 81.2 (Strong Buy); prior completed session +0.23% (well under the +2% no-chase line); 7-day trend 5 up of 7; 2x commodity \u2014 a catalyst-specific commodity pick, not demoted index-3x beta or single-stock 2x. Last UCO pick was Oct 23 (a win, +1.49%), so no re-pick rule is triggered.\n- Why UCO over ERX: ERX also passes every filter (sentiment 8.1, tech 87.5 Strong Buy, prior +0.87%), but it is 3x energy equities, which carry broad-market equity beta on a tape where Nasdaq-100 futures are -2.4% \u2014 and today's own Pre-Market report notes higher oil \"revives inflation fears and dents broader risk appetite.\" UCO at 2x tracks the catalyst itself (the crude price, up this morning) rather than equities that can fall with the market even as oil rises. The Oct 20 ERX override on this same oil-shock thesis missed (-1.26%) while the Oct 23 UCO override won (+1.49%).\n- Why not the other longs: CURE (sentiment 8.6, tech 79.2) is disqualified by no-chase (prior +7.25% after two straight winning days); PILL (9.4) is disqualified by no-chase (prior +3.71%); UGE (7.3) is disqualified by no-chase (prior +3.95%); GUSH/DIG (8.0/8.1) are second-tier energy-equity versions of the same thesis with weaker direct crude linkage than UCO.\n\nRISKS, STATED PLAINLY: a de-escalation headline intraday (US-Iran talks, a Hormuz calming statement) would unwind the geopolitical premium fast, and 2x daily-reset leverage amplifies any reversal. A broad risk-off cascade can drag crude lower at the open despite the supply story. This morning's Employment Cost Index and Chicago PMI are the known macro risk \u2014 a hot print would feed the December-hike repricing already on the tape. This is the documented-override trade, not a tape trade, and Strategy V2 is unchanged.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 81.2,
+    "rating": "Strong Buy",
+    "direction": "long",
+    "sentiment": 8.7,
+    "composite": 8.41,
+    "today_pct": 0.23,
+    "vs_sma50_pct": 23.87,
+    "trend7": [
+     "up",
+     "up",
+     "down",
+     "down",
+     "up",
+     "up",
+     "up"
+    ],
+    "prev_close": 66.81,
+    "data_as_of": "2026-10-29T20:28+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -955,5 +994,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-10-29T16:50-04:00"
+ "updated": "2026-10-30T09:16-04:00"
 }
