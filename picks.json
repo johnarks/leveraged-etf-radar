@@ -983,6 +983,45 @@
    "spy_return_pct": -0.74,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "UST",
+   "name": "ProShares Ultra 7-10 Year Treasury",
+   "lev": 2,
+   "underlying": "7-10 Year U.S. Treasuries",
+   "category": "rates",
+   "direction": "long",
+   "thesis": "ETF Radar daily pick \u2014 Monday 2026-11-02: UST (ProShares Ultra 7-10 Year Treasury, 2x long).\n\nMARKET SENTIMENT GATE: AI Sentiment Pre-Market today (2026-11-02) = 54/100, \"Tentative Rebound\". This is the 45-55 SELECTIVE band, not the below-45 inverse-or-cash default \u2014 so a defensive, catalyst-specific long is the correct V2 posture, not a blunt inverse and not broad beta.\n\nSELECTION (all Strategy V2 filters bind):\n- News sentiment 7.6/10 (Bullish), technical score 66.7 (Buy), composite 7.13 \u2014 the highest composite among all sentiment>=7, no-chase qualifiers, and top of the board on that filtered set.\n- No-chase rule PASSES: prior completed session (Friday) +1.14%, well under the +2% hard cap (audit: 0-6 on chased spikes).\n- Technical + sentiment AGREE (both bullish), sentiment >= 7.0 for longs.\n- Defensive class for the selective band: intermediate Treasuries, not index-3x beta (demoted, 0-3 in audit) and not single-stock 2x (demoted, and AAPU is disqualified anyway by its binary after-close earnings print today).\n- Not a re-pick within 3 trading days; last pick was UCO on 2026-10-30 (miss).\n\nCATALYST (fresh, verified this morning):\n- The bond rally survived last week's strong Q3 GDP (3.4% annualised) and the Fed's hawkish hold (3.75-4.00%, Oct 28); the 10-year ended October at 4.94%, down 35bp from 5.29% on Sep 30, vs an October peak of 5.3645%.\n- Premarket check today (TradingView/Dow Jones, Morningstar): 10-year little changed at ~4.92-4.95%, near a seven-week low, with yields falling in European trade as oil slid on a longer Iran diplomacy window \u2014 easing inflation pressure and supporting duration. No yield-spike veto.\n- Futures are only modestly rebounding (S&P +0.4-0.5%, Nasdaq +0.8-0.9% after Friday's rout), a tentative bounce, not a risk-on rip that would punish long duration.\n\nWHY NOT THE ALTERNATIVES:\n- INDL (sentiment 7.7, highest in universe) fails the agreement test: technicals only 52.1 Neutral, composite 6.46, and India's session already closed +1.68% (Nifty 23,440.80, Reliance +11.6% on a 41% profit jump) \u2014 a US-listed INDL open would gap on that news, i.e. buying the move intraday.\n- TYD (3x same Treasury theme, sentiment 7.6, composite 6.92) is the close second; UST's 2x form wins on composite and on the audit's milder 2x record.\n- Inverses (SQQQ/TECS/SOXS) fail V2's inverse test today: direction-adjusted sentiment only 6.6/6.7/6.5 (< 7), and their own prior sessions spiked +10.6%/+14.2%/+25.0% \u2014 all violate the no-chase rule applied to the inverse fund itself. Cash was considered and rejected: a qualifying defensive long exists.\n\nRISK (stated plainly): today's 10:00 AM ET ISM manufacturing PMI (forecast 54.5) and the week's event stack (midterms Tuesday, Treasury refunding Wednesday, payrolls Friday) can move yields either way; a strong ISM print lifting yields is the day's main threat to this pick. Prior-day +1.14% and +2.02% vs the 50DMA leave room, not extension.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 66.7,
+    "rating": "Buy",
+    "direction": "long",
+    "sentiment": 7.6,
+    "composite": 7.13,
+    "today_pct": 1.14,
+    "vs_sma50_pct": 2.02,
+    "trend7": [
+     "up",
+     "up",
+     "down",
+     "down",
+     "up",
+     "down",
+     "up"
+    ],
+    "prev_close": 40.05,
+    "data_as_of": "2026-10-30T20:54+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -994,5 +1033,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-10-30T16:50-04:00"
+ "updated": "2026-11-02T09:16-05:00"
 }
