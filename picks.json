@@ -1022,6 +1022,45 @@
    "spy_return_pct": -0.97,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-11-03",
+   "ticker": "SPXS",
+   "name": "Direxion Daily S&P 500 Bear 3X",
+   "lev": 3,
+   "underlying": "S&P 500",
+   "category": "index",
+   "direction": "inverse",
+   "thesis": "ETF Radar daily pick \u2014 Tuesday 2026-11-03: SPXS (Direxion Daily S&P 500 Bear 3X).\n\nMARKET SENTIMENT GATE: AI Sentiment Pre-Market today (2026-11-03, posted ~8:45 AM ET) = 40/100, \"Risk-Off Tilt\" \u2014 below 45, so under Strategy V2 the default is INVERSE-or-cash, not a long. This pick follows that default path (not a long override): SPXS is the one inverse setup that passes the same agreement test in reverse.\n\nWhy SPXS passes every V2 filter:\n- Direction-adjusted news sentiment 7.0 (meets the >= 7 bar; holdings-driven at 7.6, with the underlying's mega-cap news flow heavily bearish \u2014 AAPL, MSFT, AMZN, GOOGL all scoring 1.5-3.2 on raw news).\n- Technical score 70.8, Buy-rated \u2014 technical + sentiment agreement.\n- Prior completed session +1.48% \u2014 under the +2% no-chase line (the audit's clean separator: chased spikes went 0-6).\n- Trending up: 7-day trend ends up, and the fund sits +6.64% above its 50DMA.\n- Fresh bearish catalyst for the underlying, verified this morning: the S&P 500 fell 0.51% to 7,541.40 on Nov 2, its third straight decline, with technology down 2.66%; Apple is down ~4% premarket after guiding holiday-quarter gross margin to 45-46% vs ~46.9% expected despite a Q4 beat; Palantir is down ~6-8% premarket despite a 96% revenue jump; Shopify is down ~16-17% after its Q3 report; midterm voting today adds election-day caution, with S&P futures flat-to-lower and Dow futures down ~0.5-0.8% premarket, and the 10-year near 4.9%.\n\nWhy not the other inverses or a long:\n- Higher-sentiment inverses all fail the no-chase rule: TECS (7.8) +9.54% prior session, SOXS (7.3) +11.54%, SQQQ (7.4) +4.11%. Buying them would repeat the exact mistake the audit isolated.\n- TZA (6.2), LABD (6.1) and FAZ (4.1) fail the sentiment bar and are Sell-rated.\n- No long qualifies: PILL has sentiment 7.5 but a 22.9 Sell technical score (no agreement); INDL (7.4) fails no-chase at +3.0%. Cash was the fallback, but a qualifying inverse exists, so the V2 default says take it rather than sit out.\n\nRisk acknowledged: this is a one-day tactical inverse, not a trend call. The tape is mixed, not uniformly red \u2014 chips are bouncing premarket (SOXX +2.7-3.9%, NVDA +1.6%, AMD +3-4% ahead of its after-close report), Nasdaq futures are slightly positive, and Monday's breadth was positive in 8 of 11 sectors. A relief bounce on election-night positioning or AMD's print could lift the S&P and hurt SPXS; the position is sized by the system's one-day rule and judged at the close.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 70.8,
+    "rating": "Buy",
+    "direction": "inverse",
+    "sentiment": 7.0,
+    "composite": 7.04,
+    "today_pct": 1.48,
+    "vs_sma50_pct": 6.64,
+    "trend7": [
+     "up",
+     "up",
+     "up",
+     "down",
+     "down",
+     "down",
+     "up"
+    ],
+    "prev_close": 26.01,
+    "data_as_of": "2026-11-02T21:28+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -1033,5 +1072,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-11-02T16:50-05:00"
+ "updated": "2026-11-03T09:16-05:00"
 }
