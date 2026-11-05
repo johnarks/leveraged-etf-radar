@@ -1100,6 +1100,28 @@
    "spy_return_pct": 0.5,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": null,
+   "name": null,
+   "lev": null,
+   "underlying": null,
+   "category": null,
+   "thesis": "STAY OUT (cash) \u2014 Thu 2026-11-05. Market sentiment gate: AI Sentiment Pre-Market 44/100, \"Risk-Off Tilt\" \u2014 below the 45 line, so Strategy V2 default is inverse-or-cash. No inverse setup passes the agreement test in reverse: SOXS has direction-adjusted sentiment 8.1, tech 68.8 Buy and a fresh bearish catalyst (Qualcomm -10% premarket on a 26% handset-sales drop, chip purge into day two, SOXL -11.8% premarket), but it gained +9.04% in the prior session \u2014 a hard no-chase violation (audit: 0-6 on chased spikes). TECS (sent 5.9, tech 68.8) and SQQQ (sent 5.4, tech 75.0) both fail on sentiment below 7 and 7-day trends ending down, down \u2014 not trending up. No long qualifies as a documented specific-catalyst override either: every name with sentiment >= 7 and tech >= 70 chased +5.2% to +13.5% yesterday (MSFU +13.47%, AMZU +12.26%, INDL +5.29%, DPST +5.20%); the only no-chase-clean longs with composite >= 7.0 are MVV and MIDU, both with sentiment 6.8, below the 7 threshold; the closest long, industrials DUSL (sent 7.9, -3.32% prior session, PH/CMI earnings before the bell), has tech only 47.9 Neutral \u2014 no technical agreement. Premarket tape is a rotation, not a rout (Dow futures +0.5-0.6%, S&P flat, Nasdaq -0.5% on chips), with jobless claims at 8:30 AM and the October jobs report Friday \u2014 no reason to force a position into a chased board ahead of that print. Cash beats owning the best candidate today.",
+   "strategy_notes": "",
+   "snapshot": {
+    "data_as_of": "2026-11-04T21:28+00:00",
+    "call": "stay_out"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": "stayed_out",
+   "status": "stayed_out"
   }
  ],
  "record": {
@@ -1111,5 +1133,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-11-04T16:50-05:00"
+ "updated": "2026-11-05T09:16-05:00"
 }
