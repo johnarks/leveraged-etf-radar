@@ -1122,6 +1122,28 @@
    "spy_return_pct": -4.24,
    "verdict": "stayed_out",
    "status": "settled"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": null,
+   "name": null,
+   "lev": null,
+   "underlying": null,
+   "category": null,
+   "thesis": "STAY OUT (cash) \u2014 Friday 2026-11-06. Market sentiment gate: AI Sentiment Pre-Market 48/100, \"Fragile Rebound\" (45-55 selective band). Yesterday was a historic AI rout (Nasdaq -5.5%, worst in 19 months, ~$2.5T erased); futures are bouncing on dip-buying, but the report itself warns the rebound \"rests on fragile ground\" and asks whether it holds into the open or fades like recent bounces. No candidate survives the V2 filters plus this morning's tape:\n\n- INVERSES: every one violates the hard no-chase rule \u2014 SQQQ +19.2%, SPXS +13.3%, SOXS +39.0%, TECS +24.0%, TZA +13.8%, LABD +20.3%, FAZ +8.0% yesterday. Buying any of them is chasing yesterday's spike.\n- CURE/PILL (healthcare, sent 7.3/8.1, tech 87.5/25.0): vetoed \u2014 healthcare is the WORST sector in pre-market (-1.4%) despite big beats from Moderna (Q3 profit vs expected loss, raised guide), Amgen and Pfizer; MRNA is already giving back its early +10% premarket gain. The catalyst is not lifting the sector.\n- UGE (staples, sent 7.5, tech 87.5): vetoed \u2014 staples lagged yesterday on heavy volume and are red again pre-market; institutions are rotating OUT of bond proxies/defensives into cyclicals on the bounce.\n- TYD/UST/UBT/TMF (rates longs, sent 7.0-7.5): vetoed \u2014 October jobs printed hot (165K, wages firm), pressuring the Fed toward fewer cuts; yields up is the wrong tape for long-duration bond funds.\n- NAIL (homebuilders, sent 8.1, tech 77.1): the only long passing the mechanical filters, but it faces the same hot-jobs/higher-yields headwind with no fresh homebuilder catalyst verified this morning. Forcing it would be picking into a headwind with no catalyst \u2014 exactly what V2 was built to stop.\n- Bounce leaders (chips/tech, AMD/MU/SNDK +8-10% in futures): sentiment 2.6-4.0 across SOXL/TECL/TQQQ \u2014 no tech+sentiment agreement, and chasing a dead-cat bounce after a -5.5% day is what the no-chase rule guards against.\n\nCash is the better position than the best candidate today. No strategy change: V2 is functioning as designed \u2014 the stay-out is the system working, not failing. Second consecutive stay-out day (Nov 5 also stayed out).",
+   "strategy_notes": "",
+   "snapshot": {
+    "data_as_of": "2026-11-05T21:28+00:00",
+    "call": "stay_out"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": "stayed_out",
+   "status": "stayed_out"
   }
  ],
  "record": {
@@ -1133,5 +1155,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-11-05T16:50-05:00"
+ "updated": "2026-11-06T09:17-05:00"
 }
