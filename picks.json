@@ -1183,6 +1183,28 @@
    "spy_return_pct": 1.45,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-11-10",
+   "ticker": null,
+   "name": null,
+   "lev": null,
+   "underlying": null,
+   "category": null,
+   "thesis": "STAY OUT (cash) \u2014 Tuesday 2026-11-10. Market sentiment gate: AI Sentiment Pre-Market 40/100 (Risk-Off Tilt) for today, below the 45 line, so Strategy V2's default is inverse-or-cash. Fresh bearish catalyst is real \u2014 October CPI came in hot (+0.4% m/m, core +0.3%, both above consensus) and Fed Governor Waller said a December hike is likely with a 50bp move on the table if CPI ran hot; Nasdaq-100 futures were down ~0.8% and S&P futures ~0.3% into the open, 10-year yield near 4.9%. But no inverse setup passes the reverse agreement test: best is TECS at 6.5 direction-adjusted sentiment (below the 7 bar), tech 77.1, and the fund fell the last two sessions (tech bounced Mon/Fri), so it is not trending up; SOXS 4.9, SPXS 4.2, SQQQ 4.1 all fail on sentiment, and the semis bearish case softened \u2014 SOXX jumped 6.9% Monday (AMD +13.3% on an Oppenheimer upgrade and Google TPU win) and NVDA is bouncing ~1.8% premarket. No long override either: the only long passing both the sentiment >=7 and no-chase (<+2% prior session) filters is INDL (sentiment 7.9, tech 75 Buy, +1.98% Monday), but Indian markets are closed today for Diwali-Balipratipada \u2014 the GIFT Nifty +1.19% signal is a Wednesday reopening story, and a 3x ETF scored open-to-close cannot capture a gap on a closed underlying. Every other >=7-sentiment long spiked +2.3% to +11.7% Monday (JNUG +9.8%, NUGT +8.5%, PILL +11.0%, BOIL +10.5%) \u2014 all chase-blocked under the 0-6 audit rule after Monday's broad +2.35% S&P / +3.40% Nasdaq-100 rebound. With the tape risk-off, the inverse vehicles failing their own gates, and the sole long candidate a closed-market Wednesday story, cash beats owning the best candidate today.",
+   "strategy_notes": "",
+   "snapshot": {
+    "data_as_of": "2026-11-09T21:28+00:00",
+    "call": "stay_out"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": "stayed_out",
+   "status": "stayed_out"
   }
  ],
  "record": {
@@ -1194,5 +1216,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-11-09T16:51-05:00"
+ "updated": "2026-11-10T09:17-05:00"
 }
