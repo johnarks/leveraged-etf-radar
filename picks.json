@@ -1205,6 +1205,45 @@
    "spy_return_pct": 0.26,
    "verdict": "stayed_out",
    "status": "settled"
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "INDL",
+   "name": "Direxion Daily MSCI India Bull 3X",
+   "lev": 3,
+   "underlying": "MSCI India",
+   "category": "country",
+   "direction": "long",
+   "thesis": "ETF Radar daily pick \u2014 Wednesday 2026-11-11: INDL (Direxion Daily MSCI India Bull 3X).\n\nMARKET SENTIMENT GATE (Strategy V2): AI Sentiment Pre-Market edition for today 2026-11-11 scores 55/100, \"Mild Risk-On Tilt\" \u2014 the top edge of the 45-55 selective band, so the pick must be defensive or catalyst-specific, not broad beta. No override needed (score is not below 45), and no inverse case: futures are rising on the CoreWeave relief rally, and the only high-scoring inverse (TECS, comp 7.61) gained +3.58% in the prior session \u2014 a hard no-chase fail. No fresh US macro shock this morning: October PPI is Friday Nov 13, not today, and today is Veterans Day (bond market closed, equities open).\n\nSELECTION (all Strategy V2 filters pass):\n- Technical score 75.0 (Buy) with news sentiment 8.2/10 (Bullish) \u2014 agreement on both, composite 7.85.\n- Trend: up 6 of the last 7 sessions; +15.21% above the 50DMA.\n- No-chase rule: prior completed session +1.12% \u2014 under the +2% hard cap.\n- Country pick, not index-3x beta or single-stock 2x \u2014 the audit's winning category (catalyst-specific sector/commodity/country).\n\nFRESH VERIFIED CATALYST (same-day, confirmed in premarket headlines): Indian markets reopened today after the Diwali holiday (closed Nov 10) and closed at nine-month highs \u2014 Sensex +0.95% to 81,879.40, Nifty +0.84% to 25,255.05, Nifty Bank near its record. Drivers: FIIs turned net buyers in November (Rs 53,739 crore in the first nine days, after two months of outflows), Brent crude at a two-month low (~$89), and broker upgrades (Bernstein raised its Nifty Dec-2026 target to 26,100; Citi raised its end-2027 target to 28,000). INDL has not traded since yesterday's US close, so today's US session is the first chance to price the Diwali reopening rally.\n\nTAPE CONTEXT: S&P/Nasdaq futures surging on CoreWeave's Q3 beat and raised outlook (+15.3% premarket) calming AI-spending fears; the hot October CPI is already digested (SPY +0.26% yesterday). The main overhangs are the Baird Nvidia downgrade and December Fed-hike odds near 100% \u2014 noted, but they are US-centric and do not touch the India catalyst.\n\nWHY NOT THE RUNNERS-UP: UGE (comp 8.38, tech 87.5, sent 8.0) has a verified Costco catalyst ($30 special dividend, $4B buyback), but COST is flat (-0.1%) in premarket \u2014 the news is already priced. CURE (comp 8.43, top of board) has no fresh Nov 10-11 catalyst and was already picked twice in late October. DRN/URE (real estate, mortgage rates down a 4th week) is vetoed by NAIL's -9.8% plunge yesterday. AMZU (+2.9%) and PILL (+2.79%) both fail the no-chase rule.\n\nRISKS: 3x leverage into a market at nine-month highs \u2014 a fade in the India rally or a US risk-off turn on Fed-hike repricing hits hard; Veterans Day means thinner liquidity. The catalyst is same-day and market-wide for India, which is exactly the setup V2 is built for.\n\nSTRATEGY: No change. Strategy V2 stands as written (record 10W-16L, avg +0.09%/day; stay-outs on Nov 5, 6, 10 were the right calls on risk-off tapes).",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 75.0,
+    "rating": "Buy",
+    "direction": "long",
+    "sentiment": 8.2,
+    "composite": 7.85,
+    "today_pct": 1.12,
+    "vs_sma50_pct": 15.21,
+    "trend7": [
+     "up",
+     "up",
+     "up",
+     "down",
+     "up",
+     "up",
+     "up"
+    ],
+    "prev_close": 48.0,
+    "data_as_of": "2026-11-10T21:28+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -1216,5 +1255,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-11-10T16:51-05:00"
+ "updated": "2026-11-11T09:17-05:00"
 }
