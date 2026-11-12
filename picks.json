@@ -1244,6 +1244,45 @@
    "spy_return_pct": 0.4,
    "verdict": "good",
    "status": "settled"
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "CURE",
+   "name": "Direxion Daily Healthcare Bull 3X",
+   "lev": 3,
+   "underlying": "Health Care",
+   "category": "sector",
+   "direction": "long",
+   "thesis": "ETF Radar daily pick \u2014 Thursday 2026-11-12: CURE (Direxion Daily Healthcare Bull 3X Shares).\n\nMARKET SENTIMENT GATE (Strategy V2): AI Sentiment Pre-Market today (2026-11-12, posted ~8:45 AM ET) = 31/100, \"Firmly Bearish\" \u2014 below the 45 line, so Strategy V2's default is inverse-or-cash. OVERRIDING the gate with a documented specific-catalyst long (audit record on sub-45 overrides: 2-0). Reason for the override: the bearish tape is a single-stock governance shock (Nvidia board/CEO crisis), not a broad fundamental deterioration \u2014 Dow futures are flat-to-up, Europe hit record highs, and the shock's epicenter is AI semis, while healthcare is the defensive sector with a fresh, verified, fund-specific catalyst this morning.\n\nWHY NOT INVERSE: no inverse setup passes the agreement test in reverse. TECS is closest (tech 62.5 Buy, direction-adjusted sentiment 6.8) but it fell 9.82% yesterday, its 7-day trend ends down, and its sentiment is below the 7 threshold; SQQQ (58.3 Neutral / 5.0), SPXS (35.4 Sell / 5.1) and SOXS (37.5 Sell / 4.5, -18.14% yesterday) all fail. The NVDA story is also binary \u2014 a board decision is expected today and a Huang-survival headline would trigger a violent reversal, the worst setup for holding an inverse into the event.\n\nWHY CURE: (1) Strongest tech+sentiment agreement on the board \u2014 technicals 87.5 Strong Buy (highest of all 72), news sentiment 8.3/10. (2) Fresh verified catalyst, confirmed by Reuters this morning: China approved Eli Lilly's orforglipron (Foundayo), the first GLP-1 weight-loss pill in China, beating Novo Nordisk to market; LLY hit a record high premarket, up ~3%. LLY is CURE's #1 holding at 15.13% weight with a 9.7/10 holdings score; ABBV (9.2), MRK (8.6), TMO/GILD/PFE (8.5) also score high. (3) No-chase rule satisfied: prior completed session 0.0% (flat), well under +2%. (4) Defensive positioning: healthcare is the classic risk-off sector on a day the AI complex is selling off, and CURE's holdings tone is positive (Ascendis Q3 revenue +66% YoY beat). (5) Premarket scan confirms the catalyst is real and today's, not recycled.\n\nRISKS: a broad de-risking day could drag even defensive longs down; CURE is +24.3% above its 50DMA and +54% above its 200DMA (audit found extension alone does not predict losses, but a 3x fund gives back fast); the NVDA board decision landing mid-session could whipsaw the whole tape either way. If the tape turns into a broad selloff rather than an NVDA-specific one, this override fails \u2014 that is the documented bet.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 87.5,
+    "rating": "Strong Buy",
+    "direction": "long",
+    "sentiment": 8.3,
+    "composite": 8.53,
+    "today_pct": 0.0,
+    "vs_sma50_pct": 24.3,
+    "trend7": [
+     "flat",
+     "up",
+     "up",
+     "down",
+     "down",
+     "up",
+     "down"
+    ],
+    "prev_close": 177.61,
+    "data_as_of": "2026-11-11T21:28+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -1255,5 +1294,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-11-11T16:51-05:00"
+ "updated": "2026-11-12T09:21-05:00"
 }
