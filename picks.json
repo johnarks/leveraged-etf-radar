@@ -1283,6 +1283,45 @@
    "spy_return_pct": 0.42,
    "verdict": "miss",
    "status": "settled"
+  },
+  {
+   "date": "2026-11-13",
+   "ticker": "EURL",
+   "name": "Direxion Daily FTSE Europe Bull 3X",
+   "lev": 3,
+   "underlying": "FTSE Europe",
+   "category": "country",
+   "direction": "long",
+   "thesis": "EURL (Direxion Daily FTSE Europe Bull 3X) \u2014 catalyst-specific country pick for Friday, Nov 13, 2026.\n\nWhy EURL: News sentiment 8.1/10 \u2014 the highest passing candidate in the 72-fund universe \u2014 with technicals 72.9 (Buy) in agreement, satisfying Strategy V2's sentiment >= 7 + agreement rule. Prior completed session (Nov 12) was -1.65%, comfortably under the +2% no-chase ceiling, and the fund sits only +1.5% above its 50DMA, so this is not a chase of an extended spike.\n\nFresh catalyst (verified this morning): European stocks are headed for their biggest weekly advance since July, with the STOXX 600 breaching record highs for the first time since August and up over 2% on the week \u2014 its strongest gain since June \u2014 as US tech pain becomes Europe's gain. Goldman Sachs raised its 12-month STOXX 600 target to 700 from 695 on energy price relief, and global equity inflows hit a seven-week high on demand for European funds. The STOXX 600 opened just -0.2% Friday in a mild pullback from Thursday's record, not a reversal.\n\nMarket-sentiment gate: today's AI Sentiment Pre-Market score is 55/100 (Risk-On Tilt), the top of the 45-55 selective band \u2014 a catalyst-specific name like EURL is exactly what the band calls for, and no override is needed.\n\nWhy not the alternatives: CURE (sent 7.7, tech 87.5) was yesterday's pick and missed, sits +21% above its 50DMA, and healthcare headlines are mixed (CVS breakup uncertainty, rising insurance costs). INDL (7.4) is vetoed \u2014 Indian inflation surged to 6.09%, breaching the RBI's 6% tolerance, and the Sensex snapped its rally. PILL fell -8.0% yesterday \u2014 a crash, not a setup. SQQQ (7.2 direction-adjusted) fails the inverse test in reverse: Nasdaq futures are only mildly lower and NVDA is rebounding toward $170, so there is no fresh bearish catalyst for the underlying.\n\nRisk: a 3x fund on a Friday after a record week \u2014 if the AI-trade anxiety that dragged European chips -2% this morning broadens, EURL magnifies the downside. The weekly momentum and the Goldman target raise are the offset.",
+   "strategy_notes": "",
+   "snapshot": {
+    "score": 72.9,
+    "rating": "Buy",
+    "direction": "long",
+    "sentiment": 8.1,
+    "composite": 7.7,
+    "today_pct": -1.65,
+    "vs_sma50_pct": 1.49,
+    "trend7": [
+     "down",
+     "down",
+     "down",
+     "up",
+     "down",
+     "down",
+     "up"
+    ],
+    "prev_close": 44.31,
+    "data_as_of": "2026-11-12T21:28+00:00"
+   },
+   "open": null,
+   "open_time": null,
+   "close": null,
+   "close_time": null,
+   "day_return_pct": null,
+   "spy_return_pct": null,
+   "verdict": null,
+   "status": "picked"
   }
  ],
  "record": {
@@ -1294,5 +1333,5 @@
   "current": "Strategy V2 (2026-10-20, after a full audit of the first 13 settled picks: 5W-8L, avg -0.45%/day): pick only fresh-catalyst setups whose prior completed session moved less than +2% \u2014 every pick that chased a prior-day spike of +2% or more lost (0-6), while sub-+2% entries went 5-2. Require technical + news-sentiment agreement with sentiment >= 7 for longs, and treat index 3x beta (TQQQ-type, 0-3 in the audit) and single-stock 2x (1-3, avg -1.7%) as guilty until proven innocent. Market-sentiment gate: below 45 the default is now INVERSE-or-cash instead of long \u2014 take a direction-adjusted inverse ETF (SQQQ/SPXS/SOXS class) only when the weak index/sector passes the same agreement test in reverse (inverse fund trending up, direction-adjusted sentiment high, fresh bearish catalyst), otherwise stay in cash; a long below 45 remains allowed only as a documented specific-catalyst override (audit overrides went 2-0). From 45-55 pick selectively \u2014 defensive or catalyst-specific names won in that band while broad beta lost \u2014 and above 55 pick normally, always subject to the no-chase rule.",
   "updated": "2026-10-20"
  },
- "updated": "2026-11-12T16:51-05:00"
+ "updated": "2026-11-13T09:15-05:00"
 }
